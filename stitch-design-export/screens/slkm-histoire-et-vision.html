@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"background":"#f7f9fb","on-secondary-fixed-variant":"#7f2b00","tertiary":"#51596f","surface-container":"#eceef0","surface-container-highest":"#e0e3e5","on-secondary-fixed":"#370e00","inverse-on-surface":"#eff1f3","primary-fixed":"#d4e3ff","primary-fixed-dim":"#a5c8ff","on-tertiary":"#ffffff","surface-container-high":"#e6e8ea","tertiary-fixed-dim":"#bec6e0","error-container":"#ffdad6","secondary-fixed-dim":"#ffb599","on-secondary-container":"#5a1c00","secondary":"#a63b00","on-primary":"#ffffff","surface-container-low":"#f2f4f6","secondary-container":"#fc6c29","on-surface-variant":"#414752","primary":"#0059a4","surface":"#f7f9fb","surface-bright":"#f7f9fb","on-primary-container":"#f4f6ff","inverse-primary":"#a5c8ff","surface-variant":"#e0e3e5","on-surface":"#191c1e","outline":"#717783","secondary-fixed":"#ffdbce","tertiary-container":"#697188","on-primary-fixed":"#001c3a","tertiary-fixed":"#dae2fd","primary-container":"#0072ce","on-tertiary-fixed":"#131b2e","surface-tint":"#005fae","on-tertiary-fixed-variant":"#3f465c","on-error":"#ffffff","surface-dim":"#d8dadc","outline-variant":"#c1c7d4","on-error-container":"#93000a","surface-container-lowest":"#ffffff","on-tertiary-container":"#f7f6ff","error":"#ba1a1a","inverse-surface":"#2d3133","on-background":"#191c1e","on-primary-fixed-variant":"#004785","on-secondary":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"0.75rem","space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2.25rem","space-md":"1rem","margin-mobile":"1rem","gutter":"1.25rem","margin":"2rem","space-lg":"1.5rem"},"fontFamily":{"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"800"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="logo.jpeg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XOdggmfRhclIB4wmbodGUCE9hwl-XslE_SszCuuwfr2D_cKVS01-GFdmnhop_RVTy50ws4NAPAUiV7Kk47ks02jPJ9eVe4bZsAshR3pdG3R08LVIIoVkHStWltWUVooIIek2sL34vbDVBSnK167PHfLzLY0vXFltePKFgBZqtmGXMs4DtPh7cjzxgJ8ASnABpywYpoXr7mcpVIyjvDCyyB1JhOQ6TBiiRFNYThNDcRn9BEj03NbYUI-8MFzMs3-U5OrEB78GTzmQ"/><div class="flex flex-col"><div class="flex items-baseline gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">SLKM</span><span class="font-label-sm text-label-sm text-secondary-container tracking-wider uppercase hidden sm:inline">Voyageurs &amp; Messagerie</span></div><span class="font-body-sm text-body-sm text-on-surface-variant hidden md:block">نقل مولاي مبارك</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded-lg"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-high" data-path="accueil" href="#">Accueil</a><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded-lg" data-path="histoire-et-vision" href="#">Histoire &amp; Vision</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-high" data-path="lignes-et-agences" href="#">Lignes &amp; Agences</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-high" data-path="irsaliyat-messagerie" href="#">Irsaliyat Messagerie</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-high" data-path="transport-personnel-et-tourisme" href="#">Transport Khddama &amp; Tourisme</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-high" data-path="espace-admin" href="#">Espace Admin</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:flex items-center bg-surface-container-low px-space-xs py-space-xs rounded-full"><button class="px-space-xs py-space-xs rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-[0_1px_3px_rgba(0,0,0,0.06)]" type="button">FR</button><button class="px-space-xs py-space-xs rounded-full text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface" type="button">عربي</button></div><a class="hidden lg:flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors" data-path="assistance-whatsapp" href="#"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="font-label-md text-label-md">WhatsApp: +212 5 28 84 XX XX</span></a><a class="px-space-md py-space-sm rounded-lg bg-secondary-container hover:bg-secondary text-on-secondary font-label-lg text-label-lg transition-transform active:scale-95 shadow-[0_1px_8px_rgba(0,0,0,0.08)]" data-path="reserver" href="#">Réserver</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Immersive Story Header -->
+<section class="relative w-full overflow-hidden bg-primary text-on-primary py-space-xl px-margin">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-lg">
+<div class="flex items-center gap-space-sm bg-on-primary/10 px-space-md py-space-xs rounded-full backdrop-blur-md">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-primary uppercase tracking-widest">Patrimoine Routier National • التراث النضالي للنقل</span>
+</div>
+<div class="font-label-md text-label-md text-primary-fixed bg-surface-container-lowest/10 px-space-md py-space-xs rounded-lg backdrop-blur-md">
+          Fondé en 1992 • Souss-Massa &amp; Sahara
+        </div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<h1 class="font-headline-xl text-headline-xl text-on-primary tracking-tight">
+            Plus de 30 Ans au Service du <span class="text-secondary-container">Transport Marocain</span>
+</h1>
+<p class="font-headline-sm text-headline-sm text-primary-fixed font-semibold" dir="rtl">
+            تاريخ من الثقة والريادة في نقل المسافرين والبضائع عبر ربوع المملكة
+          </p>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim leading-relaxed max-w-2xl">
+            Des premières pistes caravanières modernisées du Grand Souss jusqu’au déploiement d’un maillage autoroutier s’étendant de Tanger jusqu’aux confins de Dakhla, <strong class="text-on-primary font-semibold">SLKM (Naql Moulay Mbarek / نقل مولاي مبارك)</strong> incarne l'excellence du transport interurbain, le dynamisme économique du service messagerie <em class="text-secondary-container font-semibold not-italic">Irsaliyat</em>, et la fidélité inébranlable aux voyageurs du Royaume.
+          </p>
+<div class="flex flex-wrap gap-space-md pt-space-sm">
+<a class="px-space-lg py-space-md bg-secondary-container hover:bg-secondary text-on-secondary font-label-lg text-label-lg rounded-lg shadow-md transition-all flex items-center gap-space-xs" href="#timeline">
+<span>Découvrir notre odyssée</span>
+<span class="material-symbols-outlined text-lg">arrow_downward</span>
+</a>
+<a class="px-space-lg py-space-md bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-on-primary font-label-lg text-label-lg rounded-lg backdrop-blur-md transition-all flex items-center gap-space-xs" href="#vision">
+<span class="material-symbols-outlined text-lg">verified_user</span>
+<span>Nos engagements</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-xl overflow-hidden shadow-2xl bg-surface-container-lowest p-space-xs">
+<img class="w-full h-80 lg:h-96 object-cover rounded-lg" data-alt="A modern streamlined luxury coach traveling on a modern highway in Morocco during golden hour sunset, showing high-tech fleet details, Moroccan coastal mountain backdrop, professional transportation photography, rich royal blue and fiery road orange brand accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzQlGO3bGjuPsW5cjuB1wL-O8AYPZFVMRKYCsYEjlwU0pCotVNyIFjXP0Kq-QVvIX1gNKB3zwgLp1oNLKiSjshI2bDE4fSs7rllfrBkifqCqim-ZrXz_xUHp70M_hDwun0ieEWpwgD_0S8iY8lwrxzy3JjIO-jIcYj7uRSgfP3bW80gttilO0O6VHlUF7QsCJB9-Wk4Vsoe7jtG_HZN2mgesKQrkh0WC_PbX6N7YjEX6K05xyYq8nx"/>
+<div class="absolute bottom-4 left-4 right-4 p-space-md rounded-lg bg-surface/90 backdrop-blur-md shadow-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-container uppercase block font-bold">Flotte Certifiée Euro 6</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Sécurité &amp; Punctualité</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-2xl">directions_bus</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Operational Metric Banners -->
+<section class="w-full px-margin -mt-8 relative z-20">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Stat Card 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col justify-between group hover:shadow-xl transition-all">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold">Réseau Déployé</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">hub</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary font-extrabold" data-counter="35">35</span>
+<span class="font-headline-md text-headline-md text-secondary-container font-bold">+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Agences et guichets interconnectés à travers les 12 régions du Maroc.</p>
+</div>
+</div>
+<!-- Stat Card 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col justify-between group hover:shadow-xl transition-all">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold">Flotte Haut Standing</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">directions_bus</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary font-extrabold" data-counter="50">50</span>
+<span class="font-headline-md text-headline-md text-secondary-container font-bold">+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Autocars de dernière génération Scania &amp; Irizar climatisés avec Wi-Fi.</p>
+</div>
+</div>
+<!-- Stat Card 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col justify-between group hover:shadow-xl transition-all">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold">Distance Annuelle</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">route</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary font-extrabold">4.5M</span>
+<span class="font-label-lg text-label-lg text-secondary-container font-bold">KM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Kilomètres parcourus annuellement dans le respect rigoureux des normes de sécurité.</p>
+</div>
+</div>
+<!-- Stat Card 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col justify-between group hover:shadow-xl transition-all">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold">Identité &amp; Souveraineté</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">flag</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary font-extrabold">100%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Capital marocain, gouvernance familiale et engagement citoyen pour l'emploi local.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Timeline Section -->
+<section class="w-full py-space-xl px-margin bg-surface" id="timeline">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<span class="font-label-md text-label-md text-secondary-container uppercase tracking-widest font-bold">Chronologie Opérationnelle</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-xs">De Naql Moulay Mbarek au Réseau National SLKM</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Explorez les jalons clés qui ont forgé notre réputation auprès des familles marocaines, commerçants et partenaires industriels.
+        </p>
+</div>
+<!-- Timeline Tabs / Stepper Buttons -->
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-space-xs mb-space-lg bg-surface-container-low p-space-xs rounded-xl shadow-inner" id="timelineTabs">
+<button class="timeline-tab active-tab px-space-md py-space-sm rounded-lg text-center transition-all bg-surface-container-lowest text-primary shadow-sm font-label-lg text-label-lg" onclick="selectTimeline(0)" type="button">
+<span class="block font-headline-sm text-headline-sm font-extrabold">1992</span>
+<span class="text-body-sm font-normal">Fondation Souss</span>
+</button>
+<button class="timeline-tab px-space-md py-space-sm rounded-lg text-center transition-all text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg" onclick="selectTimeline(1)" type="button">
+<span class="block font-headline-sm text-headline-sm font-extrabold">2004</span>
+<span class="text-body-sm font-normal">Expansion Axe Nord</span>
+</button>
+<button class="timeline-tab px-space-md py-space-sm rounded-lg text-center transition-all text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg" onclick="selectTimeline(2)" type="button">
+<span class="block font-headline-sm text-headline-sm font-extrabold">2015</span>
+<span class="text-body-sm font-normal">Irsaliyat Messagerie</span>
+</button>
+<button class="timeline-tab px-space-md py-space-sm rounded-lg text-center transition-all text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg" onclick="selectTimeline(3)" type="button">
+<span class="block font-headline-sm text-headline-sm font-extrabold">2021</span>
+<span class="text-body-sm font-normal">Euro 6 &amp; Digital</span>
+</button>
+<button class="timeline-tab px-space-md py-space-sm rounded-lg text-center transition-all text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg" onclick="selectTimeline(4)" type="button">
+<span class="block font-headline-sm text-headline-sm font-extrabold">Aujourd'hui</span>
+<span class="text-body-sm font-normal">Tanger - Dakhla</span>
+</button>
+</div>
+<!-- Timeline Content Cards Container -->
+<div class="relative min-h-[360px]" id="timelineContentCards">
+<!-- 1992 Card -->
+<div class="timeline-panel transition-all duration-300 opacity-100 block" id="panel-0">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg bg-surface-container-lowest p-space-xl rounded-xl shadow-md">
+<div class="lg:col-span-6 flex flex-col justify-center gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase font-bold">Origine &amp; Racines</span>
+<span class="font-label-md text-label-md text-tertiary">Inezgane / Agadir • 1992</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Fondations de la société sous le nom Naql Moulay Mbarek</h3>
+<p class="font-headline-sm text-headline-sm text-primary font-medium" dir="rtl">
+                بداية المسيرة مع نقل مولاي مبارك من قلب سوس العالمة لربط القرى والحواضر
+              </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Née de l’initiative et de la persévérance de Moulay Mbarek, la société a débuté ses activités au départ du grand hub commercial d’Inezgane. L’objectif fondateur était clair : désenclaver les localités rurales du Souss, relier Tiznit, Taroudant et Agadir, tout en garantissant un respect absolu des horaires et la sécurité des familles.
+              </p>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-md text-label-md pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container">done_all</span>
+<span>Liaisons régionales pionnières</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container">done_all</span>
+<span>Confiance communautaire</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-72 lg:h-full object-cover rounded-lg" data-alt="Vintage archival styled photograph showing historic Moroccan intercity bus station in southern Morocco Souss valley with passengers boarding early morning buses, authentic atmosphere, warm daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ5Q6QrIBnv_WzqmvDyuizUykYr0csHcOKE1sRtLNLTPU4zGnwiKvD4LTFvSc5tsvb1-U_Yj2qa2MVNfhxIeNlkA87-a3WrIRiEaFhMfQ1KyVOZqZ6fdxOu1eyXLBPcaRVj8OYA4XxyrbMZRZHO6ZcfjfIQZqx7Vt63Dx8EdtJytsCcTm5URRmeMNjDytHecebsa0UAo5BNcoYOZeDVSUOJNdXRMaKns21XSnqWwDZf19fP2lt7Qks"/>
+</div>
+</div>
+</div>
+<!-- 2004 Card -->
+<div class="timeline-panel transition-all duration-300 opacity-0 hidden" id="panel-1">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg bg-surface-container-lowest p-space-xl rounded-xl shadow-md">
+<div class="lg:col-span-6 flex flex-col justify-center gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xs rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase font-bold">Grandes Lignes</span>
+<span class="font-label-md text-label-md text-tertiary">Casablanca - Marrakech • 2004</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Expansion des lignes régionales et ouverture vers le Sahara</h3>
+<p class="font-headline-sm text-headline-sm text-primary font-medium" dir="rtl">
+                توسيع شبكة الخطوط نحو الدار البيضاء ومراكش والأقاليم الجنوبية للمملكة
+              </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Avec le développement des voies express et des autoroutes, la compagnie franchit un palier stratégique. Naql Moulay Mbarek inaugure des départs quotidiens directs vers la gare Oulad Ziane à Casablanca et Bab Doukkala à Marrakech, tout en devenant une référence vitale pour la desserte de Tan-Tan, Guelmim et Laâyoune.
+              </p>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-md text-label-md pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container">done_all</span>
+<span>Ouverture 15 nouvelles gares</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container">done_all</span>
+<span>Doubles équipages conducteurs</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-72 lg:h-full object-cover rounded-lg" data-alt="Classic highway intercity bus driving across High Atlas mountains towards Marrakech, dramatic Moroccan mountain passes, clear blue skies, authentic Moroccan transit history." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyxSXW0TYrrLFflQbZTaOKeXfgycUDDDuXtO8S7EMSG8iRXXnlJASbOCQzE0YJPf0A3OpB4kGR4qlaHIGKkPLcFt8RbXGbyBGgHmGpmm2YJR9cMPpRi6PBE6tUJ2Ddxcvo92cIroZEpob9NTTpppDEbFsXPYFSlDkn4DZ8Bb8FlgbzMAzE87conN4GfV-saRW4Xa2LFmMAJCATe47EjMN5K2PQa7lthHHvNTRXVldLWPjGl8lwaPbB"/>
+</div>
+</div>
+</div>
+<!-- 2015 Card -->
+<div class="timeline-panel transition-all duration-300 opacity-0 hidden" id="panel-2">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg bg-surface-container-lowest p-space-xl rounded-xl shadow-md">
+<div class="lg:col-span-6 flex flex-col justify-center gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase font-bold">Révolution Logistique</span>
+<span class="font-label-md text-label-md text-tertiary">Irsaliyat Express • 2015</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Lancement officiel du service 'Irsaliyat' de messagerie express</h3>
+<p class="font-headline-sm text-headline-sm text-primary font-medium" dir="rtl">
+                إطلاق خدمة إرساليات: شحن سريع وآمن للطرود والبضائع بين مختلف المدن
+              </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Face à la demande grandissante des coopératives agricoles, commerçants de souk et e-commerçants naissants, SLKM structure un pôle fret dédié. Les soutes des autocars sont complétées par des utilitaires de ramassage. En moins de 24 heures, colis urgents, échantillons et marchandises transitent entre le Nord et le Sud avec accusé de réception.
+              </p>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-md text-label-md pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container">done_all</span>
+<span>Dépôt et retrait en gare en 24h</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container">done_all</span>
+<span>Bordereaux numérotés sécurisés</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-72 lg:h-full object-cover rounded-lg" data-alt="Logistics team at Moroccan freight depot loading standardized packages and parcels into coach luggage bays with clipboards and barcode scanners, bright daylight, commercial efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkQSp9slSs88G677wvXWtijJ3LS9rQIvWIpi-4IOyfcV6hDm8FVHDxpVOBnuLSKOc1NzxNimzOX705PJPSspuV7J_8qT4EDFSztWleftP-JIY9BfDueKK-e9BjBf9p39yZ1c9tuVG7t2iJ9XwdUIW6oEgGkUwdGxFDNpv8p6ABf6ugTa40zRJaN2ElwCQTV82UlOIODpx9MybZWZ0wyPZg_i-5MCnD07P70L9TbxTTaBi_mytGWmVG"/>
+</div>
+</div>
+</div>
+<!-- 2021 Card -->
+<div class="timeline-panel transition-all duration-300 opacity-0 hidden" id="panel-3">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg bg-surface-container-lowest p-space-xl rounded-xl shadow-md">
+<div class="lg:col-span-6 flex flex-col justify-center gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xs rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase font-bold">Standard Technologique</span>
+<span class="font-label-md text-label-md text-tertiary">Norme Euro 6 • 2021</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Modernisation de la flotte d'autocars Scania &amp; Irizar Euro 6</h3>
+<p class="font-headline-sm text-headline-sm text-primary font-medium" dir="rtl">
+                تحديث شامل لأسطول الحافلات بحافلات سكانيا وإيرزار الحديثة والمريحة
+              </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Investissement record dans 30 unités Scania Irizar i6S conformes aux normes environnementales Euro 6. Le confort des passagers est repensé : sièges ergonomiques en cuir, prises USB individuelles, filtration d’air antivirale et télématique embarquée pour suivre les vitesses et la consommation en temps réel depuis le centre de contrôle.
+              </p>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-md text-label-md pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container">done_all</span>
+<span>Réduction de 40% des émissions</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container">done_all</span>
+<span>Télémétrie GPS en direct</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-72 lg:h-full object-cover rounded-lg" data-alt="Interior view of a modern luxury tour bus coach with blue and amber LED ambient roof lighting, pristine high back leather seats with headrests and USB ports, clean Moroccan coach interior." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg0OYsdJq0wVMm6omDCjRwabb2FW6F-GxOmLWmloaE0BOoDXZA2rtKrNqWmvlDnaKH-my2kjTUNYq5UEnw2A-ECj6XcNtRt6xAhGT0TR466mOUzzRo01equFBarRYqG63gTVsG-vfoRoNIOY3pAhhqhrlah5howX9tsDv0JnSfB5hwkIGrZJ6wmimILf04ZH3ZvdWAuHo9C-sl1L6FQibtgCRbiRoYA5C-5yz0kWAVakBg_UwP880b"/>
+</div>
+</div>
+</div>
+<!-- Aujourd'hui Card -->
+<div class="timeline-panel transition-all duration-300 opacity-0 hidden" id="panel-4">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg bg-surface-container-lowest p-space-xl rounded-xl shadow-md">
+<div class="lg:col-span-6 flex flex-col justify-center gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xs rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm uppercase font-bold">Écosystème National</span>
+<span class="font-label-md text-label-md text-tertiary">35+ Agences • Réseau Intégré</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">De Tanger à Dakhla avec assistance WhatsApp 24/7</h3>
+<p class="font-headline-sm text-headline-sm text-primary font-medium" dir="rtl">
+                ربط شامل لكافة أقاليم المملكة مع خدمات رقمية متطورة ودعم متواصل
+              </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Aujourd’hui, SLKM s’affirme comme un leader agile. Notre centrale de dispatch suit les flux de passagers et de fret en direct. Grâce à notre canal WhatsApp certifié, les familles et expéditeurs réservent, localisent leur autocar ou suivent leurs colis en temps réel d’un simple message.
+              </p>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-md text-label-md pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container">done_all</span>
+<span>Couverture intégrale Nord-Sud</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container">done_all</span>
+<span>Dispatching digitalisé 24h/7j</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-72 lg:h-full object-cover rounded-lg" data-alt="High-tech dispatch control room in Morocco with digital route maps displayed on monitors showing bus routes between Tangier Casablanca Marrakech Agadir and Dakhla, logistics managers at work." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIUxPpUvXYf7BO5nARgkyIy5XCYpQeUYvB0l7SUjcWYElURphEtNI5LL9_TEGfBes8Ncaku43HKclHsY73LT8ZvcFyc_sS6Calkok3xUo3tgqS8e-4GM7lh7tdka2FV-4T0b_yxniSGQoDaZBMjAIzOKyghTQTTYez5dRCdh77DviaGUaJH9PpINCIr3fGt9ru-RK1xBAqMr2RWwSUXbxwqzlQvzKbxQGi4QbEsAr8AXs6sSgFTkBh"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Route Map / Network Corridor Visualization -->
+<section class="w-full py-space-xl px-margin bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<span class="font-label-md text-label-md text-primary uppercase font-bold tracking-wider">L'Épine Dorsale Nationale</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Un Corridor Vivant qui Rapproche les Régions
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Notre réseau ne trace pas seulement des routes ; il tisse des liens économiques et familiaux vitaux. Chaque jour, des dizaines de départs coordonnés synchronisent les échanges entre la capitale économique, les plaines fertiles du Souss et les provinces sahariennes en plein essor.
+          </p>
+<div class="space-y-space-sm pt-space-xs">
+<!-- Line 1 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-primary"></div>
+<span class="font-label-lg text-label-lg text-on-surface">Axe Nord : Casablanca ⇄ Agadir</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-container bg-secondary-fixed/50 px-space-xs py-0.5 rounded font-bold">8 départs/jour</span>
+</div>
+<!-- Line 2 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<span class="font-label-lg text-label-lg text-on-surface">Axe Sud : Agadir ⇄ Laâyoune ⇄ Dakhla</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed/50 px-space-xs py-0.5 rounded font-bold">Liaison Quotidienne</span>
+</div>
+<!-- Line 3 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-tertiary"></div>
+<span class="font-label-lg text-label-lg text-on-surface">Transversale : Marrakech ⇄ Essaouira ⇄ Taroudant</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-surface-container px-space-xs py-0.5 rounded font-bold">Régulier Express</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="relative rounded-2xl overflow-hidden shadow-xl bg-surface-container-lowest p-space-md">
+<div class="w-full h-96 bg-cover bg-center rounded-xl relative overflow-hidden" data-location="Morocco Agadir Inezgane Casablanca Laayoune" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0baQgX7GkLC6oOIISwwrRoCU_zG0kwERbqftTtaWDDgmFshE8Z1ZEzsP-g8m2wHs986u4uXzmlku_TmKtjBUF7WmcRsosrEdrc41_J7qTyV71lj07-5s8cEP-BIzVCYc0hRVRMebYG9a-7W1zofAqOmpyx10RoIhNs-TOFizfjZM9YwXHSX7-PCLvKCmb3OP85S4b6FGZX6Mg3Y8EwhibA63D_e-XpsSVfIY3AFk3VO-5UFMAJdPM')">
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px]"></div>
+<!-- Custom SVG Route Overlay -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" preserveaspectratio="none" viewbox="0 0 600 400">
+<defs>
+<lineargradient id="routeGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#0072ce"></stop>
+<stop offset="50%" stop-color="#fc6c29"></stop>
+<stop offset="100%" stop-color="#0059a4"></stop>
+</lineargradient>
+</defs>
+<path class="opacity-90" d="M 420 40 Q 360 120 320 180 T 260 250 T 200 320 T 150 380" fill="none" stroke="url(#routeGradient)" stroke-dasharray="6 4" stroke-width="4"></path>
+<!-- Tangier Pin -->
+<circle cx="420" cy="40" fill="#0059a4" r="7" stroke="#ffffff" stroke-width="3"></circle>
+<!-- Casa Pin -->
+<circle cx="340" cy="110" fill="#fc6c29" r="8" stroke="#ffffff" stroke-width="3"></circle>
+<!-- Marrakech Pin -->
+<circle cx="320" cy="180" fill="#0072ce" r="7" stroke="#ffffff" stroke-width="3"></circle>
+<!-- Agadir Hub -->
+<circle cx="260" cy="250" fill="#a63b00" r="10" stroke="#ffffff" stroke-width="4"></circle>
+<!-- Laayoune Pin -->
+<circle cx="200" cy="320" fill="#0072ce" r="7" stroke="#ffffff" stroke-width="3"></circle>
+<!-- Dakhla Pin -->
+<circle cx="150" cy="380" fill="#fc6c29" r="7" stroke="#ffffff" stroke-width="3"></circle>
+</svg>
+<!-- Hub Label Callouts -->
+<div class="absolute top-6 right-20 bg-surface-container-lowest/90 px-space-xs py-0.5 rounded shadow-sm backdrop-blur-md">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">TANGER • طنجة</span>
+</div>
+<div class="absolute top-24 right-36 bg-surface-container-lowest/90 px-space-xs py-0.5 rounded shadow-sm backdrop-blur-md">
+<span class="font-label-sm text-label-sm text-primary font-bold">CASABLANCA • الدار البيضاء</span>
+</div>
+<div class="absolute top-48 right-48 bg-surface-container-lowest/90 px-space-xs py-0.5 rounded shadow-sm backdrop-blur-md">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">MARRAKECH • مراكش</span>
+</div>
+<div class="absolute bottom-28 left-40 bg-secondary-container text-on-secondary px-space-sm py-1 rounded shadow-md backdrop-blur-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">home_work</span>
+<span class="font-label-sm text-label-sm font-bold">AGADIR HUB HISTORIQUE • أكادير</span>
+</div>
+<div class="absolute bottom-8 left-20 bg-surface-container-lowest/90 px-space-xs py-0.5 rounded shadow-sm backdrop-blur-md">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">DAKHLA • الداخلة</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values & Commitments Section -->
+<section class="w-full py-space-xl px-margin bg-surface" id="vision">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<span class="font-label-md text-label-md text-secondary-container uppercase tracking-widest font-bold">Charte d'Excellence</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-xs">
+          Les 4 Piliers Fondateurs de l'Engagement SLKM
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+          Chaque départ est un contrat de confiance scellé avec le citoyen marocain et nos partenaires économiques.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Value 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="w-14 h-14 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-space-md">
+<span class="material-symbols-outlined text-3xl">build_circle</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Sécurité &amp; Maintenance Rigoureuse</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              Centres techniques propriétaires agréés, contrôle préventif des pneumatiques et du freinage avant chaque rotation, et doublement systématique des chauffeurs sur les longues distances.
+            </p>
+</div>
+<div class="pt-space-sm border-t-0 bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold block">Protocole</span>
+<span class="font-body-sm text-body-sm text-on-surface">Inspection 48 points certifiée</span>
+</div>
+</div>
+<!-- Value 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="w-14 h-14 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed mb-space-md">
+<span class="material-symbols-outlined text-3xl">airline_seat_recline_extra</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Confort &amp; Dignité du Voyageur</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              Espace généreux pour les jambes, assises inclinables à mémoire de forme, régulation thermique bizone et personnel navigant dévoué à l’accueil courtois des aînés et des familles.
+            </p>
+</div>
+<div class="pt-space-sm border-t-0 bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold block">Standard</span>
+<span class="font-body-sm text-body-sm text-on-surface">Climatisation &amp; Wi-Fi Haut Débit</span>
+</div>
+</div>
+<!-- Value 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="w-14 h-14 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed mb-space-md">
+<span class="material-symbols-outlined text-3xl">badge</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Transport Khddama &amp; RSE</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              Partenaire de référence des zones industrielles (Agadir, Tanger Med, Casablanca), SLKM assure le transport ponctuel des ouvriers et techniciens dans des conditions de dignité absolue.
+            </p>
+</div>
+<div class="pt-space-sm border-t-0 bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold block">Impact Social</span>
+<span class="font-body-sm text-body-sm text-on-surface">+18 000 salariés transportés/jour</span>
+</div>
+</div>
+<!-- Value 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="w-14 h-14 rounded-xl bg-primary-fixed-dim flex items-center justify-center text-on-primary-fixed mb-space-md">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Innovation &amp; Services Numériques</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              Billeterie en ligne instantanée, suivi de colis Irsaliyat par numéro d'envoi en direct, intégration WhatsApp conversationnelle et dispatch automatisé pour une traçabilité totale.
+            </p>
+</div>
+<div class="pt-space-sm border-t-0 bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold block">Technologies</span>
+<span class="font-body-sm text-body-sm text-on-surface">API Suivi Colis &amp; E-Ticket QR</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Note & Moroccan Transport Vision Section -->
+<section class="w-full py-space-xl px-margin bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-4 flex flex-col items-center text-center">
+<div class="relative w-48 h-48 rounded-full overflow-hidden shadow-xl mb-space-md bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Portrait of an authoritative experienced Moroccan transportation executive in his late fifties wearing an elegant dark tailored suit with subtle traditional Moroccan lapel pin, smiling with warm confident leadership expression, warm corporate office setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsZG0W3SdKYyT57TaZCiS10KCJDsOKyhOESdSGY7tXtY_2ni4XS48JbqiJDZkI66PobsE1GGYlwAOTG3QdCo-DgebclX6RGMnZx3N8564yQl_C_NsbudVnpNluFDSHXksCMid7feqwMLnOr1IwdGk7fCs9LXWZMXKFekEOd2m-2gRRBpHzEFr8T34eiyKBFt9hx5FY34NGoC6XI3NjTfk8vSyfYw4SenSA_BzKqNWslVdjLVvu0INJ"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Direction Générale</h4>
+<span class="font-label-md text-label-md text-primary font-semibold">Société SLKM - Naql Moulay Mbarek</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1" dir="rtl">الإدارة العامة لنقل مولاي مبارك</span>
+</div>
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm text-secondary-container">
+<span class="material-symbols-outlined text-3xl">format_quote</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-bold">Message de la Présidence</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+              « Le transport routier n’est pas un simple métier logistique ; c’est le pouls battant de la cohésion nationale marocaine. »
+            </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              Lorsque nous avons amorcé notre premier voyage en 1992 sous la signature historique de <em>Naql Moulay Mbarek</em>, notre foi en l’avenir du Maroc moderne était notre unique boussole. Aujourd'hui, en unifiant nos services sous la marque <strong>SLKM</strong>, nous réaffirmons notre fierté d'accompagner les grands chantiers du Royaume : du désenclavement territorial aux grands événements mondiaux qui s'annoncent à l'horizon 2030.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Qu'il s'agisse de transporter l'artisan qui rejoint le souk hebdomadaire, l'étudiant regagnant l'université, ou d'acheminer en toute hâte un pli vital grâce à notre réseau Irsaliyat, nous mettons notre honneur à servir le citoyen marocain avec rigueur, humanité et ponctualité.
+            </p>
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-sm border-t-0 bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-2xl">verified</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block font-bold">Certification</span>
+<span class="font-label-md text-label-md text-on-surface">Agrément Ministère du Transport &amp; de la Logistique</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase block font-bold">Engagement Citoyen</span>
+<span class="font-label-md text-label-md text-on-surface">Horizon Maroc 2030</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Call to Action / WhatsApp Dispatch Banner -->
+<section class="w-full py-space-xl px-margin bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="rounded-2xl bg-gradient-to-r from-primary to-primary-container text-on-primary p-space-xl shadow-xl flex flex-col lg:flex-row items-center justify-between gap-space-lg relative overflow-hidden">
+<div class="absolute -right-12 -bottom-12 w-64 h-64 rounded-full bg-secondary-container/20 pointer-events-none blur-2xl"></div>
+<div class="flex flex-col gap-space-xs max-w-2xl relative z-10">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed font-bold">Besoin d'un renseignement immédiat ?</span>
+<h3 class="font-headline-lg text-headline-lg text-on-primary">Rejoignez le Réseau SLKM sur la Route</h3>
+<p class="font-body-md text-body-md text-primary-fixed leading-relaxed">
+            Consultez nos horaires réguliers, expédiez un colis via Irsaliyat ou demandez un devis pour vos navettes d'entreprise (Khddama) en échangeant directement avec nos chefs de gare.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md shrink-0 relative z-10">
+<a class="px-space-lg py-space-md rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container-low font-label-lg text-label-lg shadow-md transition-all flex items-center gap-space-xs" data-path="lignes-et-agences" href="#">
+<span class="material-symbols-outlined">map</span>
+<span>Consulter les Agences</span>
+</a>
+<a class="px-space-lg py-space-md rounded-lg bg-secondary-container hover:bg-secondary text-on-secondary font-label-lg text-label-lg shadow-md transition-all flex items-center gap-space-xs" data-path="assistance-whatsapp" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span>Assistance WhatsApp 24/7</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function selectTimeline(index) {
+    // Manage Tabs Styling
+    const tabs = document.querySelectorAll('.timeline-tab');
+    tabs.forEach((tab, i) => {
+      if (i === index) {
+        tab.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        tab.classList.remove('text-on-surface-variant');
+      } else {
+        tab.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        tab.classList.add('text-on-surface-variant');
+      }
+    });
+
+    // Manage Panel Visibility
+    const panels = document.querySelectorAll('.timeline-panel');
+    panels.forEach((panel, i) => {
+      if (i === index) {
+        panel.classList.remove('hidden', 'opacity-0');
+        panel.classList.add('block', 'opacity-100');
+      } else {
+        panel.classList.remove('block', 'opacity-100');
+        panel.classList.add('hidden', 'opacity-0');
+      }
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-low"><div class="w-full px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl"><div><div class="flex items-center gap-space-sm mb-space-sm"><span class="font-headline-sm text-headline-sm text-primary">SLKM Transport</span></div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Naql Moulay Mbarek - Société pionnière dans le transport interurbain de voyageurs, le transit de fret messagerie (Irsaliyat), et la mobilité d'entreprise à travers tout le Royaume du Maroc.</p><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md text-on-surface">Siège Social: Agadir, Maroc</span><span class="font-body-sm text-body-sm text-on-surface-variant">Disponibilité dispatch 24h/7j</span></div></div><div><h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-md">Hubs &amp; Agences Nationales</h4><div class="grid grid-cols-2 gap-space-xs font-body-md text-body-md text-on-surface-variant"><span>Agadir (Inezgane)</span><span>Casablanca (Oulad Ziane)</span><span>Marrakech (Bab Doukkala)</span><span>Rabat (Kamra)</span><span>Laâyoune Gare</span><span>Dakhla Centre</span></div></div><div><h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-md">Services &amp; Navigations</h4><div class="flex flex-col gap-space-xs font-body-md text-body-md"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="accueil" href="#">Accueil &amp; Horaires</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="irsaliyat-messagerie" href="#">Suivi de Colis Irsaliyat</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="lignes-et-agences" href="#">Réseau d'Agences</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="transport-personnel-et-tourisme" href="#">Contrats Khddama &amp; Tourisme</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="espace-admin" href="#">Portail Administrateur</a></div></div><div><h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-md">Dispatch &amp; Contact Direct</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Assistance billets et réclamations messagerie instantanée :</p><div class="flex flex-col gap-space-xs"><div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-[0_1px_3px_rgba(0,0,0,0.04)]"><span class="font-label-sm text-label-sm text-secondary-container uppercase block">Support WhatsApp</span><span class="font-label-md text-label-md text-on-surface">+212 5 28 84 XX XX</span></div><div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-[0_1px_3px_rgba(0,0,0,0.04)]"><span class="font-label-sm text-label-sm text-primary uppercase block">Bureau Messagerie</span><span class="font-label-md text-label-md text-on-surface">irsaliyat@slkm.ma</span></div></div></div></div><div class="pt-space-md bg-surface-container flex flex-col md:flex-row items-center justify-between gap-space-sm px-space-md rounded-lg font-body-sm text-body-sm text-on-surface-variant"><span>© 2025 SLKM - Naql Moulay Mbarek (نقل مولاي مبارك). Tous droits réservés.</span><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" data-path="mentions-legales" href="#">Mentions Légales</a><a class="hover:text-on-surface transition-colors" data-path="conditions-generales" href="#">Conditions de Transport &amp; Messagerie</a></div></div></div></footer></body></html>

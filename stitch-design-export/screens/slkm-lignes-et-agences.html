@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"background":"#f7f9fb","on-secondary-fixed-variant":"#7f2b00","tertiary":"#51596f","surface-container":"#eceef0","surface-container-highest":"#e0e3e5","on-secondary-fixed":"#370e00","inverse-on-surface":"#eff1f3","primary-fixed":"#d4e3ff","primary-fixed-dim":"#a5c8ff","on-tertiary":"#ffffff","surface-container-high":"#e6e8ea","tertiary-fixed-dim":"#bec6e0","error-container":"#ffdad6","secondary-fixed-dim":"#ffb599","on-secondary-container":"#5a1c00","secondary":"#a63b00","on-primary":"#ffffff","surface-container-low":"#f2f4f6","secondary-container":"#fc6c29","on-surface-variant":"#414752","primary":"#0059a4","surface":"#f7f9fb","surface-bright":"#f7f9fb","on-primary-container":"#f4f6ff","inverse-primary":"#a5c8ff","surface-variant":"#e0e3e5","on-surface":"#191c1e","outline":"#717783","secondary-fixed":"#ffdbce","tertiary-container":"#697188","on-primary-fixed":"#001c3a","tertiary-fixed":"#dae2fd","primary-container":"#0072ce","on-tertiary-fixed":"#131b2e","surface-tint":"#005fae","on-tertiary-fixed-variant":"#3f465c","on-error":"#ffffff","surface-dim":"#d8dadc","outline-variant":"#c1c7d4","on-error-container":"#93000a","surface-container-lowest":"#ffffff","on-tertiary-container":"#f7f6ff","error":"#ba1a1a","inverse-surface":"#2d3133","on-background":"#191c1e","on-primary-fixed-variant":"#004785","on-secondary":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"0.75rem","space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2.25rem","space-md":"1rem","margin-mobile":"1rem","gutter":"1.25rem","margin":"2rem","space-lg":"1.5rem"},"fontFamily":{"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"800"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="logo.jpeg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XOdggmfRhclIB4wmbodGUCE9hwl-XslE_SszCuuwfr2D_cKVS01-GFdmnhop_RVTy50ws4NAPAUiV7Kk47ks02jPJ9eVe4bZsAshR3pdG3R08LVIIoVkHStWltWUVooIIek2sL34vbDVBSnK167PHfLzLY0vXFltePKFgBZqtmGXMs4DtPh7cjzxgJ8ASnABpywYpoXr7mcpVIyjvDCyyB1JhOQ6TBiiRFNYThNDcRn9BEj03NbYUI-8MFzMs3-U5OrEB78GTzmQ"/><div class="flex flex-col"><div class="flex items-baseline gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">SLKM</span><span class="font-label-sm text-label-sm text-secondary-container tracking-wider uppercase hidden sm:inline">Voyageurs &amp; Messagerie</span></div><span class="font-body-sm text-body-sm text-on-surface-variant hidden md:block">نقل مولاي مبارك</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded-lg"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-high" data-path="accueil" href="#">Accueil</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-high" data-path="histoire-et-vision" href="#">Histoire &amp; Vision</a><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded-lg" data-path="lignes-et-agences" href="#">Lignes &amp; Agences</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-high" data-path="irsaliyat-messagerie" href="#">Irsaliyat Messagerie</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-high" data-path="transport-personnel-et-tourisme" href="#">Transport Khddama &amp; Tourisme</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-high" data-path="espace-admin" href="#">Espace Admin</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:flex items-center bg-surface-container-low px-space-xs py-space-xs rounded-full"><button class="px-space-xs py-space-xs rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-[0_1px_3px_rgba(0,0,0,0.06)]" type="button">FR</button><button class="px-space-xs py-space-xs rounded-full text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface" type="button">عربي</button></div><a class="hidden lg:flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors" data-path="assistance-whatsapp" href="#"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="font-label-md text-label-md">WhatsApp: +212 5 28 84 XX XX</span></a><a class="px-space-md py-space-sm rounded-lg bg-secondary-container hover:bg-secondary text-on-secondary font-label-lg text-label-lg transition-transform active:scale-95 shadow-[0_1px_8px_rgba(0,0,0,0.08)]" data-path="reserver" href="#">Réserver</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- TOP NETWORK STATS & LIVE BANNER -->
+<section class="w-full px-margin py-space-md">
+<div class="max-w-[1280px] mx-auto bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center shrink-0 text-on-primary">
+<span class="material-symbols-outlined text-[28px]">hub</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-primary">Réseau National SLKM</span>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed">شبكة الخطوط والوكالات</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Plus de 48 comptoirs de billetterie &amp; plateformes de fret express Irsaliyat du Nord aux Provinces du Sud.</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-xs rounded-lg shadow-sm">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary-container"></span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guichets Ouverts</span>
+<span class="font-label-lg text-label-lg text-on-surface">36 Agences 24/7</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-xs rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary">directions_bus</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Liaisons Quotidiennes</span>
+<span class="font-label-lg text-label-lg text-on-surface">140+ Départs / Jour</span>
+</div>
+</div>
+<a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-[#25D366] text-on-primary font-label-lg text-label-lg transition-transform active:scale-95 shadow-sm" href="https://wa.me/212528840000" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Centrale WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SEARCH, REGION FILTER CHIPS & VIEW SWITCHER -->
+<section class="w-full px-margin pb-space-lg">
+<div class="max-w-[1280px] mx-auto flex flex-col gap-space-md">
+<!-- Search row -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<div class="lg:col-span-8 relative">
+<div class="absolute inset-y-0 left-0 pl-space-md flex items-center pointer-events-none text-primary">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="w-full pl-12 pr-space-md py-3.5 bg-surface-container-lowest rounded-xl font-body-md text-body-md text-on-surface placeholder:text-outline shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="agencySearchInput" placeholder="Rechercher une agence, gare routière ou ville (ex: Agadir, Casablanca, Inezgane, Dakhla...)" type="text"/>
+<div class="absolute inset-y-0 right-0 pr-space-md flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase bg-surface-container px-space-xs py-0.5 rounded">Recherche Bilingue</span>
+</div>
+</div>
+<!-- View Switch Toggle -->
+<div class="lg:col-span-4 flex items-center justify-end">
+<div class="w-full lg:w-auto inline-flex p-1 bg-surface-container rounded-xl shadow-sm">
+<button class="flex-1 lg:flex-initial flex items-center justify-center gap-space-xs px-space-md py-space-xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all" id="viewGridBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+<span>Vue Agences</span>
+</button>
+<button class="flex-1 lg:flex-initial flex items-center justify-center gap-space-xs px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="viewRouteBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+<span>Schéma Interurbain</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Regional Filter Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs pt-1 no-scrollbar">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase shrink-0 mr-space-xs">Régions:</span>
+<button class="region-chip shrink-0 px-space-md py-space-xs rounded-full font-label-md text-label-md bg-primary-container text-on-primary shadow-sm" data-filter="all" type="button">Toutes les Agences</button>
+<button class="region-chip shrink-0 px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-colors" data-filter="souss" type="button">Souss-Massa (Hub Principal)</button>
+<button class="region-chip shrink-0 px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-colors" data-filter="casa" type="button">Casablanca-Settat</button>
+<button class="region-chip shrink-0 px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-colors" data-filter="marrakech" type="button">Marrakech-Safi &amp; Haouz</button>
+<button class="region-chip shrink-0 px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-colors" data-filter="sahara" type="button">Provinces Sahariennes (Sud)</button>
+<button class="region-chip shrink-0 px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-colors" data-filter="nord" type="button">Rabat &amp; Axe Atlantique</button>
+</div>
+</div>
+</section>
+<!-- VIEW 1: AGENCY CARDS DIRECTORY -->
+<section class="w-full px-margin pb-space-xl" id="agencyCardsSection">
+<div class="max-w-[1280px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="agencyGrid">
+<!-- CARD 1: AGADIR PRINCIPAL -->
+<article class="agency-card bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow" data-city="agadir inezgane" data-region="souss">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider">Siège Opérationnel &amp; Hub</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Agence Agadir Principal</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">وكالة أكادير المركزية</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-[#ECFDF5] text-[#059669] px-space-xs py-1 rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-[#059669]"></span> Ouvert
+              </span>
+</div>
+<!-- Address and Details -->
+<div class="flex flex-col gap-space-xs my-space-md py-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+<span class="font-body-md text-body-md">Avenue Hassan II &amp; Gare Routière Al Massira, Guichet SLKM n° 1-3</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0">schedule</span>
+<span class="font-body-sm text-body-sm">06h00 – 23h30 (Continu 7j/7)</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">call</span>
+<span class="font-label-md text-label-md text-on-surface">+212 5 28 84 12 34</span>
+</div>
+</div>
+<!-- Features pills -->
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Comptoir Billetterie</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Dépôt Irsaliyat Messagerie</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Salle d'attente climatisée</span>
+</div>
+<!-- Map Location Widget -->
+<div class="w-full h-32 rounded-lg bg-cover bg-center shadow-inner relative overflow-hidden mb-space-md" data-location="Gare Routiere Al Massira Agadir" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAu4YR6bZ5Op9y1O3C1Su0zHL3YkVI9RNgMiJJSNtDF-NmKvPLm7STRBpAH7zWmdM9erVnVfuekrEnxvC_5c0s8N0ag-YGL-iUpzwZsKWnSZrxzOfcUYLJ1r6bQ7VW4XSbdvxyR5qe9lsPGYyv7GiX4CT9d0jXDnlX-PMD60bgtIOFVpUsKZEZcIyP921m38w_lJEBku8qm2lK8E7HqRXdyLOjdUDbgKzozaAWQ3LDHyV2XB6_0hihZ')">
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-1 rounded text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">pin_drop</span>
+<span>Hub Al Massira Agadir</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<a class="flex-1 flex items-center justify-center gap-space-xs py-space-sm rounded-lg bg-secondary-container text-on-secondary font-label-lg text-label-lg transition-transform active:scale-95 shadow-sm" href="https://wa.me/212528841234?text=Salam%20SLKM%2C%20je%20souhaite%20r%C3%A9server%20au%20d%C3%A9part%20d%27Agadir" target="_blank">
+<span class="material-symbols-outlined text-[18px]">send_to_mobile</span>
+<span>Réserver à Agadir</span>
+</a>
+<button class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Itinéraire Maps" type="button">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+</button>
+</div>
+</article>
+<!-- CARD 2: CASABLANCA -->
+<article class="agency-card bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow" data-city="casablanca ouled ziane" data-region="casa">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Axe Métropolitain 24/7</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Agence Casablanca</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">وكالة الدار البيضاء - أولاد زيان</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-[#EFF6FF] text-[#0072CE] px-space-xs py-1 rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-[#0072CE] animate-pulse"></span> 24h / 24
+              </span>
+</div>
+<div class="flex flex-col gap-space-xs my-space-md py-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+<span class="font-body-md text-body-md">Gare Routière Ouled Ziane, Guichet 14 &amp; Quai Expédition Irsaliyat</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0">schedule</span>
+<span class="font-body-sm text-body-sm">Permanence 24h/24 &amp; 7j/7</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">call</span>
+<span class="font-label-md text-label-md text-on-surface">+212 5 22 40 55 88</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Fret Express Nuit</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Lignes Directes Sud</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Paiement CMI / TPE</span>
+</div>
+<div class="w-full h-32 rounded-lg bg-cover bg-center shadow-inner relative overflow-hidden mb-space-md" data-location="Gare Routiere Ouled Ziane Casablanca" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDBV58ivbdzf7mrGMlTNPowNsM_eqkES11kdRDtIoamuEgSYnCK5jdbbYJVCEED8YDrG1XBXc1GV52VbASjEbv0gsd6Ls2-iHYga_koBFitCyPGSlRveYgsXcYPZA5eX1UlsUPc8QonCRgK3NBUFJdVGLraXX8yEbrLoiWo-MO2cZh5IuywDJrLRyd-HxxeJLVgTUq7bQc_rq5aMKrJ1-LuVYhSqOP4b2SkYs8mWieP2UV9OdDSjFwO')">
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-1 rounded text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">pin_drop</span>
+<span>Ouled Ziane Casablanca</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<a class="flex-1 flex items-center justify-center gap-space-xs py-space-sm rounded-lg bg-secondary-container text-on-secondary font-label-lg text-label-lg transition-transform active:scale-95 shadow-sm" href="https://wa.me/212522405588?text=Salam%20SLKM%2C%20je%20souhaite%20r%C3%A9server%20au%20d%C3%A9part%20de%20Casablanca" target="_blank">
+<span class="material-symbols-outlined text-[18px]">send_to_mobile</span>
+<span>Réserver à Casablanca</span>
+</a>
+<button class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Itinéraire Maps" type="button">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+</button>
+</div>
+</article>
+<!-- CARD 3: MARRAKECH -->
+<article class="agency-card bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow" data-city="marrakech bab doukkala" data-region="marrakech">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Carrefour Central</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Agence Marrakech</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">وكالة مراكش - باب دكالة</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-[#ECFDF5] text-[#059669] px-space-xs py-1 rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-[#059669]"></span> Ouvert
+              </span>
+</div>
+<div class="flex flex-col gap-space-xs my-space-md py-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+<span class="font-body-md text-body-md">Gare Routière Bab Doukkala, Hall Voyageurs Guichet 7 &amp; Bureau SLKM</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0">schedule</span>
+<span class="font-body-sm text-body-sm">06h00 – 01h00 (7j/7)</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">call</span>
+<span class="font-label-md text-label-md text-on-surface">+212 5 24 43 78 90</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Départs Autoroute A3</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Transit Bagages</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Wifi Voyageurs</span>
+</div>
+<div class="w-full h-32 rounded-lg bg-cover bg-center shadow-inner relative overflow-hidden mb-space-md" data-location="Bab Doukkala Marrakech Bus Station" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAMUZta6KzrmHDIY86JQN1JPreg8x49j6iZygWnHzOC1w_bFUi3tG619baT1j3Fm4dSMCRMNR-8oeDDiR4hzDoqOFIN6lt2QbTrj7zmTyzm4ziA_zszc2mvAM-TSLQaoqG0I5GaVx4ktrslNLDj1YN70i97ltQn6kV9qXtKjlBAg6J4GqPQSPcRtV8Hgk1tChUpfxsJGAskFE5y1W7cygvg5_ikLuP8xhp9eAEDYX95BdeXCsKmF6Lb')">
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-1 rounded text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">pin_drop</span>
+<span>Bab Doukkala Marrakech</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<a class="flex-1 flex items-center justify-center gap-space-xs py-space-sm rounded-lg bg-secondary-container text-on-secondary font-label-lg text-label-lg transition-transform active:scale-95 shadow-sm" href="https://wa.me/212524437890?text=Salam%20SLKM%2C%20je%20souhaite%20r%C3%A9server%20au%20d%C3%A9part%20de%20Marrakech" target="_blank">
+<span class="material-symbols-outlined text-[18px]">send_to_mobile</span>
+<span>Réserver à Marrakech</span>
+</a>
+<button class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Itinéraire Maps" type="button">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+</button>
+</div>
+</article>
+<!-- CARD 4: INEZGANE -->
+<article class="agency-card bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow" data-city="inezgane ait melloul taroudant" data-region="souss">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider">Hub Transit &amp; Départs Sud</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Agence Inezgane</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">وكالة إنزكان - المحطة الطرقية</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-[#EFF6FF] text-[#0072CE] px-space-xs py-1 rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-[#0072CE] animate-pulse"></span> 24h / 24
+              </span>
+</div>
+<div class="flex flex-col gap-space-xs my-space-md py-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+<span class="font-body-md text-body-md">Gare Routière Inezgane, Entrée Principale &amp; Dépôt Régional Irsaliyat</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0">schedule</span>
+<span class="font-body-sm text-body-sm">Permanence 24h/24 non-stop</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">call</span>
+<span class="font-label-md text-label-md text-on-surface">+212 5 28 24 10 20</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Transit Saharien</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Navettes Express</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Pesage Colis Lourd</span>
+</div>
+<div class="w-full h-32 rounded-lg bg-cover bg-center shadow-inner relative overflow-hidden mb-space-md" data-location="Gare Routiere Inezgane Agadir" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRgJMB1KzMl0nbiH0MZhPbH3Nu8qEshZg67pUbWRck25ZFB3kQP3qxtPX7L1m1-cdEBw_6sv-QgGJXWKUylt9h0XtPVpY4faoY2iGgNf5X-nKam1Ckx1Y-6r5SB-xcesd_B7py2mr-vi6lqysYBWb2qwVY62_QF8GXMHs0_pVNN8XmexE4mgZJ-nSrGjUGSopmd8PvDkUwYYcNiIjMTOF8ILFeSsy835EoCjncGQT7GKqVvD3o_T8B')">
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-1 rounded text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">pin_drop</span>
+<span>Hub Inezgane Souss</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<a class="flex-1 flex items-center justify-center gap-space-xs py-space-sm rounded-lg bg-secondary-container text-on-secondary font-label-lg text-label-lg transition-transform active:scale-95 shadow-sm" href="https://wa.me/212528241020?text=Salam%20SLKM%2C%20je%20souhaite%20r%C3%A9server%20au%20d%C3%A9part%20d%27Inezgane" target="_blank">
+<span class="material-symbols-outlined text-[18px]">send_to_mobile</span>
+<span>Réserver à Inezgane</span>
+</a>
+<button class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Itinéraire Maps" type="button">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+</button>
+</div>
+</article>
+<!-- CARD 5: LAÂYOUNE -->
+<article class="agency-card bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow" data-city="laayoune dakhla boujdour tarfaya" data-region="sahara">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Plateforme Sud Marocain</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Agence Laâyoune</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">وكالة العيون - شارع السمارة</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-[#ECFDF5] text-[#059669] px-space-xs py-1 rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-[#059669]"></span> Ouvert
+              </span>
+</div>
+<div class="flex flex-col gap-space-xs my-space-md py-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+<span class="font-body-md text-body-md">Place Dcheira &amp; Avenue Smara (Face à la Gare Routière Municipale)</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0">schedule</span>
+<span class="font-body-sm text-body-sm">07h30 – 23h00 (7j/7)</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">call</span>
+<span class="font-label-md text-label-md text-on-surface">+212 5 28 89 44 11</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Express Dakhla-Nord</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Messagerie Sécurisée</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Confort Grand Voyage</span>
+</div>
+<div class="w-full h-32 rounded-lg bg-cover bg-center shadow-inner relative overflow-hidden mb-space-md" data-location="Gare Routiere Laayoune Avenue Smara" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWjP-synor5h50ogsBvfPak2clrWfVyy72eqBC4QHu6x3tnLzBi8NDZie1hRIZ0aOkjrKHGWdyaziMiazoB03L4Jut_RtO0x2gbTE1x6NoI8CGikiqJ6SdnccEtM_zex2jZzxZSWAX8HizrDp-iD-aPbvYCi3YCsG0Z6kqzHKZfFSI9uxmdiyICtqB04E96Yhu8T9pTQxotFD5e7piRRpm2h3e4h0GTGXNjNBKlZM7kjgYum2yC7ZR')">
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-1 rounded text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">pin_drop</span>
+<span>Laâyoune Avenue Smara</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<a class="flex-1 flex items-center justify-center gap-space-xs py-space-sm rounded-lg bg-secondary-container text-on-secondary font-label-lg text-label-lg transition-transform active:scale-95 shadow-sm" href="https://wa.me/212528894411?text=Salam%20SLKM%2C%20je%20souhaite%20r%C3%A9server%20au%20d%C3%A9part%20de%20Laayoune" target="_blank">
+<span class="material-symbols-outlined text-[18px]">send_to_mobile</span>
+<span>Réserver à Laâyoune</span>
+</a>
+<button class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Itinéraire Maps" type="button">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+</button>
+</div>
+</article>
+<!-- CARD 6: RABAT -->
+<article class="agency-card bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow" data-city="rabat sale kenitra kamra" data-region="nord">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Capitale Administrative</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Agence Rabat</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">وكالة الرباط - محطة القامرة / الجديدة</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-[#ECFDF5] text-[#059669] px-space-xs py-1 rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-[#059669]"></span> Ouvert
+              </span>
+</div>
+<div class="flex flex-col gap-space-xs my-space-md py-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+<span class="font-body-md text-body-md">Nouvelle Gare Routière de Rabat Al Qods &amp; Ex-Kamra, Comptoir SLKM</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0">schedule</span>
+<span class="font-body-sm text-body-sm">06h30 – 23h30 (7j/7)</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">call</span>
+<span class="font-label-md text-label-md text-on-surface">+212 5 37 69 22 55</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Lignes Directes Souss</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Messagerie Administrative</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Bus Première Classe</span>
+</div>
+<div class="w-full h-32 rounded-lg bg-cover bg-center shadow-inner relative overflow-hidden mb-space-md" data-location="Gare Routiere Rabat Al Qods" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSM689rWTP0ubzPhzDIQgVNoXrTJ8YPuS9j-VxxPfHrIc9wt7TCVjiRkeW8iNbfpSn_6Hb1nVlMxIKLPVmEwX8Yc8w_yR_KKEgf-HJJhiS-MyLQSxYKaMVYl8PALe8BhO-ywak_3mDcEvilTBJf57lPurvcfea7GSdbcLkQSpCi3uM6tygs-IJPOuf_7jjCHg3k1HG8HZZEWPVSnrADdvns-ASNbWJjahGTSRls9uiImAUAaYmSgGi')">
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-1 rounded text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">pin_drop</span>
+<span>Gare Routière Rabat</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<a class="flex-1 flex items-center justify-center gap-space-xs py-space-sm rounded-lg bg-secondary-container text-on-secondary font-label-lg text-label-lg transition-transform active:scale-95 shadow-sm" href="https://wa.me/212537692255?text=Salam%20SLKM%2C%20je%20souhaite%20r%C3%A9server%20au%20d%C3%A9part%20de%20Rabat" target="_blank">
+<span class="material-symbols-outlined text-[18px]">send_to_mobile</span>
+<span>Réserver à Rabat</span>
+</a>
+<button class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Itinéraire Maps" type="button">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+</button>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- VIEW 2: SCHÉMA INTERURBAIN / CORRIDORS MAP (HIDDEN BY DEFAULT, TOGGLED VIA JS) -->
+<section class="hidden w-full px-margin pb-space-xl" id="routeDiagramSection">
+<div class="max-w-[1280px] mx-auto bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase">Corridors Stratégiques</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Cartographie des Lignes Fréquentes SLKM</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Liaisons directes autoroutières A3 / A1 &amp; Voies Express Atlantique RN1</p>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ligne Standard Confort</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ligne Express Nuit / VIP</span>
+</div>
+</div>
+</div>
+<!-- Interactive Stepper Diagram of the Main Spine -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md mb-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-primary font-bold">AXE NORD-ATLANTIQUE</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container">A1 / R22</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-space-xs">Tanger / Rabat ⇄ Casablanca</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Départs toutes les 60 min. Transit de fret Irsaliyat en J+1 avant 09h00.</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-secondary-container font-bold">CORRIDOR CENTRAL</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container">Autoroute A3</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-space-xs">Casablanca ⇄ Marrakech ⇄ Agadir</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">La dorsale économique du Maroc. Plus de 24 autocars quotidiens par sens.</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-primary font-bold">SOUSS &amp; OUED NOUN</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container">RN1 / Voie Express</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-space-xs">Agadir / Inezgane ⇄ Tiznit ⇄ Guelmim</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hub historique Naql Moulay Mbarek avec desserte des oasis et souks régionaux.</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-secondary-container font-bold">CORRIDOR SAHARIEN</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container">Express Sud</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-semibold mb-space-xs">Guelmim ⇄ Tan-Tan ⇄ Laâyoune ⇄ Dakhla</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Autocars longue distance avec climatisation renforcée, double chauffeurs.</span>
+</div>
+</div>
+<!-- Static Map Overview container -->
+<div class="w-full h-80 rounded-xl bg-cover bg-center relative overflow-hidden shadow-sm" data-location="Morocco Agadir Casablanca Marrakech Laayoune" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPKtyrqBKpwfq1oHcg9ug-KvSls8gmYib_hgbmgN3mfqEFWmFsn4O0z83Tzxnf_ONgZ9BUJxH9c_h9F--77UVufVrsofHZEbdhaGU7efIB68DNb-VzqwPRoRPYfbDk7aM9tWZjKJ7NGNfwhFCCCJB-wt4gcOXXuRWn675K8hBHxtEN70Ej5fXQebZnE8TTuTmOKKPeYu19b4KKysqYv_mnAdBU1lL_OwjC3Pe4Ixhrsrii6WGBxyC3')">
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px] flex items-center justify-center">
+<div class="bg-surface-container-lowest/95 backdrop-blur-md p-space-md rounded-xl max-w-md text-center shadow-lg mx-space-md">
+<span class="material-symbols-outlined text-[32px] text-primary mb-space-xs">route</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Couverture Intégrale du Territoire</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-space-md">Nos autocars relient quotidiennement plus de 32 préfectures et provinces marocaines avec suivi GPS en temps réel.</p>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" href="https://wa.me/212528840000?text=Salam%2C%20je%20souhaite%20consulter%20les%20horaires%20d%27une%20ligne%20sp%C3%A9cifique" target="_blank">
+<span class="material-symbols-outlined text-[18px]">help</span>
+<span>Demander un horaire spécifique</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- POPULAR INTERCITY ROUTES TABLE (Lignes Fréquentes) -->
+<section class="w-full px-margin pb-space-xl">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-space-xs mb-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Liaisons Directes Quotidiens</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold">Lignes Populaires &amp; Tarifs Indicatifs</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">الخطوط الرئيسية وأسعار التذاكر</span>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tarifs indicatifs par siège / TTC en Dirhams</span>
+</div>
+</div>
+<!-- Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface font-label-md text-label-md uppercase tracking-wider">
+<th class="py-space-md px-space-md">Itinéraire &amp; Départ / Arrivée</th>
+<th class="py-space-md px-space-md">Fréquence</th>
+<th class="py-space-md px-space-md">Durée Estimée</th>
+<th class="py-space-md px-space-md">Catégorie</th>
+<th class="py-space-md px-space-md text-right">Tarif à partir de</th>
+<th class="py-space-md px-space-md text-center">Action Directe</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-md text-body-md text-on-surface">
+<!-- Row 1: Agadir <-> Casablanca -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed flex items-center justify-center text-primary font-bold text-[14px]">
+                      A3
+                    </div>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span>Agadir (Inezgane)</span>
+<span class="material-symbols-outlined text-[16px] text-outline">swap_horiz</span>
+<span>Casablanca (O. Ziane)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">أكادير ⇄ الدار البيضاء عبر الطريق السيار</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span> 12 Départs / jour
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-body-md text-body-md">~ 5h 30 min</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-1 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Confort Climatisé</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-secondary-container font-bold">180 DH</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">180 درهم</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<a class="inline-flex items-center gap-1 px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-transform active:scale-95 shadow-sm" href="https://wa.me/212528841234?text=Salam%20SLKM%2C%20je%20souhaite%20r%C3%A9server%20un%20billet%20Agadir%20-%20Casablanca" target="_blank">
+<span>Réserver</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</td>
+</tr>
+<!-- Row 2: Marrakech <-> Agadir -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary font-bold text-[14px]">
+                      A3
+                    </div>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span>Marrakech (Bab Doukkala)</span>
+<span class="material-symbols-outlined text-[16px] text-outline">swap_horiz</span>
+<span>Agadir (Al Massira)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">مراكش ⇄ أكادير مباشر</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span> 16 Départs / jour
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-body-md text-body-md">~ 3h 15 min</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-1 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Navette Express</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-secondary-container font-bold">110 DH</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">110 درهم</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<a class="inline-flex items-center gap-1 px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-transform active:scale-95 shadow-sm" href="https://wa.me/212524437890?text=Salam%20SLKM%2C%20je%20souhaite%20r%C3%A9server%20un%20billet%20Marrakech%20-%20Agadir" target="_blank">
+<span>Réserver</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</td>
+</tr>
+<!-- Row 3: Agadir <-> Laâyoune -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-tertiary-fixed flex items-center justify-center text-primary font-bold text-[14px]">
+                      RN1
+                    </div>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span>Agadir (Inezgane)</span>
+<span class="material-symbols-outlined text-[16px] text-outline">swap_horiz</span>
+<span>Laâyoune (Av. Smara)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">أكادير / إنزكان ⇄ العيون</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span> 8 Départs / jour
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-body-md text-body-md">~ 8h 30 min</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-1 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Grand Tourisme VIP</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-secondary-container font-bold">240 DH</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">240 درهم</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<a class="inline-flex items-center gap-1 px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-transform active:scale-95 shadow-sm" href="https://wa.me/212528894411?text=Salam%20SLKM%2C%20je%20souhaite%20r%C3%A9server%20un%20billet%20Agadir%20-%20Laayoune" target="_blank">
+<span>Réserver</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</td>
+</tr>
+<!-- Row 4: Rabat <-> Agadir -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed flex items-center justify-center text-primary font-bold text-[14px]">
+                      A1-3
+                    </div>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span>Rabat (Al Qods)</span>
+<span class="material-symbols-outlined text-[16px] text-outline">swap_horiz</span>
+<span>Agadir (Al Massira)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">الرباط ⇄ أكادير مباشر</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span> 6 Départs / jour
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-body-md text-body-md">~ 6h 45 min</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-1 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Confort de Nuit &amp; Jour</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-secondary-container font-bold">210 DH</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">210 درهم</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<a class="inline-flex items-center gap-1 px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-transform active:scale-95 shadow-sm" href="https://wa.me/212537692255?text=Salam%20SLKM%2C%20je%20souhaite%20r%C3%A9server%20un%20billet%20Rabat%20-%20Agadir" target="_blank">
+<span>Réserver</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</td>
+</tr>
+<!-- Row 5: Casablanca <-> Dakhla -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary font-bold text-[14px]">
+                      SUD
+                    </div>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span>Casablanca (O. Ziane)</span>
+<span class="material-symbols-outlined text-[16px] text-outline">swap_horiz</span>
+<span>Dakhla Centre</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">الدار البيضاء ⇄ الداخلة - رحلة الصحراء</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span> 3 Départs / jour
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-body-md text-body-md">~ 22h</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">VIP Grand Confort</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-secondary-container font-bold">450 DH</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">450 درهم</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<a class="inline-flex items-center gap-1 px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-transform active:scale-95 shadow-sm" href="https://wa.me/212522405588?text=Salam%20SLKM%2C%20je%20souhaite%20r%C3%A9server%20un%20billet%20Casablanca%20-%20Dakhla" target="_blank">
+<span>Réserver</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<!-- OPERATIONAL GUARANTEES & IRSALIYAT COUNTER BAR -->
+<section class="w-full px-margin pb-space-xl">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">inventory_2</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Messagerie Irsaliyat en Agence</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Déposez vos colis et plis confidentiels dans n'importe quel guichet SLKM. Arrivée garantie sous 24h ouvrées.</p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Ponctualité &amp; Suivi GPS</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Départs cadencés et télémesure satellitaire continue garantissant un respect rigoureux des heures annoncées.</p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">badge</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Équipage Expérimenté</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Conducteurs certifiés, relève systématique sur les trajets supérieurs à 450 km et sécurité routière certifiée.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FREQUENT TRAVELER FAQ ACCORDION -->
+<section class="w-full px-margin pb-space-xl">
+<div class="max-w-[1280px] mx-auto bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="max-w-2xl mb-space-lg">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Informations Pratiques Voyageurs</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold">Questions Fréquentes sur les Agences &amp; Bagages</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Tout ce que vous devez savoir avant de vous présenter au guichet de départ Naql Moulay Mbarek.</p>
+</div>
+<div class="divide-y divide-surface-container" id="faqContainer">
+<!-- FAQ item 1 -->
+<div class="py-space-md">
+<button class="faq-toggle w-full flex items-center justify-between text-left gap-space-md group" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">
+              Combien de temps avant le départ dois-je me présenter en agence ?
+            </span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden pt-space-xs text-on-surface-variant font-body-md text-body-md">
+            Pour les départs depuis les gares principales (Agadir Al Massira, Casablanca Ouled Ziane, Marrakech Bab Doukkala), nous recommandons de vous présenter au guichet au moins <strong>30 minutes</strong> avant l'heure indiquée afin de procéder à l'enregistrement des bagages en soute et à l'embarquement sans stress.
+          </div>
+</div>
+<!-- FAQ item 2 -->
+<div class="py-space-md">
+<button class="faq-toggle w-full flex items-center justify-between text-left gap-space-md group" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">
+              Quelle est la franchise bagages incluse dans mon billet ?
+            </span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden pt-space-xs text-on-surface-variant font-body-md text-body-md">
+            Chaque billet voyageur comprend gratuitement <strong>un bagage en soute jusqu'à 25 kg</strong> ainsi qu'un petit sac à main ou sac à dos en cabine. Les excédents de bagages ou colis volumineux sont facturés au tarif kilométrique préférentiel Irsaliyat directement au comptoir de pesage de l'agence.
+          </div>
+</div>
+<!-- FAQ item 3 -->
+<div class="py-space-md">
+<button class="faq-toggle w-full flex items-center justify-between text-left gap-space-md group" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">
+              Puis-je retirer un colis Irsaliyat en dehors des heures d'ouverture standard ?
+            </span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden pt-space-xs text-on-surface-variant font-body-md text-body-md">
+            Nos agences ouvertes 24h/24 (notamment Casablanca Ouled Ziane et Inezgane) assurent la réception et le retrait des colis à tout moment, de jour comme de nuit, sur présentation de la pièce d'identité originale du destinataire et du numéro de récépissé (Bordereau Irsaliyat).
+          </div>
+</div>
+<!-- FAQ item 4 -->
+<div class="py-space-md">
+<button class="faq-toggle w-full flex items-center justify-between text-left gap-space-md group" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">
+              Comment payer mon billet ou mon fret en agence ?
+            </span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden pt-space-xs text-on-surface-variant font-body-md text-body-md">
+            Tous les guichets SLKM acceptent les règlements en espèces (MAD), par carte bancaire marocaine (CMI) ou internationale (Visa / Mastercard), ainsi que les paiements dématérialisés via applications de transfert d'argent nationales.
+          </div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Filter chips interaction
+  const regionChips = document.querySelectorAll('.region-chip');
+  const agencyCards = document.querySelectorAll('.agency-card');
+  const searchInput = document.getElementById('agencySearchInput');
+
+  function filterCards() {
+    const query = searchInput.value.toLowerCase().trim();
+    const activeChip = document.querySelector('.region-chip.bg-primary-container');
+    const selectedFilter = activeChip ? activeChip.getAttribute('data-filter') : 'all';
+
+    agencyCards.forEach(card => {
+      const cardRegion = card.getAttribute('data-region') || '';
+      const cardCity = card.getAttribute('data-city') || '';
+      const cardText = card.textContent.toLowerCase();
+
+      const matchesRegion = (selectedFilter === 'all' || cardRegion === selectedFilter);
+      const matchesSearch = query === '' || cardCity.includes(query) || cardText.includes(query);
+
+      if (matchesRegion && matchesSearch) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  regionChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      regionChips.forEach(c => {
+        c.classList.remove('bg-primary-container', 'text-on-primary');
+        c.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+      chip.classList.add('bg-primary-container', 'text-on-primary');
+      chip.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+      filterCards();
+    });
+  });
+
+  searchInput.addEventListener('input', filterCards);
+
+  // Switch between Grid view and Route diagram view
+  const viewGridBtn = document.getElementById('viewGridBtn');
+  const viewRouteBtn = document.getElementById('viewRouteBtn');
+  const agencyCardsSection = document.getElementById('agencyCardsSection');
+  const routeDiagramSection = document.getElementById('routeDiagramSection');
+
+  viewGridBtn.addEventListener('click', () => {
+    viewGridBtn.classList.add('bg-surface-container-lowest', 'text-primary');
+    viewGridBtn.classList.remove('text-on-surface-variant');
+    viewRouteBtn.classList.remove('bg-surface-container-lowest', 'text-primary');
+    viewRouteBtn.classList.add('text-on-surface-variant');
+
+    agencyCardsSection.classList.remove('hidden');
+    routeDiagramSection.classList.add('hidden');
+  });
+
+  viewRouteBtn.addEventListener('click', () => {
+    viewRouteBtn.classList.add('bg-surface-container-lowest', 'text-primary');
+    viewRouteBtn.classList.remove('text-on-surface-variant');
+    viewGridBtn.classList.remove('bg-surface-container-lowest', 'text-primary');
+    viewGridBtn.classList.add('text-on-surface-variant');
+
+    agencyCardsSection.classList.add('hidden');
+    routeDiagramSection.classList.remove('hidden');
+  });
+
+  // Accordion toggle behavior
+  const faqToggles = document.querySelectorAll('.faq-toggle');
+  faqToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const content = toggle.nextElementSibling;
+      const icon = toggle.querySelector('.material-symbols-outlined');
+      const isExpanded = !content.classList.contains('hidden');
+
+      if (isExpanded) {
+        content.classList.add('hidden');
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        content.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low"><div class="w-full px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl"><div><div class="flex items-center gap-space-sm mb-space-sm"><span class="font-headline-sm text-headline-sm text-primary">SLKM Transport</span></div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Naql Moulay Mbarek - Société pionnière dans le transport interurbain de voyageurs, le transit de fret messagerie (Irsaliyat), et la mobilité d'entreprise à travers tout le Royaume du Maroc.</p><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md text-on-surface">Siège Social: Agadir, Maroc</span><span class="font-body-sm text-body-sm text-on-surface-variant">Disponibilité dispatch 24h/7j</span></div></div><div><h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-md">Hubs &amp; Agences Nationales</h4><div class="grid grid-cols-2 gap-space-xs font-body-md text-body-md text-on-surface-variant"><span>Agadir (Inezgane)</span><span>Casablanca (Oulad Ziane)</span><span>Marrakech (Bab Doukkala)</span><span>Rabat (Kamra)</span><span>Laâyoune Gare</span><span>Dakhla Centre</span></div></div><div><h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-md">Services &amp; Navigations</h4><div class="flex flex-col gap-space-xs font-body-md text-body-md"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="accueil" href="#">Accueil &amp; Horaires</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="irsaliyat-messagerie" href="#">Suivi de Colis Irsaliyat</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="lignes-et-agences" href="#">Réseau d'Agences</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="transport-personnel-et-tourisme" href="#">Contrats Khddama &amp; Tourisme</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="espace-admin" href="#">Portail Administrateur</a></div></div><div><h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-md">Dispatch &amp; Contact Direct</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Assistance billets et réclamations messagerie instantanée :</p><div class="flex flex-col gap-space-xs"><div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-[0_1px_3px_rgba(0,0,0,0.04)]"><span class="font-label-sm text-label-sm text-secondary-container uppercase block">Support WhatsApp</span><span class="font-label-md text-label-md text-on-surface">+212 5 28 84 XX XX</span></div><div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-[0_1px_3px_rgba(0,0,0,0.04)]"><span class="font-label-sm text-label-sm text-primary uppercase block">Bureau Messagerie</span><span class="font-label-md text-label-md text-on-surface">irsaliyat@slkm.ma</span></div></div></div></div><div class="pt-space-md bg-surface-container flex flex-col md:flex-row items-center justify-between gap-space-sm px-space-md rounded-lg font-body-sm text-body-sm text-on-surface-variant"><span>© 2025 SLKM - Naql Moulay Mbarek (نقل مولاي مبارك). Tous droits réservés.</span><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" data-path="mentions-legales" href="#">Mentions Légales</a><a class="hover:text-on-surface transition-colors" data-path="conditions-generales" href="#">Conditions de Transport &amp; Messagerie</a></div></div></div></footer></body></html>

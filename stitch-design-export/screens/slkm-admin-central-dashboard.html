@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"background":"#f7f9fb","on-secondary-fixed-variant":"#7f2b00","tertiary":"#51596f","surface-container":"#eceef0","surface-container-highest":"#e0e3e5","on-secondary-fixed":"#370e00","inverse-on-surface":"#eff1f3","primary-fixed":"#d4e3ff","primary-fixed-dim":"#a5c8ff","on-tertiary":"#ffffff","surface-container-high":"#e6e8ea","tertiary-fixed-dim":"#bec6e0","error-container":"#ffdad6","secondary-fixed-dim":"#ffb599","on-secondary-container":"#5a1c00","secondary":"#a63b00","on-primary":"#ffffff","surface-container-low":"#f2f4f6","secondary-container":"#fc6c29","on-surface-variant":"#414752","primary":"#0059a4","surface":"#f7f9fb","surface-bright":"#f7f9fb","on-primary-container":"#f4f6ff","inverse-primary":"#a5c8ff","surface-variant":"#e0e3e5","on-surface":"#191c1e","outline":"#717783","secondary-fixed":"#ffdbce","tertiary-container":"#697188","on-primary-fixed":"#001c3a","tertiary-fixed":"#dae2fd","primary-container":"#0072ce","on-tertiary-fixed":"#131b2e","surface-tint":"#005fae","on-tertiary-fixed-variant":"#3f465c","on-error":"#ffffff","surface-dim":"#d8dadc","outline-variant":"#c1c7d4","on-error-container":"#93000a","surface-container-lowest":"#ffffff","on-tertiary-container":"#f7f6ff","error":"#ba1a1a","inverse-surface":"#2d3133","on-background":"#191c1e","on-primary-fixed-variant":"#004785","on-secondary":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"0.75rem","space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2.25rem","space-md":"1rem","margin-mobile":"1rem","gutter":"1.25rem","margin":"2rem","space-lg":"1.5rem"},"fontFamily":{"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"800"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><main class="w-full min-h-screen bg-surface flex items-center justify-center"><div class="flex flex-col w-full">
+<div class="flex flex-col lg:flex-row w-full min-h-[920px] bg-surface gap-6 p-4 lg:p-8">
+<!-- ADMIN SIDEBAR -->
+<aside class="w-full lg:w-72 shrink-0 flex flex-col justify-between bg-surface-container-lowest rounded-xl p-5 shadow-sm">
+<div class="flex flex-col gap-6">
+<!-- Brand Identity -->
+<div class="flex items-center gap-3.5 pb-4 bg-surface-container-low p-3.5 rounded-lg">
+<div class="w-11 h-11 rounded-full bg-primary-container flex items-center justify-center text-on-primary font-headline-md text-headline-md tracking-tight shadow-sm relative overflow-hidden">
+<span class="z-10">M</span>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-secondary-container opacity-90"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight">SLKM</span>
+<span class="font-label-sm text-label-sm text-secondary font-extrabold uppercase">نقل مبارك</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary truncate">Plateforme Centrale v3.4</span>
+</div>
+</div>
+<!-- Navigation Menu -->
+<nav aria-label="Navigation Principale" class="flex flex-col gap-1.5">
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="truncate">Tableau de Bord</span>
+<span class="ml-auto w-2 h-2 rounded-full bg-secondary-container"></span>
+</a>
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px] text-tertiary group-hover:text-primary">storefront</span>
+<span class="truncate">Gestion des Agences</span>
+<span class="ml-auto font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">35</span>
+</a>
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px] text-tertiary group-hover:text-primary">alt_route</span>
+<span class="truncate">Lignes &amp; Horaires</span>
+</a>
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px] text-tertiary group-hover:text-primary">inventory_2</span>
+<span class="truncate">Tarifs Irsaliyat (إرساليات)</span>
+<span class="ml-auto font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed">Colis</span>
+</a>
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px] text-tertiary group-hover:text-secondary">corporate_fare</span>
+<span class="truncate">Demandes B2B Khddama</span>
+<span class="ml-auto font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">14</span>
+</a>
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px] text-tertiary group-hover:text-primary">chat</span>
+<span class="truncate">Réservations WhatsApp</span>
+</a>
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px] text-tertiary group-hover:text-primary">manage_accounts</span>
+<span class="truncate">Paramètres &amp; Rôles</span>
+</a>
+</nav>
+</div>
+<!-- Quick Telemetry Card -->
+<div class="mt-6 p-4 rounded-xl bg-surface-container-low flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Passerelle GPS</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span> Live 5G
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hub Agadir-Souss opérationnel avec liaison satellite relais Tan-Tan &amp; Dakhla.</p>
+<div class="flex items-center gap-2 pt-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Réseau CTM-Partenaires Sync</span>
+</div>
+</div>
+</aside>
+<!-- MAIN DASHBOARD CONTENT -->
+<div class="flex-1 flex flex-col gap-6 min-w-0">
+<!-- TOP HEADER -->
+<header class="bg-surface-container-lowest rounded-xl p-4 lg:px-6 flex flex-col md:flex-row items-center justify-between gap-4 shadow-sm">
+<!-- Search Input -->
+<div class="relative w-full md:w-96 flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-tertiary text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 rounded-lg bg-surface-container text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="Rechercher une agence, chauffeur, autocar..." type="text"/>
+<span class="absolute right-3 font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-tertiary hidden sm:inline">⌘K</span>
+</div>
+<!-- Status Badges & Profile Admin -->
+<div class="flex items-center justify-between w-full md:w-auto gap-4">
+<!-- Active Status Pill -->
+<div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Flotte Connectée : <strong>48 Autocars</strong> en circulation</span>
+</div>
+<!-- User Badge / Logout -->
+<div class="flex items-center gap-3 ml-auto md:ml-0">
+<div class="flex items-center gap-3 p-1.5 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-lg shadow-sm">
+                AB
+              </div>
+<div class="hidden sm:flex flex-col text-left">
+<span class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Aziz B.</span>
+<span class="font-label-sm text-label-sm text-tertiary">Directeur d'Exploitation (Agadir)</span>
+</div>
+</div>
+<button class="w-9 h-9 flex items-center justify-center rounded-lg text-tertiary hover:text-error hover:bg-error-container transition-colors" title="Déconnexion">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+</button>
+</div>
+</div>
+</header>
+<!-- EXECUTIVE METRICS KPI ROW -->
+<section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+<!-- Metric 1: Départs -->
+<div class="bg-surface-container-lowest p-5 rounded-xl flex flex-col justify-between shadow-sm relative overflow-hidden group">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-wider font-semibold">Départs du Jour</span>
+<div class="w-9 h-9 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">departure_board</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">128</span>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-primary-fixed-dim px-2 py-0.5 rounded-full">+12% vs hier</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Tous terminaux actifs (Souss &amp; Sahara)</p>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+<!-- Metric 2: Colis Irsaliyat -->
+<div class="bg-surface-container-lowest p-5 rounded-xl flex flex-col justify-between shadow-sm relative overflow-hidden group">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-wider font-semibold">Colis Irsaliyat (إرساليات)</span>
+<div class="w-9 h-9 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">local_shipping</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">842</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Colis actifs</span>
+</div>
+<div class="flex justify-between items-center mt-2 font-body-sm text-body-sm">
+<span class="text-tertiary">Valeur fret estimée</span>
+<span class="font-bold text-secondary">42,500 MAD</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 91%;"></div>
+</div>
+</div>
+<!-- Metric 3: Demandes B2B -->
+<div class="bg-surface-container-lowest p-5 rounded-xl flex flex-col justify-between shadow-sm relative overflow-hidden group">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-wider font-semibold">Devis Khddama B2B</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">domain_verification</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-secondary">14</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container bg-secondary-fixed-dim px-2 py-0.5 rounded-full font-bold">À traiter</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Agroalimentaire &amp; BTP Chtouka / Taroudant</p>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 45%;"></div>
+</div>
+</div>
+<!-- Metric 4: Ponctualité -->
+<div class="bg-surface-container-lowest p-5 rounded-xl flex flex-col justify-between shadow-sm relative overflow-hidden group">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-wider font-semibold">Ponctualité Flotte</span>
+<div class="w-9 h-9 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">timer</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">98.4%</span>
+<span class="font-label-sm text-label-sm text-tertiary">Moyenne 7j</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">2 retards mineurs déclarés (A7 Chichaoua)</p>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 98.4%;"></div>
+</div>
+</div>
+</section>
+<!-- TWO-PANEL GRID: MANAGEMENT TABLE & LIVE FEED -->
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-6 items-start">
+<!-- LEFT 2 COLUMNS: AGENCES DATA TABLE -->
+<section class="xl:col-span-2 bg-surface-container-lowest rounded-xl p-5 lg:p-6 shadow-sm flex flex-col gap-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Gestion du Réseau des Agences</h2>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container text-tertiary">35 Points de Vente</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Configuration centrale des départs, comptoirs Irsaliyat et contacts directs.</p>
+</div>
+<button class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container active:scale-95 transition-all shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[18px]">add_business</span>
+<span>+ Ajouter une Agence</span>
+</button>
+</div>
+<!-- Responsive Data Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-tertiary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg">Agence &amp; Ville</th>
+<th class="py-3 px-4">Responsable</th>
+<th class="py-3 px-4">WhatsApp Dédié</th>
+<th class="py-3 px-4">Lignes Clés</th>
+<th class="py-3 px-4">Statut</th>
+<th class="py-3 px-4 text-right rounded-r-lg">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-md text-body-md">
+<!-- Row 1: Agadir -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4 font-semibold text-on-surface">
+<div class="flex flex-col">
+<span class="text-primary font-bold">Agadir Al Massira (Gare Centrale)</span>
+<span class="font-label-sm text-label-sm text-tertiary">أكادير المسيرة • Hub Régional</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">Hadj Omar Tazi</td>
+<td class="py-3.5 px-4">
+<a class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface hover:text-primary transition-colors" href="https://wa.me/212661001122" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-primary">chat</span>
+                      +212 661 00 11 22
+                    </a>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-tertiary">Casa, Laâyoune, Dakhla</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Ouverte 24/7
+                    </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-tertiary hover:text-primary transition-colors" title="Modifier WhatsApp">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-tertiary hover:text-on-surface transition-colors" title="Horaires">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Casablanca -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-4 font-semibold text-on-surface">
+<div class="flex flex-col">
+<span class="text-on-surface font-bold">Casablanca Ouled Ziane</span>
+<span class="font-label-sm text-label-sm text-tertiary">الدار البيضاء • Guichet 18-19</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">Rachid El Amrani</td>
+<td class="py-3.5 px-4">
+<a class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface hover:text-primary transition-colors" href="https://wa.me/212662445566" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-primary">chat</span>
+                      +212 662 44 55 66
+                    </a>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-tertiary">Agadir, Tiznit, Guelmim</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Ouverte
+                    </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-tertiary hover:text-primary transition-colors" title="Modifier WhatsApp">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-tertiary hover:text-on-surface transition-colors" title="Horaires">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Marrakech -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 font-semibold text-on-surface">
+<div class="flex flex-col">
+<span class="text-on-surface font-bold">Marrakech Bab Doukkala</span>
+<span class="font-label-sm text-label-sm text-tertiary">مراكش باب دكالة</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">Karima Bennani</td>
+<td class="py-3.5 px-4">
+<a class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface hover:text-primary transition-colors" href="https://wa.me/212663889900" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-primary">chat</span>
+                      +212 663 88 99 00
+                    </a>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-tertiary">Taroudant, Ouarzazate</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Ouverte
+                    </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-tertiary hover:text-primary transition-colors" title="Modifier WhatsApp">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-tertiary hover:text-on-surface transition-colors" title="Horaires">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Inezgane -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 font-semibold text-on-surface">
+<div class="flex flex-col">
+<span class="text-on-surface font-bold">Inezgane Gare Routière</span>
+<span class="font-label-sm text-label-sm text-tertiary">إنزكان • Centre Logistique Irsaliyat</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">Mbarek Souissi</td>
+<td class="py-3.5 px-4">
+<a class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface hover:text-primary transition-colors" href="https://wa.me/212664123456" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-primary">chat</span>
+                      +212 664 12 34 56
+                    </a>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-tertiary">Dakhla, Goulimine, Tan-Tan</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Forte Affluence
+                    </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-tertiary hover:text-primary transition-colors" title="Modifier WhatsApp">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-tertiary hover:text-on-surface transition-colors" title="Horaires">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Laâyoune -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 font-semibold text-on-surface">
+<div class="flex flex-col">
+<span class="text-on-surface font-bold">Laâyoune Dcheira</span>
+<span class="font-label-sm text-label-sm text-tertiary">العيون الدشيرة • Ligne Express Sud</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">Sidi Mohamed Salek</td>
+<td class="py-3.5 px-4">
+<a class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface hover:text-primary transition-colors" href="https://wa.me/212665778899" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-primary">chat</span>
+                      +212 665 77 88 99
+                    </a>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-tertiary">Agadir, Casablanca, Dakhla</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Ouverte
+                    </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-tertiary hover:text-primary transition-colors" title="Modifier WhatsApp">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-tertiary hover:text-on-surface transition-colors" title="Horaires">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination and Quick Export -->
+<div class="flex flex-col sm:flex-row items-center justify-between pt-3 gap-3">
+<span class="font-label-sm text-label-sm text-tertiary">Affichage de 5 sur 35 agences affiliées SLKM</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">
+                Précédent
+              </button>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold">
+                1
+              </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">
+                2
+              </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">
+                Suivant
+              </button>
+</div>
+</div>
+</section>
+<!-- RIGHT 1 COLUMN: REAL-TIME DISPATCH FEED -->
+<section class="bg-surface-container-lowest rounded-xl p-5 lg:p-6 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">radar</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Départs Flotte en Direct</h2>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Télématique embarquée &amp; occupation des sièges en temps réel.</p>
+<!-- Feed Items -->
+<div class="flex flex-col gap-3.5 mt-1">
+<!-- Feed Card 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Agadir ➔ Casablanca</span>
+<span class="font-label-md text-label-md text-primary font-extrabold">21:30</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-tertiary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">person</span> Chauffeur: H. Boukhriss
+                </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-mono">18442-A-50</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-tertiary">Remplissage passagers</span>
+<span class="font-bold text-on-surface">48 / 50 Sièges (96%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 96%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span> 18 Colis à bord
+                </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Porte 03 - À quai</span>
+</div>
+</div>
+<!-- Feed Card 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Inezgane ➔ Laâyoune</span>
+<span class="font-label-md text-label-md text-primary font-extrabold">22:00</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-tertiary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">person</span> Chauffeur: M. Id-Ouass
+                </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-mono">92031-B-33</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-tertiary">Remplissage passagers</span>
+<span class="font-bold text-on-surface">52 / 54 Sièges (96%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 96%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span> 42 Colis (Express Sud)
+                </span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Embarquement en cours</span>
+</div>
+</div>
+<!-- Feed Card 3 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Marrakech ➔ Agadir</span>
+<span class="font-label-md text-label-md text-secondary font-extrabold">22:45</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-tertiary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">person</span> Chauffeur: A. Zouhairi
+                </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-mono">11049-A-54</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-tertiary">Remplissage passagers</span>
+<span class="font-bold text-on-surface">36 / 50 Sièges (72%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 72%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span> 9 Colis
+                </span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">En route vers Bab Doukkala</span>
+</div>
+</div>
+</div>
+<!-- Bottom Button -->
+<button class="w-full py-2.5 rounded-lg bg-surface-container font-label-md text-label-md text-primary font-bold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2 mt-2">
+<span class="material-symbols-outlined text-[18px]">map</span>
+<span>Ouvrir la Carte Télématique Globale</span>
+</button>
+</section>
+</div>
+</div>
+</div>
+</div></main></body></html>

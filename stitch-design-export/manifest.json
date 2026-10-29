@@ -1,0 +1,67 @@
+{
+  "project": "4815849128443958365",
+  "screens": [
+    {
+      "id": "2226955091957471412",
+      "title": "logo.jpeg",
+      "files": {
+        "image": "assets/images/logo.jpg"
+      }
+    },
+    {
+      "id": "87624c8c7c3e45bdb3f213e64f4947c2",
+      "title": "SLKM - Transport Personnel & Tourisme",
+      "files": {
+        "html": "screens/slkm-transport-personnel-et-tourisme.html",
+        "screenshot": "assets/screenshots/slkm-transport-personnel-et-tourisme.png",
+        "css": "css/slkm-transport-personnel-et-tourisme.css"
+      }
+    },
+    {
+      "id": "887e8637702c47bc9a5c1251ed760ec1",
+      "title": "SLKM - Accueil & Réservations",
+      "files": {
+        "html": "screens/slkm-accueil-et-reservations.html",
+        "screenshot": "assets/screenshots/slkm-accueil-et-reservations.png",
+        "css": "css/slkm-accueil-et-reservations.css"
+      }
+    },
+    {
+      "id": "65ed39edca2f408d8e4237e0ff11e382",
+      "title": "SLKM - Lignes & Agences",
+      "files": {
+        "html": "screens/slkm-lignes-et-agences.html",
+        "screenshot": "assets/screenshots/slkm-lignes-et-agences.png",
+        "css": "css/slkm-lignes-et-agences.css"
+      }
+    },
+    {
+      "id": "8832f4a63e7541d7a2e03d18171bf6c8",
+      "title": "SLKM - Admin Central Dashboard",
+      "files": {
+        "html": "screens/slkm-admin-central-dashboard.html",
+        "screenshot": "assets/screenshots/slkm-admin-central-dashboard.png",
+        "css": "css/slkm-admin-central-dashboard.css"
+      }
+    },
+    {
+      "id": "472212cc083944b0b693d8cde20f9184",
+      "title": "SLKM - Histoire & Vision",
+      "files": {
+        "html": "screens/slkm-histoire-et-vision.html",
+        "screenshot": "assets/screenshots/slkm-histoire-et-vision.png",
+        "css": "css/slkm-histoire-et-vision.css"
+      }
+    },
+    {
+      "id": "1cafb594c1bb4b11b6fcd4fabd5b3f34",
+      "title": "SLKM - Irsaliyat Messagerie Express",
+      "files": {
+        "html": "screens/slkm-irsaliyat-messagerie-express.html",
+        "screenshot": "assets/screenshots/slkm-irsaliyat-messagerie-express.png",
+        "css": "css/slkm-irsaliyat-messagerie-express.css"
+      }
+    }
+  ],
+  "projectTitle": "SLKM Moroccan Transport Platform"
+}
