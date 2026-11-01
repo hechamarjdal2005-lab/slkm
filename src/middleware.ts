@@ -44,11 +44,17 @@ export async function middleware(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
+  const administrator = user?.app_metadata?.role === "admin";
   if (!user && !loginPath) {
     return redirectTo(request, "/admin/login", response);
   }
 
-  if (user && loginPath) {
+  if (user && !administrator && !loginPath) {
+    const denied = new NextResponse("Accès réservé aux administrateurs SLKM.", { status: 403, headers: { "content-type": "text/plain; charset=utf-8", "cache-control": "no-store" } });
+    response.cookies.getAll().forEach(cookie => denied.cookies.set(cookie));
+    return denied;
+  }
+  if (administrator && loginPath) {
     return redirectTo(request, "/admin", response);
   }
 

@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   outputFileTracingRoot: process.cwd(),
   poweredByHeader: false,
   experimental: {
+    serverActions: { bodySizeLimit: "6mb" },
     optimizePackageImports: ["lucide-react"],
   },
   images: {

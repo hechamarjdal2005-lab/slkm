@@ -1,8 +1,8 @@
 "use client";
 
 import { useTransition } from "react";
-import { useRouter } from "next/navigation";
 import { Globe2 } from "lucide-react";
+import { setSiteLocale } from "@/app/locale-actions";
 import type { Locale } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
@@ -12,27 +12,30 @@ const LABELS: Array<{ value: Locale; label: string }> = [
   { value: "en", label: "EN" },
 ];
 
-export function LocaleSwitcher({ locale, dark = false }: { locale: Locale; dark?: boolean }) {
-  const router = useRouter();
+export function LocaleSwitcher({ locale, dark = false, compact = false }: { locale: Locale; dark?: boolean; compact?: boolean }) {
   const [pending, startTransition] = useTransition();
 
   function change(next: Locale) {
     if (next === locale) return;
-    const secure = window.location.protocol === "https:" ? ";secure" : "";
-    document.cookie = `slkm_locale=${next};path=/;max-age=31536000;samesite=lax${secure}`;
-    document.documentElement.lang = next;
-    document.documentElement.dir = next === "ar" ? "rtl" : "ltr";
-    startTransition(() => router.refresh());
+    startTransition(async () => { await setSiteLocale(next); });
   }
 
   return (
+    compact ? <label className="compact-locale">
+      <Globe2 size={15} aria-hidden="true" />
+      <span className="sr-only">{locale === "ar" ? "اللغة" : locale === "fr" ? "Langue" : "Language"}</span>
+      <select value={locale} disabled={pending} onChange={event => change(event.target.value as Locale)} aria-busy={pending}>
+        {LABELS.map(item => <option key={item.value} value={item.value} lang={item.value}>{item.label}</option>)}
+      </select>
+    </label> :
     <div
       className={cn(
         "inline-flex items-center gap-0.5 rounded-full border p-1",
         dark ? "border-white/20 bg-white/10 text-white" : "border-line bg-white text-muted",
         pending && "opacity-60",
       )}
-      aria-label="Language"
+      role="group"
+      aria-label={locale === "ar" ? "اللغة" : locale === "fr" ? "Langue" : "Language"}
     >
       <Globe2 className="mx-1 h-3.5 w-3.5" />
       {LABELS.map((item) => (
@@ -40,8 +43,9 @@ export function LocaleSwitcher({ locale, dark = false }: { locale: Locale; dark?
           key={item.value}
           type="button"
           onClick={() => change(item.value)}
+          disabled={pending}
           className={cn(
-            "rounded-full px-2 py-1 text-[10px] font-extrabold tracking-wider transition",
+            "min-h-11 min-w-11 rounded-full px-2 py-1 text-xs font-extrabold tracking-wider transition",
             item.value === locale
               ? dark
                 ? "bg-white text-primary-dark"

@@ -1,3 +1,4 @@
+import { ImageAssetInput } from "./image-asset-input";
 import { Pencil, Plus } from "lucide-react";
 import { upsertBlogPost, deleteBlogPost } from "@/app/actions";
 import { DeleteButton } from "@/components/delete-button";
@@ -16,7 +17,7 @@ function BlogForm({ post }: { post?: BlogPost }) {
     <form action={upsertBlogPost} className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
       {post ? <input type="hidden" name="id" value={post.id} /> : null}
       <AdminField label="Slug" hint="minuscules, chiffres et tirets" className="sm:col-span-2 xl:col-span-2"><AdminInput name="slug" required defaultValue={post?.slug} placeholder="mon-article-2026" /></AdminField>
-      <AdminField label="Image de couverture"><AdminInput name="cover_image_url" defaultValue={post?.cover_image_url ?? ""} placeholder="/images/blog/..." /></AdminField>
+      <AdminField label="Image de couverture"><ImageAssetInput name="cover_image_url" defaultValue={post?.cover_image_url ?? ""} placeholder="/images/blog/..." /></AdminField>
       <AdminField label="Titre (FR)"><AdminInput name="title_fr" required defaultValue={post?.title_fr} /></AdminField>
       <AdminField label="Titre (AR)"><AdminInput name="title_ar" required defaultValue={post?.title_ar} dir="rtl" /></AdminField>
       <AdminField label="Titre (EN)"><AdminInput name="title_en" required defaultValue={post?.title_en} /></AdminField>

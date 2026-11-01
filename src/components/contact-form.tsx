@@ -1,4 +1,6 @@
 "use client";
+import { createTranslator } from "@/lib/cms";
+import { usePageCMS } from "@/components/cms-provider";
 
 import { useActionState, useEffect, useRef } from "react";
 import { AlertCircle, CheckCircle2, Send } from "lucide-react";
@@ -9,6 +11,8 @@ import { fieldClass, labelClass } from "./ui";
 import { SubmitButton } from "./submit-button";
 
 export function ContactForm({ locale }: { locale: Locale }) {
+  const cms = usePageCMS("contact");
+  const ct = createTranslator(cms, locale);
   const [state, action] = useActionState(submitContactMessage, initialActionState);
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -17,13 +21,13 @@ export function ContactForm({ locale }: { locale: Locale }) {
   }, [state.status]);
 
   return (
-    <form ref={formRef} action={action} className="rounded-3xl border border-line bg-white p-5 shadow-soft sm:p-7">
+    <form ref={formRef} action={action} className="slkm-form rounded-3xl border border-line bg-white p-5 shadow-soft sm:p-7">
       <input type="hidden" name="locale" value={locale} />
-      <h2 className="text-2xl font-extrabold tracking-[-0.03em] text-ink">
-        {locale === "ar" ? "أرسل لنا رسالة" : locale === "en" ? "Send us a message" : "Écrivez-nous"}
+      <h2 className="text-[1.375rem] font-extrabold tracking-[-0.03em] text-ink">
+        {ct("text_a44e9e92caa9", "Écrivez-nous", "أرسل لنا رسالة", "Send us a message")}
       </h2>
       <p className="mt-2 text-sm leading-6 text-muted">
-        {locale === "ar" ? "سنعود إليكم خلال يوم عمل واحد." : locale === "en" ? "We reply within one business day." : "Nous répondons sous un jour ouvré."}
+        {ct("text_c0ab5dbad189", "Nous répondons sous un jour ouvré.", "سنعود إليكم خلال يوم عمل واحد.", "We reply within one business day.")}
       </p>
 
       {state.status !== "idle" ? (
@@ -35,34 +39,34 @@ export function ContactForm({ locale }: { locale: Locale }) {
 
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         <div>
-          <label htmlFor="contact-name" className={labelClass}>{locale === "ar" ? "الاسم الكامل" : locale === "en" ? "Full name" : "Nom complet"} *</label>
-          <input id="contact-name" name="full_name" required className={fieldClass} />
+          <label htmlFor="contact-name" className={labelClass}>{ct("text_c8af6e29fba8", "Nom complet", "الاسم الكامل", "Full name")} *</label>
+          <input id="contact-name" name="full_name" autoComplete="name" required className={fieldClass} />
         </div>
         <div>
-          <label htmlFor="contact-email" className={labelClass}>{locale === "ar" ? "البريد الإلكتروني" : locale === "en" ? "Email" : "E-mail"} *</label>
-          <input id="contact-email" name="email" type="email" required className={fieldClass} />
+          <label htmlFor="contact-email" className={labelClass}>{ct("text_2550d962e536", "E-mail", "البريد الإلكتروني", "Email")} *</label>
+          <input id="contact-email" name="email" autoComplete="email" type="email" dir="ltr" required className={fieldClass} />
         </div>
         <div>
-          <label htmlFor="contact-phone" className={labelClass}>{locale === "ar" ? "الهاتف" : locale === "en" ? "Phone" : "Téléphone"}</label>
-          <input id="contact-phone" name="phone" type="tel" className={fieldClass} />
+          <label htmlFor="contact-phone" className={labelClass}>{ct("text_cc4c424b571f", "Téléphone", "الهاتف", "Phone")}</label>
+          <input id="contact-phone" name="phone" autoComplete="tel" type="tel" dir="ltr" className={fieldClass} />
         </div>
         <div>
-          <label htmlFor="contact-subject" className={labelClass}>{locale === "ar" ? "الموضوع" : locale === "en" ? "Subject" : "Sujet"} *</label>
+          <label htmlFor="contact-subject" className={labelClass}>{ct("text_db59ebb27218", "Sujet", "الموضوع", "Subject")} *</label>
           <input id="contact-subject" name="subject" required className={fieldClass} />
         </div>
         <div className="sm:col-span-2">
-          <label htmlFor="contact-message" className={labelClass}>{locale === "ar" ? "الرسالة" : locale === "en" ? "Message" : "Message"} *</label>
+          <label htmlFor="contact-message" className={labelClass}>{ct("text_2f77668a9dfb", "Message", "الرسالة", "Message")} *</label>
           <textarea id="contact-message" name="message" rows={6} required className={fieldClass} />
         </div>
       </div>
 
-      <div className="mt-5 flex items-center justify-between gap-3 border-t border-line pt-5">
+      <div className="mt-5 flex flex-col items-stretch justify-between gap-3 border-t sm:flex-row sm:items-center border-line pt-5">
         <p className="text-[11px] leading-5 text-muted">
-          {locale === "ar" ? "لن نشارك بياناتكم مع أي طرف ثالث." : locale === "en" ? "We never share your details with third parties." : "Vos données ne sont jamais revendues."}
+          {ct("text_b5875ab3a419", "Vos données ne sont jamais revendues.", "لن نشارك بياناتكم مع أي طرف ثالث.", "We never share your details with third parties.")}
         </p>
-        <SubmitButton pendingLabel={locale === "ar" ? "جارٍ الإرسال..." : locale === "en" ? "Sending..." : "Envoi..."}>
+        <SubmitButton pendingLabel={ct("text_bf2f14e82f15", "Envoi...", "جارٍ الإرسال...", "Sending...")}>
           <Send className="h-4 w-4" />
-          {locale === "ar" ? "إرسال" : locale === "en" ? "Send" : "Envoyer"}
+          {ct("text_79075209f2bb", "Envoyer", "إرسال", "Send")}
         </SubmitButton>
       </div>
     </form>

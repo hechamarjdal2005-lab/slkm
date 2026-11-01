@@ -1,330 +1,74 @@
-import Image from "next/image";
+import { createTranslator, cmsImage, cmsLink } from "@/lib/cms";
+import { getPageCMS, getCMSMetadata } from "@/lib/cms-store";
+import { CmsPage, CmsBuiltin } from "@/components/cms-page";
+import Image from "@/components/site-image";
 import Link from "next/link";
-import {
-  ArrowRight,
-  Bus,
-  CheckCircle2,
-  Clock3,
-  MapPin,
-  Package,
-  ShieldCheck,
-  Sparkles,
-  Users,
-} from "lucide-react";
-import { AgencyMap } from "@/components/agency-map";
+import { ArrowRight, Bus, Headphones, MapPin, MessageCircle, Package, ShieldCheck, Users } from "lucide-react";
 import { BlogCard } from "@/components/blog-card";
-import { RouteSearch } from "@/components/route-search";
-import { Badge, buttonClass, EmptyState, SectionHeading, StatCard } from "@/components/ui";
+import { RouteCard } from "@/components/route-card";
+import { TransportNetworkExplorer } from "@/components/transport-network-explorer";
+import { buttonClass, SectionHeading } from "@/components/ui";
 import { getLocale } from "@/lib/locale";
 import { getAgencies, getBlogPosts, getRoutes, getSiteSettings } from "@/lib/queries";
-import type { SiteStat } from "@/lib/types";
 import { pick } from "@/lib/utils";
-
-export default async function HomePage() {
-  const locale = await getLocale();
-  const [settings, agencies, routes, posts] = await Promise.all([
-    getSiteSettings(),
-    getAgencies(),
-    getRoutes(),
-    getBlogPosts(3),
-  ]);
-
-  const config = settings?.analytics_config;
-  const stats = config?.stats ?? [];
-  const fleet = config?.fleet ?? [];
-  const whatsapp = settings?.whatsapp_number ?? null;
-  const siteName = pick(locale, settings?.site_name_fr, settings?.site_name_ar, settings?.site_name_en) || "SLKM";
-  const fallbackStats: SiteStat[] = [
-    { key: "agencies", value: String(agencies.length), label_fr: "Agences actives", label_ar: "وكالات نشطة", label_en: "Active agencies" },
-    { key: "routes", value: String(routes.length), label_fr: "Lignes publiées", label_ar: "خطوط منشورة", label_en: "Published routes" },
-    { key: "articles", value: String(posts.length), label_fr: "Derniers articles", label_ar: "أحدث المقالات", label_en: "Latest articles" },
-  ];
-  const quickStats = stats.length ? stats.slice(0, 3) : fallbackStats;
-
-  const heroTitle =
-    locale === "ar"
-      ? "سافروا بعيداً. وصلوا مطمئنين."
-      : locale === "en"
-        ? "Travel further. Arrive with peace of mind."
-        : "Voyagez loin. Arrivez serein.";
-  const heroText =
-    locale === "ar"
-      ? "حافلات حديثة، شبكة وطنية من طنجة إلى الداخلة، وحجز مباشر عبر واتساب. إس إل كي إم تنقلكم بانتظام وأمان."
-      : locale === "en"
-        ? "Modern coaches, a national network from Tangier to Dakhla and direct WhatsApp booking. SLKM gets you there safely, on time."
-        : "Des autocars récents, un réseau national de Tanger à Dakhla et une réservation directe sur WhatsApp. SLKM vous emmène loin, à l'heure et en sécurité.";
-  const popularRoutes = routes.slice(0, 6);
-
-  return (
-    <>
-      <section className="relative overflow-hidden bg-primary-dark">
-        <Image src="/images/hero-home.jpg" alt="" fill priority sizes="100vw" className="object-cover object-center" />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-dark via-primary-dark/85 to-primary-dark/25" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background/90 to-transparent" />
-        <div className="container-page relative py-20 sm:py-28 lg:py-32">
-          <div className="max-w-3xl text-white">
-            <Badge tone="orange" className="bg-secondary-bright text-white">
-              <Sparkles className="h-3 w-3" />
-              {siteName} · {locale === "ar" ? "منذ 1992" : locale === "en" ? "Since 1992" : "Depuis 1992"}
-            </Badge>
-            <h1 className="mt-5 text-balance text-4xl font-extrabold leading-[1.03] tracking-[-0.05em] sm:text-6xl lg:text-7xl">{heroTitle}</h1>
-            <p className="mt-5 max-w-2xl text-sm leading-7 text-white/75 sm:text-lg sm:leading-8">{heroText}</p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/lignes" className={buttonClass("secondary", "lg")}>
-                <Bus className="h-4 w-4" />
-                {locale === "ar" ? "استكشف الخطوط" : locale === "en" ? "Explore routes" : "Explorer les lignes"}
-              </Link>
-              <Link href="/irsaliyat" className={buttonClass("white", "lg")}>
-                <Package className="h-4 w-4" />
-                {locale === "ar" ? "خدمة إرساليات" : locale === "en" ? "Irsaliyat parcels" : "Irsaliyat colis"}
-                <ArrowRight className="h-4 w-4 rtl:rotate-180" />
-              </Link>
-            </div>
-            <div className="mt-10 grid max-w-xl grid-cols-3 gap-3">
-              {quickStats.map((stat) => (
-                <StatCard key={stat.key} value={stat.value} label={pick(locale, stat.label_fr, stat.label_ar, stat.label_en)} tone="dark" />
-              ))}
-            </div>
-          </div>
+export async function generateMetadata() { return getCMSMetadata("home"); }
+export default async function HomePage({ searchParams }: {
+    searchParams: Promise<{
+        from?: string;
+        to?: string;
+        date?: string;
+        class?: string;
+    }>;
+}) {
+    const params = await searchParams;
+    const locale = await getLocale();
+    const cms = await getPageCMS("home");
+    const ct = createTranslator(cms, locale);
+    const [settings, agencies, routes, posts] = await Promise.all([getSiteSettings(), getAgencies(), getRoutes(), getBlogPosts(3)]);
+    const t = (fr: string, ar: string, en: string) => pick(locale, fr, ar, en);
+    const fleet = settings?.analytics_config?.fleet?.filter(item => item.is_active !== false) ?? [];
+    const classes = [...new Set(routes.map(r => r.bus_type))];
+    const services = [
+        { image: cmsImage(cms, "image_1d93533d8035", "/images/serenity-coach.jpg"), icon: Bus, title: ct("text_46f2cb5f4c7e", "Transport voyageurs", "نقل المسافرين", "Passenger travel"), text: ct("text_62efdfc9ae9f", "Votre prochaine destination commence ici.", "وجهتكم القادمة تبدأ هنا.", "Your next destination starts here."), href: cmsLink(cms, "link_d6d9a0b2b0b5", "/lignes") },
+        { image: cmsImage(cms, "image_7f366d3e4316", "/images/cargo-hold.jpg"), icon: Package, title: ct("text_aa209268f717", "Messagerie Irsaliyat", "إرساليات", "Irsaliyat parcels"), text: ct("text_d2b98e1951de", "Un réseau d’agences pour vos envois.", "شبكة وكالات لإرسالياتكم.", "An agency network for your parcels."), href: cmsLink(cms, "link_88f3b90341f9", "/irsaliyat") },
+        { image: cmsImage(cms, "image_a9296b58a762", "/images/service-tourism.jpg"), icon: Users, title: ct("text_cb6d502fe0d4", "Professionnels & tourisme", "الشركات والسياحة", "Business & tourism"), text: ct("text_cdb4c98c43a2", "Une solution adaptée aux déplacements de groupe.", "حل يناسب تنقلات مجموعاتكم.", "Travel solutions tailored to your group."), href: cmsLink(cms, "link_93ace474a9f1", "/services") },
+    ];
+    return <CmsPage cms={cms}><>
+    <CmsBuiltin sectionKey="hero"><section className="home-hero">
+      <div className="home-hero-grid">
+        <div className="home-hero-media">
+          <Image src={cmsImage(cms, "image_1b4667005cb9", "/images/hero-home.jpg")} alt={ct("text_8c8395fc2933", "Autocar SLKM sur les routes du Maroc", "حافلة SLKM على طرق المغرب", "SLKM coach on Morocco’s roads")} fill priority sizes="(max-width: 767px) 100vw, 55vw"/>
+          <span className="hero-photo-label"><MapPin size={13} aria-hidden="true"/>{ct("text_d5e6058254cc", "Le Maroc, à vos côtés", "معكم عبر المغرب", "Across Morocco, with you")}</span>
         </div>
-      </section>
-
-      <section className="container-page relative z-10 -mt-14 sm:-mt-16">
-        <RouteSearch routes={routes} agencies={agencies} locale={locale} whatsapp={whatsapp} />
-      </section>
-
-      <section className="container-page py-16 sm:py-20">
-        <SectionHeading
-          eyebrow={locale === "ar" ? "الخطوط الأكثر طلباً" : locale === "en" ? "Popular routes" : "Lignes populaires"}
-          title={locale === "ar" ? "وجهات تربط المغرب من الشمال إلى الجنوب" : locale === "en" ? "Destinations linking Morocco north to south" : "Des destinations qui relient le Maroc du nord au sud"}
-          description={
-            locale === "ar"
-              ? "أسعار واضحة، مواعيد يومية وحجز سهل. اختر وجهتكم وتواصلوا مع الوكالة مباشرة."
-              : locale === "en"
-                ? "Clear fares, daily departures and simple booking. Pick your destination and reach the agency directly."
-                : "Des tarifs clairs, des départs quotidiens et une réservation simple. Choisissez votre destination et contactez l'agence directement."
-          }
-          href="/lignes"
-          linkLabel={locale === "ar" ? "كل الخطوط" : locale === "en" ? "All routes" : "Toutes les lignes"}
-        />
-        {popularRoutes.length ? (
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {popularRoutes.map((route) => (
-              <Link key={route.id} href={`/lignes?from=${route.from_agency_id}&to=${route.to_agency_id}`} className="group rounded-2xl border border-line bg-white p-4 shadow-soft transition hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-lift">
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-sm font-extrabold text-ink">
-                    {route.from_agency ? pick(locale, route.from_agency.city_fr, route.from_agency.city_ar, route.from_agency.city_en) : "—"}
-                    <span className="mx-2 text-primary">→</span>
-                    {route.to_agency ? pick(locale, route.to_agency.city_fr, route.to_agency.city_ar, route.to_agency.city_en) : "—"}
-                  </p>
-                  <ArrowRight className="h-4 w-4 text-primary transition group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
-                </div>
-                <p className="mt-2 flex items-center gap-2 text-xs text-muted">
-                  <Clock3 className="h-3.5 w-3.5 text-primary" />
-                  {route.departure_time.slice(0, 5)} · {route.bus_type}
-                </p>
-              </Link>
-            ))}
-          </div>
-        ) : (
-          <EmptyState
-            title={locale === "ar" ? "لا توجد خطوط منشورة" : locale === "en" ? "No published routes" : "Aucune ligne publiée"}
-            description={locale === "ar" ? "أضف الخطوط من لوحة الإدارة ثم أعد تحميل الصفحة." : locale === "en" ? "Add routes from the admin dashboard, then refresh this page." : "Ajoutez des lignes depuis l'espace admin, puis rechargez cette page."}
-            action={{ href: "/admin?tab=routes", label: locale === "ar" ? "إدارة الخطوط" : locale === "en" ? "Manage routes" : "Gérer les lignes" }}
-          />
-        )}
-      </section>
-
-      <section className="border-y border-line bg-white py-16 sm:py-20">
-        <div className="container-page grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-          <div>
-            <SectionHeading
-              eyebrow={locale === "ar" ? "شبكة وطنية" : locale === "en" ? "National network" : "Réseau national"}
-              title={locale === "ar" ? "اعثروا على وكالتكم على الخريطة" : locale === "en" ? "Find your agency on the map" : "Trouvez votre agence sur la carte"}
-              description={
-                locale === "ar"
-                  ? "شبابيك في المدن الكبرى والمتوسطة، مع فرق محلية تعرف الطرق وتفاصيل كل رحلة."
-                  : locale === "en"
-                    ? "Counters in major and regional cities, with local teams who know every road and connection."
-                    : "Des comptoirs dans les grandes villes et les villes régionales, avec des équipes locales qui connaissent chaque route."
-              }
-              href="/lignes"
-              linkLabel={locale === "ar" ? "كل الوكالات" : locale === "en" ? "All agencies" : "Toutes les agences"}
-            />
-            <div className="grid grid-cols-2 gap-3">
-              <div className="rounded-2xl border border-line bg-background p-4">
-                <MapPin className="h-5 w-5 text-primary" />
-                <p className="mt-2 text-2xl font-extrabold text-ink">{agencies.length}</p>
-                <p className="text-xs text-muted">{locale === "ar" ? "وكالة نشطة" : locale === "en" ? "active agencies" : "agences actives"}</p>
-              </div>
-              <div className="rounded-2xl border border-line bg-background p-4">
-                <Bus className="h-5 w-5 text-secondary" />
-                <p className="mt-2 text-2xl font-extrabold text-ink">{routes.length}</p>
-                <p className="text-xs text-muted">{locale === "ar" ? "خط منشور" : locale === "en" ? "published routes" : "lignes publiées"}</p>
-              </div>
-            </div>
-            <div className="mt-5 grid gap-3">
-              {agencies.slice(0, 4).map((agency) => (
-                <Link key={agency.id} href={`/lignes#agency-${agency.id}`} className="flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-sm transition hover:border-primary/30 hover:text-primary">
-                  <span className="inline-flex items-center gap-2 font-bold">
-                    <MapPin className="h-4 w-4 text-primary" />
-                    {pick(locale, agency.city_fr, agency.city_ar, agency.city_en)}
-                  </span>
-                  <ArrowRight className="h-4 w-4 rtl:rotate-180" />
-                </Link>
-              ))}
-            </div>
-          </div>
-          <AgencyMap agencies={agencies} locale={locale} height="480px" />
+        <div className="home-hero-copy">
+          <p className="hero-eyebrow">SLKM · Najd Moulay Mbarek</p>
+          <h1>{ct("text_437027c1fec3", "Voyagez loin.", "سافروا بعيداً.", "Travel further.")}<br /><span>{ct("text_6907768e8608", "Arrivez serein.", "وصلوا مطمئنين.", "Arrive with peace of mind.")}</span></h1>
+          <p className="hero-description">{ct("text_e0c5b6fab684", "Les villes se rapprochent, le voyage commence. Découvrez les lignes SLKM et préparez votre prochain départ.", "تتقارب المدن وتبدأ الرحلة. اكتشفوا خطوط SLKM واستعدوا لرحلتكم القادمة.", "Cities come closer. Your journey begins. Discover SLKM routes and plan your next departure.")}</p>
+          <div className="hero-actions"><Link href={cmsLink(cms, "link_32835313c8a2", "#reseau")} className={buttonClass("secondary", "lg")}><Bus size={17} aria-hidden="true"/>{ct("text_7b7b47dfa7c7", "Explorer & réserver", "اكتشفوا واحجزوا", "Explore & book")}</Link><Link href={cmsLink(cms, "link_41d2227187ad", "#services")} className={buttonClass("ghost", "lg")}>{ct("text_0ca296547019", "Nos services", "خدماتنا", "Our services")}<ArrowRight size={15} className="rtl:rotate-180" aria-hidden="true"/></Link></div>
+          <div className="hero-assurance"><span><ShieldCheck aria-hidden="true"/>{ct("text_d09d61817e68", "Voyagez en confiance", "سافروا بثقة", "Travel with confidence")}</span><span><MessageCircle aria-hidden="true"/>{ct("text_e04366819c5c", "Réservation WhatsApp", "الحجز عبر واتساب", "WhatsApp booking")}</span></div>
         </div>
-      </section>
-
-      {fleet.length ? (
-        <section className="container-page py-16 sm:py-20">
-          <SectionHeading
-            eyebrow={locale === "ar" ? "أسطولنا" : locale === "en" ? "Our fleet" : "Notre flotte"}
-            title={locale === "ar" ? "حافلات مصممة للراحة والسلامة" : locale === "en" ? "Coaches designed for comfort and safety" : "Des autocars pensés pour le confort et la sécurité"}
-            description={
-              locale === "ar"
-                ? "من الحافلات السياحية الفاخرة إلى أسطول النقل اليومي، نختار تجهيزات تناسب كل مسار."
-                : locale === "en"
-                  ? "From premium touring coaches to everyday intercity fleet, every vehicle is configured for its route."
-                  : "Du coach grand tourisme à l'autocar interurbain, chaque véhicule est configuré pour sa ligne."
-            }
-          />
-          <div className="grid gap-5 lg:grid-cols-3">
-            {fleet.map((vehicle) => {
-              const features = locale === "ar" ? vehicle.features_ar : locale === "en" ? vehicle.features_en : vehicle.features_fr;
-              return (
-                <article key={`${vehicle.name}-${vehicle.category}`} className="overflow-hidden rounded-3xl border border-line bg-white shadow-soft">
-                  <div className="relative aspect-[16/10] bg-surface-muted">
-                    <Image src={vehicle.image_url} alt={vehicle.name} fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover" />
-                    <Badge className="absolute start-4 top-4 bg-white/95" tone="primary">{vehicle.category}</Badge>
-                  </div>
-                  <div className="p-5">
-                    <div className="flex items-start justify-between gap-3">
-                      <div>
-                        <h3 className="text-lg font-extrabold tracking-[-0.02em] text-ink">{vehicle.name}</h3>
-                        <p className="mt-1 inline-flex items-center gap-1.5 text-xs text-muted">
-                          <Users className="h-3.5 w-3.5 text-primary" />
-                          {vehicle.capacity}
-                        </p>
-                      </div>
-                      <ShieldCheck className="h-6 w-6 text-primary" />
-                    </div>
-                    <ul className="mt-4 grid gap-2">
-                      {features.map((feature) => (
-                        <li key={feature} className="flex items-start gap-2 text-xs leading-5 text-muted">
-                          <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-success" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </section>
-      ) : null}
-
-      <section className="bg-primary-dark py-16 text-white sm:py-20">
-        <div className="container-page grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
-          <div>
-            <SectionHeading
-              eyebrow={locale === "ar" ? "إرساليات" : locale === "en" ? "Irsaliyat" : "Irsaliyat"}
-              title={locale === "ar" ? "أماناتكم تصل مع نفس الحافلات" : locale === "en" ? "Your parcels travel with the same coaches" : "Vos colis voyagent avec les mêmes autocars"}
-              description={
-                locale === "ar"
-                  ? "توصيل سريع بين المدن، تتبع عبر واتساب، وخيار الدفع عند الاستلام للتجار."
-                  : locale === "en"
-                    ? "Fast intercity delivery, WhatsApp tracking and cash on delivery for retailers."
-                    : "Livraison rapide entre les villes, suivi WhatsApp et paiement à la livraison pour les commerçants."
-              }
-              light
-            />
-            <Link href="/irsaliyat" className={buttonClass("secondary", "lg")}>
-              {locale === "ar" ? "اكتشف الأسعار" : locale === "en" ? "See parcel rates" : "Voir les tarifs"}
-              <ArrowRight className="h-4 w-4 rtl:rotate-180" />
-            </Link>
-          </div>
-          <div className="relative aspect-[16/10] overflow-hidden rounded-3xl border border-white/15 shadow-lift">
-            <Image src="/images/cargo-hold.jpg" alt="" fill sizes="(max-width: 1024px) 100vw, 45vw" className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/60 to-transparent" />
-          </div>
-        </div>
-      </section>
-
-      <section className="container-page py-16 sm:py-20">
-        <SectionHeading
-          eyebrow={locale === "ar" ? "المدونة" : locale === "en" ? "Journal" : "Le journal"}
-          title={locale === "ar" ? "أخبار ونصائح للسفر" : locale === "en" ? "News and travel advice" : "Actualités et conseils de voyage"}
-          description={
-            locale === "ar"
-              ? "كل ما تحتاجونه لتحضير رحلتكم، من مواعيد الخطوط إلى نصائح الطريق."
-              : locale === "en"
-                ? "Everything you need to plan your trip, from route updates to practical travel advice."
-                : "Tout pour préparer votre trajet, des nouveautés du réseau aux conseils pratiques."
-          }
-          href="/blog"
-          linkLabel={locale === "ar" ? "كل المقالات" : locale === "en" ? "All articles" : "Tous les articles"}
-        />
-        {posts.length ? (
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {posts.map((post) => (
-              <BlogCard key={post.id} post={post} locale={locale} />
-            ))}
-          </div>
-        ) : (
-          <EmptyState
-            title={locale === "ar" ? "لا توجد مقالات منشورة" : locale === "en" ? "No published articles" : "Aucun article publié"}
-            description={locale === "ar" ? "انشر أول مقال من لوحة الإدارة." : locale === "en" ? "Publish the first article from the admin dashboard." : "Publiez le premier article depuis l'espace admin."}
-            action={{ href: "/admin?tab=blog", label: locale === "ar" ? "إدارة المدونة" : locale === "en" ? "Manage blog" : "Gérer le blog" }}
-          />
-        )}
-      </section>
-
-      <section className="container-page pb-20">
-        <div className="grid gap-5 lg:grid-cols-2">
-          <div className="relative overflow-hidden rounded-3xl bg-primary p-7 text-white shadow-glow sm:p-9">
-            <div className="absolute -end-10 -top-10 h-40 w-40 rounded-full bg-white/10" />
-            <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-white/60">
-              {locale === "ar" ? "شركات ومؤسسات" : locale === "en" ? "Business & institutions" : "Entreprises & institutions"}
-            </p>
-            <h2 className="mt-3 text-2xl font-extrabold tracking-[-0.03em] sm:text-3xl">
-              {locale === "ar" ? "نقل الموظفين والرحلات الجماعية" : locale === "en" ? "Staff transport and group travel" : "Transport du personnel et voyages de groupe"}
-            </h2>
-            <p className="mt-3 max-w-md text-sm leading-7 text-white/70">
-              {locale === "ar" ? "عروض مخصصة للشركات، المدارس والجمعيات، مع تتبع وتنسيق يومي." : locale === "en" ? "Tailored offers for companies, schools and associations, with daily coordination." : "Des offres sur mesure pour entreprises, écoles et associations, avec coordination quotidienne."}
-            </p>
-            <Link href="/services" className={`${buttonClass("white", "md")} mt-6`}>
-              {locale === "ar" ? "طلب عرض أسعار" : locale === "en" ? "Request a quote" : "Demander un devis"}
-              <ArrowRight className="h-4 w-4 rtl:rotate-180" />
-            </Link>
-          </div>
-          <div className="relative overflow-hidden rounded-3xl border border-line bg-white p-7 shadow-soft sm:p-9">
-            <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-secondary">
-              {locale === "ar" ? "دعم 24/7" : locale === "en" ? "24/7 support" : "Assistance 24/7"}
-            </p>
-            <h2 className="mt-3 text-2xl font-extrabold tracking-[-0.03em] text-ink sm:text-3xl">
-              {locale === "ar" ? "هل تحتاجون مساعدة فورية؟" : locale === "en" ? "Need immediate help?" : "Besoin d'une aide immédiate ?"}
-            </h2>
-            <p className="mt-3 max-w-md text-sm leading-7 text-muted">
-              {locale === "ar" ? "فريق العمليات متاح على مدار الساعة للمساعدة في الحجز أو تتبع الأمانات." : locale === "en" ? "Our operations team is available around the clock for bookings and parcel tracking." : "Notre équipe d'exploitation répond 24 h/24 pour les réservations et le suivi des colis."}
-            </p>
-            <div className="mt-6 flex flex-wrap gap-2">
-              <Link href="/contact" className={buttonClass("primary", "md")}>
-                {locale === "ar" ? "اتصل بنا" : locale === "en" ? "Contact us" : "Nous contacter"}
-              </Link>
-              {settings?.emergency_phone ? (
-                <a href={`tel:${settings.emergency_phone.replace(/\s/g, "")}`} className={buttonClass("ghost", "md")}>
-                  {settings.emergency_phone}
-                </a>
-              ) : null}
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
+      </div>
+    </section></CmsBuiltin>
+    <CmsBuiltin sectionKey="section-1"><section className="home-service-strip"><div className="container-page"><Link href={cmsLink(cms, "link_4f6fddd0268f", "/lignes")}><Bus aria-hidden="true"/>{ct("text_cabe19f5af26", "Voyageurs", "المسافرون", "Passengers")}</Link><Link href={cmsLink(cms, "link_bb2b804fc069", "/irsaliyat")}><Package aria-hidden="true"/>{ct("text_6800adb9b73f", "Irsaliyat", "إرساليات", "Parcels")}</Link><Link href={cmsLink(cms, "link_a956e6e51f8c", "/services")}><Users aria-hidden="true"/>{ct("text_99069541d9d0", "Entreprises", "الشركات", "Business")}</Link></div></section></CmsBuiltin>
+    <CmsBuiltin sectionKey="reseau"><section id="reseau" className="container-page scroll-mt-28 py-10 sm:py-12"><TransportNetworkExplorer routes={routes} agencies={agencies} locale={locale} whatsapp={settings?.whatsapp_number ?? null} initialFrom={params.from} initialTo={params.to} initialDate={params.date} initialClass={params.class}/></section></CmsBuiltin>
+    {routes.length > 0 && <CmsBuiltin sectionKey="section-2"><section className="container-page pb-14 sm:pb-[4.5rem]"><SectionHeading eyebrow={ct("text_59970170bf38", "Prenez la route", "انطلقوا معنا", "Take the road")} title={ct("text_bdf17040d1e3", "Nos trajets à découvrir", "رحلات لاكتشافها", "Journeys to discover")} description={ct("text_6aa353ce7bd2", "Horaires, classes et tarifs publiés par SLKM.", "مواعيد وفئات وأسعار منشورة من SLKM.", "Schedules, classes and fares published by SLKM.")} href={cmsLink(cms, "link_0c58396ba61d", "/lignes")} linkLabel={ct("text_a696995454ad", "Voir toutes les lignes", "جميع الخطوط", "View all routes")}/><div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">{routes.slice(0, 3).map(route => <RouteCard key={route.id} route={route} locale={locale} whatsapp={settings?.whatsapp_number} compact/>)}</div></section></CmsBuiltin>}
+    {(fleet.length > 0 || classes.length > 0) && <CmsBuiltin sectionKey="section-3"><section className="border-y border-line bg-white py-14 sm:py-[4.5rem]"><div className="container-page"><SectionHeading eyebrow={ct("text_90a38e74ad1b", "L’expérience à bord", "تجربة على متن الحافلة", "The onboard experience")} title={ct("text_46c73613900a", "À chaque voyage, sa classe", "لكل رحلة فئتها", "A class for every journey")}/><div className="grid gap-6 md:grid-cols-3">{(fleet.length ? fleet : classes.map(category => ({ name: category, category, image_url: `/images/fleet/${category.toLowerCase()}.jpg`, capacity: "", features_fr: [], features_ar: [], features_en: [] }))).map(vehicle => <article key={`${vehicle.category}-${vehicle.name}`} className="photo-card fleet-card"><div className="relative aspect-[4/3] overflow-hidden"><Image src={vehicle.image_url} alt={vehicle.name} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-300 hover:scale-[1.025]"/></div><div className="p-[18px]"><p className="section-kicker">{vehicle.category}</p><h3 className="mt-2 text-xl font-extrabold text-primary-dark">{vehicle.name}</h3>{vehicle.capacity && <p className="mt-2 text-sm text-muted">{vehicle.capacity}</p>}<ul className="mt-3 space-y-2 text-sm text-muted">{(locale === "ar" ? vehicle.features_ar : locale === "en" ? vehicle.features_en : vehicle.features_fr).map(feature => <li key={feature}>{feature}</li>)}</ul></div></article>)}</div></div></section></CmsBuiltin>}
+    <CmsBuiltin sectionKey="section-4"><section className="border-y border-orange-100 bg-primary-soft py-10 sm:py-14"><div className="container-page">
+      <SectionHeading eyebrow={ct("text_0eb1407994e2", "Simple, du début à la fin", "بكل بساطة", "Simple, from start to finish")} title={ct("text_2c275f3b8261", "Votre prochain départ, en trois étapes", "رحلتكم القادمة في ثلاث خطوات", "Your next departure in three steps")}/>
+      <div className="booking-steps">{[
+            { title: ct("text_6e4daea88b21", "Trouvez votre trajet", "اعثروا على رحلتكم", "Find your journey"), text: ct("text_36c467672652", "Choisissez votre départ, votre destination et votre classe.", "اختاروا مدينة الانطلاق والوجهة والفئة.", "Choose your departure, destination and class.") },
+            { title: ct("text_98f73c3d4753", "Contactez votre agence", "تواصلوا مع وكالتكم", "Contact your agency"), text: ct("text_74871f5de39e", "Envoyez votre demande de réservation sur WhatsApp.", "أرسلوا طلب الحجز عبر واتساب.", "Send your booking request on WhatsApp.") },
+            { title: ct("text_727afbb7a838", "Confirmez votre départ", "أكدوا رحلتكم", "Confirm your departure"), text: ct("text_4199e93389c2", "Notre équipe vous accompagne pour finaliser votre voyage.", "فريقنا يساعدكم على إتمام ترتيبات الرحلة.", "Our team helps you finalise your journey.") },
+        ].map((step, index) => <div key={step.title} className="booking-step"><span className="booking-step-number" aria-hidden="true">0{index + 1}</span><div><h3 className="text-sm font-extrabold text-ink">{step.title}</h3><p className="mt-2 text-xs leading-6 text-muted">{step.text}</p></div></div>)}</div>
+    </div></section></CmsBuiltin>
+    <CmsBuiltin sectionKey="services"><section id="services" className="container-page scroll-mt-28 py-14 sm:py-[4.5rem]"><SectionHeading eyebrow={ct("text_372cbcef4167", "Bien plus qu’un trajet", "أكثر من مجرد رحلة", "More than a journey")} title={ct("text_9adc17724739", "La mobilité, sous toutes ses formes", "التنقل بكل أشكاله", "Mobility in every form")}/><div className="grid gap-6 md:grid-cols-3">{services.map(service => <Link key={service.href} href={service.href} className="photo-card service-card group"><div className="relative aspect-[16/11] overflow-hidden"><Image src={service.image} alt={service.title} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-300 group-hover:scale-[1.025]"/></div><div className="p-[21px]"><service.icon size={23} className="mb-4 text-primary"/><h3 className="text-lg font-extrabold text-primary-dark">{service.title}</h3><p className="mt-2 text-sm leading-6 text-muted">{service.text}</p><span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-primary">{ct("text_977ae6cb0c22", "Découvrir", "اكتشفوا", "Discover")}<ArrowRight size={16} className="rtl:rotate-180"/></span></div></Link>)}</div></section></CmsBuiltin>
+    <CmsBuiltin sectionKey="section-5"><section className="border-y border-line bg-white py-12"><div className="container-page"><SectionHeading title={ct("text_e768c27bd59e", "Le voyage commence par la confiance", "تبدأ الرحلة بالثقة", "Every journey begins with trust")}/><div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">{[
+            { icon: MapPin, title: ct("text_c523a8fa364c", "Un réseau d’agences", "شبكة وكالات", "An agency network"), text: ct("text_b849165e2bbf", "Consultez les adresses et coordonnées de nos agences.", "اطلعوا على عناوين وكالاتنا وبياناتها.", "Find agency addresses and contact details.") },
+            { icon: Bus, title: ct("text_f825cbf35d21", "Votre classe de voyage", "فئة رحلتكم", "Your travel class"), text: ct("text_61cae2f65de2", "Choisissez parmi les classes proposées sur votre ligne.", "اختاروا من الفئات المتاحة على خطكم.", "Choose from the classes offered on your route.") },
+            { icon: Headphones, title: ct("text_795070462d4e", "Un contact direct", "تواصل مباشر", "Direct contact"), text: ct("text_40883463e126", "Échangez avec notre équipe pour préparer votre trajet.", "تواصلوا مع فريقنا لتحضير رحلتكم.", "Talk to our team to plan your journey.") },
+            { icon: MessageCircle, title: ct("text_89eb7cdacbc7", "Une réservation simple", "حجز بسيط", "Simple booking"), text: ct("text_50c5012e9ee3", "Envoyez votre demande sur WhatsApp.", "أرسلوا طلبكم عبر واتساب.", "Send your request on WhatsApp.") },
+        ].map(item => <div key={item.title} className="commitment-card"><item.icon className="mb-4 text-primary" size={24}/><h3 className="font-bold text-primary-dark">{item.title}</h3><p className="mt-2 text-sm leading-6 text-muted">{item.text}</p></div>)}</div></div></section></CmsBuiltin>
+    <CmsBuiltin sectionKey="section-6"><section className="container-page py-14 sm:py-[4.5rem]"><div className="grid overflow-hidden rounded-2xl border border-line bg-white md:grid-cols-2"><div className="relative min-h-72"><Image src={cmsImage(cms, "image_7f366d3e4316", "/images/cargo-hold.jpg")} alt={ct("text_cd9fbef20b1d", "Service de messagerie Irsaliyat", "خدمة إرساليات", "Irsaliyat parcel service")} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover"/></div><div className="p-7 sm:p-9"><SectionHeading eyebrow="Irsaliyat" title={ct("text_621f1f364772", "Vos envois aussi prennent la route", "إرسالياتكم تسافر معنا أيضاً", "Your parcels travel too")} description={ct("text_7e64179e87d7", "Découvrez les tarifs de messagerie et contactez l’équipe Irsaliyat avec votre numéro de suivi.", "اكتشفوا أسعار الإرساليات وتواصلوا مع فريقنا برقم التتبع.", "Discover parcel rates and contact the Irsaliyat team with your tracking number.")}/><div className="flex flex-wrap gap-3"><Link href={cmsLink(cms, "link_bc3c45514639", "/irsaliyat#tracking")} className={buttonClass("secondary")}>{ct("text_34e096b32ef8", "Suivre un colis", "تتبع أمانة", "Track a parcel")}</Link><Link href={cmsLink(cms, "link_a8198dffee02", "/irsaliyat#tarifs")} className={buttonClass("ghost")}>{ct("text_e34fb32f832c", "Découvrir les tarifs", "اكتشاف الأسعار", "Explore rates")}</Link></div></div></div></section></CmsBuiltin>
+    {posts.length > 0 && <CmsBuiltin sectionKey="section-7"><section className="container-page pb-14"><SectionHeading eyebrow={ct("text_b0a309dfd8fd", "Le journal SLKM", "مجلة SLKM", "The SLKM journal")} title={ct("text_90163f055351", "L’actualité du voyage", "أخبار السفر", "Travel news")} href={cmsLink(cms, "link_ff68034cb2b1", "/blog")} linkLabel={ct("text_1bb3f29464e5", "Voir les actualités", "جميع الأخبار", "View all news")}/><div className="grid gap-6 md:grid-cols-3">{posts.map(post => <BlogCard key={post.id} post={post} locale={locale}/>)}</div></section></CmsBuiltin>}
+  </></CmsPage>;
 }

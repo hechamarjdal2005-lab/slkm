@@ -12,6 +12,7 @@ const DAY_LABELS: Record<string, string> = { MON: "Lun", TUE: "Mar", WED: "Mer",
 function RouteForm({ route, agencies }: { route?: Route; agencies: Agency[] }) {
   return (
     <form action={upsertRoute} className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+      <AdminField label="Ordre d’affichage"><AdminInput name="sort_order" type="number" min="0" max="10000" step="1" required defaultValue={route?.sort_order ?? 0} /></AdminField>
       {route ? <input type="hidden" name="id" value={route.id} /> : null}
       <AdminField label="Agence de départ">
         <AdminSelect name="from_agency_id" required defaultValue={route?.from_agency_id ?? ""}>

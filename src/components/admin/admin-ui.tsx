@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { cloneElement, isValidElement, useId, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { fieldClass, labelClass } from "@/components/ui";
 
@@ -74,21 +74,26 @@ export function AdminEmpty({ title, description }: { title: string; description:
 }
 
 export function AdminField({ label, children, className, hint }: { label: string; children: ReactNode; className?: string; hint?: string }) {
+  const generated = useId();
+  const single = isValidElement<{ id?: string }>(children) && (children.type === AdminInput || children.type === AdminTextarea || children.type === AdminSelect || ["input", "select", "textarea"].includes(String(children.type)));
+  const id = single ? children.props.id || generated : undefined;
   return (
-    <label className={cn("block", className)}>
-      <span className={labelClass}>{label}</span>
-      {children}
+    <div className={cn("block", className)}>
+      {single ? <label htmlFor={id} className={labelClass}>{label}</label> : <p className={labelClass}>{label}</p>}
+      {single ? cloneElement(children, { id }) : children}
       {hint ? <span className="mt-1 block text-[10px] leading-4 text-muted">{hint}</span> : null}
-    </label>
+    </div>
   );
 }
 
 export function AdminInput(props: React.InputHTMLAttributes<HTMLInputElement>) {
-  return <input {...props} className={cn(fieldClass, props.className)} />;
+  const arabic = props.name?.endsWith("_ar");
+  return <input lang={arabic ? "ar" : "fr"} dir={arabic ? "rtl" : "ltr"} {...props} className={cn(fieldClass, props.className)} />;
 }
 
 export function AdminTextarea(props: React.TextareaHTMLAttributes<HTMLTextAreaElement>) {
-  return <textarea {...props} className={cn(fieldClass, props.className)} />;
+  const arabic = props.name?.endsWith("_ar");
+  return <textarea lang={arabic ? "ar" : "fr"} dir={arabic ? "rtl" : "ltr"} {...props} className={cn(fieldClass, props.className)} />;
 }
 
 export function AdminSelect(props: React.SelectHTMLAttributes<HTMLSelectElement>) {

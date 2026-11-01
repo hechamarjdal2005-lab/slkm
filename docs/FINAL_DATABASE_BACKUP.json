@@ -1,0 +1,432 @@
+﻿{
+    "verified":  true,
+    "files":  [
+                  {
+                      "path":  "supabase/messagerie_setup.sql",
+                      "bytes":  7990,
+                      "sha256":  "FC4F5B4A38063C7F9C73F8CBF1725870CDC3CFAF0E79CB99A1417C5DB3077CEA"
+                  },
+                  {
+                      "path":  "supabase/schema.sql",
+                      "bytes":  26446,
+                      "sha256":  "7C8397E2F153015B0C1590A13B0A8B1FEC4FEA842D8A6B6E6FCD56BA097504F7"
+                  },
+                  {
+                      "path":  "supabase/seed.sql",
+                      "bytes":  50298,
+                      "sha256":  "93B50948B244620EBB3AE8B432BD9DA0C716BE186B49A68460A522C808E06FFE"
+                  },
+                  {
+                      "path":  "supabase/SLKM_SQL_ORDRE.zip",
+                      "bytes":  43390,
+                      "sha256":  "9D4590FE66B1E6A35A058552A096D9038B3EE99D206D8D30C67B18DB4E60B73B"
+                  },
+                  {
+                      "path":  "supabase/FINAL_SQL/01.sql",
+                      "bytes":  60807,
+                      "sha256":  "83E8CC3C820E0EF7824A1D667AD9D53CDD0B81B43B533932B97AAC0A1666A21E"
+                  },
+                  {
+                      "path":  "supabase/FINAL_SQL/02.sql",
+                      "bytes":  142627,
+                      "sha256":  "6C2DBD10C8321527D433C2374F9435D64F0B38D41630DB2EBAF98B5B0E06B834"
+                  },
+                  {
+                      "path":  "supabase/FINAL_SQL/03.sql",
+                      "bytes":  10493,
+                      "sha256":  "CF38A944D3BE459599E8E08891DF245AA47897CE910DC528C235DCCD1B0803C6"
+                  },
+                  {
+                      "path":  "supabase/FINAL_SQL/04.sql",
+                      "bytes":  18558,
+                      "sha256":  "A9F198ADBE4770E8A7D2808B34AD219A63A81CDA82476DE52A3CFCCC84567320"
+                  },
+                  {
+                      "path":  "supabase/FINAL_SQL/05.sql",
+                      "bytes":  19593,
+                      "sha256":  "4E65B65BA5D920A1E0FFCCD317311E42E6C92817B6B51042AE1437A0E14B2FB8"
+                  },
+                  {
+                      "path":  "supabase/FINAL_SQL/06.sql",
+                      "bytes":  128452,
+                      "sha256":  "A422DD64C27B68AF3137412DA7AA7E9C83CE191798746A6F8E6B4D5BAC6F1808"
+                  },
+                  {
+                      "path":  "supabase/FINAL_SQL/07.sql",
+                      "bytes":  3495,
+                      "sha256":  "6D246697DE6D4CB5478B2F1836F1986CF9785EB36611F0AF1AA169BC63A0A187"
+                  },
+                  {
+                      "path":  "supabase/FINAL_SQL/08.sql",
+                      "bytes":  25716,
+                      "sha256":  "A8BB00D449F7EF2482511CFABFF75E111A1DED2BC95DE02EB969B233DB1078D0"
+                  },
+                  {
+                      "path":  "supabase/FINAL_SQL/09.sql",
+                      "bytes":  1884,
+                      "sha256":  "FEFB97E96536316AB1E1494809A12115538A19B75723FE64C16EC66FBDFFB764"
+                  },
+                  {
+                      "path":  "supabase/FINAL_SQL/README.md",
+                      "bytes":  4846,
+                      "sha256":  "AF0621FDD502DD58B6544B1B2B62ED7151463A393D59AE70BAA4DC610C9CAB83"
+                  },
+                  {
+                      "path":  "supabase/migrations/20261030180000_messagerie_network.sql",
+                      "bytes":  7988,
+                      "sha256":  "76EBEF7C5AEFAD7F1425E44696913ED5981004F3C040B2A2E5569AAB5AF53408"
+                  },
+                  {
+                      "path":  "supabase/migrations/20261031090000_site_cms_structure.sql",
+                      "bytes":  7499,
+                      "sha256":  "4CC5E2BCE31F23CC266F93D51ED1536F5D60D0A540FC664C6FAD136A794EACF4"
+                  },
+                  {
+                      "path":  "supabase/migrations/20261031091000_site_cms_policies.sql",
+                      "bytes":  5375,
+                      "sha256":  "B6A3581B987B84E26F595CC71E6382BA6216210B32718739E7BBE18FE8692A41"
+                  },
+                  {
+                      "path":  "supabase/migrations/20261031092000_site_cms_defaults.sql",
+                      "bytes":  45656,
+                      "sha256":  "4F57ABAC07277DA194582272A7549DB83F17E371603F89C2F333532A0AFC64B8"
+                  },
+                  {
+                      "path":  "supabase/slkm_final_sql/00_existing_schema_preflight.sql",
+                      "bytes":  10035,
+                      "sha256":  "BEBB8D8AEC8CFDE85F172646114DEF029082E261BF7BF1A5F2BF87E8DF3973A2"
+                  },
+                  {
+                      "path":  "supabase/slkm_final_sql/01_core_schema_and_storage.sql",
+                      "bytes":  42310,
+                      "sha256":  "F63DB4E4A3BF2ACEDB04C9C6BD4937E335B1C5D01C0EB9A5D768A897B0446BDB"
+                  },
+                  {
+                      "path":  "supabase/slkm_final_sql/02_messagerie.sql",
+                      "bytes":  11984,
+                      "sha256":  "27E4233B6585B96F3194B31138011D6B55F805EBA5EF6D426BD75691EEC3A78E"
+                  },
+                  {
+                      "path":  "supabase/slkm_final_sql/03_cms_structure.sql",
+                      "bytes":  15272,
+                      "sha256":  "8EAD73B27CEDD31D576DE230B21EC979C277527564470B34FE440EB0AEFCB930"
+                  },
+                  {
+                      "path":  "supabase/slkm_final_sql/04_cms_authorization.sql",
+                      "bytes":  5375,
+                      "sha256":  "B6A3581B987B84E26F595CC71E6382BA6216210B32718739E7BBE18FE8692A41"
+                  },
+                  {
+                      "path":  "supabase/slkm_final_sql/05_cms_defaults.sql",
+                      "bytes":  45656,
+                      "sha256":  "4F57ABAC07277DA194582272A7549DB83F17E371603F89C2F333532A0AFC64B8"
+                  },
+                  {
+                      "path":  "supabase/slkm_final_sql/06_complete_controls.sql",
+                      "bytes":  1614,
+                      "sha256":  "D02FECD89AF59759217A3D14CD19862229288309952BC27DA15E7938B24589C9"
+                  },
+                  {
+                      "path":  "supabase/slkm_final_sql/07_constraints_verification.sql",
+                      "bytes":  63187,
+                      "sha256":  "988F7D44FEBA8F1F71D08793C0F927D764EA3136C0C9439C032D75A4EFDA371E"
+                  },
+                  {
+                      "path":  "supabase/slkm_final_sql/08_editorial_defaults.sql",
+                      "bytes":  4992,
+                      "sha256":  "5867B416E186F566B5E0E47F3E1A75481DDFF3EDF655E87023CFC8B68D67A5D5"
+                  },
+                  {
+                      "path":  "supabase/slkm_final_sql/09_messagerie_details.sql",
+                      "bytes":  1090,
+                      "sha256":  "CE6A33CB75E85AC4FA0FDF5FAA1ECB642A304DDB7EA2892EFDEC1CE6A2E3F601"
+                  },
+                  {
+                      "path":  "supabase/slkm_final_sql/canonical-schema.json",
+                      "bytes":  44183,
+                      "sha256":  "118CE4D0655B13DEF31687437CEB08569E21BD4A6EEBB3E80C778224D7C04C82"
+                  },
+                  {
+                      "path":  "supabase/slkm_final_sql/expected-schema.json",
+                      "bytes":  25390,
+                      "sha256":  "34C3185E29C2916A30B05AB6D52CD23F33B674E52FA2C0E7F5F06D31CF417ADD"
+                  },
+                  {
+                      "path":  "supabase/slkm_final_sql/README_EXECUTION.md",
+                      "bytes":  9302,
+                      "sha256":  "04F47126EB0A8D83E0B38D32E14B132BBE17A66ADC1623D2A25CF6647AD7E858"
+                  },
+                  {
+                      "path":  "supabase/slkm_final_sql/VALIDATION_QUERIES.sql",
+                      "bytes":  8355,
+                      "sha256":  "F1C07CADA2D734F545E14D63DEFDDCB309C7E5D4DD75FAE50FE807E369D045ED"
+                  },
+                  {
+                      "path":  "supabase/SLKM_SQL_ORDRE/01_PREREQUIS.sql",
+                      "bytes":  15004,
+                      "sha256":  "FF0736D5CD46F07DB7E13788144B5F972D7DD61370E9382C846AADD213F1BFAA"
+                  },
+                  {
+                      "path":  "supabase/SLKM_SQL_ORDRE/02_TABLES_ET_COLONNES.sql",
+                      "bytes":  46721,
+                      "sha256":  "455D48639BD9F667E88B46A1432BD34B676B1FC9A4C6E4FAE45B1427D290A67D"
+                  },
+                  {
+                      "path":  "supabase/SLKM_SQL_ORDRE/03_CLES_ET_CONTRAINTES.sql",
+                      "bytes":  142562,
+                      "sha256":  "AC47550D1B3624DD5BF93B6E75D183FE7622186B809E33C12E0AE51CA947B8DE"
+                  },
+                  {
+                      "path":  "supabase/SLKM_SQL_ORDRE/04_STORAGE_BUCKETS.sql",
+                      "bytes":  1737,
+                      "sha256":  "3491771380BDC2C27B1DF67DE1864D27A35E29D56442D84DE620C129D8507C47"
+                  },
+                  {
+                      "path":  "supabase/SLKM_SQL_ORDRE/05_RELATIONS_FOREIGN_KEYS.sql",
+                      "bytes":  8725,
+                      "sha256":  "26016ABA58FEDF660CB8D095F4137ED024054DE2AE1447CADE1526089B4BBFF5"
+                  },
+                  {
+                      "path":  "supabase/SLKM_SQL_ORDRE/06_FONCTIONS_TRIGGERS_INDEX.sql",
+                      "bytes":  18506,
+                      "sha256":  "E961E4495760003F8469A0B06CF0CF516A7ECE11F2150048F41DD07D1D1F0ACD"
+                  },
+                  {
+                      "path":  "supabase/SLKM_SQL_ORDRE/07_SECURITE_RLS.sql",
+                      "bytes":  21543,
+                      "sha256":  "36D803D46D7FEC997BBB15A36D04EC70BCDC45371EB39CE382C58BBE257D55DF"
+                  },
+                  {
+                      "path":  "supabase/SLKM_SQL_ORDRE/08_CONTENU_INITIAL.sql",
+                      "bytes":  128401,
+                      "sha256":  "8196204FD98C954F26CC73EC0DD8C7F92B5D6031DA01B89C8CC4FB230B2EC046"
+                  },
+                  {
+                      "path":  "supabase/SLKM_SQL_ORDRE/09_VERIFICATION.sql",
+                      "bytes":  23592,
+                      "sha256":  "0E1E9342778010885DF58C846A3D9F275774CCDD3EED26457ABB15A817C0BF59"
+                  },
+                  {
+                      "path":  "supabase/SLKM_SQL_ORDRE/LISEZ_MOI.txt",
+                      "bytes":  1364,
+                      "sha256":  "C909C177298813DE6DC568548BCF061D741E8EBAE5498A01FC63D0EAD0B794D9"
+                  },
+                  {
+                      "path":  "supabase/SLKM_SQL_ORDRE/TESTS.json",
+                      "bytes":  2335,
+                      "sha256":  "2F03ED3BA04BF5896C405AA17455C9E198EE04B749E07FAF4224E9A07CD054B7"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/00_prerequisites.sql",
+                      "bytes":  15004,
+                      "sha256":  "FF0736D5CD46F07DB7E13788144B5F972D7DD61370E9382C846AADD213F1BFAA"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/01_tables_and_columns.sql",
+                      "bytes":  46721,
+                      "sha256":  "455D48639BD9F667E88B46A1432BD34B676B1FC9A4C6E4FAE45B1427D290A67D"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/02_keys_and_checks.sql",
+                      "bytes":  142562,
+                      "sha256":  "AC47550D1B3624DD5BF93B6E75D183FE7622186B809E33C12E0AE51CA947B8DE"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/03_storage_buckets.sql",
+                      "bytes":  1737,
+                      "sha256":  "3491771380BDC2C27B1DF67DE1864D27A35E29D56442D84DE620C129D8507C47"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/04_foreign_keys.sql",
+                      "bytes":  8725,
+                      "sha256":  "26016ABA58FEDF660CB8D095F4137ED024054DE2AE1447CADE1526089B4BBFF5"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/05_functions_triggers_indexes.sql",
+                      "bytes":  18506,
+                      "sha256":  "E961E4495760003F8469A0B06CF0CF516A7ECE11F2150048F41DD07D1D1F0ACD"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/06_rls_and_grants.sql",
+                      "bytes":  21543,
+                      "sha256":  "36D803D46D7FEC997BBB15A36D04EC70BCDC45371EB39CE382C58BBE257D55DF"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/07_editorial_defaults.sql",
+                      "bytes":  128401,
+                      "sha256":  "8196204FD98C954F26CC73EC0DD8C7F92B5D6031DA01B89C8CC4FB230B2EC046"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/INSTALL_OR_UPGRADE.sql",
+                      "bytes":  383874,
+                      "sha256":  "09FE4F47DA464A94A9273E827A6D71D434E3C73BBA10C615D73F2E6063A77AD3"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/README_EXECUTION.md",
+                      "bytes":  12911,
+                      "sha256":  "1C0C04BD86575DCD22BF1C5DD7508B4A579A069FDF3818B9BDA71A98480DEF57"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/SCHEMA_CONTRACT.json",
+                      "bytes":  104826,
+                      "sha256":  "1A34D92CF255A33BE0EE7C7BE20CAD6BEC2F42B7F59DDC84AD5C7F363DDCA86A"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/SOURCE_PROVENANCE.json",
+                      "bytes":  1549,
+                      "sha256":  "004FEB9F1F3E513B3D7C46AA944E145412758A9E97E7E031043926B70E1816F2"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/VALIDATION_QUERIES.sql",
+                      "bytes":  23592,
+                      "sha256":  "0E1E9342778010885DF58C846A3D9F275774CCDD3EED26457ABB15A817C0BF59"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/WORKFLOWS.json",
+                      "bytes":  670,
+                      "sha256":  "30427FE640C2DF1157F421C1B93D6D8FF34CDC3EB24CC50650DA949196C6FC20"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/fresh/00_assert_fresh.sql",
+                      "bytes":  540,
+                      "sha256":  "81BC144766DE1C2BD8E9ECC0AB2CF6DF03CEABEB45E9278A170B5B2F256087E6"
+                  },
+                  {
+                      "path":  "supabase/slkm_sql_verified/upgrade/00_upgrade_review.sql",
+                      "bytes":  597,
+                      "sha256":  "258A02A1F46BC635642669DE4E52B7D20E1E3680A64CDDBFEADFA107B5678993"
+                  },
+                  {
+                      "path":  "scripts/audit-inventory.cjs",
+                      "bytes":  3806,
+                      "sha256":  "C1B53C0C45F06B5BB31997E44E89C4CE4484636484AFBC8232EA44773E5DB2EB"
+                  },
+                  {
+                      "path":  "scripts/audit-sql-source.cjs",
+                      "bytes":  8419,
+                      "sha256":  "9DC190473A1ADE6DA7F2175FF66EC456399C465E6FA9C919E12884D043436F48"
+                  },
+                  {
+                      "path":  "scripts/build-cms-seed.cjs",
+                      "bytes":  1786,
+                      "sha256":  "89D42AAEB922FE995F7DA729A6D8969BB47B6E9A8A8F057229528939D3F87175"
+                  },
+                  {
+                      "path":  "scripts/build-final-sql.cjs",
+                      "bytes":  7273,
+                      "sha256":  "65DBB56AD3C97DBB8D97CC8692EB6E942EFDDCF6CFE83D80C696D9CE84A3C716"
+                  },
+                  {
+                      "path":  "scripts/build-schema-guards.cjs",
+                      "bytes":  4288,
+                      "sha256":  "3C4E9F651665E948929E6246E933F20F5C1A0F3F3CAF5353E3CDDE48D266112D"
+                  },
+                  {
+                      "path":  "scripts/build-sql-single-file.cjs",
+                      "bytes":  1363,
+                      "sha256":  "1E6C3B2161F2D8FA2426FAC998E499DDA4A377080C3FA9E6BE203192AC31AB58"
+                  },
+                  {
+                      "path":  "scripts/build-sql-verified.cjs",
+                      "bytes":  22943,
+                      "sha256":  "5FD0464A15BEAF3DAFAD4343ACABD3D740D0289B2ECAD9988FBE7706CE62C063"
+                  },
+                  {
+                      "path":  "scripts/migrate-cms-links.cjs",
+                      "bytes":  2900,
+                      "sha256":  "F61CC7D3B2BD76AFE7314E3C2553BACB7C53F8AD015FE076130B417760ECEA27"
+                  },
+                  {
+                      "path":  "scripts/migrate-public-copy.cjs",
+                      "bytes":  12460,
+                      "sha256":  "79AF55AF0D2849EAB489004D80B46D4FF3480574064FA86CB61B2C973F77AD36"
+                  },
+                  {
+                      "path":  "scripts/prepare-numbered-sql.cjs",
+                      "bytes":  6676,
+                      "sha256":  "A346D0421F47E7CF79096395C04F97C9762AF296584046081009910B8769EB4B"
+                  },
+                  {
+                      "path":  "scripts/preview-orange.cjs",
+                      "bytes":  1655,
+                      "sha256":  "4BD750425601825E0FCA0553CA702B333DECF92C4EC3FBC40FD6AD415A07C237"
+                  },
+                  {
+                      "path":  "scripts/probe-supabase-readonly.cjs",
+                      "bytes":  1500,
+                      "sha256":  "EA6E91AD6305CB04C7811AFE1BA9DF9F601A806F07C904E506477B7A4F081FA6"
+                  },
+                  {
+                      "path":  "scripts/smoke-public.cjs",
+                      "bytes":  2817,
+                      "sha256":  "44EE85D2E39A42BA953F3AD8778E3C0E97F60AA46ED8841DB44CA0FBF6D7223B"
+                  },
+                  {
+                      "path":  "scripts/sql-schema-contract.json",
+                      "bytes":  104826,
+                      "sha256":  "1A34D92CF255A33BE0EE7C7BE20CAD6BEC2F42B7F59DDC84AD5C7F363DDCA86A"
+                  },
+                  {
+                      "path":  "scripts/sql-test-support.cjs",
+                      "bytes":  1358,
+                      "sha256":  "4319DE49E3252714A48C1A0B4B118093B5CFEBEF785016CF37671184A84A6E82"
+                  },
+                  {
+                      "path":  "scripts/sql-verified-support.cjs",
+                      "bytes":  1358,
+                      "sha256":  "4319DE49E3252714A48C1A0B4B118093B5CFEBEF785016CF37671184A84A6E82"
+                  },
+                  {
+                      "path":  "scripts/test-cms-controls.cjs",
+                      "bytes":  2777,
+                      "sha256":  "486D5586D67216E590F6B097B44A7F24A9EF1AC32058DAB5525777D25294804F"
+                  },
+                  {
+                      "path":  "scripts/test-cms-sql.cjs",
+                      "bytes":  7535,
+                      "sha256":  "84E342C75FF7FF9D286094C7FF068990560C7183FE5AC87FAB1C9533DEDECEF9"
+                  },
+                  {
+                      "path":  "scripts/test-final-sql.cjs",
+                      "bytes":  10318,
+                      "sha256":  "79942E10B63047AC1626D58140EB4596E9978F1F39EB722F5537EA1495CB1F56"
+                  },
+                  {
+                      "path":  "scripts/test-messagerie.cjs",
+                      "bytes":  3261,
+                      "sha256":  "34EA49AF4DB6423D321F1631ED1866977FEEFF8686C00BC12CDD5A282DDC3EE2"
+                  },
+                  {
+                      "path":  "scripts/test-public-ui.cjs",
+                      "bytes":  19331,
+                      "sha256":  "F31724CC510C265809B60EF3A73CB93BD2F276AE96FF593B8BCF066A799CA6B5"
+                  },
+                  {
+                      "path":  "scripts/test-sql-single-file.cjs",
+                      "bytes":  2391,
+                      "sha256":  "C40AECAD3E2864A9B3C66A2B66549EFFCD83BC104F491CED5A165157B09800C9"
+                  },
+                  {
+                      "path":  "scripts/test-sql-verified.cjs",
+                      "bytes":  21112,
+                      "sha256":  "F2A9E59A968D19827B80FDD199EED4546539C303EAAF1849B53681935218EC05"
+                  },
+                  {
+                      "path":  "scripts/test-transport.cjs",
+                      "bytes":  2708,
+                      "sha256":  "4B1996BC22F848B1AB67C304CA4E65B306B4EACB6D4D3456F45CFC52722E9B84"
+                  },
+                  {
+                      "path":  "scripts/verify-final-sql.cjs",
+                      "bytes":  7558,
+                      "sha256":  "D0BED492104AD4A21538F35846D8116858E8FE09C6BAF55F151E7FE96207EB84"
+                  },
+                  {
+                      "path":  "scripts/write-sql-audit-table.cjs",
+                      "bytes":  2363,
+                      "sha256":  "F7BB605FEA962FFFD8810D0D97D989F21C46EFFF2A801AFFCE504CA12E8125E5"
+                  }
+              ],
+    "archive":  "docs/archive/SQL_BEFORE_FINAL_DATABASE_20261031.zip",
+    "verifiedAt":  "2026-10-31T15:54:39.4772225Z"
+}

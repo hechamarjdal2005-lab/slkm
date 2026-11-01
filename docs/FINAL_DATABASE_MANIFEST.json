@@ -1,0 +1,52 @@
+﻿{
+    "backupEntries":  85,
+    "files":  [
+                  {
+                      "file":  "supabase/FINAL_DATABASE/01.sql",
+                      "bytes":  60807,
+                      "sha256":  "83E8CC3C820E0EF7824A1D667AD9D53CDD0B81B43B533932B97AAC0A1666A21E"
+                  },
+                  {
+                      "file":  "supabase/FINAL_DATABASE/02.sql",
+                      "bytes":  169913,
+                      "sha256":  "8FD478982A6116B5D32333C0CC3DE7D8E11D3A11BD7107B7CF06A7CB2B440DB9"
+                  },
+                  {
+                      "file":  "supabase/FINAL_DATABASE/03.sql",
+                      "bytes":  10493,
+                      "sha256":  "CF38A944D3BE459599E8E08891DF245AA47897CE910DC528C235DCCD1B0803C6"
+                  },
+                  {
+                      "file":  "supabase/FINAL_DATABASE/04.sql",
+                      "bytes":  18558,
+                      "sha256":  "A9F198ADBE4770E8A7D2808B34AD219A63A81CDA82476DE52A3CFCCC84567320"
+                  },
+                  {
+                      "file":  "supabase/FINAL_DATABASE/05.sql",
+                      "bytes":  19593,
+                      "sha256":  "4E65B65BA5D920A1E0FFCCD317311E42E6C92817B6B51042AE1437A0E14B2FB8"
+                  },
+                  {
+                      "file":  "supabase/FINAL_DATABASE/06.sql",
+                      "bytes":  134506,
+                      "sha256":  "C41EC3CB755FB891B530580E0DB23054299F99E20799B7F07CEB522435724A5A"
+                  },
+                  {
+                      "file":  "supabase/FINAL_DATABASE/07.sql",
+                      "bytes":  3495,
+                      "sha256":  "6D246697DE6D4CB5478B2F1836F1986CF9785EB36611F0AF1AA169BC63A0A187"
+                  },
+                  {
+                      "file":  "supabase/FINAL_DATABASE/08.sql",
+                      "bytes":  25716,
+                      "sha256":  "A8BB00D449F7EF2482511CFABFF75E111A1DED2BC95DE02EB969B233DB1078D0"
+                  },
+                  {
+                      "file":  "supabase/FINAL_DATABASE/09.sql",
+                      "bytes":  1884,
+                      "sha256":  "FEFB97E96536316AB1E1494809A12115538A19B75723FE64C16EC66FBDFFB764"
+                  }
+              ],
+    "verifiedAt":  "2026-10-31T16:19:53.7766705Z",
+    "backupReverified":  true
+}

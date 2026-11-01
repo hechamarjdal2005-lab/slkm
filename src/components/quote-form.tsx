@@ -1,4 +1,6 @@
 "use client";
+import { createTranslator } from "@/lib/cms";
+import { usePageCMS } from "@/components/cms-provider";
 
 import { useActionState, useEffect, useRef } from "react";
 import { AlertCircle, CheckCircle2, Send } from "lucide-react";
@@ -9,6 +11,8 @@ import { fieldClass, labelClass } from "./ui";
 import { SubmitButton } from "./submit-button";
 
 export function QuoteForm({ locale }: { locale: Locale }) {
+  const cms = usePageCMS("services");
+  const ct = createTranslator(cms, locale);
   const [state, action] = useActionState(submitCorporateQuote, initialActionState);
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -17,14 +21,14 @@ export function QuoteForm({ locale }: { locale: Locale }) {
   }, [state.status]);
 
   return (
-    <form ref={formRef} action={action} className="rounded-3xl border border-line bg-white p-5 shadow-soft sm:p-7">
+    <form ref={formRef} action={action} className="slkm-form rounded-3xl border border-line bg-white p-5 shadow-soft sm:p-7">
       <input type="hidden" name="locale" value={locale} />
       <div className="mb-5">
         <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-primary">
-          {locale === "ar" ? "طلب عرض أسعار" : locale === "en" ? "Request a quote" : "Demander un devis"}
+          {ct("text_3767bd206863", "Demander un devis", "طلب عرض أسعار", "Request a quote")}
         </p>
-        <h2 className="mt-1 text-2xl font-extrabold tracking-[-0.03em] text-ink">
-          {locale === "ar" ? "حلول تنقل مصممة لشركتكم" : locale === "en" ? "Mobility built around your team" : "Une mobilité adaptée à vos équipes"}
+        <h2 className="mt-1 text-[1.375rem] font-extrabold tracking-[-0.03em] text-ink">
+          {ct("text_2456f711edaf", "Une mobilité adaptée à vos équipes", "حلول تنقل مصممة لشركتكم", "Mobility built around your team")}
         </h2>
       </div>
 
@@ -42,59 +46,59 @@ export function QuoteForm({ locale }: { locale: Locale }) {
 
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="sm:col-span-2">
-          <label htmlFor="quote-company" className={labelClass}>{locale === "ar" ? "اسم الشركة" : locale === "en" ? "Company" : "Entreprise"} *</label>
-          <input id="quote-company" name="company_name" required className={fieldClass} placeholder="SLKM Partner" />
+          <label htmlFor="quote-company" className={labelClass}>{ct("text_4b000c1c5bff", "Entreprise", "اسم الشركة", "Company")} *</label>
+          <input id="quote-company" name="company_name" autoComplete="organization" required className={fieldClass} placeholder="SLKM Partner" />
         </div>
         <div>
-          <label htmlFor="quote-contact" className={labelClass}>{locale === "ar" ? "الشخص المسؤول" : locale === "en" ? "Contact person" : "Contact"} *</label>
-          <input id="quote-contact" name="contact_person" required className={fieldClass} />
+          <label htmlFor="quote-contact" className={labelClass}>{ct("text_2b5c3d26721a", "Contact", "الشخص المسؤول", "Contact person")} *</label>
+          <input id="quote-contact" name="contact_person" autoComplete="name" required className={fieldClass} />
         </div>
         <div>
-          <label htmlFor="quote-phone" className={labelClass}>{locale === "ar" ? "الهاتف" : locale === "en" ? "Phone" : "Téléphone"} *</label>
-          <input id="quote-phone" name="phone" required type="tel" className={fieldClass} placeholder="+212 6..." />
+          <label htmlFor="quote-phone" className={labelClass}>{ct("text_cc4c424b571f", "Téléphone", "الهاتف", "Phone")} *</label>
+          <input id="quote-phone" name="phone" autoComplete="tel" required type="tel" dir="ltr" className={fieldClass} placeholder="+212 6..." />
         </div>
         <div>
-          <label htmlFor="quote-email" className={labelClass}>{locale === "ar" ? "البريد الإلكتروني" : locale === "en" ? "Email" : "E-mail"} *</label>
-          <input id="quote-email" name="email" required type="email" className={fieldClass} />
+          <label htmlFor="quote-email" className={labelClass}>{ct("text_2550d962e536", "E-mail", "البريد الإلكتروني", "Email")} *</label>
+          <input id="quote-email" name="email" autoComplete="email" required type="email" dir="ltr" className={fieldClass} />
         </div>
         <div>
-          <label htmlFor="quote-passengers" className={labelClass}>{locale === "ar" ? "عدد المسافرين" : locale === "en" ? "Passengers" : "Passagers"} *</label>
+          <label htmlFor="quote-passengers" className={labelClass}>{ct("text_da26234dc917", "Passagers", "عدد المسافرين", "Passengers")} *</label>
           <input id="quote-passengers" name="passenger_count" required type="number" min="1" className={fieldClass} placeholder="40" />
         </div>
         <div>
-          <label htmlFor="quote-from" className={labelClass}>{locale === "ar" ? "مدينة الانطلاق" : locale === "en" ? "Origin city" : "Ville de départ"} *</label>
+          <label htmlFor="quote-from" className={labelClass}>{ct("text_0bc226ec29cd", "Ville de départ", "مدينة الانطلاق", "Origin city")} *</label>
           <input id="quote-from" name="origin_city" required className={fieldClass} />
         </div>
         <div>
-          <label htmlFor="quote-to" className={labelClass}>{locale === "ar" ? "مدينة الوصول" : locale === "en" ? "Destination" : "Ville d'arrivée"} *</label>
+          <label htmlFor="quote-to" className={labelClass}>{ct("text_88aaac5494d3", "Ville d'arrivée", "مدينة الوصول", "Destination")} *</label>
           <input id="quote-to" name="destination_city" required className={fieldClass} />
         </div>
         <div className="sm:col-span-2">
-          <span className={labelClass}>{locale === "ar" ? "نوع الخدمة" : locale === "en" ? "Service type" : "Type de service"} *</span>
+          <span className={labelClass}>{ct("text_13f85bc0d96a", "Type de service", "نوع الخدمة", "Service type")} *</span>
           <div className="grid gap-2 sm:grid-cols-2">
             <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-line bg-white px-4 py-3 text-sm font-semibold text-ink transition has-[:checked]:border-primary has-[:checked]:bg-primary-soft">
               <input type="radio" name="service_type" value="personnel" defaultChecked className="h-4 w-4 text-primary" />
-              {locale === "ar" ? "نقل الموظفين" : locale === "en" ? "Staff transport" : "Transport du personnel"}
+              {ct("text_e6d84389cc74", "Transport du personnel", "نقل الموظفين", "Staff transport")}
             </label>
             <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-line bg-white px-4 py-3 text-sm font-semibold text-ink transition has-[:checked]:border-primary has-[:checked]:bg-primary-soft">
               <input type="radio" name="service_type" value="tourisme" className="h-4 w-4 text-primary" />
-              {locale === "ar" ? "رحلات سياحية" : locale === "en" ? "Tourism trips" : "Voyages touristiques"}
+              {ct("text_9b0c6974de4d", "Voyages touristiques", "رحلات سياحية", "Tourism trips")}
             </label>
           </div>
         </div>
         <div className="sm:col-span-2">
-          <label htmlFor="quote-details" className={labelClass}>{locale === "ar" ? "تفاصيل إضافية" : locale === "en" ? "Additional details" : "Détails complémentaires"}</label>
-          <textarea id="quote-details" name="details" rows={4} className={fieldClass} placeholder={locale === "ar" ? "التواريخ، التردد، نقطة الانطلاق..." : locale === "en" ? "Dates, frequency, pickup point..." : "Dates, fréquence, point de prise en charge..."} />
+          <label htmlFor="quote-details" className={labelClass}>{ct("text_0aa120a657ef", "Détails complémentaires", "تفاصيل إضافية", "Additional details")}</label>
+          <textarea id="quote-details" name="details" rows={4} className={fieldClass} placeholder={ct("text_b8675b04f918", "Dates, fréquence, point de prise en charge...", "التواريخ، التردد، نقطة الانطلاق...", "Dates, frequency, pickup point...")} />
         </div>
       </div>
 
       <div className="mt-5 flex flex-col gap-3 border-t border-line pt-5 sm:flex-row sm:items-center sm:justify-between">
         <p className="max-w-sm text-[11px] leading-5 text-muted">
-          {locale === "ar" ? "بياناتكم محمية ولا تُستخدم إلا لمعالجة الطلب." : locale === "en" ? "Your details are protected and only used to process this request." : "Vos données sont protégées et utilisées uniquement pour traiter cette demande."}
+          {ct("text_d3440d913b14", "Vos données sont protégées et utilisées uniquement pour traiter cette demande.", "بياناتكم محمية ولا تُستخدم إلا لمعالجة الطلب.", "Your details are protected and only used to process this request.")}
         </p>
-        <SubmitButton pendingLabel={locale === "ar" ? "جارٍ الإرسال..." : locale === "en" ? "Sending..." : "Envoi..."}>
+        <SubmitButton pendingLabel={ct("text_bf2f14e82f15", "Envoi...", "جارٍ الإرسال...", "Sending...")}>
           <Send className="h-4 w-4" />
-          {locale === "ar" ? "إرسال الطلب" : locale === "en" ? "Send request" : "Envoyer la demande"}
+          {ct("text_642583f3af3a", "Envoyer la demande", "إرسال الطلب", "Send request")}
         </SubmitButton>
       </div>
     </form>

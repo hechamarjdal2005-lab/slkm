@@ -2,6 +2,7 @@ import { cache } from "react";
 import { createClient as createSupabaseClient, type SupabaseClient } from "@supabase/supabase-js";
 import { getSupabaseEnv } from "./supabase/env";
 import { createClient as createServerSupabaseClient } from "./supabase/server";
+import { authorizedAdminClient } from "./supabase/admin";
 import type {
   Agency,
   BlogPost,
@@ -21,6 +22,7 @@ function getPublicClient() {
   if (!publicClient) {
     publicClient = createSupabaseClient(env.url, env.anonKey, {
       auth: { persistSession: false, autoRefreshToken: false },
+      global: { fetch: (input, init) => fetch(input, { ...init, cache: "no-store", signal: init?.signal ?? AbortSignal.timeout(12000) }) },
     });
   }
   return publicClient;
@@ -41,7 +43,7 @@ export const getSiteSettings = cache(async (): Promise<SiteSettings | null> => {
 export const getAgencies = cache(async (includeInactive = false): Promise<Agency[]> => {
   const supabase = getPublicClient();
   if (!supabase) return [];
-  let query = supabase.from("agencies").select("*").order("city_fr", { ascending: true });
+  let query = supabase.from("agencies").select("*").order("sort_order").order("city_fr", { ascending: true });
   if (!includeInactive) query = query.eq("is_active", true);
   const { data, error } = await query;
   report("agencies", error);
@@ -52,7 +54,7 @@ export const getRoutes = cache(async (): Promise<RouteWithAgencies[]> => {
   const supabase = getPublicClient();
   if (!supabase) return [];
   const [routeResult, agencies] = await Promise.all([
-    supabase.from("routes").select("*").eq("is_active", true).order("departure_time", { ascending: true }),
+    supabase.from("routes").select("*").eq("is_active", true).order("sort_order").order("departure_time", { ascending: true }),
     getAgencies(),
   ]);
   report("routes", routeResult.error);
@@ -108,7 +110,7 @@ async function adminClient() {
   const env = getSupabaseEnv();
   if (!env) return null;
   try {
-    return await createServerSupabaseClient();
+    return await authorizedAdminClient();
   } catch (error) {
     report("admin_client", error as Error);
     return null;
@@ -116,6 +118,7 @@ async function adminClient() {
 }
 
 export interface AdminSnapshot {
+  error?: string;
   agencies: Agency[];
   routes: Route[];
   rates: ParcelRate[];
@@ -150,6 +153,7 @@ export async function getAdminSnapshot(): Promise<AdminSnapshot> {
   report("admin_settings", settings.error);
 
   return {
+    error: [agencies, routes, rates, quotes, posts, messages, settings].some(result => result.error) ? "Certaines données n’ont pas pu être chargées. Vérifiez les migrations et les permissions Supabase avant de modifier le site." : undefined,
     agencies: (agencies.data as Agency[] | null) ?? [],
     routes: (routes.data as Route[] | null) ?? [],
     rates: (rates.data as ParcelRate[] | null) ?? [],

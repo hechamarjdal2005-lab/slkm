@@ -24,10 +24,10 @@ export function AdminShell({
   const pathname = usePathname();
   const isLoginPage = pathname === "/admin/login" || pathname.startsWith("/admin/login/");
 
-  if (isLoginPage) return <>{children}</>;
+  if (isLoginPage) return <div className="admin-interface" lang="fr" dir="ltr">{children}</div>;
 
   return (
-    <div className="min-h-screen bg-surface-muted/50">
+    <div className="admin-interface min-h-screen bg-surface-muted/50" lang="fr" dir="ltr">
       <header className="sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur">
         <div className="container-page flex h-16 items-center justify-between gap-4">
           <Link href="/admin" className="flex items-center gap-3">
@@ -69,7 +69,7 @@ export function AdminShell({
 
       <div className="container-page py-6">
         <div className="grid gap-5 lg:grid-cols-[230px_minmax(0,1fr)] lg:items-start">
-          <aside className="grid gap-3">
+          <aside className="grid gap-3 lg:sticky lg:top-24">
             <Suspense fallback={<div className="h-12 rounded-2xl border border-line bg-white shadow-soft" />}>
               <AdminNav />
             </Suspense>

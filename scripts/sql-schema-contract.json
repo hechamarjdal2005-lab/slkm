@@ -1,0 +1,3566 @@
+{
+  "tables": [
+    "agencies",
+    "blog_posts",
+    "contact_messages",
+    "corporate_quotes",
+    "messagerie_agencies",
+    "messagerie_network_settings",
+    "parcel_rates",
+    "routes",
+    "site_media_assets",
+    "site_page_media",
+    "site_pages",
+    "site_sections",
+    "site_settings"
+  ],
+  "columns": [
+    {
+      "table_name": "agencies",
+      "column_name": "id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": "gen_random_uuid()"
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "city_ar",
+      "data_type": "character varying(120)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "city_fr",
+      "data_type": "character varying(120)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "city_en",
+      "data_type": "character varying(120)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "agency_name_ar",
+      "data_type": "character varying(200)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "agency_name_fr",
+      "data_type": "character varying(200)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "agency_name_en",
+      "data_type": "character varying(200)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "address_ar",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "address_fr",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "address_en",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "whatsapp_number",
+      "data_type": "character varying(32)",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "phone_number",
+      "data_type": "character varying(32)",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "lat",
+      "data_type": "numeric(10,7)",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "lng",
+      "data_type": "numeric(10,7)",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "image_url",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "is_active",
+      "data_type": "boolean",
+      "required": true,
+      "default_sql": "true"
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "agencies",
+      "column_name": "sort_order",
+      "data_type": "integer",
+      "required": true,
+      "default_sql": "0"
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": "gen_random_uuid()"
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "slug",
+      "data_type": "character varying(255)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "title_ar",
+      "data_type": "character varying(255)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "title_fr",
+      "data_type": "character varying(255)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "title_en",
+      "data_type": "character varying(255)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "excerpt_ar",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "excerpt_fr",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "excerpt_en",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "content_ar",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "content_fr",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "content_en",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "cover_image_url",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "is_published",
+      "data_type": "boolean",
+      "required": true,
+      "default_sql": "false"
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "published_at",
+      "data_type": "timestamp with time zone",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "blog_posts",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "contact_messages",
+      "column_name": "id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": "gen_random_uuid()"
+    },
+    {
+      "table_name": "contact_messages",
+      "column_name": "full_name",
+      "data_type": "character varying(255)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "contact_messages",
+      "column_name": "email",
+      "data_type": "character varying(320)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "contact_messages",
+      "column_name": "phone",
+      "data_type": "character varying(32)",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "contact_messages",
+      "column_name": "subject",
+      "data_type": "character varying(255)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "contact_messages",
+      "column_name": "message",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "contact_messages",
+      "column_name": "status",
+      "data_type": "character varying(20)",
+      "required": true,
+      "default_sql": "'new'::character varying"
+    },
+    {
+      "table_name": "contact_messages",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "contact_messages",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "corporate_quotes",
+      "column_name": "id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": "gen_random_uuid()"
+    },
+    {
+      "table_name": "corporate_quotes",
+      "column_name": "company_name",
+      "data_type": "character varying(255)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "corporate_quotes",
+      "column_name": "contact_person",
+      "data_type": "character varying(255)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "corporate_quotes",
+      "column_name": "phone",
+      "data_type": "character varying(32)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "corporate_quotes",
+      "column_name": "email",
+      "data_type": "character varying(320)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "corporate_quotes",
+      "column_name": "service_type",
+      "data_type": "character varying(20)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "corporate_quotes",
+      "column_name": "passenger_count",
+      "data_type": "integer",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "corporate_quotes",
+      "column_name": "origin_city",
+      "data_type": "character varying(120)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "corporate_quotes",
+      "column_name": "destination_city",
+      "data_type": "character varying(120)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "corporate_quotes",
+      "column_name": "details",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "corporate_quotes",
+      "column_name": "status",
+      "data_type": "character varying(20)",
+      "required": true,
+      "default_sql": "'pending'::character varying"
+    },
+    {
+      "table_name": "corporate_quotes",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "corporate_quotes",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": "gen_random_uuid()"
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "agency_id",
+      "data_type": "uuid",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "name_fr",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "name_ar",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "name_en",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "city_fr",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "city_ar",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "city_en",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "address_fr",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "address_ar",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "address_en",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "phone",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "whatsapp",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "opening_hours_fr",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "opening_hours_ar",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "opening_hours_en",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "is_active",
+      "data_type": "boolean",
+      "required": true,
+      "default_sql": "true"
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "display_order",
+      "data_type": "integer",
+      "required": true,
+      "default_sql": "0"
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "image_url",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "lat",
+      "data_type": "numeric(10,7)",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "lng",
+      "data_type": "numeric(10,7)",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "column_name": "agents",
+      "data_type": "jsonb",
+      "required": true,
+      "default_sql": "'[]'::jsonb"
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "column_name": "id",
+      "data_type": "integer",
+      "required": true,
+      "default_sql": "1"
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "column_name": "title_fr",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "column_name": "title_ar",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "column_name": "title_en",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "column_name": "description_fr",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "column_name": "description_ar",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "column_name": "description_en",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "column_name": "map_image_url",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "column_name": "is_active",
+      "data_type": "boolean",
+      "required": true,
+      "default_sql": "true"
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "parcel_rates",
+      "column_name": "id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": "gen_random_uuid()"
+    },
+    {
+      "table_name": "parcel_rates",
+      "column_name": "category_ar",
+      "data_type": "character varying(120)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "parcel_rates",
+      "column_name": "category_fr",
+      "data_type": "character varying(120)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "parcel_rates",
+      "column_name": "category_en",
+      "data_type": "character varying(120)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "parcel_rates",
+      "column_name": "max_weight_kg",
+      "data_type": "numeric(8,2)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "parcel_rates",
+      "column_name": "base_price_mad",
+      "data_type": "numeric(10,2)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "parcel_rates",
+      "column_name": "description_ar",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "parcel_rates",
+      "column_name": "description_fr",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "parcel_rates",
+      "column_name": "description_en",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "parcel_rates",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "parcel_rates",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "parcel_rates",
+      "column_name": "is_active",
+      "data_type": "boolean",
+      "required": true,
+      "default_sql": "true"
+    },
+    {
+      "table_name": "routes",
+      "column_name": "id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": "gen_random_uuid()"
+    },
+    {
+      "table_name": "routes",
+      "column_name": "from_agency_id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "routes",
+      "column_name": "to_agency_id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "routes",
+      "column_name": "departure_time",
+      "data_type": "time without time zone",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "routes",
+      "column_name": "arrival_time",
+      "data_type": "time without time zone",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "routes",
+      "column_name": "price_mad",
+      "data_type": "numeric(10,2)",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "routes",
+      "column_name": "bus_type",
+      "data_type": "character varying(20)",
+      "required": true,
+      "default_sql": "'Comfort'::character varying"
+    },
+    {
+      "table_name": "routes",
+      "column_name": "days_of_week",
+      "data_type": "text[]",
+      "required": true,
+      "default_sql": "'{}'::text[]"
+    },
+    {
+      "table_name": "routes",
+      "column_name": "is_tourist_route",
+      "data_type": "boolean",
+      "required": true,
+      "default_sql": "false"
+    },
+    {
+      "table_name": "routes",
+      "column_name": "is_active",
+      "data_type": "boolean",
+      "required": true,
+      "default_sql": "true"
+    },
+    {
+      "table_name": "routes",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "routes",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "routes",
+      "column_name": "sort_order",
+      "data_type": "integer",
+      "required": true,
+      "default_sql": "0"
+    },
+    {
+      "table_name": "site_media_assets",
+      "column_name": "id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": "gen_random_uuid()"
+    },
+    {
+      "table_name": "site_media_assets",
+      "column_name": "bucket_id",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "'site-media'::text"
+    },
+    {
+      "table_name": "site_media_assets",
+      "column_name": "storage_path",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_media_assets",
+      "column_name": "filename",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_media_assets",
+      "column_name": "mime_type",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_media_assets",
+      "column_name": "size_bytes",
+      "data_type": "integer",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_media_assets",
+      "column_name": "alt_fr",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_media_assets",
+      "column_name": "alt_ar",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_media_assets",
+      "column_name": "alt_en",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_media_assets",
+      "column_name": "is_published",
+      "data_type": "boolean",
+      "required": true,
+      "default_sql": "false"
+    },
+    {
+      "table_name": "site_media_assets",
+      "column_name": "is_active",
+      "data_type": "boolean",
+      "required": true,
+      "default_sql": "true"
+    },
+    {
+      "table_name": "site_media_assets",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "site_media_assets",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "site_page_media",
+      "column_name": "id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": "gen_random_uuid()"
+    },
+    {
+      "table_name": "site_page_media",
+      "column_name": "page_id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_page_media",
+      "column_name": "field_key",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_page_media",
+      "column_name": "asset_id",
+      "data_type": "uuid",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_page_media",
+      "column_name": "external_url",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_page_media",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "site_page_media",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": "gen_random_uuid()"
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "slug",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "route",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "label",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "title_fr",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "title_ar",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "title_en",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "seo_description_fr",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "seo_description_ar",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "seo_description_en",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "hero_overlay",
+      "data_type": "numeric",
+      "required": true,
+      "default_sql": "0.7"
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "content",
+      "data_type": "jsonb",
+      "required": true,
+      "default_sql": "'{\"copy\": {}}'::jsonb"
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "is_published",
+      "data_type": "boolean",
+      "required": true,
+      "default_sql": "true"
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "is_active",
+      "data_type": "boolean",
+      "required": true,
+      "default_sql": "true"
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "site_pages",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": "gen_random_uuid()"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "page_id",
+      "data_type": "uuid",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "section_key",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "label",
+      "data_type": "text",
+      "required": true,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "kind",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "'builtin'::text"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "sort_order",
+      "data_type": "integer",
+      "required": true,
+      "default_sql": "0"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "is_active",
+      "data_type": "boolean",
+      "required": true,
+      "default_sql": "true"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "is_published",
+      "data_type": "boolean",
+      "required": true,
+      "default_sql": "true"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "background",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "'default'::text"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "layout",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "'standard'::text"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "title_fr",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "title_ar",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "title_en",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "body_fr",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "body_ar",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "body_en",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "cta_fr",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "cta_ar",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "cta_en",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "cta_href",
+      "data_type": "text",
+      "required": true,
+      "default_sql": "''::text"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "media_asset_id",
+      "data_type": "uuid",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "image_url",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "content",
+      "data_type": "jsonb",
+      "required": true,
+      "default_sql": "'{}'::jsonb"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "site_sections",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "id",
+      "data_type": "smallint",
+      "required": true,
+      "default_sql": "1"
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "site_name_ar",
+      "data_type": "character varying(200)",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "site_name_fr",
+      "data_type": "character varying(200)",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "site_name_en",
+      "data_type": "character varying(200)",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "default_locale",
+      "data_type": "character varying(2)",
+      "required": true,
+      "default_sql": "'fr'::character varying"
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "support_phone",
+      "data_type": "character varying(32)",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "emergency_phone",
+      "data_type": "character varying(32)",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "emergency_lines",
+      "data_type": "jsonb",
+      "required": true,
+      "default_sql": "'[]'::jsonb"
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "whatsapp_number",
+      "data_type": "character varying(32)",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "contact_email",
+      "data_type": "character varying(320)",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "address_ar",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "address_fr",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "address_en",
+      "data_type": "text",
+      "required": false,
+      "default_sql": null
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "social_links",
+      "data_type": "jsonb",
+      "required": true,
+      "default_sql": "'{}'::jsonb"
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "analytics_config",
+      "data_type": "jsonb",
+      "required": true,
+      "default_sql": "'{}'::jsonb"
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "required": true,
+      "default_sql": "now()"
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "presentation",
+      "data_type": "jsonb",
+      "required": true,
+      "default_sql": "'{}'::jsonb"
+    },
+    {
+      "table_name": "site_settings",
+      "column_name": "navigation",
+      "data_type": "jsonb",
+      "required": true,
+      "default_sql": "'{}'::jsonb"
+    }
+  ],
+  "constraints": [
+    {
+      "table_name": "agencies",
+      "name": "agencies_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "accepted_definitions": [
+        "PRIMARY KEY (id)"
+      ]
+    },
+    {
+      "table_name": "blog_posts",
+      "name": "blog_posts_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "accepted_definitions": [
+        "PRIMARY KEY (id)"
+      ]
+    },
+    {
+      "table_name": "contact_messages",
+      "name": "contact_messages_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "accepted_definitions": [
+        "PRIMARY KEY (id)"
+      ]
+    },
+    {
+      "table_name": "corporate_quotes",
+      "name": "corporate_quotes_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "accepted_definitions": [
+        "PRIMARY KEY (id)"
+      ]
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "name": "messagerie_agencies_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "accepted_definitions": [
+        "PRIMARY KEY (id)"
+      ]
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "name": "messagerie_network_settings_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "accepted_definitions": [
+        "PRIMARY KEY (id)"
+      ]
+    },
+    {
+      "table_name": "parcel_rates",
+      "name": "parcel_rates_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "accepted_definitions": [
+        "PRIMARY KEY (id)"
+      ]
+    },
+    {
+      "table_name": "routes",
+      "name": "routes_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "accepted_definitions": [
+        "PRIMARY KEY (id)"
+      ]
+    },
+    {
+      "table_name": "site_media_assets",
+      "name": "site_media_assets_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "accepted_definitions": [
+        "PRIMARY KEY (id)"
+      ]
+    },
+    {
+      "table_name": "site_page_media",
+      "name": "site_page_media_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "accepted_definitions": [
+        "PRIMARY KEY (id)"
+      ]
+    },
+    {
+      "table_name": "site_pages",
+      "name": "site_pages_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "accepted_definitions": [
+        "PRIMARY KEY (id)"
+      ]
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "accepted_definitions": [
+        "PRIMARY KEY (id)"
+      ]
+    },
+    {
+      "table_name": "site_settings",
+      "name": "site_settings_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "accepted_definitions": [
+        "PRIMARY KEY (id)"
+      ]
+    },
+    {
+      "table_name": "blog_posts",
+      "name": "blog_posts_slug_key",
+      "kind": "u",
+      "definition": "UNIQUE (slug)",
+      "accepted_definitions": [
+        "UNIQUE (slug)"
+      ]
+    },
+    {
+      "table_name": "site_media_assets",
+      "name": "site_media_assets_storage_path_key",
+      "kind": "u",
+      "definition": "UNIQUE (storage_path)",
+      "accepted_definitions": [
+        "UNIQUE (storage_path)"
+      ]
+    },
+    {
+      "table_name": "site_page_media",
+      "name": "site_page_media_page_id_field_key_key",
+      "kind": "u",
+      "definition": "UNIQUE (page_id, field_key)",
+      "accepted_definitions": [
+        "UNIQUE (page_id, field_key)"
+      ]
+    },
+    {
+      "table_name": "site_pages",
+      "name": "site_pages_route_key",
+      "kind": "u",
+      "definition": "UNIQUE (route)",
+      "accepted_definitions": [
+        "UNIQUE (route)"
+      ]
+    },
+    {
+      "table_name": "site_pages",
+      "name": "site_pages_slug_key",
+      "kind": "u",
+      "definition": "UNIQUE (slug)",
+      "accepted_definitions": [
+        "UNIQUE (slug)"
+      ]
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_page_id_section_key_key",
+      "kind": "u",
+      "definition": "UNIQUE (page_id, section_key)",
+      "accepted_definitions": [
+        "UNIQUE (page_id, section_key)"
+      ]
+    },
+    {
+      "table_name": "agencies",
+      "name": "agencies_coordinates_together",
+      "kind": "c",
+      "definition": "CHECK (((lat IS NULL) = (lng IS NULL)))",
+      "accepted_definitions": [
+        "CHECK (((lat IS NULL) = (lng IS NULL)))"
+      ]
+    },
+    {
+      "table_name": "agencies",
+      "name": "agencies_lat_range",
+      "kind": "c",
+      "definition": "CHECK (((lat IS NULL) OR ((lat >= ('-90'::integer)::numeric) AND (lat <= (90)::numeric))))",
+      "accepted_definitions": [
+        "CHECK (((lat IS NULL) OR ((lat >= ('-90'::integer)::numeric) AND (lat <= (90)::numeric))))"
+      ]
+    },
+    {
+      "table_name": "agencies",
+      "name": "agencies_lng_range",
+      "kind": "c",
+      "definition": "CHECK (((lng IS NULL) OR ((lng >= ('-180'::integer)::numeric) AND (lng <= (180)::numeric))))",
+      "accepted_definitions": [
+        "CHECK (((lng IS NULL) OR ((lng >= ('-180'::integer)::numeric) AND (lng <= (180)::numeric))))"
+      ]
+    },
+    {
+      "table_name": "agencies",
+      "name": "agencies_sort_order_check",
+      "kind": "c",
+      "definition": "CHECK (((sort_order >= 0) AND (sort_order <= 10000)))",
+      "accepted_definitions": [
+        "CHECK (((sort_order >= 0) AND (sort_order <= 10000)))"
+      ]
+    },
+    {
+      "table_name": "blog_posts",
+      "name": "blog_posts_slug_format",
+      "kind": "c",
+      "definition": "CHECK (((slug)::text ~ '^[a-z0-9]+(?:-[a-z0-9]+)*$'::text))",
+      "accepted_definitions": [
+        "CHECK (((slug)::text ~ '^[a-z0-9]+(?:-[a-z0-9]+)*$'::text))"
+      ]
+    },
+    {
+      "table_name": "contact_messages",
+      "name": "contact_messages_status_valid",
+      "kind": "c",
+      "definition": "CHECK (((status)::text = ANY ((ARRAY['new'::character varying, 'read'::character varying, 'replied'::character varying, 'archived'::character varying])::text[])))",
+      "accepted_definitions": [
+        "CHECK (((status)::text = ANY ((ARRAY['new'::character varying, 'read'::character varying, 'replied'::character varying, 'archived'::character varying])::text[])))",
+        "CHECK (((status)::text = ANY (ARRAY[('new'::character varying)::text, ('read'::character varying)::text, ('replied'::character varying)::text, ('archived'::character varying)::text])))"
+      ]
+    },
+    {
+      "table_name": "corporate_quotes",
+      "name": "corporate_quotes_passenger_count_positive",
+      "kind": "c",
+      "definition": "CHECK ((passenger_count > 0))",
+      "accepted_definitions": [
+        "CHECK ((passenger_count > 0))"
+      ]
+    },
+    {
+      "table_name": "corporate_quotes",
+      "name": "corporate_quotes_service_type_valid",
+      "kind": "c",
+      "definition": "CHECK (((service_type)::text = ANY ((ARRAY['personnel'::character varying, 'tourisme'::character varying])::text[])))",
+      "accepted_definitions": [
+        "CHECK (((service_type)::text = ANY ((ARRAY['personnel'::character varying, 'tourisme'::character varying])::text[])))",
+        "CHECK (((service_type)::text = ANY (ARRAY[('personnel'::character varying)::text, ('tourisme'::character varying)::text])))"
+      ]
+    },
+    {
+      "table_name": "corporate_quotes",
+      "name": "corporate_quotes_status_valid",
+      "kind": "c",
+      "definition": "CHECK (((status)::text = ANY ((ARRAY['pending'::character varying, 'contacted'::character varying, 'quoted'::character varying, 'confirmed'::character varying, 'completed'::character varying, 'cancelled'::character varying])::text[])))",
+      "accepted_definitions": [
+        "CHECK (((status)::text = ANY ((ARRAY['pending'::character varying, 'contacted'::character varying, 'quoted'::character varying, 'confirmed'::character varying, 'completed'::character varying, 'cancelled'::character varying])::text[])))",
+        "CHECK (((status)::text = ANY (ARRAY[('pending'::character varying)::text, ('contacted'::character varying)::text, ('quoted'::character varying)::text, ('confirmed'::character varying)::text, ('completed'::character varying)::text, ('cancelled'::character varying)::text])))"
+      ]
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "name": "messagerie_agencies_display_order_check",
+      "kind": "c",
+      "definition": "CHECK ((display_order >= 0))",
+      "accepted_definitions": [
+        "CHECK ((display_order >= 0))"
+      ]
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "name": "messagerie_agency_source",
+      "kind": "c",
+      "definition": "CHECK ((((agency_id IS NOT NULL) AND (name_fr IS NULL) AND (name_ar IS NULL) AND (name_en IS NULL) AND (city_fr IS NULL) AND (city_ar IS NULL) AND (city_en IS NULL) AND (address_fr IS NULL) AND (address_ar IS NULL) AND (address_en IS NULL) AND (phone IS NULL) AND (whatsapp IS NULL)) OR ((agency_id IS NULL) AND (COALESCE(length(TRIM(BOTH FROM name_fr)), 0) > 0) AND (COALESCE(length(TRIM(BOTH FROM city_fr)), 0) > 0))))",
+      "accepted_definitions": [
+        "CHECK ((((agency_id IS NOT NULL) AND (name_fr IS NULL) AND (name_ar IS NULL) AND (name_en IS NULL) AND (city_fr IS NULL) AND (city_ar IS NULL) AND (city_en IS NULL) AND (address_fr IS NULL) AND (address_ar IS NULL) AND (address_en IS NULL) AND (phone IS NULL) AND (whatsapp IS NULL)) OR ((agency_id IS NULL) AND (COALESCE(length(TRIM(BOTH FROM name_fr)), 0) > 0) AND (COALESCE(length(TRIM(BOTH FROM city_fr)), 0) > 0))))"
+      ]
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "name": "slkm_messagerie_details_valid",
+      "kind": "c",
+      "definition": "CHECK ((((lat IS NULL) = (lng IS NULL)) AND ((lat IS NULL) OR ((lat >= ('-90'::integer)::numeric) AND (lat <= (90)::numeric))) AND ((lng IS NULL) OR ((lng >= ('-180'::integer)::numeric) AND (lng <= (180)::numeric))) AND ((image_url IS NULL) OR (image_url ~ '^https://'::text) OR (image_url ~ '^/[^/]'::text)) AND (jsonb_typeof(agents) = 'array'::text) AND (jsonb_array_length(agents) <= 20) AND (octet_length((agents)::text) <= 32768)))",
+      "accepted_definitions": [
+        "CHECK ((((lat IS NULL) = (lng IS NULL)) AND ((lat IS NULL) OR ((lat >= ('-90'::integer)::numeric) AND (lat <= (90)::numeric))) AND ((lng IS NULL) OR ((lng >= ('-180'::integer)::numeric) AND (lng <= (180)::numeric))) AND ((image_url IS NULL) OR (image_url ~ '^https://'::text) OR (image_url ~ '^/[^/]'::text)) AND (jsonb_typeof(agents) = 'array'::text) AND (jsonb_array_length(agents) <= 20) AND (octet_length((agents)::text) <= 32768)))"
+      ]
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "name": "messagerie_network_settings_id_check",
+      "kind": "c",
+      "definition": "CHECK ((id = 1))",
+      "accepted_definitions": [
+        "CHECK ((id = 1))"
+      ]
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "name": "messagerie_network_settings_map_image_url_check",
+      "kind": "c",
+      "definition": "CHECK (((map_image_url IS NULL) OR (map_image_url ~ '^https://'::text) OR (map_image_url ~ '^/[^/]'::text)))",
+      "accepted_definitions": [
+        "CHECK (((map_image_url IS NULL) OR (map_image_url ~ '^https://'::text) OR (map_image_url ~ '^/[^/]'::text)))"
+      ]
+    },
+    {
+      "table_name": "parcel_rates",
+      "name": "parcel_rates_price_nonnegative",
+      "kind": "c",
+      "definition": "CHECK ((base_price_mad >= (0)::numeric))",
+      "accepted_definitions": [
+        "CHECK ((base_price_mad >= (0)::numeric))"
+      ]
+    },
+    {
+      "table_name": "parcel_rates",
+      "name": "parcel_rates_weight_positive",
+      "kind": "c",
+      "definition": "CHECK ((max_weight_kg > (0)::numeric))",
+      "accepted_definitions": [
+        "CHECK ((max_weight_kg > (0)::numeric))"
+      ]
+    },
+    {
+      "table_name": "routes",
+      "name": "routes_bus_type_valid",
+      "kind": "c",
+      "definition": "CHECK (((bus_type)::text = ANY ((ARRAY['Comfort'::character varying, 'Premium'::character varying, 'VIP'::character varying])::text[])))",
+      "accepted_definitions": [
+        "CHECK (((bus_type)::text = ANY ((ARRAY['Comfort'::character varying, 'Premium'::character varying, 'VIP'::character varying])::text[])))",
+        "CHECK (((bus_type)::text = ANY (ARRAY[('Comfort'::character varying)::text, ('Premium'::character varying)::text, ('VIP'::character varying)::text])))"
+      ]
+    },
+    {
+      "table_name": "routes",
+      "name": "routes_days_of_week_valid",
+      "kind": "c",
+      "definition": "CHECK ((days_of_week <@ ARRAY['MON'::text, 'TUE'::text, 'WED'::text, 'THU'::text, 'FRI'::text, 'SAT'::text, 'SUN'::text]))",
+      "accepted_definitions": [
+        "CHECK ((days_of_week <@ ARRAY['MON'::text, 'TUE'::text, 'WED'::text, 'THU'::text, 'FRI'::text, 'SAT'::text, 'SUN'::text]))"
+      ]
+    },
+    {
+      "table_name": "routes",
+      "name": "routes_distinct_agencies",
+      "kind": "c",
+      "definition": "CHECK ((from_agency_id <> to_agency_id))",
+      "accepted_definitions": [
+        "CHECK ((from_agency_id <> to_agency_id))"
+      ]
+    },
+    {
+      "table_name": "routes",
+      "name": "routes_price_nonnegative",
+      "kind": "c",
+      "definition": "CHECK ((price_mad >= (0)::numeric))",
+      "accepted_definitions": [
+        "CHECK ((price_mad >= (0)::numeric))"
+      ]
+    },
+    {
+      "table_name": "routes",
+      "name": "routes_sort_order_check",
+      "kind": "c",
+      "definition": "CHECK (((sort_order >= 0) AND (sort_order <= 10000)))",
+      "accepted_definitions": [
+        "CHECK (((sort_order >= 0) AND (sort_order <= 10000)))"
+      ]
+    },
+    {
+      "table_name": "site_media_assets",
+      "name": "site_media_assets_bucket_id_check",
+      "kind": "c",
+      "definition": "CHECK ((bucket_id = 'site-media'::text))",
+      "accepted_definitions": [
+        "CHECK ((bucket_id = 'site-media'::text))"
+      ]
+    },
+    {
+      "table_name": "site_media_assets",
+      "name": "site_media_assets_filename_check",
+      "kind": "c",
+      "definition": "CHECK (((length(filename) >= 1) AND (length(filename) <= 255)))",
+      "accepted_definitions": [
+        "CHECK (((length(filename) >= 1) AND (length(filename) <= 255)))"
+      ]
+    },
+    {
+      "table_name": "site_media_assets",
+      "name": "site_media_assets_mime_type_check",
+      "kind": "c",
+      "definition": "CHECK ((mime_type = ANY (ARRAY['image/jpeg'::text, 'image/png'::text, 'image/webp'::text, 'image/avif'::text])))",
+      "accepted_definitions": [
+        "CHECK ((mime_type = ANY (ARRAY['image/jpeg'::text, 'image/png'::text, 'image/webp'::text, 'image/avif'::text])))"
+      ]
+    },
+    {
+      "table_name": "site_media_assets",
+      "name": "site_media_assets_size_bytes_check",
+      "kind": "c",
+      "definition": "CHECK (((size_bytes >= 1) AND (size_bytes <= 5242880)))",
+      "accepted_definitions": [
+        "CHECK (((size_bytes >= 1) AND (size_bytes <= 5242880)))"
+      ]
+    },
+    {
+      "table_name": "site_media_assets",
+      "name": "site_media_assets_storage_path_check",
+      "kind": "c",
+      "definition": "CHECK ((storage_path ~ '^[a-f0-9-]{36}\\.(jpg|png|webp|avif)$'::text))",
+      "accepted_definitions": [
+        "CHECK ((storage_path ~ '^[a-f0-9-]{36}\\.(jpg|png|webp|avif)$'::text))"
+      ]
+    },
+    {
+      "table_name": "site_page_media",
+      "name": "site_page_media_check",
+      "kind": "c",
+      "definition": "CHECK (((asset_id IS NULL) <> (external_url IS NULL)))",
+      "accepted_definitions": [
+        "CHECK (((asset_id IS NULL) <> (external_url IS NULL)))"
+      ]
+    },
+    {
+      "table_name": "site_page_media",
+      "name": "site_page_media_external_url_check",
+      "kind": "c",
+      "definition": "CHECK (((external_url IS NULL) OR (external_url ~ '^https://'::text) OR (external_url ~ '^/[^/]'::text)))",
+      "accepted_definitions": [
+        "CHECK (((external_url IS NULL) OR (external_url ~ '^https://'::text) OR (external_url ~ '^/[^/]'::text)))"
+      ]
+    },
+    {
+      "table_name": "site_page_media",
+      "name": "site_page_media_field_key_check",
+      "kind": "c",
+      "definition": "CHECK ((field_key ~ '^image_[a-f0-9]{12}$'::text))",
+      "accepted_definitions": [
+        "CHECK ((field_key ~ '^image_[a-f0-9]{12}$'::text))"
+      ]
+    },
+    {
+      "table_name": "site_pages",
+      "name": "site_pages_content_check",
+      "kind": "c",
+      "definition": "CHECK (((jsonb_typeof(content) = 'object'::text) AND (jsonb_typeof((content -> 'copy'::text)) = 'object'::text) AND (octet_length((content)::text) <= 262144)))",
+      "accepted_definitions": [
+        "CHECK (((jsonb_typeof(content) = 'object'::text) AND (jsonb_typeof((content -> 'copy'::text)) = 'object'::text) AND (octet_length((content)::text) <= 262144)))"
+      ]
+    },
+    {
+      "table_name": "site_pages",
+      "name": "site_pages_hero_overlay_check",
+      "kind": "c",
+      "definition": "CHECK (((hero_overlay >= 0.3) AND (hero_overlay <= 0.9)))",
+      "accepted_definitions": [
+        "CHECK (((hero_overlay >= 0.3) AND (hero_overlay <= 0.9)))"
+      ]
+    },
+    {
+      "table_name": "site_pages",
+      "name": "site_pages_label_check",
+      "kind": "c",
+      "definition": "CHECK (((length(label) >= 1) AND (length(label) <= 200)))",
+      "accepted_definitions": [
+        "CHECK (((length(label) >= 1) AND (length(label) <= 200)))"
+      ]
+    },
+    {
+      "table_name": "site_pages",
+      "name": "site_pages_route_matches",
+      "kind": "c",
+      "definition": "CHECK ((route =\nCASE slug\n    WHEN 'home'::text THEN '/'::text\n    WHEN 'article'::text THEN '/blog/[slug]'::text\n    WHEN 'global'::text THEN 'global'::text\n    ELSE ('/'::text || slug)\nEND))",
+      "accepted_definitions": [
+        "CHECK ((route =\nCASE slug\n    WHEN 'home'::text THEN '/'::text\n    WHEN 'article'::text THEN '/blog/[slug]'::text\n    WHEN 'global'::text THEN 'global'::text\n    ELSE ('/'::text || slug)\nEND))"
+      ]
+    },
+    {
+      "table_name": "site_pages",
+      "name": "site_pages_slug_check",
+      "kind": "c",
+      "definition": "CHECK ((slug = ANY (ARRAY['home'::text, 'lignes'::text, 'irsaliyat'::text, 'about'::text, 'services'::text, 'contact'::text, 'blog'::text, 'article'::text, 'global'::text])))",
+      "accepted_definitions": [
+        "CHECK ((slug = ANY (ARRAY['home'::text, 'lignes'::text, 'irsaliyat'::text, 'about'::text, 'services'::text, 'contact'::text, 'blog'::text, 'article'::text, 'global'::text])))"
+      ]
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_background_check",
+      "kind": "c",
+      "definition": "CHECK ((background = ANY (ARRAY['default'::text, 'white'::text, 'orange'::text, 'muted'::text])))",
+      "accepted_definitions": [
+        "CHECK ((background = ANY (ARRAY['default'::text, 'white'::text, 'orange'::text, 'muted'::text])))"
+      ]
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_content_check",
+      "kind": "c",
+      "definition": "CHECK (((jsonb_typeof(content) = 'object'::text) AND (octet_length((content)::text) <= 65536)))",
+      "accepted_definitions": [
+        "CHECK (((jsonb_typeof(content) = 'object'::text) AND (octet_length((content)::text) <= 65536)))"
+      ]
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_cta_href_check",
+      "kind": "c",
+      "definition": "CHECK (((cta_href = ''::text) OR (cta_href ~ '^https://'::text) OR (cta_href ~ '^/[^/]'::text) OR (cta_href = '/'::text) OR (cta_href ~ '^#[a-zA-Z]'::text)))",
+      "accepted_definitions": [
+        "CHECK (((cta_href = ''::text) OR (cta_href ~ '^https://'::text) OR (cta_href ~ '^/[^/]'::text) OR (cta_href = '/'::text) OR (cta_href ~ '^#[a-zA-Z]'::text)))"
+      ]
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_image_url_check",
+      "kind": "c",
+      "definition": "CHECK (((image_url IS NULL) OR (image_url ~ '^https://'::text) OR (image_url ~ '^/[^/]'::text)))",
+      "accepted_definitions": [
+        "CHECK (((image_url IS NULL) OR (image_url ~ '^https://'::text) OR (image_url ~ '^/[^/]'::text)))"
+      ]
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_kind_check",
+      "kind": "c",
+      "definition": "CHECK ((kind = ANY (ARRAY['builtin'::text, 'text'::text, 'image_text'::text, 'features'::text, 'cta'::text])))",
+      "accepted_definitions": [
+        "CHECK ((kind = ANY (ARRAY['builtin'::text, 'text'::text, 'image_text'::text, 'features'::text, 'cta'::text])))"
+      ]
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_label_check",
+      "kind": "c",
+      "definition": "CHECK (((length(label) >= 1) AND (length(label) <= 200)))",
+      "accepted_definitions": [
+        "CHECK (((length(label) >= 1) AND (length(label) <= 200)))"
+      ]
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_layout_check",
+      "kind": "c",
+      "definition": "CHECK ((layout = ANY (ARRAY['compact'::text, 'standard'::text])))",
+      "accepted_definitions": [
+        "CHECK ((layout = ANY (ARRAY['compact'::text, 'standard'::text])))"
+      ]
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_section_key_check",
+      "kind": "c",
+      "definition": "CHECK ((section_key ~ '^[a-z][a-z0-9-]{0,79}$'::text))",
+      "accepted_definitions": [
+        "CHECK ((section_key ~ '^[a-z][a-z0-9-]{0,79}$'::text))"
+      ]
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_sort_order_check",
+      "kind": "c",
+      "definition": "CHECK (((sort_order >= 0) AND (sort_order <= 10000)))",
+      "accepted_definitions": [
+        "CHECK (((sort_order >= 0) AND (sort_order <= 10000)))"
+      ]
+    },
+    {
+      "table_name": "site_settings",
+      "name": "site_presentation_valid",
+      "kind": "c",
+      "definition": "CHECK (((jsonb_typeof(presentation) = 'object'::text) AND (octet_length((presentation)::text) <= 65536) AND ((NOT (presentation ? 'primary_color'::text)) OR ((presentation ->> 'primary_color'::text) ~ '^#[0-9a-fA-F]{6}$'::text)) AND ((NOT (presentation ? 'secondary_color'::text)) OR ((presentation ->> 'secondary_color'::text) ~ '^#[0-9a-fA-F]{6}$'::text)) AND ((NOT (presentation ? 'font_arabic'::text)) OR ((presentation ->> 'font_arabic'::text) = ANY (ARRAY['cairo'::text, 'system'::text]))) AND ((NOT (presentation ? 'font_latin'::text)) OR ((presentation ->> 'font_latin'::text) = ANY (ARRAY['jakarta'::text, 'system'::text]))) AND ((NOT (presentation ? 'button_style'::text)) OR ((presentation ->> 'button_style'::text) = ANY (ARRAY['rounded'::text, 'soft-square'::text]))) AND ((NOT (presentation ? 'layout'::text)) OR ((presentation ->> 'layout'::text) = ANY (ARRAY['compact'::text, 'comfortable'::text])))))",
+      "accepted_definitions": [
+        "CHECK (((jsonb_typeof(presentation) = 'object'::text) AND (octet_length((presentation)::text) <= 65536) AND ((NOT (presentation ? 'primary_color'::text)) OR ((presentation ->> 'primary_color'::text) ~ '^#[0-9a-fA-F]{6}$'::text)) AND ((NOT (presentation ? 'secondary_color'::text)) OR ((presentation ->> 'secondary_color'::text) ~ '^#[0-9a-fA-F]{6}$'::text)) AND ((NOT (presentation ? 'font_arabic'::text)) OR ((presentation ->> 'font_arabic'::text) = ANY (ARRAY['cairo'::text, 'system'::text]))) AND ((NOT (presentation ? 'font_latin'::text)) OR ((presentation ->> 'font_latin'::text) = ANY (ARRAY['jakarta'::text, 'system'::text]))) AND ((NOT (presentation ? 'button_style'::text)) OR ((presentation ->> 'button_style'::text) = ANY (ARRAY['rounded'::text, 'soft-square'::text]))) AND ((NOT (presentation ? 'layout'::text)) OR ((presentation ->> 'layout'::text) = ANY (ARRAY['compact'::text, 'comfortable'::text])))))"
+      ]
+    },
+    {
+      "table_name": "site_settings",
+      "name": "site_settings_analytics_is_object",
+      "kind": "c",
+      "definition": "CHECK ((jsonb_typeof(analytics_config) = 'object'::text))",
+      "accepted_definitions": [
+        "CHECK ((jsonb_typeof(analytics_config) = 'object'::text))"
+      ]
+    },
+    {
+      "table_name": "site_settings",
+      "name": "site_settings_default_locale_valid",
+      "kind": "c",
+      "definition": "CHECK (((default_locale)::text = ANY ((ARRAY['ar'::character varying, 'fr'::character varying, 'en'::character varying])::text[])))",
+      "accepted_definitions": [
+        "CHECK (((default_locale)::text = ANY ((ARRAY['ar'::character varying, 'fr'::character varying, 'en'::character varying])::text[])))",
+        "CHECK (((default_locale)::text = ANY (ARRAY[('ar'::character varying)::text, ('fr'::character varying)::text, ('en'::character varying)::text])))"
+      ]
+    },
+    {
+      "table_name": "site_settings",
+      "name": "site_settings_emergency_lines_is_array",
+      "kind": "c",
+      "definition": "CHECK ((jsonb_typeof(emergency_lines) = 'array'::text))",
+      "accepted_definitions": [
+        "CHECK ((jsonb_typeof(emergency_lines) = 'array'::text))"
+      ]
+    },
+    {
+      "table_name": "site_settings",
+      "name": "site_settings_singleton",
+      "kind": "c",
+      "definition": "CHECK ((id = 1))",
+      "accepted_definitions": [
+        "CHECK ((id = 1))"
+      ]
+    },
+    {
+      "table_name": "site_settings",
+      "name": "site_settings_social_links_is_object",
+      "kind": "c",
+      "definition": "CHECK ((jsonb_typeof(social_links) = 'object'::text))",
+      "accepted_definitions": [
+        "CHECK ((jsonb_typeof(social_links) = 'object'::text))"
+      ]
+    },
+    {
+      "table_name": "site_settings",
+      "name": "slkm_navigation_object",
+      "kind": "c",
+      "definition": "CHECK (((jsonb_typeof(navigation) = 'object'::text) AND (octet_length((navigation)::text) <= 32768)))",
+      "accepted_definitions": [
+        "CHECK (((jsonb_typeof(navigation) = 'object'::text) AND (octet_length((navigation)::text) <= 32768)))"
+      ]
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "name": "messagerie_agencies_agency_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (agency_id) REFERENCES agencies(id) ON DELETE RESTRICT",
+      "accepted_definitions": [
+        "FOREIGN KEY (agency_id) REFERENCES agencies(id) ON DELETE RESTRICT"
+      ]
+    },
+    {
+      "table_name": "routes",
+      "name": "routes_from_agency_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (from_agency_id) REFERENCES agencies(id) ON DELETE RESTRICT",
+      "accepted_definitions": [
+        "FOREIGN KEY (from_agency_id) REFERENCES agencies(id) ON DELETE RESTRICT"
+      ]
+    },
+    {
+      "table_name": "routes",
+      "name": "routes_to_agency_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (to_agency_id) REFERENCES agencies(id) ON DELETE RESTRICT",
+      "accepted_definitions": [
+        "FOREIGN KEY (to_agency_id) REFERENCES agencies(id) ON DELETE RESTRICT"
+      ]
+    },
+    {
+      "table_name": "site_media_assets",
+      "name": "site_media_assets_bucket_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (bucket_id) REFERENCES storage.buckets(id) ON DELETE RESTRICT",
+      "accepted_definitions": [
+        "FOREIGN KEY (bucket_id) REFERENCES storage.buckets(id) ON DELETE RESTRICT"
+      ]
+    },
+    {
+      "table_name": "site_page_media",
+      "name": "site_page_media_asset_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (asset_id) REFERENCES site_media_assets(id) ON DELETE RESTRICT",
+      "accepted_definitions": [
+        "FOREIGN KEY (asset_id) REFERENCES site_media_assets(id) ON DELETE RESTRICT"
+      ]
+    },
+    {
+      "table_name": "site_page_media",
+      "name": "site_page_media_page_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (page_id) REFERENCES site_pages(id) ON DELETE CASCADE",
+      "accepted_definitions": [
+        "FOREIGN KEY (page_id) REFERENCES site_pages(id) ON DELETE CASCADE"
+      ]
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_media_asset_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (media_asset_id) REFERENCES site_media_assets(id) ON DELETE RESTRICT",
+      "accepted_definitions": [
+        "FOREIGN KEY (media_asset_id) REFERENCES site_media_assets(id) ON DELETE RESTRICT"
+      ]
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_page_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (page_id) REFERENCES site_pages(id) ON DELETE CASCADE",
+      "accepted_definitions": [
+        "FOREIGN KEY (page_id) REFERENCES site_pages(id) ON DELETE CASCADE"
+      ]
+    }
+  ],
+  "indexes": [
+    {
+      "table_name": "agencies",
+      "name": "idx_agencies_active",
+      "definition": "CREATE INDEX idx_agencies_active ON public.agencies USING btree (is_active) WHERE is_active"
+    },
+    {
+      "table_name": "agencies",
+      "name": "idx_agencies_city_ar",
+      "definition": "CREATE INDEX idx_agencies_city_ar ON public.agencies USING btree (city_ar)"
+    },
+    {
+      "table_name": "agencies",
+      "name": "idx_agencies_city_en",
+      "definition": "CREATE INDEX idx_agencies_city_en ON public.agencies USING btree (city_en)"
+    },
+    {
+      "table_name": "agencies",
+      "name": "idx_agencies_city_fr",
+      "definition": "CREATE INDEX idx_agencies_city_fr ON public.agencies USING btree (city_fr)"
+    },
+    {
+      "table_name": "agencies",
+      "name": "slkm_agency_order",
+      "definition": "CREATE INDEX slkm_agency_order ON public.agencies USING btree (sort_order, city_fr)"
+    },
+    {
+      "table_name": "blog_posts",
+      "name": "idx_blog_posts_published",
+      "definition": "CREATE INDEX idx_blog_posts_published ON public.blog_posts USING btree (is_published, published_at DESC) WHERE is_published"
+    },
+    {
+      "table_name": "contact_messages",
+      "name": "idx_contact_messages_status_created",
+      "definition": "CREATE INDEX idx_contact_messages_status_created ON public.contact_messages USING btree (status, created_at DESC)"
+    },
+    {
+      "table_name": "corporate_quotes",
+      "name": "idx_corporate_quotes_email",
+      "definition": "CREATE INDEX idx_corporate_quotes_email ON public.corporate_quotes USING btree (lower((email)::text))"
+    },
+    {
+      "table_name": "corporate_quotes",
+      "name": "idx_corporate_quotes_service_type",
+      "definition": "CREATE INDEX idx_corporate_quotes_service_type ON public.corporate_quotes USING btree (service_type)"
+    },
+    {
+      "table_name": "corporate_quotes",
+      "name": "idx_corporate_quotes_status_created",
+      "definition": "CREATE INDEX idx_corporate_quotes_status_created ON public.corporate_quotes USING btree (status, created_at DESC)"
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "name": "messagerie_agencies_active_order",
+      "definition": "CREATE INDEX messagerie_agencies_active_order ON public.messagerie_agencies USING btree (is_active, display_order)"
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "name": "messagerie_agency_link_unique",
+      "definition": "CREATE UNIQUE INDEX messagerie_agency_link_unique ON public.messagerie_agencies USING btree (agency_id) WHERE (agency_id IS NOT NULL)"
+    },
+    {
+      "table_name": "parcel_rates",
+      "name": "idx_parcel_rates_category_fr",
+      "definition": "CREATE INDEX idx_parcel_rates_category_fr ON public.parcel_rates USING btree (category_fr)"
+    },
+    {
+      "table_name": "parcel_rates",
+      "name": "idx_parcel_rates_weight",
+      "definition": "CREATE INDEX idx_parcel_rates_weight ON public.parcel_rates USING btree (max_weight_kg)"
+    },
+    {
+      "table_name": "routes",
+      "name": "idx_routes_days_of_week",
+      "definition": "CREATE INDEX idx_routes_days_of_week ON public.routes USING gin (days_of_week)"
+    },
+    {
+      "table_name": "routes",
+      "name": "idx_routes_from_agency",
+      "definition": "CREATE INDEX idx_routes_from_agency ON public.routes USING btree (from_agency_id)"
+    },
+    {
+      "table_name": "routes",
+      "name": "idx_routes_search",
+      "definition": "CREATE INDEX idx_routes_search ON public.routes USING btree (from_agency_id, to_agency_id, is_active, departure_time)"
+    },
+    {
+      "table_name": "routes",
+      "name": "idx_routes_to_agency",
+      "definition": "CREATE INDEX idx_routes_to_agency ON public.routes USING btree (to_agency_id)"
+    },
+    {
+      "table_name": "routes",
+      "name": "idx_routes_tourist",
+      "definition": "CREATE INDEX idx_routes_tourist ON public.routes USING btree (is_tourist_route) WHERE is_tourist_route"
+    },
+    {
+      "table_name": "routes",
+      "name": "slkm_route_order",
+      "definition": "CREATE INDEX slkm_route_order ON public.routes USING btree (sort_order, departure_time)"
+    },
+    {
+      "table_name": "site_media_assets",
+      "name": "site_media_public",
+      "definition": "CREATE INDEX site_media_public ON public.site_media_assets USING btree (created_at DESC) WHERE (is_active AND is_published)"
+    },
+    {
+      "table_name": "site_page_media",
+      "name": "site_page_media_asset_fk",
+      "definition": "CREATE INDEX site_page_media_asset_fk ON public.site_page_media USING btree (asset_id) WHERE (asset_id IS NOT NULL)"
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_media_fk",
+      "definition": "CREATE INDEX site_sections_media_fk ON public.site_sections USING btree (media_asset_id) WHERE (media_asset_id IS NOT NULL)"
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_public_order",
+      "definition": "CREATE INDEX site_sections_public_order ON public.site_sections USING btree (page_id, sort_order, id) WHERE (is_active AND is_published)"
+    }
+  ],
+  "triggers": [
+    {
+      "table_name": "agencies",
+      "name": "trg_agencies_updated_at",
+      "definition": "CREATE TRIGGER trg_agencies_updated_at BEFORE UPDATE ON public.agencies FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+    },
+    {
+      "table_name": "blog_posts",
+      "name": "trg_blog_posts_updated_at",
+      "definition": "CREATE TRIGGER trg_blog_posts_updated_at BEFORE UPDATE ON public.blog_posts FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+    },
+    {
+      "table_name": "contact_messages",
+      "name": "trg_contact_messages_updated_at",
+      "definition": "CREATE TRIGGER trg_contact_messages_updated_at BEFORE UPDATE ON public.contact_messages FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+    },
+    {
+      "table_name": "corporate_quotes",
+      "name": "trg_corporate_quotes_updated_at",
+      "definition": "CREATE TRIGGER trg_corporate_quotes_updated_at BEFORE UPDATE ON public.corporate_quotes FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+    },
+    {
+      "table_name": "messagerie_agencies",
+      "name": "messagerie_agencies_updated_at",
+      "definition": "CREATE TRIGGER messagerie_agencies_updated_at BEFORE UPDATE ON public.messagerie_agencies FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+    },
+    {
+      "table_name": "messagerie_network_settings",
+      "name": "messagerie_settings_updated_at",
+      "definition": "CREATE TRIGGER messagerie_settings_updated_at BEFORE UPDATE ON public.messagerie_network_settings FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+    },
+    {
+      "table_name": "parcel_rates",
+      "name": "trg_parcel_rates_updated_at",
+      "definition": "CREATE TRIGGER trg_parcel_rates_updated_at BEFORE UPDATE ON public.parcel_rates FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+    },
+    {
+      "table_name": "routes",
+      "name": "trg_routes_updated_at",
+      "definition": "CREATE TRIGGER trg_routes_updated_at BEFORE UPDATE ON public.routes FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+    },
+    {
+      "table_name": "site_media_assets",
+      "name": "site_media_assets_updated_at",
+      "definition": "CREATE TRIGGER site_media_assets_updated_at BEFORE UPDATE ON public.site_media_assets FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+    },
+    {
+      "table_name": "site_page_media",
+      "name": "site_page_media_updated_at",
+      "definition": "CREATE TRIGGER site_page_media_updated_at BEFORE UPDATE ON public.site_page_media FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+    },
+    {
+      "table_name": "site_pages",
+      "name": "site_pages_updated_at",
+      "definition": "CREATE TRIGGER site_pages_updated_at BEFORE UPDATE ON public.site_pages FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+    },
+    {
+      "table_name": "site_sections",
+      "name": "site_sections_updated_at",
+      "definition": "CREATE TRIGGER site_sections_updated_at BEFORE UPDATE ON public.site_sections FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+    },
+    {
+      "table_name": "site_settings",
+      "name": "trg_site_settings_updated_at",
+      "definition": "CREATE TRIGGER trg_site_settings_updated_at BEFORE UPDATE ON public.site_settings FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+    }
+  ],
+  "functions": [
+    {
+      "name": "is_admin",
+      "definition": "CREATE OR REPLACE FUNCTION public.is_admin()\n RETURNS boolean\n LANGUAGE sql\n STABLE\n SET search_path TO ''\nAS $function$\r\n  select coalesce(\r\n    (auth.jwt() -> 'app_metadata' ->> 'role') = 'admin',\r\n    false\r\n  );\r\n$function$\n",
+      "arguments": ""
+    },
+    {
+      "name": "save_site_cms_page",
+      "definition": "CREATE OR REPLACE FUNCTION public.save_site_cms_page(p_slug text, p_payload jsonb, p_images jsonb)\n RETURNS uuid\n LANGUAGE plpgsql\n SET search_path TO ''\nAS $function$\ndeclare page_uuid uuid; item record; ref uuid; url text;\nbegin\n  if not public.is_admin() then raise exception 'Administrator role required' using errcode='42501'; end if;\n  if jsonb_typeof(p_payload)<>'object' or jsonb_typeof(p_images)<>'object' then raise exception 'Invalid CMS payload'; end if;\n  update public.site_pages set\n    title_fr=coalesce(p_payload->>'title_fr',''),title_ar=coalesce(p_payload->>'title_ar',''),title_en=coalesce(p_payload->>'title_en',''),\n    seo_description_fr=coalesce(p_payload->>'seo_description_fr',''),seo_description_ar=coalesce(p_payload->>'seo_description_ar',''),seo_description_en=coalesce(p_payload->>'seo_description_en',''),\n    hero_overlay=(p_payload->>'hero_overlay')::numeric,content=p_payload->'content'\n  where slug=p_slug returning id into page_uuid;\n  if page_uuid is null then raise exception 'CMS page missing: apply defaults migration first'; end if;\n  delete from public.site_page_media where page_id=page_uuid;\n  for item in select key,value from jsonb_each_text(p_images) loop\n    ref:=null; url:=null;\n    if item.value ~ '^/media/[a-f0-9-]{36}$' then\n      ref:=substring(item.value from 8)::uuid;\n      if not exists(select 1 from public.site_media_assets where id=ref and is_active and is_published) then raise exception 'Publish media before using it on a public page'; end if;\n    else url:=item.value;\n    end if;\n    insert into public.site_page_media(page_id,field_key,asset_id,external_url) values(page_uuid,item.key,ref,url);\n  end loop;\n  return page_uuid;\nend $function$\n",
+      "arguments": "p_slug text, p_payload jsonb, p_images jsonb"
+    },
+    {
+      "name": "set_updated_at",
+      "definition": "CREATE OR REPLACE FUNCTION public.set_updated_at()\n RETURNS trigger\n LANGUAGE plpgsql\n SET search_path TO ''\nAS $function$\r\nbegin\r\n  new.updated_at = now();\r\n  return new;\r\nend;\r\n$function$\n",
+      "arguments": ""
+    }
+  ],
+  "policies": [
+    {
+      "schemaname": "public",
+      "tablename": "agencies",
+      "policyname": "Admins can delete agencies",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "DELETE",
+      "qual": "is_admin()",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "agencies",
+      "policyname": "Admins can insert agencies",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "agencies",
+      "policyname": "Admins can read all agencies",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "is_admin()",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "agencies",
+      "policyname": "Admins can update agencies",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "UPDATE",
+      "qual": "is_admin()",
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "agencies",
+      "policyname": "Public can read active agencies",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "(is_active = true)",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "blog_posts",
+      "policyname": "Admins can delete blog posts",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "DELETE",
+      "qual": "is_admin()",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "blog_posts",
+      "policyname": "Admins can insert blog posts",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "blog_posts",
+      "policyname": "Admins can read all blog posts",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "is_admin()",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "blog_posts",
+      "policyname": "Admins can update blog posts",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "UPDATE",
+      "qual": "is_admin()",
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "blog_posts",
+      "policyname": "Public can read published blog posts",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "(is_published = true)",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "contact_messages",
+      "policyname": "Admins can delete contact messages",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "DELETE",
+      "qual": "is_admin()",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "contact_messages",
+      "policyname": "Admins can read contact messages",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "is_admin()",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "contact_messages",
+      "policyname": "Admins can update contact messages",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "UPDATE",
+      "qual": "is_admin()",
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "contact_messages",
+      "policyname": "Anyone can send a contact message",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "((status)::text = 'new'::text)"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "corporate_quotes",
+      "policyname": "Admins can delete corporate quotes",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "DELETE",
+      "qual": "is_admin()",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "corporate_quotes",
+      "policyname": "Admins can read all corporate quotes",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "is_admin()",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "corporate_quotes",
+      "policyname": "Admins can update corporate quotes",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "UPDATE",
+      "qual": "is_admin()",
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "corporate_quotes",
+      "policyname": "Anyone can submit a corporate quote",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "((status)::text = 'pending'::text)"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "messagerie_agencies",
+      "policyname": "messagerie_agencies_admin",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "ALL",
+      "qual": "is_admin()",
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "messagerie_agencies",
+      "policyname": "messagerie_agencies_public",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "(is_active AND ((agency_id IS NULL) OR (EXISTS ( SELECT 1\n   FROM agencies a\n  WHERE ((a.id = messagerie_agencies.agency_id) AND a.is_active)))))",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "messagerie_network_settings",
+      "policyname": "messagerie_settings_admin",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "ALL",
+      "qual": "is_admin()",
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "messagerie_network_settings",
+      "policyname": "messagerie_settings_public",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "is_active",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "parcel_rates",
+      "policyname": "Admins can delete parcel rates",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "DELETE",
+      "qual": "is_admin()",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "parcel_rates",
+      "policyname": "Admins can insert parcel rates",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "parcel_rates",
+      "policyname": "Admins can read all parcel rates",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "is_admin()",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "parcel_rates",
+      "policyname": "Admins can update parcel rates",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "UPDATE",
+      "qual": "is_admin()",
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "parcel_rates",
+      "policyname": "Public can read parcel rates",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "is_active",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "routes",
+      "policyname": "Admins can delete routes",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "DELETE",
+      "qual": "is_admin()",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "routes",
+      "policyname": "Admins can insert routes",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "routes",
+      "policyname": "Admins can read all routes",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "is_admin()",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "routes",
+      "policyname": "Admins can update routes",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "UPDATE",
+      "qual": "is_admin()",
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "routes",
+      "policyname": "Public can read active routes",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "(is_active = true)",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "site_media_assets",
+      "policyname": "cms_admin_all",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "ALL",
+      "qual": "is_admin()",
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "site_media_assets",
+      "policyname": "cms_public_assets",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "(is_active AND is_published)",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "site_page_media",
+      "policyname": "cms_admin_all",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "ALL",
+      "qual": "is_admin()",
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "site_page_media",
+      "policyname": "cms_public_media_links",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "((EXISTS ( SELECT 1\n   FROM site_pages p\n  WHERE ((p.id = site_page_media.page_id) AND p.is_active AND p.is_published))) AND ((asset_id IS NULL) OR (EXISTS ( SELECT 1\n   FROM site_media_assets a\n  WHERE ((a.id = site_page_media.asset_id) AND a.is_active AND a.is_published)))))",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "site_pages",
+      "policyname": "cms_admin_all",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "ALL",
+      "qual": "is_admin()",
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "site_pages",
+      "policyname": "cms_public_pages",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "(is_active AND is_published)",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "site_sections",
+      "policyname": "cms_admin_all",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "ALL",
+      "qual": "is_admin()",
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "site_sections",
+      "policyname": "cms_public_sections",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "(is_active AND is_published AND (EXISTS ( SELECT 1\n   FROM site_pages p\n  WHERE ((p.id = site_sections.page_id) AND p.is_active AND p.is_published))))",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "site_settings",
+      "policyname": "Admins can read site settings",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "is_admin()",
+      "with_check": null
+    },
+    {
+      "schemaname": "public",
+      "tablename": "site_settings",
+      "policyname": "Admins can update site settings",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "UPDATE",
+      "qual": "is_admin()",
+      "with_check": "is_admin()"
+    },
+    {
+      "schemaname": "public",
+      "tablename": "site_settings",
+      "policyname": "Public can read site settings",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "true",
+      "with_check": null
+    },
+    {
+      "schemaname": "storage",
+      "tablename": "objects",
+      "policyname": "CMS admin media all",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "ALL",
+      "qual": "((bucket_id = 'site-media'::text) AND is_admin())",
+      "with_check": "((bucket_id = 'site-media'::text) AND is_admin())"
+    },
+    {
+      "schemaname": "storage",
+      "tablename": "objects",
+      "policyname": "CMS published media read",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "((bucket_id = 'site-media'::text) AND (EXISTS ( SELECT 1\n   FROM site_media_assets a\n  WHERE ((a.storage_path = objects.name) AND a.is_active AND a.is_published))))",
+      "with_check": null
+    },
+    {
+      "schemaname": "storage",
+      "tablename": "objects",
+      "policyname": "SLKM admins media delete",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "DELETE",
+      "qual": "((bucket_id = ANY (ARRAY['agencies-media'::text, 'blog-images'::text, 'fleet-images'::text])) AND is_admin())",
+      "with_check": null
+    },
+    {
+      "schemaname": "storage",
+      "tablename": "objects",
+      "policyname": "SLKM authenticated media update",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "UPDATE",
+      "qual": "((bucket_id = ANY (ARRAY['agencies-media'::text, 'blog-images'::text, 'fleet-images'::text])) AND is_admin())",
+      "with_check": "((bucket_id = ANY (ARRAY['agencies-media'::text, 'blog-images'::text, 'fleet-images'::text])) AND is_admin())"
+    },
+    {
+      "schemaname": "storage",
+      "tablename": "objects",
+      "policyname": "SLKM authenticated media upload",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "authenticated"
+      ],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "((bucket_id = ANY (ARRAY['agencies-media'::text, 'blog-images'::text, 'fleet-images'::text])) AND is_admin() AND (length(TRIM(BOTH FROM name)) > 0))"
+    },
+    {
+      "schemaname": "storage",
+      "tablename": "objects",
+      "policyname": "SLKM public media read",
+      "permissive": "PERMISSIVE",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "cmd": "SELECT",
+      "qual": "(bucket_id = ANY (ARRAY['agencies-media'::text, 'blog-images'::text, 'fleet-images'::text]))",
+      "with_check": null
+    }
+  ],
+  "grants": [
+    {
+      "grantee": "anon",
+      "table_name": "agencies",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "agencies",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "agencies",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "agencies",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "agencies",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "agencies",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "agencies",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "agencies",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "agencies",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "anon",
+      "table_name": "blog_posts",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "blog_posts",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "blog_posts",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "blog_posts",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "blog_posts",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "blog_posts",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "blog_posts",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "blog_posts",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "blog_posts",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "anon",
+      "table_name": "contact_messages",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "contact_messages",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "contact_messages",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "contact_messages",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "contact_messages",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "contact_messages",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "contact_messages",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "contact_messages",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "contact_messages",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "anon",
+      "table_name": "corporate_quotes",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "corporate_quotes",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "corporate_quotes",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "corporate_quotes",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "corporate_quotes",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "corporate_quotes",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "corporate_quotes",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "corporate_quotes",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "corporate_quotes",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "anon",
+      "table_name": "messagerie_agencies",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "messagerie_agencies",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "messagerie_agencies",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "messagerie_agencies",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "messagerie_agencies",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "anon",
+      "table_name": "messagerie_network_settings",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "messagerie_network_settings",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "messagerie_network_settings",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "messagerie_network_settings",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "messagerie_network_settings",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "anon",
+      "table_name": "parcel_rates",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "parcel_rates",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "parcel_rates",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "parcel_rates",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "parcel_rates",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "parcel_rates",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "parcel_rates",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "parcel_rates",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "parcel_rates",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "anon",
+      "table_name": "routes",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "routes",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "routes",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "routes",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "routes",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "routes",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "routes",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "routes",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "routes",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "anon",
+      "table_name": "site_media_assets",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_media_assets",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_media_assets",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_media_assets",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_media_assets",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_media_assets",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_media_assets",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_media_assets",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_media_assets",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_media_assets",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_media_assets",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_media_assets",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "anon",
+      "table_name": "site_page_media",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_page_media",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_page_media",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_page_media",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_page_media",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_page_media",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_page_media",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_page_media",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_page_media",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_page_media",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_page_media",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_page_media",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "anon",
+      "table_name": "site_pages",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_pages",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_pages",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_pages",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_pages",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_pages",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_pages",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_pages",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_pages",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_pages",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_pages",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_pages",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "anon",
+      "table_name": "site_sections",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_sections",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_sections",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_sections",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_sections",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_sections",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_sections",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_sections",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_sections",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_sections",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_sections",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_sections",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "anon",
+      "table_name": "site_settings",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_settings",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_settings",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_settings",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "authenticated",
+      "table_name": "site_settings",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_settings",
+      "privilege_type": "DELETE"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_settings",
+      "privilege_type": "INSERT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_settings",
+      "privilege_type": "SELECT"
+    },
+    {
+      "grantee": "service_role",
+      "table_name": "site_settings",
+      "privilege_type": "UPDATE"
+    }
+  ],
+  "buckets": [
+    {
+      "id": "agencies-media",
+      "name": "agencies-media",
+      "public": true,
+      "file_size_limit": 10485760,
+      "allowed_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp",
+        "image/avif"
+      ]
+    },
+    {
+      "id": "blog-images",
+      "name": "blog-images",
+      "public": true,
+      "file_size_limit": 10485760,
+      "allowed_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp",
+        "image/avif"
+      ]
+    },
+    {
+      "id": "fleet-images",
+      "name": "fleet-images",
+      "public": true,
+      "file_size_limit": 10485760,
+      "allowed_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp",
+        "image/avif"
+      ]
+    },
+    {
+      "id": "site-media",
+      "name": "site-media",
+      "public": false,
+      "file_size_limit": 5242880,
+      "allowed_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp",
+        "image/avif"
+      ]
+    }
+  ]
+}

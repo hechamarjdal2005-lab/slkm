@@ -9,12 +9,12 @@ export function buttonClass(
   size: "sm" | "md" | "lg" = "md",
 ) {
   return cn(
-    "inline-flex items-center justify-center gap-2 rounded-xl font-bold transition focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-60",
-    size === "sm" && "px-3.5 py-2 text-xs",
+    `slkm-button slkm-button-${variant} inline-flex items-center justify-center gap-2 rounded-xl font-bold transition duration-200 motion-safe:hover:-translate-y-0.5 active:translate-y-0 focus-visible:ring-4 focus-visible:ring-primary-bright/40 disabled:cursor-not-allowed disabled:opacity-60`,
+    size === "sm" && "min-h-11 px-3.5 py-2 text-xs",
     size === "md" && "px-5 py-3 text-sm",
     size === "lg" && "px-6 py-3.5 text-sm sm:text-base",
     variant === "primary" && "bg-primary text-white shadow-soft hover:bg-primary-dark",
-    variant === "secondary" && "bg-secondary-bright text-white shadow-soft hover:bg-secondary",
+    variant === "secondary" && "bg-secondary-bright text-primary-dark shadow-soft hover:bg-[#e87518]",
     variant === "white" && "bg-white text-primary shadow-soft hover:bg-primary-soft",
     variant === "ghost" && "border border-line bg-white/70 text-ink hover:border-primary/40 hover:text-primary",
     variant === "danger" && "bg-danger text-white hover:bg-red-800",
@@ -22,9 +22,9 @@ export function buttonClass(
 }
 
 export const fieldClass =
-  "w-full rounded-xl border border-line bg-white px-3.5 py-2.5 text-sm text-ink shadow-sm outline-none transition placeholder:text-muted/70 focus:border-primary-bright focus:ring-4 focus:ring-primary-bright/10";
+  "slkm-field min-h-11 w-full rounded-xl border border-line bg-white px-3.5 py-2.5 text-sm text-ink shadow-sm outline-none transition placeholder:text-muted/70 focus:border-primary-bright focus:ring-4 focus:ring-primary-bright/10";
 
-export const labelClass = "mb-1.5 block text-xs font-bold uppercase tracking-[0.12em] text-muted";
+export const labelClass = "mb-2 block text-xs font-semibold text-muted";
 
 export function Badge({
   children,
@@ -72,17 +72,17 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        "mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between",
+        "section-heading mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between",
         align === "center" && "items-center text-center md:flex-col md:items-center",
       )}
     >
       <div className={cn("max-w-3xl", align === "center" && "mx-auto")}>
         {eyebrow ? (
-          <p className={cn("mb-2 text-xs font-extrabold uppercase tracking-[0.18em]", light ? "text-white/70" : "text-primary")}>
+          <p className={cn("section-eyebrow mb-2 text-[11px] font-extrabold uppercase tracking-[0.15em]", light ? "text-white/80" : "text-primary")}>
             {eyebrow}
           </p>
         ) : null}
-        <h2 className={cn("text-balance text-2xl font-extrabold tracking-[-0.03em] sm:text-3xl lg:text-4xl", light ? "text-white" : "text-ink")}>
+        <h2 className={cn("text-balance text-[clamp(1.375rem,2.7vw,2.25rem)] font-extrabold leading-[1.24] tracking-[-0.035em]", light ? "text-white" : "text-ink")}>
           {title}
         </h2>
         {description ? (
@@ -142,13 +142,13 @@ export function PageHero({
   compact?: boolean;
 }) {
   return (
-    <section className={cn("relative overflow-hidden bg-primary-dark text-white", compact ? "py-16" : "py-20 sm:py-28")}>
-      <Image src={image} alt="" fill priority sizes="100vw" className="object-cover opacity-45" />
-      <div className="absolute inset-0 bg-gradient-to-b from-primary-dark/70 via-primary-dark/50 to-primary-dark/90" />
+    <section className={cn("page-hero relative overflow-hidden bg-ink text-white", compact ? "py-12" : "py-14 sm:py-20")}>
+      <Image src={image} alt="" fill priority sizes="100vw" className="object-cover" />
+      <div className="absolute inset-0 hero-overlay" />
       <div className="container-page relative">
-        <div className="max-w-4xl">
-          {eyebrow ? <p className="mb-3 text-xs font-extrabold uppercase tracking-[0.22em] text-secondary-soft">{eyebrow}</p> : null}
-          <h1 className="text-balance text-3xl font-extrabold tracking-[-0.04em] sm:text-5xl lg:text-6xl">{title}</h1>
+        <div className="max-w-2xl">
+          {eyebrow ? <p className="hero-eyebrow">{eyebrow}</p> : null}
+          <h1 className="text-balance text-[clamp(2.25rem,4.5vw,4rem)] font-extrabold leading-[1.12] tracking-[-0.02em]">{title}</h1>
           {description ? <p className="mt-5 max-w-2xl text-sm leading-7 text-white/80 sm:text-lg sm:leading-8">{description}</p> : null}
           {children ? <div className="mt-8">{children}</div> : null}
         </div>
@@ -160,7 +160,7 @@ export function PageHero({
 export function StatCard({ value, label, tone = "light" }: { value: string; label: string; tone?: "light" | "dark" }) {
   return (
     <div className={cn("rounded-2xl border p-4 sm:p-5", tone === "light" ? "border-line bg-white" : "border-white/15 bg-white/10")}>
-      <p className={cn("text-2xl font-extrabold tracking-[-0.04em] sm:text-3xl", tone === "light" ? "text-primary" : "text-white")}>{value}</p>
+      <p className={cn("text-2xl font-extrabold tracking-[-0.02em] sm:text-3xl", tone === "light" ? "text-primary" : "text-white")}>{value}</p>
       <p className={cn("mt-1 text-xs font-semibold leading-5", tone === "light" ? "text-muted" : "text-white/70")}>{label}</p>
     </div>
   );

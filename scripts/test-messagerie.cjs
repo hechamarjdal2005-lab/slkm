@@ -1,0 +1,38 @@
+const fs = require("node:fs");
+const path = require("node:path");
+const Module = require("node:module");
+const ts = require("typescript");
+const assert = require("node:assert/strict");
+const originalResolve = Module._resolveFilename;
+Module._resolveFilename = function (request, ...args) {
+  return originalResolve.call(this, request.startsWith("@/") ? path.join(__dirname, "../src", request.slice(2)) : request, ...args);
+};
+for (const extension of [".ts", ".tsx"]) require.extensions[extension] = (module, filename) => {
+  module._compile(ts.transpileModule(fs.readFileSync(filename, "utf8"), { compilerOptions: { module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.ReactJSX, esModuleInterop: true, target: ts.ScriptTarget.ES2020 } }).outputText, filename);
+};
+const React = require("react");
+const { renderToStaticMarkup } = require("react-dom/server");
+const { MessagerieNetworkSection } = require("../src/components/messagerie-network-section.tsx");
+const row = { id: "fixture", agency_id: null, agency: null, name_fr: "Fixture Parcel Agency", city_fr: "Fixture City", address_fr: "Fixture address", phone: "+212000000000", whatsapp: null, is_active: true, display_order: 0 };
+const render = props => renderToStaticMarkup(React.createElement(MessagerieNetworkSection, { settings: null, agencies: [], locale: "fr", ...props }));
+assert.ok(render({}).includes("Notre r"));
+assert.ok(render({ agencies: [row] }).includes("Fixture Parcel Agency"));
+assert.ok(!render({ agencies: [{ ...row, is_active: false }] }).includes("Fixture Parcel Agency"));
+assert.ok(!render({ agencies: [{ ...row, agency_id: "shared", agency: { is_active: false } }] }).includes("Fixture Parcel Agency"));
+const shared = { ...row, agency_id: "shared", agency: { is_active: true, agency_name_fr: "Source name", city_fr: "Source city", address_fr: "Source address" } };
+const sharedHtml = render({ agencies: [shared] });
+assert.ok(sharedHtml.includes("Source name"));
+assert.ok(!sharedHtml.includes("Fixture Parcel Agency"));
+assert.equal(render({ settings: { is_active: false } }), "");
+assert.ok(render({ locale: "en" }).includes("Our parcel network"));
+assert.ok(render({ locale: "ar" }).includes("شبكة إرسالياتنا"));
+const image = render({ settings: { is_active: true, map_image_url: "/images/test-only.png" } });
+assert.ok(image.includes("object-contain"));
+assert.ok(image.includes("<dialog"));
+assert.ok(image.includes("aria-label="));
+const details = render({ agencies: [{ ...row, image_url: '/images/agencies/agadir.png', lat: 30, lng: -9, agents: [{name:'Public service agent',role_fr:'Conseiller',role_ar:'مستشار',role_en:'Advisor',phone:'+212600000000',email:'public@example.invalid',is_active:true},{name:'Hidden service agent',role_fr:'Conseiller',role_ar:'مستشار',role_en:'Advisor',phone:'+212600000000',email:'public@example.invalid',is_active:false}] }] });
+assert.ok(details.includes('Public service agent'));
+assert.ok(!details.includes('Hidden service agent'));
+assert.ok(details.includes('maps/search/?api=1'));
+assert.ok(decodeURIComponent(details).includes('/images/agencies/agadir.png'));
+console.log("Messagerie: 16 rendering assertions passed (publication, identity, FR/AR/EN, photos, locations, service agents and accessible dialog).");

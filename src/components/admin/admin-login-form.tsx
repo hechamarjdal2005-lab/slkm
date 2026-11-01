@@ -43,6 +43,13 @@ export function AdminLoginForm() {
         setPending(false);
         return;
       }
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user?.app_metadata?.role !== "admin") {
+        await supabase.auth.signOut();
+        setError("Ce compte ne dispose pas du rôle administrateur SLKM.");
+        setPending(false);
+        return;
+      }
       router.replace("/admin");
       router.refresh();
     } catch {

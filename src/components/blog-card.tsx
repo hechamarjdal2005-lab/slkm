@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/site-image";
 import Link from "next/link";
 import { ArrowUpRight, CalendarDays } from "lucide-react";
 import type { BlogPost, Locale } from "@/lib/types";
@@ -10,12 +10,12 @@ export function BlogCard({ post, locale, featured = false }: { post: BlogPost; l
   const excerpt = pick(locale, post.excerpt_fr, post.excerpt_ar, post.excerpt_en);
 
   return (
-    <article className={`group overflow-hidden rounded-3xl border border-line bg-white shadow-soft transition hover:-translate-y-0.5 hover:shadow-lift ${featured ? "lg:grid lg:grid-cols-2" : ""}`}>
-      <Link href={`/blog/${post.slug}`} className={`relative block overflow-hidden bg-surface-muted ${featured ? "aspect-[16/10] lg:aspect-auto lg:min-h-72" : "aspect-[16/10]"}`}>
+    <article className={`journal-card group overflow-hidden rounded-3xl border border-line bg-white shadow-soft transition motion-safe:hover:-translate-y-0.5 hover:shadow-lift ${featured ? "lg:grid lg:grid-cols-2" : ""}`}>
+      <Link href={`/blog/${post.slug}`} className={`relative block overflow-hidden bg-surface-muted ${featured ? "aspect-[16/9] lg:aspect-auto lg:min-h-72" : "aspect-[16/9]"}`}>
         {post.cover_image_url ? (
           <Image
             src={post.cover_image_url}
-            alt=""
+            alt={title}
             fill
             sizes={featured ? "(max-width: 1024px) 100vw, 50vw" : "(max-width: 768px) 100vw, 33vw"}
             className="object-cover transition duration-500 group-hover:scale-[1.03]"
@@ -28,18 +28,18 @@ export function BlogCard({ post, locale, featured = false }: { post: BlogPost; l
           {locale === "ar" ? "مقال" : locale === "en" ? "Article" : "Actualité"}
         </Badge>
       </Link>
-      <div className={`flex flex-col p-5 sm:p-6 ${featured ? "lg:justify-center lg:p-8" : ""}`}>
+      <div className={`journal-card-body flex flex-col p-5 sm:p-6 ${featured ? "lg:justify-center lg:p-7" : ""}`}>
         <p className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-[0.1em] text-muted">
           <CalendarDays className="h-3.5 w-3.5 text-primary" />
           {formatDate(post.published_at, locale)}
         </p>
-        <h3 className={`mt-3 text-balance font-extrabold tracking-[-0.03em] text-ink ${featured ? "text-2xl lg:text-3xl" : "text-lg"}`}>
+        <h3 className={`mt-3 text-balance font-extrabold tracking-[-0.03em] text-ink ${featured ? "text-[22px] lg:text-[27px]" : "text-[17px]"}`}>
           <Link href={`/blog/${post.slug}`} className="transition hover:text-primary">
             {title}
           </Link>
         </h3>
         {excerpt ? <p className="mt-3 line-clamp-3 text-sm leading-6 text-muted">{excerptText(excerpt, featured ? 220 : 140)}</p> : null}
-        <Link href={`/blog/${post.slug}`} className="mt-5 inline-flex items-center gap-1.5 text-xs font-extrabold text-primary">
+        <Link href={`/blog/${post.slug}`} className="mt-4 inline-flex min-h-11 items-center gap-1.5 text-xs font-extrabold text-primary">
           {locale === "ar" ? "اقرأ المزيد" : locale === "en" ? "Read article" : "Lire l'article"}
           <ArrowUpRight className="h-4 w-4 rtl:-scale-x-100" />
         </Link>

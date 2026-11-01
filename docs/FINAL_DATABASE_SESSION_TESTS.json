@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-31T16:18:59.506Z",
+  "status": "PASS",
+  "checks": 578,
+  "original42P01Reproduced": true,
+  "selfContainedConstraintBlocks": 69,
+  "separatelyCommittedStatements": 218,
+  "numberedFilesInNewSessions": [
+    {
+      "file": "supabase/FINAL_DATABASE/01.sql",
+      "newSession": true,
+      "status": "PASS"
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/02.sql",
+      "newSession": true,
+      "status": "PASS"
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/03.sql",
+      "newSession": true,
+      "status": "PASS"
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/04.sql",
+      "newSession": true,
+      "status": "PASS"
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/05.sql",
+      "newSession": true,
+      "status": "PASS"
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/06.sql",
+      "newSession": true,
+      "status": "PASS"
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/07.sql",
+      "newSession": true,
+      "status": "PASS"
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/08.sql",
+      "newSession": true,
+      "status": "PASS"
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/09.sql",
+      "newSession": true,
+      "status": "PASS"
+    }
+  ],
+  "rerunOnly02": "PASS; all 13 table snapshots unchanged",
+  "remoteWrites": false
+}

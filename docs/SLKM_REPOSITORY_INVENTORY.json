@@ -1,0 +1,7047 @@
+{
+  "date": "2026-10-31T16:10:51.842Z",
+  "excluded": "Dependencies, build outputs, artifacts, git internals, secrets and binary assets. Static exported HTML designs are references, not active Next.js routes.",
+  "files": [
+    {
+      "file": "AUDIT_SLKM.md",
+      "lines": 36,
+      "sha256": "d487e6c0fd4e581b740bc3181f1547a45d59eb40e161f2dd8fcc19860b768beb"
+    },
+    {
+      "file": "eslint.config.mjs",
+      "lines": 19,
+      "sha256": "f655908a2e11f78d691e76cbcfae15ec09e8854b1ebf24acdd451995f64a476a"
+    },
+    {
+      "file": "MESSAGERIE.md",
+      "lines": 64,
+      "sha256": "a63f39f304f7401401de93dc2ed04b0e3a3704d57a67d4f2a3dfe448d745eb1a"
+    },
+    {
+      "file": "next-env.d.ts",
+      "lines": 7,
+      "sha256": "f4e8976c19fc926644d72610bf1058bd6bf52add97e46a02bc0b912a751625c0",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "next.config.ts",
+      "lines": 20,
+      "sha256": "f39361f6c195840ce8d572f2c66684e9ee53c9bf8f46787da1fb80860d3799e4",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "opencode.json",
+      "lines": 13,
+      "sha256": "852edc4f12c36f39162a968b3c66bd29c8c4ef4fec90a65004bbc51e2cf6d5c7"
+    },
+    {
+      "file": "ORANGE-REDESIGN.md",
+      "lines": 51,
+      "sha256": "8d5e6550f41feb5d2d96ecf4b95709965f76926a5963f2bcd7063432c0defc23"
+    },
+    {
+      "file": "package-lock.json",
+      "lines": 3434,
+      "sha256": "d07e9fe4ebab01e540f80fc021bd714e930871709345beda5b7e4bee9c97a781"
+    },
+    {
+      "file": "package.json",
+      "lines": 48,
+      "sha256": "805382c206716f498884fb42008fb4a7cb8b73167d88797bf91397e7c2aaa99e"
+    },
+    {
+      "file": "postcss.config.mjs",
+      "lines": 7,
+      "sha256": "98e8d8a143f16216f4b50a2520024f6254987049b2e199026742a96e16ba411e"
+    },
+    {
+      "file": "README.md",
+      "lines": 8,
+      "sha256": "2a0f7e40678fb6a8fbe963b212711f447e20694bae5f9538e5cb7fb25ec53d56"
+    },
+    {
+      "file": "REDESIGN.md",
+      "lines": 115,
+      "sha256": "f323aa17afa9c46e88a8e9d7faecc4e185cecc2a2fd7a488f88967d4c174a59c"
+    },
+    {
+      "file": "scripts/audit-inventory.cjs",
+      "lines": 14,
+      "sha256": "c1b53c0c45f06b5bb31997e44e89c4ce4484636484afbc8232ea44773e5db2eb"
+    },
+    {
+      "file": "scripts/audit-sql-source.cjs",
+      "lines": 34,
+      "sha256": "8525e939ac29e9a74c2f68269327daedb0efe08180b6e9ff9007076db8c760e6"
+    },
+    {
+      "file": "scripts/build-cms-seed.cjs",
+      "lines": 22,
+      "sha256": "00a701c1e7ae034f88ad7b70813fc21ac93fbf6eafe6e103b702e8698e2b5ffa"
+    },
+    {
+      "file": "scripts/build-final-database-defaults.cjs",
+      "lines": 38,
+      "sha256": "f686c8ed1f5129cd585b6212c73eecad133cc768854f28f26ee6dc33a71e35cc"
+    },
+    {
+      "file": "scripts/build-final-sql.cjs",
+      "lines": 66,
+      "sha256": "41296a6d098ac48e779d78eef27de880731d696d36da45bcb89bbf3c2e064a3a"
+    },
+    {
+      "file": "scripts/build-schema-guards.cjs",
+      "lines": 17,
+      "sha256": "6f73fc24b9c9b8a17189d9bc8c007c1713ed5297ad76674be8c8a1a38deb8a0f"
+    },
+    {
+      "file": "scripts/build-sql-single-file.cjs",
+      "lines": 25,
+      "sha256": "47210e7d69a38d66278bdfc558797057720e8b889d069902ba9cd8573fa12d38"
+    },
+    {
+      "file": "scripts/build-sql-verified.cjs",
+      "lines": 197,
+      "sha256": "cc8c43d7241e75f0bb4f9142c672ab2e48c899fad3385e9f614c84fa9e649635"
+    },
+    {
+      "file": "scripts/migrate-cms-links.cjs",
+      "lines": 47,
+      "sha256": "f61cc7d3b2bd76afe7314e3c2553bacb7c53f8ad015fe076130b417760ecea27"
+    },
+    {
+      "file": "scripts/migrate-public-copy.cjs",
+      "lines": 172,
+      "sha256": "79af55af0d2849eab489004d80b46d4ff3480574064fa86cb61b2c973f77ad36"
+    },
+    {
+      "file": "scripts/prepare-numbered-sql.cjs",
+      "lines": 70,
+      "sha256": "0c808d13cc951e419231fc04199e3a346afe1f442274167b2d90aa1c39a342fc"
+    },
+    {
+      "file": "scripts/preview-orange.cjs",
+      "lines": 28,
+      "sha256": "4bd750425601825e0fca0553ca702b333decf92c4ec3fbc40fd6ad415a07c237"
+    },
+    {
+      "file": "scripts/probe-supabase-readonly.cjs",
+      "lines": 6,
+      "sha256": "ea6e91ad6305cb04c7811afe1ba9df9f601a806f07c904e506477b7a4f081fa6"
+    },
+    {
+      "file": "scripts/smoke-public.cjs",
+      "lines": 49,
+      "sha256": "44ee85d2e39a42ba953f3ad8778e3c0e97f60aa46ed8841db44ca0fbf6d7223b"
+    },
+    {
+      "file": "scripts/sql-schema-contract.json",
+      "lines": 3567,
+      "sha256": "1a34d92cf255a33be0ee7c7be20cad6bec2f42b7f59ddc84ad5c7f363ddca86a"
+    },
+    {
+      "file": "scripts/sql-test-support.cjs",
+      "lines": 27,
+      "sha256": "4319de49e3252714a48c1a0b4b118093b5cfebef785016cf37671184a84a6e82"
+    },
+    {
+      "file": "scripts/sql-verified-support.cjs",
+      "lines": 27,
+      "sha256": "4319de49e3252714a48c1a0b4b118093b5cfebef785016cf37671184a84a6e82"
+    },
+    {
+      "file": "scripts/test-cms-controls.cjs",
+      "lines": 23,
+      "sha256": "486d5586d67216e590f6b097b44a7f24a9ef1ac32058dab5525777d25294804f"
+    },
+    {
+      "file": "scripts/test-cms-sql.cjs",
+      "lines": 63,
+      "sha256": "d92ba4c58f2580208ad86481898af6bf7701f526ded040e82a8e80724e6838da"
+    },
+    {
+      "file": "scripts/test-database-crud.cjs",
+      "lines": 67,
+      "sha256": "0c5ac31383812dc7ff0d0d1a5c418aca5368d88c796d3ed4f1ce4325a625dba7"
+    },
+    {
+      "file": "scripts/test-final-sql.cjs",
+      "lines": 97,
+      "sha256": "c5d1da2d89dd2e5d989cd41f22952cbc489feade9195c8d2a29eacd901fe2332"
+    },
+    {
+      "file": "scripts/test-messagerie.cjs",
+      "lines": 39,
+      "sha256": "34ea49af4db6423d321f1631ed1866977feeff8686c00bc12cdd5a282ddc3ee2"
+    },
+    {
+      "file": "scripts/test-public-ui.cjs",
+      "lines": 282,
+      "sha256": "f31724cc510c265809b60ef3a73cb93bd2f276ae96ff593b8bcf066a799ca6b5"
+    },
+    {
+      "file": "scripts/test-sql-single-file.cjs",
+      "lines": 37,
+      "sha256": "49e437e6a0ab66143d0ed05e140e2dd621717fd73eee4f1582bddcf3e315ab1a"
+    },
+    {
+      "file": "scripts/test-sql-verified.cjs",
+      "lines": 173,
+      "sha256": "0e349faa232e4482e5413018973b68075ee6ac60addc3bc5a80799cfd9b32efc"
+    },
+    {
+      "file": "scripts/test-transport.cjs",
+      "lines": 30,
+      "sha256": "4b1996bc22f848b1ab67c304ca4e65b306b4eacb6d4d3456f45cfc52722e9b84"
+    },
+    {
+      "file": "scripts/verify-final-sql.cjs",
+      "lines": 61,
+      "sha256": "1323f7feaf1f21385780aae8c21baf226035d2b73516ed3bea8e8d020dcedaa0"
+    },
+    {
+      "file": "scripts/write-sql-audit-table.cjs",
+      "lines": 20,
+      "sha256": "f7bb605fea962fffd8810d0d97d989f21c46efff2a801affce504ca12e8125e5"
+    },
+    {
+      "file": "src/app/(site)/about/page.tsx",
+      "lines": 177,
+      "sha256": "3513e51eec91bf8863103e04398e3bbbcfcb8ed67e2346f782a2a102dca8a540",
+      "tables": [],
+      "rpc": [],
+      "cms": [
+        {
+          "key": "text_e1170ab1997e",
+          "line": 25
+        },
+        {
+          "key": "text_e1170ab1997e",
+          "line": 26
+        },
+        {
+          "key": "text_e1170ab1997e",
+          "line": 27
+        },
+        {
+          "key": "text_164066236600",
+          "line": 28
+        },
+        {
+          "key": "text_164066236600",
+          "line": 29
+        },
+        {
+          "key": "text_164066236600",
+          "line": 30
+        },
+        {
+          "key": "text_a4ed9ff495ee",
+          "line": 34
+        },
+        {
+          "key": "text_a4ed9ff495ee",
+          "line": 35
+        },
+        {
+          "key": "text_a4ed9ff495ee",
+          "line": 36
+        },
+        {
+          "key": "text_d1e1254035e1",
+          "line": 37
+        },
+        {
+          "key": "text_d1e1254035e1",
+          "line": 38
+        },
+        {
+          "key": "text_d1e1254035e1",
+          "line": 39
+        },
+        {
+          "key": "text_1915ad464625",
+          "line": 43
+        },
+        {
+          "key": "text_1915ad464625",
+          "line": 44
+        },
+        {
+          "key": "text_1915ad464625",
+          "line": 45
+        },
+        {
+          "key": "text_fbf2b0944ae5",
+          "line": 46
+        },
+        {
+          "key": "text_fbf2b0944ae5",
+          "line": 47
+        },
+        {
+          "key": "text_fbf2b0944ae5",
+          "line": 48
+        },
+        {
+          "key": "image_9fce0732de23",
+          "line": 52
+        },
+        {
+          "key": "text_652cd9603ac8",
+          "line": 52
+        },
+        {
+          "key": "text_51ef54c529de",
+          "line": 52
+        },
+        {
+          "key": "text_26b72d60c687",
+          "line": 52
+        },
+        {
+          "key": "image_19e23c8c7648",
+          "line": 66
+        },
+        {
+          "key": "text_5a3031c4680d",
+          "line": 70
+        },
+        {
+          "key": "text_54b9497e87db",
+          "line": 74
+        },
+        {
+          "key": "text_8c6db3af58e2",
+          "line": 79
+        },
+        {
+          "key": "text_1148cf3ee1c8",
+          "line": 79
+        },
+        {
+          "key": "text_5775e5336150",
+          "line": 82
+        },
+        {
+          "key": "text_6974fce44f26",
+          "line": 85
+        },
+        {
+          "key": "text_7541c2434aed",
+          "line": 90
+        },
+        {
+          "key": "text_7541c2434aed",
+          "line": 90
+        },
+        {
+          "key": "text_7541c2434aed",
+          "line": 90
+        },
+        {
+          "key": "text_6fae79c72db8",
+          "line": 91
+        },
+        {
+          "key": "text_6fae79c72db8",
+          "line": 91
+        },
+        {
+          "key": "text_6fae79c72db8",
+          "line": 91
+        },
+        {
+          "key": "text_5852bcae1f62",
+          "line": 92
+        },
+        {
+          "key": "text_5852bcae1f62",
+          "line": 92
+        },
+        {
+          "key": "text_5852bcae1f62",
+          "line": 92
+        },
+        {
+          "key": "text_d925c104e333",
+          "line": 93
+        },
+        {
+          "key": "text_d925c104e333",
+          "line": 93
+        },
+        {
+          "key": "text_d925c104e333",
+          "line": 93
+        },
+        {
+          "key": "text_09e7d2cf376c",
+          "line": 105
+        },
+        {
+          "key": "text_66d2df0e0bda",
+          "line": 105
+        },
+        {
+          "key": "text_d0c8a757b7e7",
+          "line": 123
+        },
+        {
+          "key": "text_49f6c0ea2f85",
+          "line": 123
+        },
+        {
+          "key": "text_c3201fad6f90",
+          "line": 128
+        },
+        {
+          "key": "text_fb69107a96df",
+          "line": 128
+        },
+        {
+          "key": "text_d95a1270801d",
+          "line": 143
+        },
+        {
+          "key": "text_17c70e1250fa",
+          "line": 143
+        },
+        {
+          "key": "text_b140ab9fb32c",
+          "line": 143
+        },
+        {
+          "key": "link_3bd6b58d0eb5",
+          "line": 143
+        },
+        {
+          "key": "text_f139c54b7dd6",
+          "line": 143
+        },
+        {
+          "key": "link_72a342010d62",
+          "line": 144
+        },
+        {
+          "key": "text_9f38ae8098e2",
+          "line": 145
+        },
+        {
+          "key": "text_cc48426bf7db",
+          "line": 159
+        },
+        {
+          "key": "text_fda674ddaf45",
+          "line": 162
+        },
+        {
+          "key": "text_ffcadf5671ac",
+          "line": 165
+        },
+        {
+          "key": "link_a6d076cfdd50",
+          "line": 169
+        },
+        {
+          "key": "text_567565cc67ca",
+          "line": 169
+        },
+        {
+          "key": "link_4e08d4e7785a",
+          "line": 170
+        },
+        {
+          "key": "text_330a53f83685",
+          "line": 170
+        }
+      ],
+      "staticJsx": [
+        {
+          "line": 72,
+          "text": "Moulay Mbarek"
+        }
+      ]
+    },
+    {
+      "file": "src/app/(site)/blog/page.tsx",
+      "lines": 43,
+      "sha256": "38568175af201f702bfcb6e47c8cc15e124908af019aac82759091006419f3e1",
+      "tables": [],
+      "rpc": [],
+      "cms": [
+        {
+          "key": "text_1831f60fe790",
+          "line": 26
+        },
+        {
+          "key": "text_175c55873466",
+          "line": 26
+        },
+        {
+          "key": "text_bd64b55010c7",
+          "line": 26
+        },
+        {
+          "key": "text_bee9f69397b0",
+          "line": 31
+        },
+        {
+          "key": "text_e36036739f5c",
+          "line": 31
+        },
+        {
+          "key": "text_4ef07352550e",
+          "line": 34
+        },
+        {
+          "key": "text_6f0b048748bb",
+          "line": 34
+        },
+        {
+          "key": "text_6acd985680f8",
+          "line": 38
+        },
+        {
+          "key": "text_6c857416ce4b",
+          "line": 39
+        },
+        {
+          "key": "text_440bf68b4bef",
+          "line": 39
+        },
+        {
+          "key": "link_4f6fddd0268f",
+          "line": 39
+        },
+        {
+          "key": "text_c37f1459c181",
+          "line": 39
+        }
+      ],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/(site)/blog/[slug]/page.tsx",
+      "lines": 114,
+      "sha256": "64cee4a7f17f28d7c0bea6a806352017630114ac468597db68e76133ac5fc8d3",
+      "tables": [],
+      "rpc": [],
+      "cms": [
+        {
+          "key": "link_1e2531571ad9",
+          "line": 60
+        },
+        {
+          "key": "text_4ef07352550e",
+          "line": 62
+        },
+        {
+          "key": "text_8a2263276b85",
+          "line": 66
+        },
+        {
+          "key": "text_da99809df088",
+          "line": 91
+        },
+        {
+          "key": "text_b74199bd8920",
+          "line": 94
+        },
+        {
+          "key": "link_55ffb6cb53be",
+          "line": 97
+        },
+        {
+          "key": "text_9f38ae8098e2",
+          "line": 98
+        },
+        {
+          "key": "text_0dc8260a5466",
+          "line": 106
+        },
+        {
+          "key": "text_12a79763dee1",
+          "line": 106
+        },
+        {
+          "key": "link_73d6b97701d3",
+          "line": 106
+        },
+        {
+          "key": "text_4ef07352550e",
+          "line": 106
+        }
+      ],
+      "staticJsx": [
+        {
+          "line": 74,
+          "text": "min"
+        }
+      ]
+    },
+    {
+      "file": "src/app/(site)/contact/page.tsx",
+      "lines": 103,
+      "sha256": "bc17541c9821d938d6bb8704df04f3db770f4b39c9ba1654395a93e8c6e0cc4a",
+      "tables": [],
+      "rpc": [],
+      "cms": [
+        {
+          "key": "text_1a04b59df37a",
+          "line": 19
+        },
+        {
+          "key": "text_cc4c424b571f",
+          "line": 23
+        },
+        {
+          "key": "text_2550d962e536",
+          "line": 35
+        },
+        {
+          "key": "text_79e5cf20de0b",
+          "line": 41
+        },
+        {
+          "key": "image_9fce0732de23",
+          "line": 47
+        },
+        {
+          "key": "text_2b5c3d26721a",
+          "line": 47
+        },
+        {
+          "key": "text_ed0d4f31b3c0",
+          "line": 47
+        },
+        {
+          "key": "text_99352e031027",
+          "line": 47
+        },
+        {
+          "key": "text_a9b01b010447",
+          "line": 54
+        },
+        {
+          "key": "text_2f4647667d91",
+          "line": 71
+        },
+        {
+          "key": "text_cdcbda2a3dd2",
+          "line": 79
+        },
+        {
+          "key": "text_c474fa194117",
+          "line": 87
+        },
+        {
+          "key": "text_f31f4fc85132",
+          "line": 97
+        },
+        {
+          "key": "text_96ac3a928459",
+          "line": 97
+        },
+        {
+          "key": "text_6aa115334159",
+          "line": 97
+        }
+      ],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/(site)/error.tsx",
+      "lines": 21,
+      "sha256": "c78a1708d361275454b07b821a124010cafce6d729ba66aa2567ee74df09027b",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/(site)/irsaliyat/page.tsx",
+      "lines": 132,
+      "sha256": "997be4263ea4ae4c85f9d2f016874f2366805601294a92ddcfcba7be4fd29293",
+      "tables": [],
+      "rpc": [],
+      "cms": [
+        {
+          "key": "text_95fa6b27692b",
+          "line": 25
+        },
+        {
+          "key": "text_95fa6b27692b",
+          "line": 26
+        },
+        {
+          "key": "text_95fa6b27692b",
+          "line": 27
+        },
+        {
+          "key": "text_7395bee98942",
+          "line": 28
+        },
+        {
+          "key": "text_7395bee98942",
+          "line": 29
+        },
+        {
+          "key": "text_7395bee98942",
+          "line": 30
+        },
+        {
+          "key": "text_95d3c8989f13",
+          "line": 34
+        },
+        {
+          "key": "text_95d3c8989f13",
+          "line": 35
+        },
+        {
+          "key": "text_95d3c8989f13",
+          "line": 36
+        },
+        {
+          "key": "text_8b2bd40ceaac",
+          "line": 37
+        },
+        {
+          "key": "text_8b2bd40ceaac",
+          "line": 38
+        },
+        {
+          "key": "text_8b2bd40ceaac",
+          "line": 39
+        },
+        {
+          "key": "text_73b6e216b4a5",
+          "line": 43
+        },
+        {
+          "key": "text_73b6e216b4a5",
+          "line": 44
+        },
+        {
+          "key": "text_73b6e216b4a5",
+          "line": 45
+        },
+        {
+          "key": "text_5d0898e0194c",
+          "line": 46
+        },
+        {
+          "key": "text_5d0898e0194c",
+          "line": 47
+        },
+        {
+          "key": "text_5d0898e0194c",
+          "line": 48
+        },
+        {
+          "key": "text_f6b950d5e567",
+          "line": 52
+        },
+        {
+          "key": "text_f6b950d5e567",
+          "line": 53
+        },
+        {
+          "key": "text_f6b950d5e567",
+          "line": 54
+        },
+        {
+          "key": "text_60a162e1535d",
+          "line": 55
+        },
+        {
+          "key": "text_60a162e1535d",
+          "line": 56
+        },
+        {
+          "key": "text_60a162e1535d",
+          "line": 57
+        },
+        {
+          "key": "image_44f3933530f3",
+          "line": 61
+        },
+        {
+          "key": "text_cf04082cac0b",
+          "line": 61
+        },
+        {
+          "key": "text_e6fa5ed22794",
+          "line": 61
+        },
+        {
+          "key": "text_59adb8f9eb01",
+          "line": 61
+        },
+        {
+          "key": "text_df01d4b731c3",
+          "line": 69
+        },
+        {
+          "key": "text_555d59a0bd73",
+          "line": 69
+        },
+        {
+          "key": "text_fb30ae8c285e",
+          "line": 84
+        },
+        {
+          "key": "text_53c01dacd291",
+          "line": 84
+        },
+        {
+          "key": "text_edf6cf5d9204",
+          "line": 84
+        },
+        {
+          "key": "text_49e333f4f39c",
+          "line": 84
+        },
+        {
+          "key": "text_fd45ba571a87",
+          "line": 93
+        },
+        {
+          "key": "text_bdbce9febab4",
+          "line": 98
+        },
+        {
+          "key": "text_b310ecd98789",
+          "line": 102
+        },
+        {
+          "key": "text_dd9085ae6490",
+          "line": 102
+        },
+        {
+          "key": "link_e0c7bc0426f0",
+          "line": 102
+        },
+        {
+          "key": "text_9f38ae8098e2",
+          "line": 102
+        },
+        {
+          "key": "image_7f366d3e4316",
+          "line": 109
+        },
+        {
+          "key": "text_feecc2f902e8",
+          "line": 112
+        },
+        {
+          "key": "text_0239e9bb3b61",
+          "line": 112
+        },
+        {
+          "key": "text_94b51582a43e",
+          "line": 112
+        },
+        {
+          "key": "text_20e3ebeead0f",
+          "line": 115
+        },
+        {
+          "key": "text_20e3ebeead0f",
+          "line": 115
+        },
+        {
+          "key": "text_20e3ebeead0f",
+          "line": 115
+        },
+        {
+          "key": "text_e4d0b543a685",
+          "line": 116
+        },
+        {
+          "key": "text_e4d0b543a685",
+          "line": 116
+        },
+        {
+          "key": "text_e4d0b543a685",
+          "line": 116
+        },
+        {
+          "key": "text_7ae43de7089d",
+          "line": 117
+        },
+        {
+          "key": "text_7ae43de7089d",
+          "line": 117
+        },
+        {
+          "key": "text_7ae43de7089d",
+          "line": 117
+        },
+        {
+          "key": "text_2b34a2619a8b",
+          "line": 118
+        },
+        {
+          "key": "text_2b34a2619a8b",
+          "line": 118
+        },
+        {
+          "key": "text_2b34a2619a8b",
+          "line": 118
+        },
+        {
+          "key": "link_fd6dc411307f",
+          "line": 124
+        },
+        {
+          "key": "text_dddf86c53ff6",
+          "line": 125
+        }
+      ],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/(site)/layout.tsx",
+      "lines": 31,
+      "sha256": "32203d108cc3eb8850a76fe744c9d3746fedfbb89dcb757f7480142ab56b1c08",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/(site)/lignes/page.tsx",
+      "lines": 25,
+      "sha256": "c0ade9dc77e37da50c672b361f98fdebf8e4c6347e2e197a97b18504adf885f1",
+      "tables": [],
+      "rpc": [],
+      "cms": [
+        {
+          "key": "text_a692bb103ab3",
+          "line": 23
+        },
+        {
+          "key": "text_57cce3ffe3ad",
+          "line": 23
+        },
+        {
+          "key": "text_afdb2ecbcf0b",
+          "line": 23
+        }
+      ],
+      "staticJsx": [
+        {
+          "line": 23,
+          "text": "SLKM ·"
+        }
+      ]
+    },
+    {
+      "file": "src/app/(site)/loading.tsx",
+      "lines": 11,
+      "sha256": "f2a352f4ceaa7442f8f8eab44a5003b8561a0ba5726f9279597a088243572fb5",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/(site)/page.tsx",
+      "lines": 75,
+      "sha256": "062ca349167d00bae394099c84e4d349b8760469b1495b0a34e54d0de7efc115",
+      "tables": [],
+      "rpc": [],
+      "cms": [
+        {
+          "key": "image_1d93533d8035",
+          "line": 32
+        },
+        {
+          "key": "text_46f2cb5f4c7e",
+          "line": 32
+        },
+        {
+          "key": "text_62efdfc9ae9f",
+          "line": 32
+        },
+        {
+          "key": "link_d6d9a0b2b0b5",
+          "line": 32
+        },
+        {
+          "key": "image_7f366d3e4316",
+          "line": 33
+        },
+        {
+          "key": "text_aa209268f717",
+          "line": 33
+        },
+        {
+          "key": "text_d2b98e1951de",
+          "line": 33
+        },
+        {
+          "key": "link_88f3b90341f9",
+          "line": 33
+        },
+        {
+          "key": "image_a9296b58a762",
+          "line": 34
+        },
+        {
+          "key": "text_cb6d502fe0d4",
+          "line": 34
+        },
+        {
+          "key": "text_cdb4c98c43a2",
+          "line": 34
+        },
+        {
+          "key": "link_93ace474a9f1",
+          "line": 34
+        },
+        {
+          "key": "image_1b4667005cb9",
+          "line": 40
+        },
+        {
+          "key": "text_8c8395fc2933",
+          "line": 40
+        },
+        {
+          "key": "text_d5e6058254cc",
+          "line": 41
+        },
+        {
+          "key": "text_437027c1fec3",
+          "line": 45
+        },
+        {
+          "key": "text_6907768e8608",
+          "line": 45
+        },
+        {
+          "key": "text_e0c5b6fab684",
+          "line": 46
+        },
+        {
+          "key": "link_32835313c8a2",
+          "line": 47
+        },
+        {
+          "key": "text_7b7b47dfa7c7",
+          "line": 47
+        },
+        {
+          "key": "link_41d2227187ad",
+          "line": 47
+        },
+        {
+          "key": "text_0ca296547019",
+          "line": 47
+        },
+        {
+          "key": "text_d09d61817e68",
+          "line": 48
+        },
+        {
+          "key": "text_e04366819c5c",
+          "line": 48
+        },
+        {
+          "key": "link_4f6fddd0268f",
+          "line": 52
+        },
+        {
+          "key": "text_cabe19f5af26",
+          "line": 52
+        },
+        {
+          "key": "link_bb2b804fc069",
+          "line": 52
+        },
+        {
+          "key": "text_6800adb9b73f",
+          "line": 52
+        },
+        {
+          "key": "link_a956e6e51f8c",
+          "line": 52
+        },
+        {
+          "key": "text_99069541d9d0",
+          "line": 52
+        },
+        {
+          "key": "text_59970170bf38",
+          "line": 54
+        },
+        {
+          "key": "text_bdf17040d1e3",
+          "line": 54
+        },
+        {
+          "key": "text_6aa353ce7bd2",
+          "line": 54
+        },
+        {
+          "key": "link_0c58396ba61d",
+          "line": 54
+        },
+        {
+          "key": "text_a696995454ad",
+          "line": 54
+        },
+        {
+          "key": "text_90a38e74ad1b",
+          "line": 55
+        },
+        {
+          "key": "text_46c73613900a",
+          "line": 55
+        },
+        {
+          "key": "text_0eb1407994e2",
+          "line": 57
+        },
+        {
+          "key": "text_2c275f3b8261",
+          "line": 57
+        },
+        {
+          "key": "text_6e4daea88b21",
+          "line": 59
+        },
+        {
+          "key": "text_36c467672652",
+          "line": 59
+        },
+        {
+          "key": "text_98f73c3d4753",
+          "line": 60
+        },
+        {
+          "key": "text_74871f5de39e",
+          "line": 60
+        },
+        {
+          "key": "text_727afbb7a838",
+          "line": 61
+        },
+        {
+          "key": "text_4199e93389c2",
+          "line": 61
+        },
+        {
+          "key": "text_372cbcef4167",
+          "line": 64
+        },
+        {
+          "key": "text_9adc17724739",
+          "line": 64
+        },
+        {
+          "key": "text_977ae6cb0c22",
+          "line": 64
+        },
+        {
+          "key": "text_e768c27bd59e",
+          "line": 65
+        },
+        {
+          "key": "text_c523a8fa364c",
+          "line": 66
+        },
+        {
+          "key": "text_b849165e2bbf",
+          "line": 66
+        },
+        {
+          "key": "text_f825cbf35d21",
+          "line": 67
+        },
+        {
+          "key": "text_61cae2f65de2",
+          "line": 67
+        },
+        {
+          "key": "text_795070462d4e",
+          "line": 68
+        },
+        {
+          "key": "text_40883463e126",
+          "line": 68
+        },
+        {
+          "key": "text_89eb7cdacbc7",
+          "line": 69
+        },
+        {
+          "key": "text_50c5012e9ee3",
+          "line": 69
+        },
+        {
+          "key": "image_7f366d3e4316",
+          "line": 71
+        },
+        {
+          "key": "text_cd9fbef20b1d",
+          "line": 71
+        },
+        {
+          "key": "text_621f1f364772",
+          "line": 71
+        },
+        {
+          "key": "text_7e64179e87d7",
+          "line": 71
+        },
+        {
+          "key": "link_bc3c45514639",
+          "line": 71
+        },
+        {
+          "key": "text_34e096b32ef8",
+          "line": 71
+        },
+        {
+          "key": "link_a8198dffee02",
+          "line": 71
+        },
+        {
+          "key": "text_e34fb32f832c",
+          "line": 71
+        },
+        {
+          "key": "text_b0a309dfd8fd",
+          "line": 72
+        },
+        {
+          "key": "text_90163f055351",
+          "line": 72
+        },
+        {
+          "key": "link_ff68034cb2b1",
+          "line": 72
+        },
+        {
+          "key": "text_1bb3f29464e5",
+          "line": 72
+        }
+      ],
+      "staticJsx": [
+        {
+          "line": 44,
+          "text": "SLKM · Najd Moulay Mbarek"
+        },
+        {
+          "line": 62,
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "file": "src/app/(site)/services/page.tsx",
+      "lines": 120,
+      "sha256": "1f11dd970179c65c4835f0d17adc6eab4105fb0a153d730bec88b314966f814b",
+      "tables": [],
+      "rpc": [],
+      "cms": [
+        {
+          "key": "image_3852bc87a12d",
+          "line": 27
+        },
+        {
+          "key": "text_1e013606c03c",
+          "line": 27
+        },
+        {
+          "key": "text_fd23bd01afda",
+          "line": 27
+        },
+        {
+          "key": "text_7e9f0fa7d11a",
+          "line": 27
+        },
+        {
+          "key": "link_bd01e7548213",
+          "line": 28
+        },
+        {
+          "key": "text_3767bd206863",
+          "line": 29
+        },
+        {
+          "key": "text_88a1b6779e84",
+          "line": 35
+        },
+        {
+          "key": "text_4a8d041ca795",
+          "line": 35
+        },
+        {
+          "key": "text_ef40bc4e956d",
+          "line": 35
+        },
+        {
+          "key": "link_8975dc6881f7",
+          "line": 47
+        },
+        {
+          "key": "text_3767bd206863",
+          "line": 47
+        },
+        {
+          "key": "text_a9c1e59fe075",
+          "line": 56
+        },
+        {
+          "key": "text_7ad3d45349f8",
+          "line": 56
+        },
+        {
+          "key": "text_81208c8b4684",
+          "line": 56
+        },
+        {
+          "key": "text_890e612f8d9b",
+          "line": 59
+        },
+        {
+          "key": "text_890e612f8d9b",
+          "line": 59
+        },
+        {
+          "key": "text_890e612f8d9b",
+          "line": 59
+        },
+        {
+          "key": "text_39291fb20b35",
+          "line": 60
+        },
+        {
+          "key": "text_39291fb20b35",
+          "line": 60
+        },
+        {
+          "key": "text_39291fb20b35",
+          "line": 60
+        },
+        {
+          "key": "text_7f144d54c07f",
+          "line": 61
+        },
+        {
+          "key": "text_7f144d54c07f",
+          "line": 61
+        },
+        {
+          "key": "text_7f144d54c07f",
+          "line": 61
+        },
+        {
+          "key": "text_7cbe7e5a7bf9",
+          "line": 62
+        },
+        {
+          "key": "text_7cbe7e5a7bf9",
+          "line": 62
+        },
+        {
+          "key": "text_7cbe7e5a7bf9",
+          "line": 62
+        },
+        {
+          "key": "image_1d93533d8035",
+          "line": 70
+        },
+        {
+          "key": "text_e0122aab53de",
+          "line": 72
+        },
+        {
+          "key": "text_118661e672de",
+          "line": 74
+        },
+        {
+          "key": "text_f5554ae2f6b7",
+          "line": 87
+        },
+        {
+          "key": "text_81cced723304",
+          "line": 90
+        },
+        {
+          "key": "text_52afccc9bd18",
+          "line": 109
+        },
+        {
+          "key": "text_4844600a506a",
+          "line": 112
+        }
+      ],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/actions.ts",
+      "lines": 448,
+      "sha256": "752c854e2b5397cc4a8b3047d8b1c4a776c1780421da8f594005a600d517ca99",
+      "tables": [
+        "corporate_quotes",
+        "contact_messages",
+        "agencies",
+        "agencies",
+        "agencies",
+        "routes",
+        "routes",
+        "routes",
+        "parcel_rates",
+        "parcel_rates",
+        "parcel_rates",
+        "blog_posts",
+        "blog_posts",
+        "blog_posts",
+        "corporate_quotes",
+        "corporate_quotes",
+        "contact_messages",
+        "contact_messages",
+        "site_settings",
+        "site_settings"
+      ],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/admin/layout.tsx",
+      "lines": 36,
+      "sha256": "ba0578651385f74555a3899cb612f5717b015a7db111315f44486a8d8fe75b6a",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/admin/login/page.tsx",
+      "lines": 100,
+      "sha256": "67c9ab04a91a62e30ebe6bda0ea63ec5a1d20c068b4847825e613636ceb7ea93",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 36,
+          "text": "SLKM"
+        },
+        {
+          "line": 37,
+          "text": "Administration"
+        },
+        {
+          "line": 42,
+          "text": "Pilotez votre réseau en toute sécurité."
+        },
+        {
+          "line": 45,
+          "text": "Agences, lignes, tarifs, devis et messages : un espace unique pour gérer l&apos;activité SLKM."
+        },
+        {
+          "line": 60,
+          "text": "Connexion chiffrée · Supabase Auth"
+        },
+        {
+          "line": 70,
+          "text": "SLKM"
+        },
+        {
+          "line": 71,
+          "text": "Administration"
+        },
+        {
+          "line": 75,
+          "text": "Espace admin"
+        },
+        {
+          "line": 76,
+          "text": "Connexion"
+        },
+        {
+          "line": 78,
+          "text": "Entrez vos identifiants administrateur pour accéder au tableau de bord."
+        },
+        {
+          "line": 91,
+          "text": "Retour au site"
+        }
+      ]
+    },
+    {
+      "file": "src/app/admin/page.tsx",
+      "lines": 181,
+      "sha256": "c106a88efa99e6f92050509e8ec96986523a5ee0f6d85e4bc33c7530ff87dad1",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 58,
+          "text": "Supabase n'est pas configuré"
+        },
+        {
+          "line": 60,
+          "text": "Renseignez"
+        },
+        {
+          "line": 60,
+          "text": "NEXT_PUBLIC_SUPABASE_URL"
+        },
+        {
+          "line": 60,
+          "text": "et"
+        },
+        {
+          "line": 61,
+          "text": "NEXT_PUBLIC_SUPABASE_ANON_KEY"
+        },
+        {
+          "line": 61,
+          "text": "dans"
+        },
+        {
+          "line": 61,
+          "text": ".env.local"
+        },
+        {
+          "line": 61,
+          "text": ", puis redémarrez le serveur."
+        },
+        {
+          "line": 96,
+          "text": "Voir le site"
+        },
+        {
+          "line": 115,
+          "text": "Tout voir"
+        },
+        {
+          "line": 126,
+          "text": "→"
+        },
+        {
+          "line": 126,
+          "text": "·"
+        },
+        {
+          "line": 126,
+          "text": "pax ·"
+        },
+        {
+          "line": 139,
+          "text": "Tout voir"
+        },
+        {
+          "line": 149,
+          "text": "·"
+        },
+        {
+          "line": 149,
+          "text": "·"
+        },
+        {
+          "line": 162,
+          "text": "Publier une ligne"
+        },
+        {
+          "line": 163,
+          "text": "Ajoutez un horaire, un tarif et les jours de circulation."
+        },
+        {
+          "line": 167,
+          "text": "Écrire un article"
+        },
+        {
+          "line": 168,
+          "text": "Publiez une actualité trilingue sur le blog."
+        },
+        {
+          "line": 172,
+          "text": "Mettre à jour Irsaliyat"
+        },
+        {
+          "line": 173,
+          "text": "Ajustez les paliers de poids et les tarifs colis."
+        }
+      ]
+    },
+    {
+      "file": "src/app/api/admin/media/route.ts",
+      "lines": 14,
+      "sha256": "7b96044e9f20747d002ebf0a346556265019d660466bb59d12b2f4fc2bb87d80",
+      "tables": [
+        "site_media_assets"
+      ],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "lines": 138,
+      "sha256": "315bc8d861c659a6f6cfdd7127ef2548a5cfde7150eed6bb5568db7c201542c7",
+      "tables": [
+        "site_settings",
+        "site_media_assets",
+        "site_settings",
+        "site_pages",
+        "site_sections",
+        "site_sections",
+        "site_sections",
+        "site_sections",
+        "site_media_assets",
+        "site_settings",
+        "agencies",
+        "blog_posts",
+        "messagerie_network_settings",
+        "messagerie_agencies",
+        "site_page_media",
+        "site_sections",
+        "site_media_assets",
+        "site_settings",
+        "agencies",
+        "blog_posts",
+        "messagerie_network_settings",
+        "messagerie_agencies",
+        "site_media_assets"
+      ],
+      "rpc": [
+        "save_site_cms_page",
+        "save_site_cms_page"
+      ],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/globals.css",
+      "lines": 507,
+      "sha256": "547c3ed179f2c82caaaf0ca23fd16a13fc22a3dbda9e3b7063c3dd1cfa82e4a9"
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "lines": 57,
+      "sha256": "557fa5cb57fe65fb1ec9ac5f5dc59a60d14946ad46d405bd8cc602b3d78de242",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/locale-actions.ts",
+      "lines": 19,
+      "sha256": "5beed10a6f178215e65dacd19b635e2ca8256730606fe922c571bc3bb3590107",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/manifest.ts",
+      "lines": 10,
+      "sha256": "2874f383aad2b1a3dd80ef639bdfc35f9c3cfb463a4b01af210457f242b7e61f",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/media/[id]/route.ts",
+      "lines": 13,
+      "sha256": "7213f12e6bb756efe0602a9520a18d2409a630114af9308cc32ec20f65ef2fd1",
+      "tables": [
+        "site_media_assets"
+      ],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "lines": 85,
+      "sha256": "42c87cd24b13f2f76c9b3471d072920acd64a870e602eb5e6c2b63c00c66de4c",
+      "tables": [
+        "messagerie_network_settings",
+        "agencies",
+        "messagerie_agencies",
+        "messagerie_agencies",
+        "messagerie_agencies"
+      ],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/not-found.tsx",
+      "lines": 27,
+      "sha256": "085f0047ca732415366fa67e322653b19139c2d6a0d7457f568b18ee9dbc6fa0",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/robots.ts",
+      "lines": 10,
+      "sha256": "d759a65ec8a9b1457573e23c8ed385b5dc8afad8030efa9923b9adc14b04a6b5",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/app/sitemap.ts",
+      "lines": 25,
+      "sha256": "bc911d73c26f75961643a3efbbb7eda293d6875f3031aba8395ad6a726ba1fdd",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/admin/admin-login-form.tsx",
+      "lines": 139,
+      "sha256": "80ed090dd682c5077d51b030383123080bea373c5ae78b30db547d3ff96eba2b",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 76,
+          "text": "E-mail admin"
+        },
+        {
+          "line": 97,
+          "text": "Mot de passe"
+        },
+        {
+          "line": 134,
+          "text": "Le compte doit disposer du rôle"
+        },
+        {
+          "line": 134,
+          "text": "app_metadata.role = &quot;admin&quot;"
+        },
+        {
+          "line": 134,
+          "text": "pour les écritures protégées par RLS."
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/admin-logout-button.tsx",
+      "lines": 36,
+      "sha256": "83b51c7731e8bb48881c3f2f44bf2733df0417b3cce19c6e8b83014763375f7a",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/admin/admin-nav.tsx",
+      "lines": 45,
+      "sha256": "6652039a56c37c27a57759d8bba36f505e219eb0e6b6efd7f55c531a8e3a51e3",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/admin/admin-shell.tsx",
+      "lines": 92,
+      "sha256": "d8ac67b0858b4f6dffce11dddbefdb3c7d4b7b2db8f36e0148b168500850db08",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 39,
+          "text": "Administration"
+        },
+        {
+          "line": 59,
+          "text": "Connexion"
+        },
+        {
+          "line": 64,
+          "text": "Voir le site"
+        },
+        {
+          "line": 79,
+          "text": "Accès protégé"
+        },
+        {
+          "line": 82,
+          "text": "Les écritures nécessitent une session Supabase dont le JWT contient"
+        },
+        {
+          "line": 82,
+          "text": "app_metadata.role = &quot;admin&quot;"
+        },
+        {
+          "line": 82,
+          "text": "."
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/admin-ui.tsx",
+      "lines": 111,
+      "sha256": "c06828021a7f5aede042506bd4f92de6faee906885746755d838901290515056",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/admin/agency-manager.tsx",
+      "lines": 102,
+      "sha256": "c624f5d1cbb5afe4abf475ee4dc0632c19ab33e1944500d4edd350eadb09e9a0",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 51,
+          "text": "Nouvelle agence"
+        },
+        {
+          "line": 73,
+          "text": "·"
+        },
+        {
+          "line": 73,
+          "text": "·"
+        },
+        {
+          "line": 80,
+          "text": "Modifier"
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/blog-manager.tsx",
+      "lines": 106,
+      "sha256": "dee76ee24063a997af3419adf3bf8dfde604ac064c7f47e7201833bf15b3a474",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 50,
+          "text": "publié"
+        },
+        {
+          "line": 56,
+          "text": "Nouvel article"
+        },
+        {
+          "line": 75,
+          "text": "/"
+        },
+        {
+          "line": 77,
+          "text": "·"
+        },
+        {
+          "line": 84,
+          "text": "Modifier"
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/cms-manager.tsx",
+      "lines": 128,
+      "sha256": "013062764d5663e5bf2fb843a94c2c0d59c88aec5111153c62f21eace16527c8",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 28,
+          "text": "·"
+        },
+        {
+          "line": 34,
+          "text": "Choisir une image publiée"
+        },
+        {
+          "line": 34,
+          "text": "Bibliothèque / chemin personnalisé"
+        },
+        {
+          "line": 57,
+          "text": "textes · URL conservée :"
+        },
+        {
+          "line": 57,
+          "text": "Voir la page"
+        },
+        {
+          "line": 62,
+          "text": "Rechercher un texte"
+        },
+        {
+          "line": 62,
+          "text": "Les variables entre doubles accolades affichent les noms et chiffres réels. Conservez-les dans chaque langue. Aucun HTML n’est exécuté."
+        },
+        {
+          "line": 62,
+          "text": "Aucun texte correspondant."
+        },
+        {
+          "line": 64,
+          "text": "Voile de la bannière :"
+        },
+        {
+          "line": 64,
+          "text": "Les titres vides utilisent les métadonnées existantes. La lisibilité et les tailles minimales restent protégées par l’application."
+        },
+        {
+          "line": 65,
+          "text": "Enregistrer la page"
+        },
+        {
+          "line": 65,
+          "text": "Annuler les modifications"
+        },
+        {
+          "line": 67,
+          "text": "Restaurer les contenus d’origine"
+        },
+        {
+          "line": 74,
+          "text": "Identité & présentation"
+        },
+        {
+          "line": 74,
+          "text": "Les contacts et noms du site restent dans Paramètres. Ici : identité visuelle, typographie, bannière d’annonce et SEO global. Les six liens principaux sont protégés."
+        },
+        {
+          "line": 76,
+          "text": "Restaurer la valeur par défaut"
+        },
+        {
+          "line": 78,
+          "text": "Afficher la barre d’annonce"
+        },
+        {
+          "line": 80,
+          "text": "Afficher les réseaux sociaux dans le pied de page"
+        },
+        {
+          "line": 83,
+          "text": "Enregistrer l’apparence"
+        },
+        {
+          "line": 83,
+          "text": "Annuler"
+        },
+        {
+          "line": 95,
+          "text": "Texte"
+        },
+        {
+          "line": 95,
+          "text": "Image & texte"
+        },
+        {
+          "line": 95,
+          "text": "Cartes de présentation"
+        },
+        {
+          "line": 95,
+          "text": "Appel à l’action"
+        },
+        {
+          "line": 96,
+          "text": "Fond existant"
+        },
+        {
+          "line": 96,
+          "text": "Blanc"
+        },
+        {
+          "line": 96,
+          "text": "Orange clair"
+        },
+        {
+          "line": 96,
+          "text": "Gris doux"
+        },
+        {
+          "line": 96,
+          "text": "Standard"
+        },
+        {
+          "line": 96,
+          "text": "Compacte"
+        },
+        {
+          "line": 97,
+          "text": "Visible"
+        },
+        {
+          "line": 97,
+          "text": "Publiée (sinon brouillon privé)"
+        },
+        {
+          "line": 100,
+          "text": "Carte"
+        },
+        {
+          "line": 100,
+          "text": "Retirer la carte"
+        },
+        {
+          "line": 100,
+          "text": "Ajouter une carte"
+        },
+        {
+          "line": 102,
+          "text": "Annuler"
+        },
+        {
+          "line": 103,
+          "text": "Supprimer la section"
+        },
+        {
+          "line": 107,
+          "text": "Ko ·"
+        },
+        {
+          "line": 108,
+          "text": "Publiée"
+        },
+        {
+          "line": 108,
+          "text": "Active"
+        },
+        {
+          "line": 108,
+          "text": "Enregistrer l’image"
+        },
+        {
+          "line": 109,
+          "text": "Chemin à sélectionner / copier"
+        },
+        {
+          "line": 109,
+          "text": "Supprimer le fichier"
+        },
+        {
+          "line": 116,
+          "text": "Médiathèque"
+        },
+        {
+          "line": 116,
+          "text": "Téléversez une image, renseignez ses descriptions, puis publiez-la pour la sélectionner sur le site. Les brouillons restent privés. Les fichiers SVG/HTML ne sont pas acceptés."
+        },
+        {
+          "line": 116,
+          "text": "Publier l’image (accessible au public)"
+        },
+        {
+          "line": 116,
+          "text": "Ajouter l’image"
+        },
+        {
+          "line": 116,
+          "text": "Filtrer la médiathèque"
+        },
+        {
+          "line": 116,
+          "text": "Aucune image téléversée. Les images SLKM existantes restent utilisables via leur chemin local."
+        },
+        {
+          "line": 123,
+          "text": "Aucune page CMS. Appliquez la migration des valeurs par défaut."
+        },
+        {
+          "line": 124,
+          "text": "Page à modifier"
+        },
+        {
+          "line": 124,
+          "text": "Contenus"
+        },
+        {
+          "line": 124,
+          "text": "Sections & ordre"
+        },
+        {
+          "line": 125,
+          "text": "Les numéros définissent l’ordre réel de lecture et d’affichage. Une section doit être visible et publiée pour apparaître. Les blocs essentiels peuvent être masqués, mais pas supprimés. Leur texte se modifie dans Contenus."
+        },
+        {
+          "line": 125,
+          "text": "·"
+        },
+        {
+          "line": 125,
+          "text": "·"
+        },
+        {
+          "line": 125,
+          "text": "Ajouter une section personnalisée"
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/cms-workspace.tsx",
+      "lines": 12,
+      "sha256": "e14616e61e9e84a0d9eb7319e8a1eed4eccbfda297f30e478ea2118e6d365ab9",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 9,
+          "text": "Les migrations ne sont jamais appliquées automatiquement. Les pages existantes restent disponibles avec leurs contenus actuels."
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/content-list-editor.tsx",
+      "lines": 46,
+      "sha256": "ef221f3903071d67f27f3ed46733046580d84bf7d080d96e16aa955862b6485f",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 29,
+          "text": "Actif sur le site"
+        },
+        {
+          "line": 30,
+          "text": "Monter ↑"
+        },
+        {
+          "line": 31,
+          "text": "Descendre ↓"
+        },
+        {
+          "line": 41,
+          "text": "Retirer"
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/global-list-editors.tsx",
+      "lines": 13,
+      "sha256": "e04bf36ec5152ea866b38046e3cc7cd0dd7c24df19999133a89a3c4fb1731acb",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 7,
+          "text": "Retirer"
+        },
+        {
+          "line": 7,
+          "text": "Ajouter un réseau social"
+        },
+        {
+          "line": 11,
+          "text": "Libellé ·"
+        },
+        {
+          "line": 11,
+          "text": "Téléphone"
+        },
+        {
+          "line": 11,
+          "text": "Retirer la ligne"
+        },
+        {
+          "line": 11,
+          "text": "Ajouter une ligne d’assistance"
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/image-asset-input.tsx",
+      "lines": 24,
+      "sha256": "689e99cb3746b6302a708727a0919cae201dae8353f6786ad1f58de112c36ac8",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 21,
+          "text": "Téléverser une image ↗"
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/message-manager.tsx",
+      "lines": 76,
+      "sha256": "d16003c3c6a0ad6680dfeb91974a3e62928d37fbbe9d57f34fae2c28d969fd59",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 32,
+          "text": "nouveau"
+        },
+        {
+          "line": 46,
+          "text": "·"
+        },
+        {
+          "line": 46,
+          "text": "·"
+        },
+        {
+          "line": 59,
+          "text": "Mettre à jour"
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/messagerie-network-manager.tsx",
+      "lines": 40,
+      "sha256": "622402207dbae3ac60fedcf767243ca9b83ff20e9e68772144c74505aece917d",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 17,
+          "text": "Agents de service — coordonnées publiques"
+        },
+        {
+          "line": 19,
+          "text": "Agence Messagerie indépendante"
+        },
+        {
+          "line": 19,
+          "text": "—"
+        },
+        {
+          "line": 23,
+          "text": "Enregistrer l’agence"
+        },
+        {
+          "line": 29,
+          "text": "Messagerie → Réseau & Agences"
+        },
+        {
+          "line": 30,
+          "text": "Données indisponibles. Appliquez la migration Messagerie dans Supabase SQL Editor, puis vérifiez la session administrateur."
+        },
+        {
+          "line": 33,
+          "text": "Enregistrer le réseau"
+        },
+        {
+          "line": 36,
+          "text": "Modifier l’agence"
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/navigation-manager.tsx",
+      "lines": 20,
+      "sha256": "ab566401c85862dd2003105cee7521f8dea0f1eb29744b1e0e484066865f88a9",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 12,
+          "text": "Navigation"
+        },
+        {
+          "line": 12,
+          "text": "Les destinations restent protégées. Masquer un lien ne supprime pas sa page."
+        },
+        {
+          "line": 14,
+          "text": "Monter"
+        },
+        {
+          "line": 14,
+          "text": "Descendre"
+        },
+        {
+          "line": 15,
+          "text": "Libellés de la barre mobile"
+        },
+        {
+          "line": 15,
+          "text": "·"
+        },
+        {
+          "line": 16,
+          "text": "Bouton ·"
+        },
+        {
+          "line": 17,
+          "text": "Destination du bouton"
+        },
+        {
+          "line": 17,
+          "text": "WhatsApp configuré / lignes par défaut"
+        },
+        {
+          "line": 17,
+          "text": "Enregistrer la navigation"
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/quote-manager.tsx",
+      "lines": 84,
+      "sha256": "54dc40ad3865eee4c35cd8609df2a80e0e5d918d28a355ccb1cfa2ae2d3a2078",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 36,
+          "text": "en attente"
+        },
+        {
+          "line": 51,
+          "text": "·"
+        },
+        {
+          "line": 51,
+          "text": "·"
+        },
+        {
+          "line": 54,
+          "text": "→"
+        },
+        {
+          "line": 54,
+          "text": "·"
+        },
+        {
+          "line": 54,
+          "text": "passagers ·"
+        },
+        {
+          "line": 67,
+          "text": "Mettre à jour"
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/rate-manager.tsx",
+      "lines": 87,
+      "sha256": "d5508a0c5dea32543a0fd04281cffbae1330f011e72faaf02a4140ab8110d171",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 12,
+          "text": "Tarif publié"
+        },
+        {
+          "line": 42,
+          "text": "Nouveau tarif"
+        },
+        {
+          "line": 58,
+          "text": "Jusqu'à"
+        },
+        {
+          "line": 58,
+          "text": "·"
+        },
+        {
+          "line": 65,
+          "text": "Modifier"
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/route-manager.tsx",
+      "lines": 133,
+      "sha256": "2871b67a89521bca39d8743617eb1b20cb98171625c043214e5a3d4fb1aae92c",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 19,
+          "text": "Sélectionner"
+        },
+        {
+          "line": 20,
+          "text": "—"
+        },
+        {
+          "line": 25,
+          "text": "Sélectionner"
+        },
+        {
+          "line": 26,
+          "text": "—"
+        },
+        {
+          "line": 31,
+          "text": "Comfort"
+        },
+        {
+          "line": 32,
+          "text": "Premium"
+        },
+        {
+          "line": 33,
+          "text": "VIP"
+        },
+        {
+          "line": 40,
+          "text": "Jours de circulation"
+        },
+        {
+          "line": 73,
+          "text": "Nouvelle ligne"
+        },
+        {
+          "line": 82,
+          "text": "Créez au moins deux agences avant d'ajouter une ligne."
+        },
+        {
+          "line": 97,
+          "text": "→"
+        },
+        {
+          "line": 100,
+          "text": "Touristique"
+        },
+        {
+          "line": 103,
+          "text": "→"
+        },
+        {
+          "line": 103,
+          "text": "·"
+        },
+        {
+          "line": 103,
+          "text": "·"
+        },
+        {
+          "line": 110,
+          "text": "Modifier"
+        }
+      ]
+    },
+    {
+      "file": "src/components/admin/settings-manager.tsx",
+      "lines": 31,
+      "sha256": "47349844f5598a5a0a299468b348eadf3775ec9be214555dbcccfa10e4dcca19",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 12,
+          "text": "Statistiques vérifiées"
+        },
+        {
+          "line": 12,
+          "text": "Publiez uniquement des valeurs documentées par l’entreprise."
+        },
+        {
+          "line": 21,
+          "text": "Français"
+        },
+        {
+          "line": 21,
+          "text": "العربية"
+        },
+        {
+          "line": 21,
+          "text": "English"
+        },
+        {
+          "line": 24,
+          "text": "Flotte & images"
+        },
+        {
+          "line": 25,
+          "text": "Notre histoire — chronologie"
+        },
+        {
+          "line": 26,
+          "text": "Services B2B"
+        },
+        {
+          "line": 27,
+          "text": "Enregistrer les paramètres"
+        }
+      ]
+    },
+    {
+      "file": "src/components/agency-card.tsx",
+      "lines": 47,
+      "sha256": "986d32b1d0e28fc5a0f0011349acc314c4992239dab25e34ada53066e502f325",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 39,
+          "text": "WhatsApp"
+        }
+      ]
+    },
+    {
+      "file": "src/components/agency-map.tsx",
+      "lines": 190,
+      "sha256": "f8db879f2160370cd30b07d1d1b00d98d473f704e5e2d11a371a221bcdf3e0f0",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/blog-card.tsx",
+      "lines": 50,
+      "sha256": "b16b2712e9d87390c6e8d5ba58589fa1b530b231fabdc323ea23fef6205dbd6c",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/cms-page.tsx",
+      "lines": 38,
+      "sha256": "358d96d82a632cc8e6b4ca15d9ca6622c2c0df4856e2724120cbf4a163fc42dd",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/cms-provider.tsx",
+      "lines": 7,
+      "sha256": "ae67312b82f209e7f0135030169e05384f2549b784f10b22fb5f0eaa727f1fbc",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/contact-form.tsx",
+      "lines": 75,
+      "sha256": "12c12cc123da5961d507d3b89da402a4f09e18331702ad0671a37b99ac0ad924",
+      "tables": [],
+      "rpc": [],
+      "cms": [
+        {
+          "key": "text_a44e9e92caa9",
+          "line": 27
+        },
+        {
+          "key": "text_c0ab5dbad189",
+          "line": 30
+        },
+        {
+          "key": "text_c8af6e29fba8",
+          "line": 42
+        },
+        {
+          "key": "text_2550d962e536",
+          "line": 46
+        },
+        {
+          "key": "text_cc4c424b571f",
+          "line": 50
+        },
+        {
+          "key": "text_db59ebb27218",
+          "line": 54
+        },
+        {
+          "key": "text_2f77668a9dfb",
+          "line": 58
+        },
+        {
+          "key": "text_b5875ab3a419",
+          "line": 65
+        },
+        {
+          "key": "text_bf2f14e82f15",
+          "line": 67
+        },
+        {
+          "key": "text_79075209f2bb",
+          "line": 69
+        }
+      ],
+      "staticJsx": [
+        {
+          "line": 42,
+          "text": "*"
+        },
+        {
+          "line": 46,
+          "text": "*"
+        },
+        {
+          "line": 54,
+          "text": "*"
+        },
+        {
+          "line": 58,
+          "text": "*"
+        }
+      ]
+    },
+    {
+      "file": "src/components/delete-button.tsx",
+      "lines": 29,
+      "sha256": "3d1ad35aebc2a9dabdc957b693dfb07e3bfa468fb3865a39435226c57eb7a687",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/dialog-focus.ts",
+      "lines": 19,
+      "sha256": "b1da7e0aefa1d9976d8c051541f4150f62e3ed288e61c090ca22fdd074923042",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/lines-explorer.tsx",
+      "lines": 3,
+      "sha256": "4bb7ffba03adc39f85e2efcf12add54f622324176bbe26209568c26770c927a4",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/locale-switcher.tsx",
+      "lines": 65,
+      "sha256": "9af67bef4ef6b03e3b3a7c92958854ba11c1fce1815bf809535030f903650119",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/messagerie-map-image.tsx",
+      "lines": 32,
+      "sha256": "273cac77424109bb1e1534a3a6e52ae2fd4126f124a9044fc5c9e83b452007b4",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/messagerie-network-section.tsx",
+      "lines": 48,
+      "sha256": "0a934852cebf8ca5b78e1c8e3728b8dc92a41460cde257b07e3db19bde2aa9ce",
+      "tables": [],
+      "rpc": [],
+      "cms": [
+        {
+          "key": "text_194d63493fa7",
+          "line": 24
+        },
+        {
+          "key": "text_e35b49703650",
+          "line": 24
+        },
+        {
+          "key": "text_0b7897cb8ec3",
+          "line": 25
+        },
+        {
+          "key": "text_b7f5ef931116",
+          "line": 25
+        },
+        {
+          "key": "text_621061dc7a98",
+          "line": 26
+        },
+        {
+          "key": "text_6f13f83e5a9b",
+          "line": 27
+        },
+        {
+          "key": "text_6f4bb3e25693",
+          "line": 27
+        },
+        {
+          "key": "text_e92207923058",
+          "line": 27
+        },
+        {
+          "key": "text_e98461de52c3",
+          "line": 45
+        }
+      ],
+      "staticJsx": [
+        {
+          "line": 24,
+          "text": "SLKM · Irsaliyat"
+        },
+        {
+          "line": 43,
+          "text": "WhatsApp"
+        }
+      ]
+    },
+    {
+      "file": "src/components/quote-form.tsx",
+      "lines": 107,
+      "sha256": "b5ea2a75b1275cb78bc1b9de10613e64b1e58717f09697ac3b098e777ec90329",
+      "tables": [],
+      "rpc": [],
+      "cms": [
+        {
+          "key": "text_3767bd206863",
+          "line": 28
+        },
+        {
+          "key": "text_2456f711edaf",
+          "line": 31
+        },
+        {
+          "key": "text_4b000c1c5bff",
+          "line": 49
+        },
+        {
+          "key": "text_2b5c3d26721a",
+          "line": 53
+        },
+        {
+          "key": "text_cc4c424b571f",
+          "line": 57
+        },
+        {
+          "key": "text_2550d962e536",
+          "line": 61
+        },
+        {
+          "key": "text_da26234dc917",
+          "line": 65
+        },
+        {
+          "key": "text_0bc226ec29cd",
+          "line": 69
+        },
+        {
+          "key": "text_88aaac5494d3",
+          "line": 73
+        },
+        {
+          "key": "text_13f85bc0d96a",
+          "line": 77
+        },
+        {
+          "key": "text_e6d84389cc74",
+          "line": 81
+        },
+        {
+          "key": "text_9b0c6974de4d",
+          "line": 85
+        },
+        {
+          "key": "text_0aa120a657ef",
+          "line": 90
+        },
+        {
+          "key": "text_b8675b04f918",
+          "line": 91
+        },
+        {
+          "key": "text_d3440d913b14",
+          "line": 97
+        },
+        {
+          "key": "text_bf2f14e82f15",
+          "line": 99
+        },
+        {
+          "key": "text_642583f3af3a",
+          "line": 101
+        }
+      ],
+      "staticJsx": [
+        {
+          "line": 49,
+          "text": "*"
+        },
+        {
+          "line": 53,
+          "text": "*"
+        },
+        {
+          "line": 57,
+          "text": "*"
+        },
+        {
+          "line": 61,
+          "text": "*"
+        },
+        {
+          "line": 65,
+          "text": "*"
+        },
+        {
+          "line": 69,
+          "text": "*"
+        },
+        {
+          "line": 73,
+          "text": "*"
+        },
+        {
+          "line": 77,
+          "text": "*"
+        }
+      ]
+    },
+    {
+      "file": "src/components/route-card.tsx",
+      "lines": 86,
+      "sha256": "e845ef8cc5706db631b28e7a58a1d81ad35a27188b366f9c68668bd916fcf060",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/route-search.tsx",
+      "lines": 3,
+      "sha256": "e3fbc8893a879eb81599e4ba9eabb85551b9b01a838deb9ba957428fc234fd8f",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/site-footer.tsx",
+      "lines": 127,
+      "sha256": "c33f97b37f601c330b267bd62e4921e74e0f18575ead4c798215b0e12f399f52",
+      "tables": [],
+      "rpc": [],
+      "cms": [
+        {
+          "key": "text_c74de52e2e36",
+          "line": 55
+        },
+        {
+          "key": "text_c39d646f1076",
+          "line": 66
+        },
+        {
+          "key": "text_44d7e9ead9cc",
+          "line": 77
+        },
+        {
+          "key": "text_cdcbda2a3dd2",
+          "line": 101
+        },
+        {
+          "key": "text_adb674945680",
+          "line": 112
+        },
+        {
+          "key": "text_5a9b0ef55c1a",
+          "line": 121
+        },
+        {
+          "key": "text_ee26a4e645de",
+          "line": 122
+        }
+      ],
+      "staticJsx": [
+        {
+          "line": 86,
+          "text": "WhatsApp"
+        },
+        {
+          "line": 121,
+          "text": "©"
+        },
+        {
+          "line": 121,
+          "text": "."
+        }
+      ]
+    },
+    {
+      "file": "src/components/site-header.tsx",
+      "lines": 115,
+      "sha256": "9b99f95fad44c02027092fdd162f978d72f095e9b83a86ab5099a7fe961fe8a2",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": [
+        {
+          "line": 79,
+          "text": "TRANSPORT"
+        }
+      ]
+    },
+    {
+      "file": "src/components/site-image.tsx",
+      "lines": 8,
+      "sha256": "3b555821c3e5704f84ce2b18ce91cff7208a9d48b830e5af0f14b440efc09860",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/submit-button.tsx",
+      "lines": 28,
+      "sha256": "13c5d309f605d341debaf2b964c27cb9f94d49ca9f0367d8e22492acec5c664d",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/tracking-form.tsx",
+      "lines": 49,
+      "sha256": "aa44efb4c832c70226957a1ff3c09a30182421719e1bdd70a7747f1b5513e4d6",
+      "tables": [],
+      "rpc": [],
+      "cms": [
+        {
+          "key": "text_15936a24b63a",
+          "line": 29
+        },
+        {
+          "key": "text_2b27304a563b",
+          "line": 33
+        },
+        {
+          "key": "text_8555a9966ded",
+          "line": 39
+        },
+        {
+          "key": "text_f8970bd401c6",
+          "line": 41
+        },
+        {
+          "key": "text_c120f11bb031",
+          "line": 43
+        },
+        {
+          "key": "text_4218a4cc0da9",
+          "line": 45
+        }
+      ],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/transport-network-explorer.tsx",
+      "lines": 108,
+      "sha256": "9a5919139c312133930f62baffa806f3bee6c73ed9db450a43076a0c770016d3",
+      "tables": [],
+      "rpc": [],
+      "cms": [
+        {
+          "key": "text_dc4ad13b105b",
+          "line": 73
+        },
+        {
+          "key": "text_a5bd8192fffa",
+          "line": 74
+        },
+        {
+          "key": "text_a01fe144c1c2",
+          "line": 75
+        },
+        {
+          "key": "text_0bc226ec29cd",
+          "line": 77
+        },
+        {
+          "key": "text_735327915fee",
+          "line": 78
+        },
+        {
+          "key": "text_5f80f2a8bf91",
+          "line": 79
+        },
+        {
+          "key": "text_de2349b723f7",
+          "line": 80
+        },
+        {
+          "key": "text_551c4bc6eb34",
+          "line": 81
+        },
+        {
+          "key": "text_8a26078a12f2",
+          "line": 81
+        },
+        {
+          "key": "text_99c40ab40592",
+          "line": 83
+        },
+        {
+          "key": "text_fec19fe3d560",
+          "line": 84
+        },
+        {
+          "key": "text_42623b97b481",
+          "line": 84
+        },
+        {
+          "key": "text_10505fb03757",
+          "line": 86
+        },
+        {
+          "key": "text_c1705fc3641b",
+          "line": 88
+        },
+        {
+          "key": "text_1e77d7378f6c",
+          "line": 92
+        },
+        {
+          "key": "text_3c5f6dd25632",
+          "line": 93
+        },
+        {
+          "key": "text_bcda4a955df7",
+          "line": 93
+        },
+        {
+          "key": "text_c7d44d72fa47",
+          "line": 93
+        },
+        {
+          "key": "text_d08e01417571",
+          "line": 93
+        },
+        {
+          "key": "text_74c28f96ba0d",
+          "line": 96
+        },
+        {
+          "key": "text_c9e34c310b35",
+          "line": 100
+        },
+        {
+          "key": "text_e0fd3c8b26e5",
+          "line": 100
+        },
+        {
+          "key": "text_f1c90bceffe5",
+          "line": 101
+        },
+        {
+          "key": "text_4e0534017cae",
+          "line": 102
+        },
+        {
+          "key": "text_80f102fc3c61",
+          "line": 102
+        },
+        {
+          "key": "text_35d5f8e60822",
+          "line": 103
+        },
+        {
+          "key": "text_277f2e31ace1",
+          "line": 105
+        },
+        {
+          "key": "text_6f4bb3e25693",
+          "line": 105
+        },
+        {
+          "key": "text_f139c54b7dd6",
+          "line": 105
+        },
+        {
+          "key": "text_8baf531b9ade",
+          "line": 105
+        },
+        {
+          "key": "text_0aa81762192d",
+          "line": 105
+        }
+      ],
+      "staticJsx": []
+    },
+    {
+      "file": "src/components/ui.tsx",
+      "lines": 168,
+      "sha256": "7b44f1268f18bebf2a30d9740eb4cdf2b07bd42de3d2097abf2cc5938428025e",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/action-state.ts",
+      "lines": 7,
+      "sha256": "da89b7cefd314e9c2d8e92becdac01c4494cfb1a266027cbab9dd99490cfd22d",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/cms-admin-store.ts",
+      "lines": 24,
+      "sha256": "9bb6def1acef17a841128fcdeae2a137d412ad97c0d4c1c851c8be71fac4d750",
+      "tables": [
+        "site_pages",
+        "site_sections",
+        "site_media_assets",
+        "site_page_media"
+      ],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/cms-defaults.json",
+      "lines": 2204,
+      "sha256": "a93ecc30cbff51e74c8ce22d8ec7ef7bfeed70e46ba03bd6bdeda257d16763a7"
+    },
+    {
+      "file": "src/lib/cms-store.ts",
+      "lines": 55,
+      "sha256": "9563ac51f7018740a3d7d98e8fed2117972fb5b6126e968f175d2973c8eba64c",
+      "tables": [
+        "site_pages",
+        "site_sections",
+        "site_page_media"
+      ],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/cms-validation.ts",
+      "lines": 108,
+      "sha256": "68d9571daa29f9f50193bb2bca684b7a93091328e8c296c36944509eb3924018",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/cms.ts",
+      "lines": 117,
+      "sha256": "8c3414d547f04e44c2529a36d89a610d1f46b4b3f098eac7f7bec4cbfa7cb3c1",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/locale.ts",
+      "lines": 23,
+      "sha256": "a2e1ae190edf3e1a63ba7d110c13e40e189be56788cc397dfad9172b91cf094e",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/messagerie.ts",
+      "lines": 40,
+      "sha256": "a0913c3cbe4957d6ccf17c1ea082fd9e041b6d058067ef90b0b27c07a906eda0",
+      "tables": [
+        "messagerie_network_settings",
+        "messagerie_agencies"
+      ],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/navigation.ts",
+      "lines": 34,
+      "sha256": "4a04064825fcc07f41025a39d6bda4dd3449f0fde2e76a9ca6f8b35e436d0a1e",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "lines": 174,
+      "sha256": "2d5eaae811e125dca0bd96b8310f1d353cc1982022232a91654b559fdbcc0594",
+      "tables": [
+        "site_settings",
+        "agencies",
+        "routes",
+        "parcel_rates",
+        "blog_posts",
+        "blog_posts",
+        "agencies",
+        "routes",
+        "parcel_rates",
+        "corporate_quotes",
+        "blog_posts",
+        "contact_messages",
+        "site_settings"
+      ],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/service-content.ts",
+      "lines": 32,
+      "sha256": "a92ce18a1547dc0eaf2dc6e3870ea0145f5b125bb3479c1d6e6982baf25e65a2",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/supabase/admin.ts",
+      "lines": 11,
+      "sha256": "9ee8862f3f6ac2aa4c2d9da17b3273aeec5c95c539bb44e05b340b900ec3c7f7",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/supabase/client.ts",
+      "lines": 20,
+      "sha256": "b5cf496821e7071cab6d7718a56fd726fb02332f5857a8ec4fb5f92c47a4806e",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/supabase/env.ts",
+      "lines": 11,
+      "sha256": "a623a037a8d36e07f40370d48b5c2e6d1a200e22470fad8d2ce2284df3a2d387",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/supabase/server.ts",
+      "lines": 28,
+      "sha256": "384c56f372370f10638ba161252f1f908eb6c69d3948d4afecdac10965564d3f",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/transport.ts",
+      "lines": 24,
+      "sha256": "2437f27d4c19085be1a6d0634daecb10fc81a0387a8873d0804fd526f396a5f6",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/types.ts",
+      "lines": 186,
+      "sha256": "e3f688f7aa2e143d02ffd16eda0ccd4c5256dcef922f5f2019eb202510aa7efe",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/lib/utils.ts",
+      "lines": 108,
+      "sha256": "732bf2a25019488f6b4c058f0e8bb8e6e7dd2edbf14df4f84cb70d0da212e12f",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "src/middleware.ts",
+      "lines": 67,
+      "sha256": "08fa899fcb9a64ae7475f2f77687c7e9d196cd80296164376ecbfc22ef051cbd",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "stitch-design-export/assets/image-url-map.json",
+      "lines": 27,
+      "sha256": "95ec10dce4e82d130a277b7ef382007f07069a792b4232d22cbcf343121fa5c8"
+    },
+    {
+      "file": "stitch-design-export/css/material-symbols-outlined-variable.css",
+      "lines": 64,
+      "sha256": "10ff4bdd4934652a914d1821d43e536ae1556003294ee7ae944ef28b1eb703c3"
+    },
+    {
+      "file": "stitch-design-export/css/material-symbols-outlined.css",
+      "lines": 21,
+      "sha256": "50477d4c72c4627542a6b67d31ba3201596938f9b77f341224b1fcf641da66ee"
+    },
+    {
+      "file": "stitch-design-export/css/plus-jakarta-sans.css",
+      "lines": 29,
+      "sha256": "09d165fd41000b34f592d9aa32673b09a7ba9e0a7e6fa048af81e9cb295fb3aa"
+    },
+    {
+      "file": "stitch-design-export/css/slkm-accueil-et-reservations.css",
+      "lines": 1,
+      "sha256": "3edcc619ba8de38dded7c4a8c7bef9933e0aef8769f7d368bd1ee810e1b64694"
+    },
+    {
+      "file": "stitch-design-export/css/slkm-admin-central-dashboard.css",
+      "lines": 1,
+      "sha256": "3edcc619ba8de38dded7c4a8c7bef9933e0aef8769f7d368bd1ee810e1b64694"
+    },
+    {
+      "file": "stitch-design-export/css/slkm-histoire-et-vision.css",
+      "lines": 1,
+      "sha256": "3edcc619ba8de38dded7c4a8c7bef9933e0aef8769f7d368bd1ee810e1b64694"
+    },
+    {
+      "file": "stitch-design-export/css/slkm-irsaliyat-messagerie-express.css",
+      "lines": 1,
+      "sha256": "3edcc619ba8de38dded7c4a8c7bef9933e0aef8769f7d368bd1ee810e1b64694"
+    },
+    {
+      "file": "stitch-design-export/css/slkm-lignes-et-agences.css",
+      "lines": 1,
+      "sha256": "3edcc619ba8de38dded7c4a8c7bef9933e0aef8769f7d368bd1ee810e1b64694"
+    },
+    {
+      "file": "stitch-design-export/css/slkm-transport-personnel-et-tourisme.css",
+      "lines": 1,
+      "sha256": "3edcc619ba8de38dded7c4a8c7bef9933e0aef8769f7d368bd1ee810e1b64694"
+    },
+    {
+      "file": "stitch-design-export/manifest.json",
+      "lines": 67,
+      "sha256": "cf0517ebe1f9464e93949a00f8bc9bd97e2b61c1b4e35eaa41f97a938299153b"
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/01.sql",
+      "lines": 911,
+      "sha256": "83e8cc3c820e0ef7824a1d667ad9d53cdd0b81b43b533932b97aac0a1666a21e",
+      "tables": [],
+      "policies": [],
+      "destructiveStatements": []
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/02.sql",
+      "lines": 1436,
+      "sha256": "6c2dbd10c8321527d433c2374f9435d64f0b38d41630db2ebaf98b5b0e06b834",
+      "tables": [],
+      "policies": [],
+      "destructiveStatements": []
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/03.sql",
+      "lines": 81,
+      "sha256": "cf38a944d3be459599e8e08891df245aa47897ce910dc528c235dccd1b0803c6",
+      "tables": [],
+      "policies": [],
+      "destructiveStatements": [
+        {
+          "line": 4,
+          "statement": "-- Supabase owns Storage system tables. No ALTER TABLE storage.objects here."
+        },
+        {
+          "line": 14,
+          "statement": "on conflict(id) do update set file_size_limit=excluded.file_size_limit,allowed_mime_types=excluded.allowed_mime_types;"
+        }
+      ]
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/04.sql",
+      "lines": 136,
+      "sha256": "a9f198adbe4770e8a7d2808b34ad219a63a81cda82476de52a3cfccc84567320",
+      "tables": [],
+      "policies": [],
+      "destructiveStatements": []
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/05.sql",
+      "lines": 249,
+      "sha256": "4e65b65ba5d920a1e0ffccd317311e42e6c92817b6b51042ae1437a0e14b2fb8",
+      "tables": [],
+      "policies": [
+        "\"Admins can delete agencies\"",
+        "\"Admins can insert agencies\"",
+        "\"Admins can read all agencies\"",
+        "\"Admins can update agencies\"",
+        "\"Public can read active agencies\"",
+        "\"Admins can delete blog posts\"",
+        "\"Admins can insert blog posts\"",
+        "\"Admins can read all blog posts\"",
+        "\"Admins can update blog posts\"",
+        "\"Public can read published blog posts\"",
+        "\"Admins can delete contact messages\"",
+        "\"Admins can read contact messages\"",
+        "\"Admins can update contact messages\"",
+        "\"Anyone can send a contact message\"",
+        "\"Admins can delete corporate quotes\"",
+        "\"Admins can read all corporate quotes\"",
+        "\"Admins can update corporate quotes\"",
+        "\"Anyone can submit a corporate quote\"",
+        "\"messagerie_agencies_admin\"",
+        "\"messagerie_agencies_public\"",
+        "\"messagerie_settings_admin\"",
+        "\"messagerie_settings_public\"",
+        "\"Admins can delete parcel rates\"",
+        "\"Admins can insert parcel rates\"",
+        "\"Admins can read all parcel rates\"",
+        "\"Admins can update parcel rates\"",
+        "\"Public can read parcel rates\"",
+        "\"Admins can delete routes\"",
+        "\"Admins can insert routes\"",
+        "\"Admins can read all routes\"",
+        "\"Admins can update routes\"",
+        "\"Public can read active routes\"",
+        "\"cms_admin_all\"",
+        "\"cms_public_assets\"",
+        "\"cms_admin_all\"",
+        "\"cms_public_media_links\"",
+        "\"cms_admin_all\"",
+        "\"cms_public_pages\"",
+        "\"cms_admin_all\"",
+        "\"cms_public_sections\"",
+        "\"Admins can read site settings\"",
+        "\"Admins can update site settings\"",
+        "\"Public can read site settings\""
+      ],
+      "destructiveStatements": [
+        {
+          "line": 106,
+          "statement": "grant TRUNCATE on public.\"site_media_assets\" to \"service_role\";"
+        },
+        {
+          "line": 118,
+          "statement": "grant TRUNCATE on public.\"site_page_media\" to \"service_role\";"
+        },
+        {
+          "line": 130,
+          "statement": "grant TRUNCATE on public.\"site_pages\" to \"service_role\";"
+        },
+        {
+          "line": 142,
+          "statement": "grant TRUNCATE on public.\"site_sections\" to \"service_role\";"
+        }
+      ]
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/06.sql",
+      "lines": 94,
+      "sha256": "c41ec3cb755fb891b530580e0db23054299f99e20799b7f07ceb522435724a5a",
+      "tables": [],
+      "policies": [],
+      "destructiveStatements": []
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/07.sql",
+      "lines": 36,
+      "sha256": "6d246697de6d4cb5478b2f1836f1986cf9785eb36611f0af1aa169bc63a0a187",
+      "tables": [],
+      "policies": [
+        "\"CMS admin media all\"",
+        "\"CMS published media read\"",
+        "\"SLKM admins media delete\"",
+        "\"SLKM authenticated media update\"",
+        "\"SLKM authenticated media upload\"",
+        "\"SLKM public media read\""
+      ],
+      "destructiveStatements": []
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/08.sql",
+      "lines": 344,
+      "sha256": "a8bb00d449f7ef2482511cfabff75e111a1ded2bc95de02eb969b233db1078d0",
+      "tables": [],
+      "policies": [],
+      "destructiveStatements": []
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/09.sql",
+      "lines": 15,
+      "sha256": "fefb97e96536316ab1e1494809a12115538a19b75723fe64c16ec66fbdffb764",
+      "tables": [],
+      "policies": [],
+      "destructiveStatements": []
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/README.md",
+      "lines": 91,
+      "sha256": "bd0cf52193c9ae4022f5dbe42af363ad1658962954f0de01295efa40cac97805"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "lines": 60,
+      "sha256": "d42bf92b8f6887baef51763290e221b6be9d1bc9e596e30dce4fd2c921c5d751",
+      "tables": [],
+      "rpc": [],
+      "cms": [],
+      "staticJsx": []
+    },
+    {
+      "file": "tsconfig.json",
+      "lines": 24,
+      "sha256": "1af1b849096a23438a47b7c060e19e433d8fd4abfaf47cd3642b2a989806fd38"
+    }
+  ],
+  "coverage": [
+    {
+      "slug": "home",
+      "route": "/",
+      "copy": [
+        {
+          "key": "text_46f2cb5f4c7e",
+          "label": "Transport voyageurs",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 32
+            }
+          ]
+        },
+        {
+          "key": "text_62efdfc9ae9f",
+          "label": "Votre prochaine destination commence ici.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 32
+            }
+          ]
+        },
+        {
+          "key": "text_aa209268f717",
+          "label": "Messagerie Irsaliyat",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 33
+            }
+          ]
+        },
+        {
+          "key": "text_d2b98e1951de",
+          "label": "Un réseau d’agences pour vos envois.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 33
+            }
+          ]
+        },
+        {
+          "key": "text_cb6d502fe0d4",
+          "label": "Professionnels & tourisme",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 34
+            }
+          ]
+        },
+        {
+          "key": "text_cdb4c98c43a2",
+          "label": "Une solution adaptée aux déplacements de groupe.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 34
+            }
+          ]
+        },
+        {
+          "key": "text_8c8395fc2933",
+          "label": "Autocar SLKM sur les routes du Maroc",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 40
+            }
+          ]
+        },
+        {
+          "key": "text_d5e6058254cc",
+          "label": "Le Maroc, à vos côtés",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 41
+            }
+          ]
+        },
+        {
+          "key": "text_437027c1fec3",
+          "label": "Voyagez loin.",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 45
+            }
+          ]
+        },
+        {
+          "key": "text_6907768e8608",
+          "label": "Arrivez serein.",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 45
+            }
+          ]
+        },
+        {
+          "key": "text_e0c5b6fab684",
+          "label": "Les villes se rapprochent, le voyage commence. Découvrez les lignes SLKM et préparez votre prochain départ.",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 46
+            }
+          ]
+        },
+        {
+          "key": "text_7b7b47dfa7c7",
+          "label": "Explorer & réserver",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 47
+            }
+          ]
+        },
+        {
+          "key": "text_0ca296547019",
+          "label": "Nos services",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 47
+            }
+          ]
+        },
+        {
+          "key": "text_d09d61817e68",
+          "label": "Voyagez en confiance",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 48
+            }
+          ]
+        },
+        {
+          "key": "text_e04366819c5c",
+          "label": "Réservation WhatsApp",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 48
+            }
+          ]
+        },
+        {
+          "key": "text_cabe19f5af26",
+          "label": "Voyageurs",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 52
+            }
+          ]
+        },
+        {
+          "key": "text_6800adb9b73f",
+          "label": "Irsaliyat",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 52
+            }
+          ]
+        },
+        {
+          "key": "text_99069541d9d0",
+          "label": "Entreprises",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 52
+            }
+          ]
+        },
+        {
+          "key": "text_59970170bf38",
+          "label": "Prenez la route",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 54
+            }
+          ]
+        },
+        {
+          "key": "text_bdf17040d1e3",
+          "label": "Nos trajets à découvrir",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 54
+            }
+          ]
+        },
+        {
+          "key": "text_6aa353ce7bd2",
+          "label": "Horaires, classes et tarifs publiés par SLKM.",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 54
+            }
+          ]
+        },
+        {
+          "key": "text_a696995454ad",
+          "label": "Voir toutes les lignes",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 54
+            }
+          ]
+        },
+        {
+          "key": "text_90a38e74ad1b",
+          "label": "L’expérience à bord",
+          "group": "section-3",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 55
+            }
+          ]
+        },
+        {
+          "key": "text_46c73613900a",
+          "label": "À chaque voyage, sa classe",
+          "group": "section-3",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 55
+            }
+          ]
+        },
+        {
+          "key": "text_0eb1407994e2",
+          "label": "Simple, du début à la fin",
+          "group": "section-4",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 57
+            }
+          ]
+        },
+        {
+          "key": "text_2c275f3b8261",
+          "label": "Votre prochain départ, en trois étapes",
+          "group": "section-4",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 57
+            }
+          ]
+        },
+        {
+          "key": "text_6e4daea88b21",
+          "label": "Trouvez votre trajet",
+          "group": "section-4",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 59
+            }
+          ]
+        },
+        {
+          "key": "text_36c467672652",
+          "label": "Choisissez votre départ, votre destination et votre classe.",
+          "group": "section-4",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 59
+            }
+          ]
+        },
+        {
+          "key": "text_98f73c3d4753",
+          "label": "Contactez votre agence",
+          "group": "section-4",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 60
+            }
+          ]
+        },
+        {
+          "key": "text_74871f5de39e",
+          "label": "Envoyez votre demande de réservation sur WhatsApp.",
+          "group": "section-4",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 60
+            }
+          ]
+        },
+        {
+          "key": "text_727afbb7a838",
+          "label": "Confirmez votre départ",
+          "group": "section-4",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 61
+            }
+          ]
+        },
+        {
+          "key": "text_4199e93389c2",
+          "label": "Notre équipe vous accompagne pour finaliser votre voyage.",
+          "group": "section-4",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 61
+            }
+          ]
+        },
+        {
+          "key": "text_372cbcef4167",
+          "label": "Bien plus qu’un trajet",
+          "group": "services",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 64
+            }
+          ]
+        },
+        {
+          "key": "text_9adc17724739",
+          "label": "La mobilité, sous toutes ses formes",
+          "group": "services",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 64
+            }
+          ]
+        },
+        {
+          "key": "text_977ae6cb0c22",
+          "label": "Découvrir",
+          "group": "services",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 64
+            }
+          ]
+        },
+        {
+          "key": "text_e768c27bd59e",
+          "label": "Le voyage commence par la confiance",
+          "group": "section-5",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 65
+            }
+          ]
+        },
+        {
+          "key": "text_c523a8fa364c",
+          "label": "Un réseau d’agences",
+          "group": "section-5",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 66
+            }
+          ]
+        },
+        {
+          "key": "text_b849165e2bbf",
+          "label": "Consultez les adresses et coordonnées de nos agences.",
+          "group": "section-5",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 66
+            }
+          ]
+        },
+        {
+          "key": "text_f825cbf35d21",
+          "label": "Votre classe de voyage",
+          "group": "section-5",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 67
+            }
+          ]
+        },
+        {
+          "key": "text_61cae2f65de2",
+          "label": "Choisissez parmi les classes proposées sur votre ligne.",
+          "group": "section-5",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 67
+            }
+          ]
+        },
+        {
+          "key": "text_795070462d4e",
+          "label": "Un contact direct",
+          "group": "section-5",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 68
+            }
+          ]
+        },
+        {
+          "key": "text_40883463e126",
+          "label": "Échangez avec notre équipe pour préparer votre trajet.",
+          "group": "section-5",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 68
+            }
+          ]
+        },
+        {
+          "key": "text_89eb7cdacbc7",
+          "label": "Une réservation simple",
+          "group": "section-5",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 69
+            }
+          ]
+        },
+        {
+          "key": "text_50c5012e9ee3",
+          "label": "Envoyez votre demande sur WhatsApp.",
+          "group": "section-5",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 69
+            }
+          ]
+        },
+        {
+          "key": "text_cd9fbef20b1d",
+          "label": "Service de messagerie Irsaliyat",
+          "group": "section-6",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 71
+            }
+          ]
+        },
+        {
+          "key": "text_621f1f364772",
+          "label": "Vos envois aussi prennent la route",
+          "group": "section-6",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 71
+            }
+          ]
+        },
+        {
+          "key": "text_7e64179e87d7",
+          "label": "Découvrez les tarifs de messagerie et contactez l’équipe Irsaliyat avec votre numéro de suivi.",
+          "group": "section-6",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 71
+            }
+          ]
+        },
+        {
+          "key": "text_34e096b32ef8",
+          "label": "Suivre un colis",
+          "group": "section-6",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 71
+            }
+          ]
+        },
+        {
+          "key": "text_e34fb32f832c",
+          "label": "Découvrir les tarifs",
+          "group": "section-6",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 71
+            }
+          ]
+        },
+        {
+          "key": "text_b0a309dfd8fd",
+          "label": "Le journal SLKM",
+          "group": "section-7",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 72
+            }
+          ]
+        },
+        {
+          "key": "text_90163f055351",
+          "label": "L’actualité du voyage",
+          "group": "section-7",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 72
+            }
+          ]
+        },
+        {
+          "key": "text_1bb3f29464e5",
+          "label": "Voir les actualités",
+          "group": "section-7",
+          "references": [
+            {
+              "file": "src/app/(site)/page.tsx",
+              "line": 72
+            }
+          ]
+        }
+      ],
+      "images": {
+        "image_1d93533d8035": {
+          "src": "/images/serenity-coach.jpg",
+          "label": "serenity-coach.jpg",
+          "group": "Contenu de page"
+        },
+        "image_7f366d3e4316": {
+          "src": "/images/cargo-hold.jpg",
+          "label": "cargo-hold.jpg",
+          "group": "section-6"
+        },
+        "image_a9296b58a762": {
+          "src": "/images/service-tourism.jpg",
+          "label": "service-tourism.jpg",
+          "group": "Contenu de page"
+        },
+        "image_1b4667005cb9": {
+          "src": "/images/hero-home.jpg",
+          "label": "hero-home.jpg",
+          "group": "hero"
+        }
+      },
+      "links": {
+        "link_d6d9a0b2b0b5": {
+          "href": "/lignes",
+          "label": "Destination · page · /lignes",
+          "group": "page"
+        },
+        "link_88f3b90341f9": {
+          "href": "/irsaliyat",
+          "label": "Destination · page · /irsaliyat",
+          "group": "page"
+        },
+        "link_93ace474a9f1": {
+          "href": "/services",
+          "label": "Destination · page · /services",
+          "group": "page"
+        },
+        "link_32835313c8a2": {
+          "href": "#reseau",
+          "label": "Destination · hero · #reseau",
+          "group": "hero"
+        },
+        "link_41d2227187ad": {
+          "href": "#services",
+          "label": "Destination · hero · #services",
+          "group": "hero"
+        },
+        "link_4f6fddd0268f": {
+          "href": "/lignes",
+          "label": "Destination · section-1 · /lignes",
+          "group": "section-1"
+        },
+        "link_bb2b804fc069": {
+          "href": "/irsaliyat",
+          "label": "Destination · section-1 · /irsaliyat",
+          "group": "section-1"
+        },
+        "link_a956e6e51f8c": {
+          "href": "/services",
+          "label": "Destination · section-1 · /services",
+          "group": "section-1"
+        },
+        "link_0c58396ba61d": {
+          "href": "/lignes",
+          "label": "Destination · section-2 · /lignes",
+          "group": "section-2"
+        },
+        "link_bc3c45514639": {
+          "href": "/irsaliyat#tracking",
+          "label": "Destination · section-6 · /irsaliyat#tracking",
+          "group": "section-6"
+        },
+        "link_a8198dffee02": {
+          "href": "/irsaliyat#tarifs",
+          "label": "Destination · section-6 · /irsaliyat#tarifs",
+          "group": "section-6"
+        },
+        "link_ff68034cb2b1": {
+          "href": "/blog",
+          "label": "Destination · section-7 · /blog",
+          "group": "section-7"
+        }
+      },
+      "sections": [
+        {
+          "key": "hero",
+          "label": "Introduction / bannière",
+          "sort_order": 0
+        },
+        {
+          "key": "section-1",
+          "label": "Voyageurs",
+          "sort_order": 10
+        },
+        {
+          "key": "reseau",
+          "label": "reseau",
+          "sort_order": 20
+        },
+        {
+          "key": "section-2",
+          "label": "Prenez la route",
+          "sort_order": 30
+        },
+        {
+          "key": "section-3",
+          "label": "L’expérience à bord",
+          "sort_order": 40
+        },
+        {
+          "key": "section-4",
+          "label": "Simple, du début à la fin",
+          "sort_order": 50
+        },
+        {
+          "key": "services",
+          "label": "services",
+          "sort_order": 60
+        },
+        {
+          "key": "section-5",
+          "label": "Le voyage commence par la confiance",
+          "sort_order": 70
+        },
+        {
+          "key": "section-6",
+          "label": "Service de messagerie Irsaliyat",
+          "sort_order": 80
+        },
+        {
+          "key": "section-7",
+          "label": "Le journal SLKM",
+          "sort_order": 90
+        }
+      ]
+    },
+    {
+      "slug": "lignes",
+      "route": "/lignes",
+      "copy": [
+        {
+          "key": "text_a692bb103ab3",
+          "label": "Le réseau",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/lignes/page.tsx",
+              "line": 23
+            }
+          ]
+        },
+        {
+          "key": "text_57cce3ffe3ad",
+          "label": "Votre prochaine destination",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/lignes/page.tsx",
+              "line": 23
+            }
+          ]
+        },
+        {
+          "key": "text_afdb2ecbcf0b",
+          "label": "Explorez la carte, comparez les trajets et retrouvez votre agence.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/lignes/page.tsx",
+              "line": 23
+            }
+          ]
+        },
+        {
+          "key": "text_dc4ad13b105b",
+          "label": "Le Maroc, à votre portée",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 73
+            }
+          ]
+        },
+        {
+          "key": "text_a5bd8192fffa",
+          "label": "Où souhaitez-vous aller ?",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 74
+            }
+          ]
+        },
+        {
+          "key": "text_a01fe144c1c2",
+          "label": "Explorez nos lignes et contactez votre agence pour réserver.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 75
+            }
+          ]
+        },
+        {
+          "key": "text_0bc226ec29cd",
+          "label": "Ville de départ",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 69
+            },
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 77
+            }
+          ]
+        },
+        {
+          "key": "text_735327915fee",
+          "label": "Tous les départs",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 78
+            }
+          ]
+        },
+        {
+          "key": "text_5f80f2a8bf91",
+          "label": "Ville d’arrivée",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 79
+            }
+          ]
+        },
+        {
+          "key": "text_de2349b723f7",
+          "label": "Toutes les destinations",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 80
+            }
+          ]
+        },
+        {
+          "key": "text_551c4bc6eb34",
+          "label": "Inverser si le retour existe",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 81
+            }
+          ]
+        },
+        {
+          "key": "text_8a26078a12f2",
+          "label": "Inverser les villes",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 81
+            }
+          ]
+        },
+        {
+          "key": "text_99c40ab40592",
+          "label": "Date",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 83
+            }
+          ]
+        },
+        {
+          "key": "text_fec19fe3d560",
+          "label": "Classe",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 84
+            }
+          ]
+        },
+        {
+          "key": "text_42623b97b481",
+          "label": "Toutes",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 84
+            }
+          ]
+        },
+        {
+          "key": "text_10505fb03757",
+          "label": "Rechercher un trajet",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 86
+            }
+          ]
+        },
+        {
+          "key": "text_c1705fc3641b",
+          "label": "Revenir à la vue nationale",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 88
+            }
+          ]
+        },
+        {
+          "key": "text_1e77d7378f6c",
+          "label": "Le réseau SLKM",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 92
+            }
+          ]
+        },
+        {
+          "key": "text_3c5f6dd25632",
+          "label": "Affichage carte",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 93
+            }
+          ]
+        },
+        {
+          "key": "text_bcda4a955df7",
+          "label": "Tout",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 93
+            }
+          ]
+        },
+        {
+          "key": "text_c7d44d72fa47",
+          "label": "Agences",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 93
+            }
+          ]
+        },
+        {
+          "key": "text_d08e01417571",
+          "label": "Lignes",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 93
+            }
+          ]
+        },
+        {
+          "key": "text_74c28f96ba0d",
+          "label": "Liaisons géographiques indicatives : elles ne représentent pas les routes routières. Seules les agences avec c",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 96
+            }
+          ]
+        },
+        {
+          "key": "text_c9e34c310b35",
+          "label": "Les trajets disponibles",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 100
+            }
+          ]
+        },
+        {
+          "key": "text_e0fd3c8b26e5",
+          "label": "lignes",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 100
+            }
+          ]
+        },
+        {
+          "key": "text_f1c90bceffe5",
+          "label": "Localiser cette ligne",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 101
+            }
+          ]
+        },
+        {
+          "key": "text_4e0534017cae",
+          "label": "Aucun trajet correspondant",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 102
+            }
+          ]
+        },
+        {
+          "key": "text_80f102fc3c61",
+          "label": "Modifiez les villes, la date ou la classe, ou contactez notre équipe.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 102
+            }
+          ]
+        },
+        {
+          "key": "text_35d5f8e60822",
+          "label": "Afficher plus de lignes",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 103
+            }
+          ]
+        },
+        {
+          "key": "text_277f2e31ace1",
+          "label": "Nos agences",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 105
+            }
+          ]
+        },
+        {
+          "key": "text_6f4bb3e25693",
+          "label": "Filtrer par ville",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/messagerie-network-section.tsx",
+              "line": 27
+            },
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 105
+            }
+          ]
+        },
+        {
+          "key": "text_f139c54b7dd6",
+          "label": "Toutes les agences",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 143
+            },
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 105
+            }
+          ]
+        },
+        {
+          "key": "text_8baf531b9ade",
+          "label": "Voir sur la carte",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 105
+            }
+          ]
+        },
+        {
+          "key": "text_0aa81762192d",
+          "label": "Voir toutes les agences",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 105
+            }
+          ]
+        }
+      ],
+      "images": {},
+      "links": {},
+      "sections": [
+        {
+          "key": "network",
+          "label": "Carte, recherche et agences",
+          "sort_order": 0
+        }
+      ]
+    },
+    {
+      "slug": "irsaliyat",
+      "route": "/irsaliyat",
+      "copy": [
+        {
+          "key": "text_95fa6b27692b",
+          "label": "Déposez votre colis",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 25
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 26
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 27
+            }
+          ]
+        },
+        {
+          "key": "text_7395bee98942",
+          "label": "Présentez le colis au guichet Irsaliyat. Nous le pesons, l'enregistrons et vous remettons un numéro de suivi.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 28
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 29
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 30
+            }
+          ]
+        },
+        {
+          "key": "text_95d3c8989f13",
+          "label": "Voyage avec l'autocar",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 34
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 35
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 36
+            }
+          ]
+        },
+        {
+          "key": "text_8b2bd40ceaac",
+          "label": "Il est placé dans un compartiment fermé dédié, séparé des bagages classiques.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 37
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 38
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 39
+            }
+          ]
+        },
+        {
+          "key": "text_73b6e216b4a5",
+          "label": "Arrivée en agence",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 43
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 44
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 45
+            }
+          ]
+        },
+        {
+          "key": "text_5d0898e0194c",
+          "label": "Le destinataire reçoit une alerte SMS ou WhatsApp dès l'arrivée.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 46
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 47
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 48
+            }
+          ]
+        },
+        {
+          "key": "text_f6b950d5e567",
+          "label": "Remise sécurisée",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 52
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 53
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 54
+            }
+          ]
+        },
+        {
+          "key": "text_60a162e1535d",
+          "label": "Vérification de la pièce d'identité et du code secret avant la remise.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 55
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 56
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 57
+            }
+          ]
+        },
+        {
+          "key": "text_cf04082cac0b",
+          "label": "Irsaliyat · messagerie express",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 61
+            }
+          ]
+        },
+        {
+          "key": "text_e6fa5ed22794",
+          "label": "Vos colis, livrés vite et en toute confiance",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 61
+            }
+          ]
+        },
+        {
+          "key": "text_59adb8f9eb01",
+          "label": "Notre réseau de colis utilise les mêmes liaisons quotidiennes que nos autocars, avec un suivi direct sur Whats",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 61
+            }
+          ]
+        },
+        {
+          "key": "text_df01d4b731c3",
+          "label": "Comment ça marche",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 69
+            }
+          ]
+        },
+        {
+          "key": "text_555d59a0bd73",
+          "label": "Du dépôt à la remise en quatre étapes",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 69
+            }
+          ]
+        },
+        {
+          "key": "text_fb30ae8c285e",
+          "label": "Tarifs",
+          "group": "tarifs",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 84
+            }
+          ]
+        },
+        {
+          "key": "text_53c01dacd291",
+          "label": "Des tarifs clairs selon le poids",
+          "group": "tarifs",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 84
+            }
+          ]
+        },
+        {
+          "key": "text_edf6cf5d9204",
+          "label": "Tarifs de base par catégorie. Des suppléments peuvent s'appliquer selon la destination ou la nature du colis.",
+          "group": "tarifs",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 84
+            }
+          ]
+        },
+        {
+          "key": "text_49e333f4f39c",
+          "label": "Demander pour votre destination",
+          "group": "tarifs",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 84
+            }
+          ]
+        },
+        {
+          "key": "text_fd45ba571a87",
+          "label": "tarif de base",
+          "group": "tarifs",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 93
+            }
+          ]
+        },
+        {
+          "key": "text_bdbce9febab4",
+          "label": "Suivi et sécurisé",
+          "group": "tarifs",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 98
+            }
+          ]
+        },
+        {
+          "key": "text_b310ecd98789",
+          "label": "Aucun tarif publié",
+          "group": "tarifs",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 102
+            }
+          ]
+        },
+        {
+          "key": "text_dd9085ae6490",
+          "label": "Contactez notre équipe pour connaître le tarif de votre envoi.",
+          "group": "tarifs",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 102
+            }
+          ]
+        },
+        {
+          "key": "text_9f38ae8098e2",
+          "label": "Nous contacter",
+          "group": "tarifs",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 145
+            },
+            {
+              "file": "src/app/(site)/blog/[slug]/page.tsx",
+              "line": 98
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 102
+            }
+          ]
+        },
+        {
+          "key": "text_feecc2f902e8",
+          "label": "Pour les commerçants",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 112
+            }
+          ]
+        },
+        {
+          "key": "text_0239e9bb3b61",
+          "label": "Paiement à la livraison, reversé chaque semaine",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 112
+            }
+          ]
+        },
+        {
+          "key": "text_94b51582a43e",
+          "label": "Expédiez vos produits avec nous. Nous encaissons à la livraison et vous reversons chaque semaine avec un récap",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 112
+            }
+          ]
+        },
+        {
+          "key": "text_20e3ebeead0f",
+          "label": "Paiement à la livraison",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 115
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 115
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 115
+            }
+          ]
+        },
+        {
+          "key": "text_e4d0b543a685",
+          "label": "Reversement hebdomadaire",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 116
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 116
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 116
+            }
+          ]
+        },
+        {
+          "key": "text_7ae43de7089d",
+          "label": "Colis traçables",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 117
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 117
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 117
+            }
+          ]
+        },
+        {
+          "key": "text_2b34a2619a8b",
+          "label": "Compartiment sécurisé",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 118
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 118
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 118
+            }
+          ]
+        },
+        {
+          "key": "text_dddf86c53ff6",
+          "label": "Parler à l'équipe Irsaliyat",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 125
+            }
+          ]
+        },
+        {
+          "key": "text_15936a24b63a",
+          "label": "Suivre votre colis",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/tracking-form.tsx",
+              "line": 29
+            }
+          ]
+        },
+        {
+          "key": "text_2b27304a563b",
+          "label": "Numéro de suivi",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/tracking-form.tsx",
+              "line": 33
+            }
+          ]
+        },
+        {
+          "key": "text_8555a9966ded",
+          "label": "Suivre sur WhatsApp",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/tracking-form.tsx",
+              "line": 39
+            }
+          ]
+        },
+        {
+          "key": "text_f8970bd401c6",
+          "label": "Le suivi est momentanément indisponible. Contactez une agence.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/tracking-form.tsx",
+              "line": 41
+            }
+          ]
+        },
+        {
+          "key": "text_c120f11bb031",
+          "label": "Veuillez saisir votre numéro de suivi.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/tracking-form.tsx",
+              "line": 43
+            }
+          ]
+        },
+        {
+          "key": "text_4218a4cc0da9",
+          "label": "Saisissez le numéro remis au dépôt. L'équipe Irsaliyat vous répond directement.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/tracking-form.tsx",
+              "line": 45
+            }
+          ]
+        },
+        {
+          "key": "text_194d63493fa7",
+          "label": "Notre réseau de messagerie",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/messagerie-network-section.tsx",
+              "line": 24
+            }
+          ]
+        },
+        {
+          "key": "text_e35b49703650",
+          "label": "Découvrez les villes et agences desservies par notre service de livraison de colis et d'envois.",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/messagerie-network-section.tsx",
+              "line": 24
+            }
+          ]
+        },
+        {
+          "key": "text_0b7897cb8ec3",
+          "label": "Les informations du réseau sont momentanément indisponibles.",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/messagerie-network-section.tsx",
+              "line": 25
+            }
+          ]
+        },
+        {
+          "key": "text_b7f5ef931116",
+          "label": "La carte du réseau sera prochainement disponible.",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/messagerie-network-section.tsx",
+              "line": 25
+            }
+          ]
+        },
+        {
+          "key": "text_621061dc7a98",
+          "label": "Villes desservies",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/messagerie-network-section.tsx",
+              "line": 26
+            }
+          ]
+        },
+        {
+          "key": "text_6f13f83e5a9b",
+          "label": "Nos agences de messagerie",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/messagerie-network-section.tsx",
+              "line": 27
+            }
+          ]
+        },
+        {
+          "key": "text_6f4bb3e25693",
+          "label": "Filtrer par ville",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/messagerie-network-section.tsx",
+              "line": 27
+            },
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 105
+            }
+          ]
+        },
+        {
+          "key": "text_e92207923058",
+          "label": "Toutes les villes",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/messagerie-network-section.tsx",
+              "line": 27
+            }
+          ]
+        },
+        {
+          "key": "text_e98461de52c3",
+          "label": "Les coordonnées des agences de messagerie seront publiées prochainement.",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/messagerie-network-section.tsx",
+              "line": 45
+            }
+          ]
+        }
+      ],
+      "images": {
+        "image_44f3933530f3": {
+          "src": "/images/hero-irsaliyat.jpg",
+          "label": "hero-irsaliyat.jpg",
+          "group": "hero"
+        },
+        "image_7f366d3e4316": {
+          "src": "/images/cargo-hold.jpg",
+          "label": "cargo-hold.jpg",
+          "group": "section-2"
+        }
+      },
+      "links": {
+        "link_e0c7bc0426f0": {
+          "href": "/contact",
+          "label": "Destination · tarifs · /contact",
+          "group": "tarifs"
+        },
+        "link_fd6dc411307f": {
+          "href": "/contact",
+          "label": "Destination · section-2 · /contact",
+          "group": "section-2"
+        }
+      },
+      "sections": [
+        {
+          "key": "hero",
+          "label": "Introduction / bannière",
+          "sort_order": 0
+        },
+        {
+          "key": "parcel-network",
+          "label": "Carte et agences de messagerie",
+          "sort_order": 10
+        },
+        {
+          "key": "section-1",
+          "label": "Comment ça marche",
+          "sort_order": 20
+        },
+        {
+          "key": "tarifs",
+          "label": "tarifs",
+          "sort_order": 30
+        },
+        {
+          "key": "section-2",
+          "label": "Pour les commerçants",
+          "sort_order": 40
+        }
+      ]
+    },
+    {
+      "slug": "about",
+      "route": "/about",
+      "copy": [
+        {
+          "key": "text_e1170ab1997e",
+          "label": "Sécurité d'abord",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 25
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 26
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 27
+            }
+          ]
+        },
+        {
+          "key": "text_164066236600",
+          "label": "Des véhicules suivis, des chauffeurs formés et des procédures de contrôle à chaque départ.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 28
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 29
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 30
+            }
+          ]
+        },
+        {
+          "key": "text_a4ed9ff495ee",
+          "label": "Proximité",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 34
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 35
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 36
+            }
+          ]
+        },
+        {
+          "key": "text_d1e1254035e1",
+          "label": "Des équipes locales dans chaque ville, qui connaissent les routes et les attentes des voyageurs.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 37
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 38
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 39
+            }
+          ]
+        },
+        {
+          "key": "text_1915ad464625",
+          "label": "Exigence",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 43
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 44
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 45
+            }
+          ]
+        },
+        {
+          "key": "text_fbf2b0944ae5",
+          "label": "Une flotte renouvelée, des départs à l'heure et un service client accessible 24/7.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 46
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 47
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 48
+            }
+          ]
+        },
+        {
+          "key": "text_652cd9603ac8",
+          "label": "Notre histoire",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 52
+            }
+          ]
+        },
+        {
+          "key": "text_51ef54c529de",
+          "label": "Du souk d'Inezgane à un réseau national",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 52
+            }
+          ]
+        },
+        {
+          "key": "text_26b72d60c687",
+          "label": "{{siteName}} a commencé avec une liaison et une idée claire : un transport sûr et régulier au service des gens",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 52
+            }
+          ]
+        },
+        {
+          "key": "text_5a3031c4680d",
+          "label": "Fondateur",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 70
+            }
+          ]
+        },
+        {
+          "key": "text_54b9497e87db",
+          "label": "Une vision familiale depuis 1992",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 74
+            }
+          ]
+        },
+        {
+          "key": "text_8c6db3af58e2",
+          "label": "L'histoire",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 79
+            }
+          ]
+        },
+        {
+          "key": "text_1148cf3ee1c8",
+          "label": "Trente ans sur la même route",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 79
+            }
+          ]
+        },
+        {
+          "key": "text_5775e5336150",
+          "label": "En 1992, les premières rotations partaient du cœur du souk d'Inezgane pour relier villages et centres urbains ",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 82
+            }
+          ]
+        },
+        {
+          "key": "text_6974fce44f26",
+          "label": "Au fil des années, le réseau s'est étendu vers le nord et le sud, et Irsaliyat a ajouté le transport de colis ",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 85
+            }
+          ]
+        },
+        {
+          "key": "text_7541c2434aed",
+          "label": "Un réseau national",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 90
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 90
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 90
+            }
+          ]
+        },
+        {
+          "key": "text_6fae79c72db8",
+          "label": "Des équipes locales",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 91
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 91
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 91
+            }
+          ]
+        },
+        {
+          "key": "text_5852bcae1f62",
+          "label": "Une flotte moderne",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 92
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 92
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 92
+            }
+          ]
+        },
+        {
+          "key": "text_d925c104e333",
+          "label": "Un service humain",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 93
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 93
+            },
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 93
+            }
+          ]
+        },
+        {
+          "key": "text_09e7d2cf376c",
+          "label": "Les étapes",
+          "group": "section-3",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 105
+            }
+          ]
+        },
+        {
+          "key": "text_66d2df0e0bda",
+          "label": "Les moments qui ont façonné le trajet",
+          "group": "section-3",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 105
+            }
+          ]
+        },
+        {
+          "key": "text_d0c8a757b7e7",
+          "label": "Aucune étape publiée",
+          "group": "section-3",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 123
+            }
+          ]
+        },
+        {
+          "key": "text_49f6c0ea2f85",
+          "label": "Contactez-nous pour en savoir plus sur SLKM.",
+          "group": "section-3",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 123
+            }
+          ]
+        },
+        {
+          "key": "text_c3201fad6f90",
+          "label": "Nos valeurs",
+          "group": "section-4",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 128
+            }
+          ]
+        },
+        {
+          "key": "text_fb69107a96df",
+          "label": "Ce qui ne change pas",
+          "group": "section-4",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 128
+            }
+          ]
+        },
+        {
+          "key": "text_d95a1270801d",
+          "label": "Présence",
+          "group": "section-5",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 143
+            }
+          ]
+        },
+        {
+          "key": "text_17c70e1250fa",
+          "label": "Notre réseau sur la carte",
+          "group": "section-5",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 143
+            }
+          ]
+        },
+        {
+          "key": "text_b140ab9fb32c",
+          "label": "{{agencies.length}} agences actives relient le nord, le centre et le sud.",
+          "group": "section-5",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 143
+            }
+          ]
+        },
+        {
+          "key": "text_f139c54b7dd6",
+          "label": "Toutes les agences",
+          "group": "section-5",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 143
+            },
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 105
+            }
+          ]
+        },
+        {
+          "key": "text_9f38ae8098e2",
+          "label": "Nous contacter",
+          "group": "section-5",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 145
+            },
+            {
+              "file": "src/app/(site)/blog/[slug]/page.tsx",
+              "line": 98
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 102
+            }
+          ]
+        },
+        {
+          "key": "text_cc48426bf7db",
+          "label": "Rejoignez le voyage",
+          "group": "section-6",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 159
+            }
+          ]
+        },
+        {
+          "key": "text_fda674ddaf45",
+          "label": "Que vous voyagiez ou travailliez avec nous, bienvenue",
+          "group": "section-6",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 162
+            }
+          ]
+        },
+        {
+          "key": "text_ffcadf5671ac",
+          "label": "Découvrez nos lignes ou demandez une offre adaptée à vos équipes.",
+          "group": "section-6",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 165
+            }
+          ]
+        },
+        {
+          "key": "text_567565cc67ca",
+          "label": "Les lignes",
+          "group": "section-6",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 169
+            }
+          ]
+        },
+        {
+          "key": "text_330a53f83685",
+          "label": "Un devis",
+          "group": "section-6",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 170
+            }
+          ]
+        }
+      ],
+      "images": {
+        "image_9fce0732de23": {
+          "src": "/images/hero-about.jpg",
+          "label": "hero-about.jpg",
+          "group": "hero"
+        },
+        "image_19e23c8c7648": {
+          "src": "/images/ceo.jpg",
+          "label": "ceo.jpg",
+          "group": "section-2"
+        }
+      },
+      "links": {
+        "link_3bd6b58d0eb5": {
+          "href": "/lignes",
+          "label": "Destination · section-5 · /lignes",
+          "group": "section-5"
+        },
+        "link_72a342010d62": {
+          "href": "/contact",
+          "label": "Destination · section-5 · /contact",
+          "group": "section-5"
+        },
+        "link_a6d076cfdd50": {
+          "href": "/lignes",
+          "label": "Destination · section-6 · /lignes",
+          "group": "section-6"
+        },
+        "link_4e08d4e7785a": {
+          "href": "/services",
+          "label": "Destination · section-6 · /services",
+          "group": "section-6"
+        }
+      },
+      "sections": [
+        {
+          "key": "hero",
+          "label": "Introduction / bannière",
+          "sort_order": 0
+        },
+        {
+          "key": "section-1",
+          "label": "Section 2",
+          "sort_order": 10
+        },
+        {
+          "key": "section-2",
+          "label": "Fondateur",
+          "sort_order": 20
+        },
+        {
+          "key": "section-3",
+          "label": "Les étapes",
+          "sort_order": 30
+        },
+        {
+          "key": "section-4",
+          "label": "Nos valeurs",
+          "sort_order": 40
+        },
+        {
+          "key": "section-5",
+          "label": "Présence",
+          "sort_order": 50
+        },
+        {
+          "key": "section-6",
+          "label": "Rejoignez le voyage",
+          "sort_order": 60
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "route": "/services",
+      "copy": [
+        {
+          "key": "text_1e013606c03c",
+          "label": "Solutions entreprises",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 27
+            }
+          ]
+        },
+        {
+          "key": "text_fd23bd01afda",
+          "label": "Ensemble, allez plus loin",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 27
+            }
+          ]
+        },
+        {
+          "key": "text_7e9f0fa7d11a",
+          "label": "Des solutions de transport sur mesure pour entreprises et institutions : personnel, tourisme et scolaire, avec",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 27
+            }
+          ]
+        },
+        {
+          "key": "text_3767bd206863",
+          "label": "Demander un devis",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 29
+            },
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 47
+            },
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 28
+            }
+          ]
+        },
+        {
+          "key": "text_88a1b6779e84",
+          "label": "Nos offres",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 35
+            }
+          ]
+        },
+        {
+          "key": "text_4a8d041ca795",
+          "label": "Une solution de mobilité pour chaque besoin",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 35
+            }
+          ]
+        },
+        {
+          "key": "text_ef40bc4e956d",
+          "label": "Chaque proposition est construite selon le nombre de passagers, la distance, la fréquence et le niveau de serv",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 35
+            }
+          ]
+        },
+        {
+          "key": "text_a9c1e59fe075",
+          "label": "Pourquoi SLKM",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 56
+            }
+          ]
+        },
+        {
+          "key": "text_7ad3d45349f8",
+          "label": "Un partenaire transport que vos équipes connaissent",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 56
+            }
+          ]
+        },
+        {
+          "key": "text_81208c8b4684",
+          "label": "Trente ans d'expérience terrain, une flotte diversifiée et une équipe de coordination unique pour chaque détai",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 56
+            }
+          ]
+        },
+        {
+          "key": "text_890e612f8d9b",
+          "label": "Ponctualité suivie",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 59
+            },
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 59
+            },
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 59
+            }
+          ]
+        },
+        {
+          "key": "text_39291fb20b35",
+          "label": "Sécurité & assurance",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 60
+            },
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 60
+            },
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 60
+            }
+          ]
+        },
+        {
+          "key": "text_7f144d54c07f",
+          "label": "Chauffeurs formés",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 61
+            },
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 61
+            },
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 61
+            }
+          ]
+        },
+        {
+          "key": "text_7cbe7e5a7bf9",
+          "label": "Facturation entreprise",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 62
+            },
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 62
+            },
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 62
+            }
+          ]
+        },
+        {
+          "key": "text_e0122aab53de",
+          "label": "Flotte récente",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 72
+            }
+          ]
+        },
+        {
+          "key": "text_118661e672de",
+          "label": "Des autocars équipés pour la route et le quotidien",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 74
+            }
+          ]
+        },
+        {
+          "key": "text_f5554ae2f6b7",
+          "label": "Équipe B2B",
+          "group": "devis",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 87
+            }
+          ]
+        },
+        {
+          "key": "text_81cced723304",
+          "label": "Réponse sous 24 heures",
+          "group": "devis",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 90
+            }
+          ]
+        },
+        {
+          "key": "text_52afccc9bd18",
+          "label": "Institutions",
+          "group": "devis",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 109
+            }
+          ]
+        },
+        {
+          "key": "text_4844600a506a",
+          "label": "Contrats annuels, suivi des trajets et facturation mensuelle structurée.",
+          "group": "devis",
+          "references": [
+            {
+              "file": "src/app/(site)/services/page.tsx",
+              "line": 112
+            }
+          ]
+        },
+        {
+          "key": "text_2456f711edaf",
+          "label": "Une mobilité adaptée à vos équipes",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 31
+            }
+          ]
+        },
+        {
+          "key": "text_4b000c1c5bff",
+          "label": "Entreprise",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 49
+            }
+          ]
+        },
+        {
+          "key": "text_2b5c3d26721a",
+          "label": "Contact",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 47
+            },
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 53
+            }
+          ]
+        },
+        {
+          "key": "text_cc4c424b571f",
+          "label": "Téléphone",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 23
+            },
+            {
+              "file": "src/components/contact-form.tsx",
+              "line": 50
+            },
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 57
+            }
+          ]
+        },
+        {
+          "key": "text_2550d962e536",
+          "label": "E-mail",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 35
+            },
+            {
+              "file": "src/components/contact-form.tsx",
+              "line": 46
+            },
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 61
+            }
+          ]
+        },
+        {
+          "key": "text_da26234dc917",
+          "label": "Passagers",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 65
+            }
+          ]
+        },
+        {
+          "key": "text_0bc226ec29cd",
+          "label": "Ville de départ",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 69
+            },
+            {
+              "file": "src/components/transport-network-explorer.tsx",
+              "line": 77
+            }
+          ]
+        },
+        {
+          "key": "text_88aaac5494d3",
+          "label": "Ville d'arrivée",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 73
+            }
+          ]
+        },
+        {
+          "key": "text_13f85bc0d96a",
+          "label": "Type de service",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 77
+            }
+          ]
+        },
+        {
+          "key": "text_e6d84389cc74",
+          "label": "Transport du personnel",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 81
+            }
+          ]
+        },
+        {
+          "key": "text_9b0c6974de4d",
+          "label": "Voyages touristiques",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 85
+            }
+          ]
+        },
+        {
+          "key": "text_0aa120a657ef",
+          "label": "Détails complémentaires",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 90
+            }
+          ]
+        },
+        {
+          "key": "text_b8675b04f918",
+          "label": "Dates, fréquence, point de prise en charge...",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 91
+            }
+          ]
+        },
+        {
+          "key": "text_d3440d913b14",
+          "label": "Vos données sont protégées et utilisées uniquement pour traiter cette demande.",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 97
+            }
+          ]
+        },
+        {
+          "key": "text_bf2f14e82f15",
+          "label": "Envoi...",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/contact-form.tsx",
+              "line": 67
+            },
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 99
+            }
+          ]
+        },
+        {
+          "key": "text_642583f3af3a",
+          "label": "Envoyer la demande",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 101
+            }
+          ]
+        }
+      ],
+      "images": {
+        "image_3852bc87a12d": {
+          "src": "/images/hero-services.jpg",
+          "label": "hero-services.jpg",
+          "group": "hero"
+        },
+        "image_1d93533d8035": {
+          "src": "/images/serenity-coach.jpg",
+          "label": "serenity-coach.jpg",
+          "group": "section-2"
+        }
+      },
+      "links": {
+        "link_bd01e7548213": {
+          "href": "#devis",
+          "label": "Destination · hero · #devis",
+          "group": "hero"
+        },
+        "link_8975dc6881f7": {
+          "href": "#devis",
+          "label": "Destination · section-1 · #devis",
+          "group": "section-1"
+        }
+      },
+      "sections": [
+        {
+          "key": "hero",
+          "label": "Introduction / bannière",
+          "sort_order": 0
+        },
+        {
+          "key": "section-1",
+          "label": "Demander un devis",
+          "sort_order": 10
+        },
+        {
+          "key": "section-2",
+          "label": "Pourquoi SLKM",
+          "sort_order": 20
+        },
+        {
+          "key": "devis",
+          "label": "devis",
+          "sort_order": 30
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "route": "/contact",
+      "copy": [
+        {
+          "key": "text_1a04b59df37a",
+          "label": "Bonjour, j'ai besoin d'aide.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 19
+            }
+          ]
+        },
+        {
+          "key": "text_cc4c424b571f",
+          "label": "Téléphone",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 23
+            },
+            {
+              "file": "src/components/contact-form.tsx",
+              "line": 50
+            },
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 57
+            }
+          ]
+        },
+        {
+          "key": "text_2550d962e536",
+          "label": "E-mail",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 35
+            },
+            {
+              "file": "src/components/contact-form.tsx",
+              "line": 46
+            },
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 61
+            }
+          ]
+        },
+        {
+          "key": "text_79e5cf20de0b",
+          "label": "Adresse",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 41
+            }
+          ]
+        },
+        {
+          "key": "text_2b5c3d26721a",
+          "label": "Contact",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 47
+            },
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 53
+            }
+          ]
+        },
+        {
+          "key": "text_ed0d4f31b3c0",
+          "label": "Nous sommes là pour répondre à vos questions",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 47
+            }
+          ]
+        },
+        {
+          "key": "text_99352e031027",
+          "label": "Réservation, suivi de colis, devis entreprise ou assistance urgente : choisissez le canal qui vous convient.",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 47
+            }
+          ]
+        },
+        {
+          "key": "text_a9b01b010447",
+          "label": "Canaux de contact",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 54
+            }
+          ]
+        },
+        {
+          "key": "text_2f4647667d91",
+          "label": "Les coordonnées sont momentanément indisponibles. Utilisez le formulaire pour nous écrire.",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 71
+            }
+          ]
+        },
+        {
+          "key": "text_cdcbda2a3dd2",
+          "label": "Lignes d'assistance",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 79
+            },
+            {
+              "file": "src/components/site-footer.tsx",
+              "line": 101
+            }
+          ]
+        },
+        {
+          "key": "text_c474fa194117",
+          "label": "Écrivez-nous via le formulaire pour préparer votre voyage.",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 87
+            }
+          ]
+        },
+        {
+          "key": "text_f31f4fc85132",
+          "label": "Localisation",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 97
+            }
+          ]
+        },
+        {
+          "key": "text_96ac3a928459",
+          "label": "Trouvez l'agence la plus proche",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 97
+            }
+          ]
+        },
+        {
+          "key": "text_6aa115334159",
+          "label": "Cliquez sur une épingle pour l'adresse et le téléphone, ou utilisez la page des lignes pour filtrer les trajet",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 97
+            }
+          ]
+        },
+        {
+          "key": "text_a44e9e92caa9",
+          "label": "Écrivez-nous",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/contact-form.tsx",
+              "line": 27
+            }
+          ]
+        },
+        {
+          "key": "text_c0ab5dbad189",
+          "label": "Nous répondons sous un jour ouvré.",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/contact-form.tsx",
+              "line": 30
+            }
+          ]
+        },
+        {
+          "key": "text_c8af6e29fba8",
+          "label": "Nom complet",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/contact-form.tsx",
+              "line": 42
+            }
+          ]
+        },
+        {
+          "key": "text_db59ebb27218",
+          "label": "Sujet",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/contact-form.tsx",
+              "line": 54
+            }
+          ]
+        },
+        {
+          "key": "text_2f77668a9dfb",
+          "label": "Message",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/contact-form.tsx",
+              "line": 58
+            }
+          ]
+        },
+        {
+          "key": "text_b5875ab3a419",
+          "label": "Vos données ne sont jamais revendues.",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/contact-form.tsx",
+              "line": 65
+            }
+          ]
+        },
+        {
+          "key": "text_bf2f14e82f15",
+          "label": "Envoi...",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/contact-form.tsx",
+              "line": 67
+            },
+            {
+              "file": "src/components/quote-form.tsx",
+              "line": 99
+            }
+          ]
+        },
+        {
+          "key": "text_79075209f2bb",
+          "label": "Envoyer",
+          "group": "Formulaire et réseau",
+          "references": [
+            {
+              "file": "src/components/contact-form.tsx",
+              "line": 69
+            }
+          ]
+        }
+      ],
+      "images": {
+        "image_9fce0732de23": {
+          "src": "/images/hero-about.jpg",
+          "label": "hero-about.jpg",
+          "group": "hero"
+        }
+      },
+      "links": {},
+      "sections": [
+        {
+          "key": "hero",
+          "label": "Introduction / bannière",
+          "sort_order": 0
+        },
+        {
+          "key": "section-1",
+          "label": "Canaux de contact",
+          "sort_order": 10
+        },
+        {
+          "key": "section-2",
+          "label": "Localisation",
+          "sort_order": 20
+        }
+      ]
+    },
+    {
+      "slug": "blog",
+      "route": "/blog",
+      "copy": [
+        {
+          "key": "text_1831f60fe790",
+          "label": "Le journal",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/page.tsx",
+              "line": 26
+            }
+          ]
+        },
+        {
+          "key": "text_175c55873466",
+          "label": "Actualités, conseils et destinations",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/page.tsx",
+              "line": 26
+            }
+          ]
+        },
+        {
+          "key": "text_bd64b55010c7",
+          "label": "Des nouvelles utiles sur nos lignes, Irsaliyat et des conseils pour préparer votre prochain voyage.",
+          "group": "hero",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/page.tsx",
+              "line": 26
+            }
+          ]
+        },
+        {
+          "key": "text_bee9f69397b0",
+          "label": "À la une",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/page.tsx",
+              "line": 31
+            }
+          ]
+        },
+        {
+          "key": "text_e36036739f5c",
+          "label": "Le choix de la rédaction",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/page.tsx",
+              "line": 31
+            }
+          ]
+        },
+        {
+          "key": "text_4ef07352550e",
+          "label": "Tous les articles",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/page.tsx",
+              "line": 34
+            },
+            {
+              "file": "src/app/(site)/blog/[slug]/page.tsx",
+              "line": 62
+            },
+            {
+              "file": "src/app/(site)/blog/[slug]/page.tsx",
+              "line": 106
+            }
+          ]
+        },
+        {
+          "key": "text_6f0b048748bb",
+          "label": "Suivez la vie du réseau",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/page.tsx",
+              "line": 34
+            }
+          ]
+        },
+        {
+          "key": "text_6acd985680f8",
+          "label": "Pages des articles",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/page.tsx",
+              "line": 38
+            }
+          ]
+        },
+        {
+          "key": "text_6c857416ce4b",
+          "label": "Aucun article publié",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/page.tsx",
+              "line": 39
+            }
+          ]
+        },
+        {
+          "key": "text_440bf68b4bef",
+          "label": "Découvrez nos lignes et nos services en attendant nos prochaines nouvelles.",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/page.tsx",
+              "line": 39
+            }
+          ]
+        },
+        {
+          "key": "text_c37f1459c181",
+          "label": "Explorer les lignes",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/page.tsx",
+              "line": 39
+            }
+          ]
+        }
+      ],
+      "images": {},
+      "links": {
+        "link_4f6fddd0268f": {
+          "href": "/lignes",
+          "label": "Destination · section-1 · /lignes",
+          "group": "section-1"
+        }
+      },
+      "sections": [
+        {
+          "key": "hero",
+          "label": "Introduction / bannière",
+          "sort_order": 0
+        },
+        {
+          "key": "section-1",
+          "label": "À la une",
+          "sort_order": 10
+        }
+      ]
+    },
+    {
+      "slug": "article",
+      "route": "/blog/[slug]",
+      "copy": [
+        {
+          "key": "text_4ef07352550e",
+          "label": "Tous les articles",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/page.tsx",
+              "line": 34
+            },
+            {
+              "file": "src/app/(site)/blog/[slug]/page.tsx",
+              "line": 62
+            },
+            {
+              "file": "src/app/(site)/blog/[slug]/page.tsx",
+              "line": 106
+            }
+          ]
+        },
+        {
+          "key": "text_8a2263276b85",
+          "label": "Actualité",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/[slug]/page.tsx",
+              "line": 66
+            }
+          ]
+        },
+        {
+          "key": "text_da99809df088",
+          "label": "Besoin d'informations ?",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/[slug]/page.tsx",
+              "line": 91
+            }
+          ]
+        },
+        {
+          "key": "text_b74199bd8920",
+          "label": "Notre équipe vous répond toute la semaine.",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/[slug]/page.tsx",
+              "line": 94
+            }
+          ]
+        },
+        {
+          "key": "text_9f38ae8098e2",
+          "label": "Nous contacter",
+          "group": "section-1",
+          "references": [
+            {
+              "file": "src/app/(site)/about/page.tsx",
+              "line": 145
+            },
+            {
+              "file": "src/app/(site)/blog/[slug]/page.tsx",
+              "line": 98
+            },
+            {
+              "file": "src/app/(site)/irsaliyat/page.tsx",
+              "line": 102
+            }
+          ]
+        },
+        {
+          "key": "text_0dc8260a5466",
+          "label": "À lire aussi",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/[slug]/page.tsx",
+              "line": 106
+            }
+          ]
+        },
+        {
+          "key": "text_12a79763dee1",
+          "label": "D'autres articles du journal",
+          "group": "section-2",
+          "references": [
+            {
+              "file": "src/app/(site)/blog/[slug]/page.tsx",
+              "line": 106
+            }
+          ]
+        }
+      ],
+      "images": {},
+      "links": {
+        "link_1e2531571ad9": {
+          "href": "/blog",
+          "label": "Destination · section-1 · /blog",
+          "group": "section-1"
+        },
+        "link_55ffb6cb53be": {
+          "href": "/contact",
+          "label": "Destination · network · /contact",
+          "group": "network"
+        },
+        "link_73d6b97701d3": {
+          "href": "/blog",
+          "label": "Destination · section-2 · /blog",
+          "group": "section-2"
+        }
+      },
+      "sections": [
+        {
+          "key": "section-1",
+          "label": "Tous les articles",
+          "sort_order": 0
+        },
+        {
+          "key": "network",
+          "label": "Carte, recherche et agences",
+          "sort_order": 0
+        },
+        {
+          "key": "section-2",
+          "label": "Tous les articles",
+          "sort_order": 20
+        }
+      ]
+    },
+    {
+      "slug": "global",
+      "route": "global",
+      "copy": [
+        {
+          "key": "text_c74de52e2e36",
+          "label": "Un réseau national de transport qui relie les grandes villes du Maroc, avec Irsaliyat et des solutions de mobi",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/site-footer.tsx",
+              "line": 55
+            }
+          ]
+        },
+        {
+          "key": "text_c39d646f1076",
+          "label": "Explorer",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/site-footer.tsx",
+              "line": 66
+            }
+          ]
+        },
+        {
+          "key": "text_44d7e9ead9cc",
+          "label": "Nous joindre",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/site-footer.tsx",
+              "line": 77
+            }
+          ]
+        },
+        {
+          "key": "text_cdcbda2a3dd2",
+          "label": "Lignes d'assistance",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/app/(site)/contact/page.tsx",
+              "line": 79
+            },
+            {
+              "file": "src/components/site-footer.tsx",
+              "line": 101
+            }
+          ]
+        },
+        {
+          "key": "text_adb674945680",
+          "label": "Contactez-nous pour préparer votre voyage.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/site-footer.tsx",
+              "line": 112
+            }
+          ]
+        },
+        {
+          "key": "text_5a9b0ef55c1a",
+          "label": "Tous droits réservés.",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/site-footer.tsx",
+              "line": 121
+            }
+          ]
+        },
+        {
+          "key": "text_ee26a4e645de",
+          "label": "Maroc · Transport de voyageurs & Irsaliyat",
+          "group": "Contenu de page",
+          "references": [
+            {
+              "file": "src/components/site-footer.tsx",
+              "line": 122
+            }
+          ]
+        }
+      ],
+      "images": {},
+      "sections": []
+    }
+  ]
+}

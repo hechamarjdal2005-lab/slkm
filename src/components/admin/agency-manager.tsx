@@ -1,3 +1,4 @@
+import { ImageAssetInput } from "./image-asset-input";
 import { Pencil, Plus } from "lucide-react";
 import { upsertAgency, deleteAgency } from "@/app/actions";
 import { DeleteButton } from "@/components/delete-button";
@@ -9,6 +10,7 @@ import { AdminCheckbox, AdminEmpty, AdminField, AdminHeader, AdminInput, AdminPa
 function AgencyForm({ agency }: { agency?: Agency }) {
   return (
     <form action={upsertAgency} className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+      <AdminField label="Ordre d’affichage"><AdminInput name="sort_order" type="number" min="0" max="10000" step="1" required defaultValue={agency?.sort_order ?? 0} /></AdminField>
       {agency ? <input type="hidden" name="id" value={agency.id} /> : null}
       <AdminField label="Ville (FR)"><AdminInput name="city_fr" required defaultValue={agency?.city_fr} /></AdminField>
       <AdminField label="Ville (AR)"><AdminInput name="city_ar" required defaultValue={agency?.city_ar} dir="rtl" /></AdminField>
@@ -21,7 +23,7 @@ function AgencyForm({ agency }: { agency?: Agency }) {
       <AdminField label="Adresse (EN)" className="sm:col-span-2 xl:col-span-3"><AdminInput name="address_en" required defaultValue={agency?.address_en} /></AdminField>
       <AdminField label="Téléphone"><AdminInput name="phone_number" defaultValue={agency?.phone_number ?? ""} /></AdminField>
       <AdminField label="WhatsApp"><AdminInput name="whatsapp_number" defaultValue={agency?.whatsapp_number ?? ""} /></AdminField>
-      <AdminField label="Image (URL)"><AdminInput name="image_url" defaultValue={agency?.image_url ?? ""} placeholder="/images/agencies/..." /></AdminField>
+      <AdminField label="Image (URL)"><ImageAssetInput name="image_url" defaultValue={agency?.image_url ?? ""} placeholder="/images/agencies/..." /></AdminField>
       <AdminField label="Latitude"><AdminInput name="lat" type="number" step="0.0000001" defaultValue={agency?.lat ?? ""} /></AdminField>
       <AdminField label="Longitude"><AdminInput name="lng" type="number" step="0.0000001" defaultValue={agency?.lng ?? ""} /></AdminField>
       <div className="flex items-end gap-2">

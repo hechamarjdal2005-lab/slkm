@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-31T14:58:53.647Z",
+  "scope": "Anonymous GET limit=0; no rows or writes; not an admin or persistence verification",
+  "result": [
+    {
+      "table": "agencies",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.agencies' in the schema cache"
+    },
+    {
+      "table": "routes",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.routes' in the schema cache"
+    },
+    {
+      "table": "parcel_rates",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.parcel_rates' in the schema cache"
+    },
+    {
+      "table": "corporate_quotes",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.corporate_quotes' in the schema cache"
+    },
+    {
+      "table": "contact_messages",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.contact_messages' in the schema cache"
+    },
+    {
+      "table": "blog_posts",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.blog_posts' in the schema cache"
+    },
+    {
+      "table": "site_settings",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.site_settings' in the schema cache"
+    },
+    {
+      "table": "messagerie_network_settings",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.messagerie_network_settings' in the schema cache"
+    },
+    {
+      "table": "messagerie_agencies",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.messagerie_agencies' in the schema cache"
+    },
+    {
+      "table": "site_media_assets",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.site_media_assets' in the schema cache"
+    },
+    {
+      "table": "site_pages",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.site_pages' in the schema cache"
+    },
+    {
+      "table": "site_sections",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.site_sections' in the schema cache"
+    },
+    {
+      "table": "site_page_media",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.site_page_media' in the schema cache"
+    }
+  ]
+}

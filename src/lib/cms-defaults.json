@@ -1,0 +1,2203 @@
+{
+  "home": {
+    "slug": "home",
+    "route": "/",
+    "label": "Accueil",
+    "copy": {
+      "text_46f2cb5f4c7e": {
+        "fr": "Transport voyageurs",
+        "ar": "نقل المسافرين",
+        "en": "Passenger travel",
+        "label": "Transport voyageurs",
+        "group": "Contenu de page"
+      },
+      "text_62efdfc9ae9f": {
+        "fr": "Votre prochaine destination commence ici.",
+        "ar": "وجهتكم القادمة تبدأ هنا.",
+        "en": "Your next destination starts here.",
+        "label": "Votre prochaine destination commence ici.",
+        "group": "Contenu de page"
+      },
+      "text_aa209268f717": {
+        "fr": "Messagerie Irsaliyat",
+        "ar": "إرساليات",
+        "en": "Irsaliyat parcels",
+        "label": "Messagerie Irsaliyat",
+        "group": "Contenu de page"
+      },
+      "text_d2b98e1951de": {
+        "fr": "Un réseau d’agences pour vos envois.",
+        "ar": "شبكة وكالات لإرسالياتكم.",
+        "en": "An agency network for your parcels.",
+        "label": "Un réseau d’agences pour vos envois.",
+        "group": "Contenu de page"
+      },
+      "text_cb6d502fe0d4": {
+        "fr": "Professionnels & tourisme",
+        "ar": "الشركات والسياحة",
+        "en": "Business & tourism",
+        "label": "Professionnels & tourisme",
+        "group": "Contenu de page"
+      },
+      "text_cdb4c98c43a2": {
+        "fr": "Une solution adaptée aux déplacements de groupe.",
+        "ar": "حل يناسب تنقلات مجموعاتكم.",
+        "en": "Travel solutions tailored to your group.",
+        "label": "Une solution adaptée aux déplacements de groupe.",
+        "group": "Contenu de page"
+      },
+      "text_8c8395fc2933": {
+        "fr": "Autocar SLKM sur les routes du Maroc",
+        "ar": "حافلة SLKM على طرق المغرب",
+        "en": "SLKM coach on Morocco’s roads",
+        "label": "Autocar SLKM sur les routes du Maroc",
+        "group": "hero"
+      },
+      "text_d5e6058254cc": {
+        "fr": "Le Maroc, à vos côtés",
+        "ar": "معكم عبر المغرب",
+        "en": "Across Morocco, with you",
+        "label": "Le Maroc, à vos côtés",
+        "group": "hero"
+      },
+      "text_437027c1fec3": {
+        "fr": "Voyagez loin.",
+        "ar": "سافروا بعيداً.",
+        "en": "Travel further.",
+        "label": "Voyagez loin.",
+        "group": "hero"
+      },
+      "text_6907768e8608": {
+        "fr": "Arrivez serein.",
+        "ar": "وصلوا مطمئنين.",
+        "en": "Arrive with peace of mind.",
+        "label": "Arrivez serein.",
+        "group": "hero"
+      },
+      "text_e0c5b6fab684": {
+        "fr": "Les villes se rapprochent, le voyage commence. Découvrez les lignes SLKM et préparez votre prochain départ.",
+        "ar": "تتقارب المدن وتبدأ الرحلة. اكتشفوا خطوط SLKM واستعدوا لرحلتكم القادمة.",
+        "en": "Cities come closer. Your journey begins. Discover SLKM routes and plan your next departure.",
+        "label": "Les villes se rapprochent, le voyage commence. Découvrez les lignes SLKM et préparez votre prochain départ.",
+        "group": "hero"
+      },
+      "text_7b7b47dfa7c7": {
+        "fr": "Explorer & réserver",
+        "ar": "اكتشفوا واحجزوا",
+        "en": "Explore & book",
+        "label": "Explorer & réserver",
+        "group": "hero"
+      },
+      "text_0ca296547019": {
+        "fr": "Nos services",
+        "ar": "خدماتنا",
+        "en": "Our services",
+        "label": "Nos services",
+        "group": "hero"
+      },
+      "text_d09d61817e68": {
+        "fr": "Voyagez en confiance",
+        "ar": "سافروا بثقة",
+        "en": "Travel with confidence",
+        "label": "Voyagez en confiance",
+        "group": "hero"
+      },
+      "text_e04366819c5c": {
+        "fr": "Réservation WhatsApp",
+        "ar": "الحجز عبر واتساب",
+        "en": "WhatsApp booking",
+        "label": "Réservation WhatsApp",
+        "group": "hero"
+      },
+      "text_cabe19f5af26": {
+        "fr": "Voyageurs",
+        "ar": "المسافرون",
+        "en": "Passengers",
+        "label": "Voyageurs",
+        "group": "section-1"
+      },
+      "text_6800adb9b73f": {
+        "fr": "Irsaliyat",
+        "ar": "إرساليات",
+        "en": "Parcels",
+        "label": "Irsaliyat",
+        "group": "section-1"
+      },
+      "text_99069541d9d0": {
+        "fr": "Entreprises",
+        "ar": "الشركات",
+        "en": "Business",
+        "label": "Entreprises",
+        "group": "section-1"
+      },
+      "text_59970170bf38": {
+        "fr": "Prenez la route",
+        "ar": "انطلقوا معنا",
+        "en": "Take the road",
+        "label": "Prenez la route",
+        "group": "section-2"
+      },
+      "text_bdf17040d1e3": {
+        "fr": "Nos trajets à découvrir",
+        "ar": "رحلات لاكتشافها",
+        "en": "Journeys to discover",
+        "label": "Nos trajets à découvrir",
+        "group": "section-2"
+      },
+      "text_6aa353ce7bd2": {
+        "fr": "Horaires, classes et tarifs publiés par SLKM.",
+        "ar": "مواعيد وفئات وأسعار منشورة من SLKM.",
+        "en": "Schedules, classes and fares published by SLKM.",
+        "label": "Horaires, classes et tarifs publiés par SLKM.",
+        "group": "section-2"
+      },
+      "text_a696995454ad": {
+        "fr": "Voir toutes les lignes",
+        "ar": "جميع الخطوط",
+        "en": "View all routes",
+        "label": "Voir toutes les lignes",
+        "group": "section-2"
+      },
+      "text_90a38e74ad1b": {
+        "fr": "L’expérience à bord",
+        "ar": "تجربة على متن الحافلة",
+        "en": "The onboard experience",
+        "label": "L’expérience à bord",
+        "group": "section-3"
+      },
+      "text_46c73613900a": {
+        "fr": "À chaque voyage, sa classe",
+        "ar": "لكل رحلة فئتها",
+        "en": "A class for every journey",
+        "label": "À chaque voyage, sa classe",
+        "group": "section-3"
+      },
+      "text_0eb1407994e2": {
+        "fr": "Simple, du début à la fin",
+        "ar": "بكل بساطة",
+        "en": "Simple, from start to finish",
+        "label": "Simple, du début à la fin",
+        "group": "section-4"
+      },
+      "text_2c275f3b8261": {
+        "fr": "Votre prochain départ, en trois étapes",
+        "ar": "رحلتكم القادمة في ثلاث خطوات",
+        "en": "Your next departure in three steps",
+        "label": "Votre prochain départ, en trois étapes",
+        "group": "section-4"
+      },
+      "text_6e4daea88b21": {
+        "fr": "Trouvez votre trajet",
+        "ar": "اعثروا على رحلتكم",
+        "en": "Find your journey",
+        "label": "Trouvez votre trajet",
+        "group": "section-4"
+      },
+      "text_36c467672652": {
+        "fr": "Choisissez votre départ, votre destination et votre classe.",
+        "ar": "اختاروا مدينة الانطلاق والوجهة والفئة.",
+        "en": "Choose your departure, destination and class.",
+        "label": "Choisissez votre départ, votre destination et votre classe.",
+        "group": "section-4"
+      },
+      "text_98f73c3d4753": {
+        "fr": "Contactez votre agence",
+        "ar": "تواصلوا مع وكالتكم",
+        "en": "Contact your agency",
+        "label": "Contactez votre agence",
+        "group": "section-4"
+      },
+      "text_74871f5de39e": {
+        "fr": "Envoyez votre demande de réservation sur WhatsApp.",
+        "ar": "أرسلوا طلب الحجز عبر واتساب.",
+        "en": "Send your booking request on WhatsApp.",
+        "label": "Envoyez votre demande de réservation sur WhatsApp.",
+        "group": "section-4"
+      },
+      "text_727afbb7a838": {
+        "fr": "Confirmez votre départ",
+        "ar": "أكدوا رحلتكم",
+        "en": "Confirm your departure",
+        "label": "Confirmez votre départ",
+        "group": "section-4"
+      },
+      "text_4199e93389c2": {
+        "fr": "Notre équipe vous accompagne pour finaliser votre voyage.",
+        "ar": "فريقنا يساعدكم على إتمام ترتيبات الرحلة.",
+        "en": "Our team helps you finalise your journey.",
+        "label": "Notre équipe vous accompagne pour finaliser votre voyage.",
+        "group": "section-4"
+      },
+      "text_372cbcef4167": {
+        "fr": "Bien plus qu’un trajet",
+        "ar": "أكثر من مجرد رحلة",
+        "en": "More than a journey",
+        "label": "Bien plus qu’un trajet",
+        "group": "services"
+      },
+      "text_9adc17724739": {
+        "fr": "La mobilité, sous toutes ses formes",
+        "ar": "التنقل بكل أشكاله",
+        "en": "Mobility in every form",
+        "label": "La mobilité, sous toutes ses formes",
+        "group": "services"
+      },
+      "text_977ae6cb0c22": {
+        "fr": "Découvrir",
+        "ar": "اكتشفوا",
+        "en": "Discover",
+        "label": "Découvrir",
+        "group": "services"
+      },
+      "text_e768c27bd59e": {
+        "fr": "Le voyage commence par la confiance",
+        "ar": "تبدأ الرحلة بالثقة",
+        "en": "Every journey begins with trust",
+        "label": "Le voyage commence par la confiance",
+        "group": "section-5"
+      },
+      "text_c523a8fa364c": {
+        "fr": "Un réseau d’agences",
+        "ar": "شبكة وكالات",
+        "en": "An agency network",
+        "label": "Un réseau d’agences",
+        "group": "section-5"
+      },
+      "text_b849165e2bbf": {
+        "fr": "Consultez les adresses et coordonnées de nos agences.",
+        "ar": "اطلعوا على عناوين وكالاتنا وبياناتها.",
+        "en": "Find agency addresses and contact details.",
+        "label": "Consultez les adresses et coordonnées de nos agences.",
+        "group": "section-5"
+      },
+      "text_f825cbf35d21": {
+        "fr": "Votre classe de voyage",
+        "ar": "فئة رحلتكم",
+        "en": "Your travel class",
+        "label": "Votre classe de voyage",
+        "group": "section-5"
+      },
+      "text_61cae2f65de2": {
+        "fr": "Choisissez parmi les classes proposées sur votre ligne.",
+        "ar": "اختاروا من الفئات المتاحة على خطكم.",
+        "en": "Choose from the classes offered on your route.",
+        "label": "Choisissez parmi les classes proposées sur votre ligne.",
+        "group": "section-5"
+      },
+      "text_795070462d4e": {
+        "fr": "Un contact direct",
+        "ar": "تواصل مباشر",
+        "en": "Direct contact",
+        "label": "Un contact direct",
+        "group": "section-5"
+      },
+      "text_40883463e126": {
+        "fr": "Échangez avec notre équipe pour préparer votre trajet.",
+        "ar": "تواصلوا مع فريقنا لتحضير رحلتكم.",
+        "en": "Talk to our team to plan your journey.",
+        "label": "Échangez avec notre équipe pour préparer votre trajet.",
+        "group": "section-5"
+      },
+      "text_89eb7cdacbc7": {
+        "fr": "Une réservation simple",
+        "ar": "حجز بسيط",
+        "en": "Simple booking",
+        "label": "Une réservation simple",
+        "group": "section-5"
+      },
+      "text_50c5012e9ee3": {
+        "fr": "Envoyez votre demande sur WhatsApp.",
+        "ar": "أرسلوا طلبكم عبر واتساب.",
+        "en": "Send your request on WhatsApp.",
+        "label": "Envoyez votre demande sur WhatsApp.",
+        "group": "section-5"
+      },
+      "text_cd9fbef20b1d": {
+        "fr": "Service de messagerie Irsaliyat",
+        "ar": "خدمة إرساليات",
+        "en": "Irsaliyat parcel service",
+        "label": "Service de messagerie Irsaliyat",
+        "group": "section-6"
+      },
+      "text_621f1f364772": {
+        "fr": "Vos envois aussi prennent la route",
+        "ar": "إرسالياتكم تسافر معنا أيضاً",
+        "en": "Your parcels travel too",
+        "label": "Vos envois aussi prennent la route",
+        "group": "section-6"
+      },
+      "text_7e64179e87d7": {
+        "fr": "Découvrez les tarifs de messagerie et contactez l’équipe Irsaliyat avec votre numéro de suivi.",
+        "ar": "اكتشفوا أسعار الإرساليات وتواصلوا مع فريقنا برقم التتبع.",
+        "en": "Discover parcel rates and contact the Irsaliyat team with your tracking number.",
+        "label": "Découvrez les tarifs de messagerie et contactez l’équipe Irsaliyat avec votre numéro de suivi.",
+        "group": "section-6"
+      },
+      "text_34e096b32ef8": {
+        "fr": "Suivre un colis",
+        "ar": "تتبع أمانة",
+        "en": "Track a parcel",
+        "label": "Suivre un colis",
+        "group": "section-6"
+      },
+      "text_e34fb32f832c": {
+        "fr": "Découvrir les tarifs",
+        "ar": "اكتشاف الأسعار",
+        "en": "Explore rates",
+        "label": "Découvrir les tarifs",
+        "group": "section-6"
+      },
+      "text_b0a309dfd8fd": {
+        "fr": "Le journal SLKM",
+        "ar": "مجلة SLKM",
+        "en": "The SLKM journal",
+        "label": "Le journal SLKM",
+        "group": "section-7"
+      },
+      "text_90163f055351": {
+        "fr": "L’actualité du voyage",
+        "ar": "أخبار السفر",
+        "en": "Travel news",
+        "label": "L’actualité du voyage",
+        "group": "section-7"
+      },
+      "text_1bb3f29464e5": {
+        "fr": "Voir les actualités",
+        "ar": "جميع الأخبار",
+        "en": "View all news",
+        "label": "Voir les actualités",
+        "group": "section-7"
+      }
+    },
+    "images": {
+      "image_1d93533d8035": {
+        "src": "/images/serenity-coach.jpg",
+        "label": "serenity-coach.jpg",
+        "group": "Contenu de page"
+      },
+      "image_7f366d3e4316": {
+        "src": "/images/cargo-hold.jpg",
+        "label": "cargo-hold.jpg",
+        "group": "section-6"
+      },
+      "image_a9296b58a762": {
+        "src": "/images/service-tourism.jpg",
+        "label": "service-tourism.jpg",
+        "group": "Contenu de page"
+      },
+      "image_1b4667005cb9": {
+        "src": "/images/hero-home.jpg",
+        "label": "hero-home.jpg",
+        "group": "hero"
+      }
+    },
+    "sections": [
+      {
+        "key": "hero",
+        "label": "Introduction / bannière",
+        "sort_order": 0
+      },
+      {
+        "key": "section-1",
+        "label": "Voyageurs",
+        "sort_order": 10
+      },
+      {
+        "key": "reseau",
+        "label": "reseau",
+        "sort_order": 20
+      },
+      {
+        "key": "section-2",
+        "label": "Prenez la route",
+        "sort_order": 30
+      },
+      {
+        "key": "section-3",
+        "label": "L’expérience à bord",
+        "sort_order": 40
+      },
+      {
+        "key": "section-4",
+        "label": "Simple, du début à la fin",
+        "sort_order": 50
+      },
+      {
+        "key": "services",
+        "label": "services",
+        "sort_order": 60
+      },
+      {
+        "key": "section-5",
+        "label": "Le voyage commence par la confiance",
+        "sort_order": 70
+      },
+      {
+        "key": "section-6",
+        "label": "Service de messagerie Irsaliyat",
+        "sort_order": 80
+      },
+      {
+        "key": "section-7",
+        "label": "Le journal SLKM",
+        "sort_order": 90
+      }
+    ],
+    "links": {
+      "link_d6d9a0b2b0b5": {
+        "href": "/lignes",
+        "label": "Destination · page · /lignes",
+        "group": "page"
+      },
+      "link_88f3b90341f9": {
+        "href": "/irsaliyat",
+        "label": "Destination · page · /irsaliyat",
+        "group": "page"
+      },
+      "link_93ace474a9f1": {
+        "href": "/services",
+        "label": "Destination · page · /services",
+        "group": "page"
+      },
+      "link_32835313c8a2": {
+        "href": "#reseau",
+        "label": "Destination · hero · #reseau",
+        "group": "hero"
+      },
+      "link_41d2227187ad": {
+        "href": "#services",
+        "label": "Destination · hero · #services",
+        "group": "hero"
+      },
+      "link_4f6fddd0268f": {
+        "href": "/lignes",
+        "label": "Destination · section-1 · /lignes",
+        "group": "section-1"
+      },
+      "link_bb2b804fc069": {
+        "href": "/irsaliyat",
+        "label": "Destination · section-1 · /irsaliyat",
+        "group": "section-1"
+      },
+      "link_a956e6e51f8c": {
+        "href": "/services",
+        "label": "Destination · section-1 · /services",
+        "group": "section-1"
+      },
+      "link_0c58396ba61d": {
+        "href": "/lignes",
+        "label": "Destination · section-2 · /lignes",
+        "group": "section-2"
+      },
+      "link_bc3c45514639": {
+        "href": "/irsaliyat#tracking",
+        "label": "Destination · section-6 · /irsaliyat#tracking",
+        "group": "section-6"
+      },
+      "link_a8198dffee02": {
+        "href": "/irsaliyat#tarifs",
+        "label": "Destination · section-6 · /irsaliyat#tarifs",
+        "group": "section-6"
+      },
+      "link_ff68034cb2b1": {
+        "href": "/blog",
+        "label": "Destination · section-7 · /blog",
+        "group": "section-7"
+      }
+    }
+  },
+  "lignes": {
+    "slug": "lignes",
+    "route": "/lignes",
+    "label": "Lignes & agences",
+    "copy": {
+      "text_a692bb103ab3": {
+        "fr": "Le réseau",
+        "ar": "الشبكة",
+        "en": "The network",
+        "label": "Le réseau",
+        "group": "Contenu de page"
+      },
+      "text_57cce3ffe3ad": {
+        "fr": "Votre prochaine destination",
+        "ar": "وجهتكم القادمة",
+        "en": "Your next destination",
+        "label": "Votre prochaine destination",
+        "group": "Contenu de page"
+      },
+      "text_afdb2ecbcf0b": {
+        "fr": "Explorez la carte, comparez les trajets et retrouvez votre agence.",
+        "ar": "استكشفوا الخريطة وقارنوا الرحلات واعثروا على وكالتكم.",
+        "en": "Explore the map, compare journeys and find your agency.",
+        "label": "Explorez la carte, comparez les trajets et retrouvez votre agence.",
+        "group": "Contenu de page"
+      },
+      "text_dc4ad13b105b": {
+        "fr": "Le Maroc, à votre portée",
+        "ar": "المغرب بين أيديكم",
+        "en": "Morocco, within reach",
+        "label": "Le Maroc, à votre portée",
+        "group": "Contenu de page"
+      },
+      "text_a5bd8192fffa": {
+        "fr": "Où souhaitez-vous aller ?",
+        "ar": "إلى أين تريدون السفر؟",
+        "en": "Where would you like to go?",
+        "label": "Où souhaitez-vous aller ?",
+        "group": "Contenu de page"
+      },
+      "text_a01fe144c1c2": {
+        "fr": "Explorez nos lignes et contactez votre agence pour réserver.",
+        "ar": "استكشفوا خطوطنا وتواصلوا مع الوكالة للحجز.",
+        "en": "Explore our routes and contact your agency to book.",
+        "label": "Explorez nos lignes et contactez votre agence pour réserver.",
+        "group": "Contenu de page"
+      },
+      "text_0bc226ec29cd": {
+        "fr": "Ville de départ",
+        "ar": "مدينة الانطلاق",
+        "en": "Departure city",
+        "label": "Ville de départ",
+        "group": "Contenu de page"
+      },
+      "text_735327915fee": {
+        "fr": "Tous les départs",
+        "ar": "جميع الانطلاقات",
+        "en": "All departures",
+        "label": "Tous les départs",
+        "group": "Contenu de page"
+      },
+      "text_5f80f2a8bf91": {
+        "fr": "Ville d’arrivée",
+        "ar": "مدينة الوصول",
+        "en": "Arrival city",
+        "label": "Ville d’arrivée",
+        "group": "Contenu de page"
+      },
+      "text_de2349b723f7": {
+        "fr": "Toutes les destinations",
+        "ar": "جميع الوجهات",
+        "en": "All destinations",
+        "label": "Toutes les destinations",
+        "group": "Contenu de page"
+      },
+      "text_551c4bc6eb34": {
+        "fr": "Inverser si le retour existe",
+        "ar": "عكس الاتجاه إذا توفر",
+        "en": "Swap when a return route exists",
+        "label": "Inverser si le retour existe",
+        "group": "Contenu de page"
+      },
+      "text_8a26078a12f2": {
+        "fr": "Inverser les villes",
+        "ar": "عكس المدن",
+        "en": "Swap cities",
+        "label": "Inverser les villes",
+        "group": "Contenu de page"
+      },
+      "text_99c40ab40592": {
+        "fr": "Date",
+        "ar": "التاريخ",
+        "en": "Date",
+        "label": "Date",
+        "group": "Contenu de page"
+      },
+      "text_fec19fe3d560": {
+        "fr": "Classe",
+        "ar": "الفئة",
+        "en": "Class",
+        "label": "Classe",
+        "group": "Contenu de page"
+      },
+      "text_42623b97b481": {
+        "fr": "Toutes",
+        "ar": "الكل",
+        "en": "All",
+        "label": "Toutes",
+        "group": "Contenu de page"
+      },
+      "text_10505fb03757": {
+        "fr": "Rechercher un trajet",
+        "ar": "البحث عن رحلة",
+        "en": "Find a journey",
+        "label": "Rechercher un trajet",
+        "group": "Contenu de page"
+      },
+      "text_c1705fc3641b": {
+        "fr": "Revenir à la vue nationale",
+        "ar": "العودة إلى العرض الوطني",
+        "en": "Return to national view",
+        "label": "Revenir à la vue nationale",
+        "group": "Contenu de page"
+      },
+      "text_1e77d7378f6c": {
+        "fr": "Le réseau SLKM",
+        "ar": "شبكة SLKM",
+        "en": "The SLKM network",
+        "label": "Le réseau SLKM",
+        "group": "Contenu de page"
+      },
+      "text_3c5f6dd25632": {
+        "fr": "Affichage carte",
+        "ar": "عرض الخريطة",
+        "en": "Map display",
+        "label": "Affichage carte",
+        "group": "Contenu de page"
+      },
+      "text_bcda4a955df7": {
+        "fr": "Tout",
+        "ar": "الكل",
+        "en": "All",
+        "label": "Tout",
+        "group": "Contenu de page"
+      },
+      "text_c7d44d72fa47": {
+        "fr": "Agences",
+        "ar": "الوكالات",
+        "en": "Agencies",
+        "label": "Agences",
+        "group": "Contenu de page"
+      },
+      "text_d08e01417571": {
+        "fr": "Lignes",
+        "ar": "الخطوط",
+        "en": "Routes",
+        "label": "Lignes",
+        "group": "Contenu de page"
+      },
+      "text_74c28f96ba0d": {
+        "fr": "Liaisons géographiques indicatives : elles ne représentent pas les routes routières. Seules les agences avec coordonnées sont localisées.",
+        "ar": "روابط جغرافية تقريبية لا تمثل المسارات الطرقية. تظهر فقط الوكالات ذات الإحداثيات.",
+        "en": "Indicative geographic connections, not road itineraries. Only agencies with coordinates are mapped.",
+        "label": "Liaisons géographiques indicatives : elles ne représentent pas les routes routières. Seules les agences avec c",
+        "group": "Contenu de page"
+      },
+      "text_c9e34c310b35": {
+        "fr": "Les trajets disponibles",
+        "ar": "الخطوط المتاحة",
+        "en": "Available routes",
+        "label": "Les trajets disponibles",
+        "group": "Contenu de page"
+      },
+      "text_e0fd3c8b26e5": {
+        "fr": "lignes",
+        "ar": "خطوط",
+        "en": "routes",
+        "label": "lignes",
+        "group": "Contenu de page"
+      },
+      "text_f1c90bceffe5": {
+        "fr": "Localiser cette ligne",
+        "ar": "عرض الخط على الخريطة",
+        "en": "Locate this route",
+        "label": "Localiser cette ligne",
+        "group": "Contenu de page"
+      },
+      "text_4e0534017cae": {
+        "fr": "Aucun trajet correspondant",
+        "ar": "لا توجد رحلة مطابقة",
+        "en": "No matching journeys",
+        "label": "Aucun trajet correspondant",
+        "group": "Contenu de page"
+      },
+      "text_80f102fc3c61": {
+        "fr": "Modifiez les villes, la date ou la classe, ou contactez notre équipe.",
+        "ar": "غيروا المدن أو التاريخ أو الفئة أو تواصلوا مع فريقنا.",
+        "en": "Change the cities, date or class, or contact our team.",
+        "label": "Modifiez les villes, la date ou la classe, ou contactez notre équipe.",
+        "group": "Contenu de page"
+      },
+      "text_35d5f8e60822": {
+        "fr": "Afficher plus de lignes",
+        "ar": "عرض المزيد من الخطوط",
+        "en": "Show more routes",
+        "label": "Afficher plus de lignes",
+        "group": "Contenu de page"
+      },
+      "text_277f2e31ace1": {
+        "fr": "Nos agences",
+        "ar": "وكالاتنا",
+        "en": "Our agencies",
+        "label": "Nos agences",
+        "group": "Contenu de page"
+      },
+      "text_6f4bb3e25693": {
+        "fr": "Filtrer par ville",
+        "ar": "تصفية حسب المدينة",
+        "en": "Filter by city",
+        "label": "Filtrer par ville",
+        "group": "Contenu de page"
+      },
+      "text_f139c54b7dd6": {
+        "fr": "Toutes les agences",
+        "ar": "جميع الوكالات",
+        "en": "All agencies",
+        "label": "Toutes les agences",
+        "group": "Contenu de page"
+      },
+      "text_8baf531b9ade": {
+        "fr": "Voir sur la carte",
+        "ar": "عرض على الخريطة",
+        "en": "View on map",
+        "label": "Voir sur la carte",
+        "group": "Contenu de page"
+      },
+      "text_0aa81762192d": {
+        "fr": "Voir toutes les agences",
+        "ar": "عرض جميع الوكالات",
+        "en": "View all agencies",
+        "label": "Voir toutes les agences",
+        "group": "Contenu de page"
+      }
+    },
+    "images": {},
+    "sections": [
+      {
+        "key": "network",
+        "label": "Carte, recherche et agences",
+        "sort_order": 0
+      }
+    ],
+    "links": {}
+  },
+  "irsaliyat": {
+    "slug": "irsaliyat",
+    "route": "/irsaliyat",
+    "label": "Messageries",
+    "copy": {
+      "text_95fa6b27692b": {
+        "fr": "Déposez votre colis",
+        "ar": "أودعوا أمانتكم",
+        "en": "Drop off your parcel",
+        "label": "Déposez votre colis",
+        "group": "Contenu de page"
+      },
+      "text_7395bee98942": {
+        "fr": "Présentez le colis au guichet Irsaliyat. Nous le pesons, l'enregistrons et vous remettons un numéro de suivi.",
+        "ar": "قدموا الأمانة في شباك إرساليات. نقوم بوزنها وتسجيلها ومنحكم رقم تتبع.",
+        "en": "Bring the parcel to the Irsaliyat counter. We weigh it, register it and issue a tracking number.",
+        "label": "Présentez le colis au guichet Irsaliyat. Nous le pesons, l'enregistrons et vous remettons un numéro de suivi.",
+        "group": "Contenu de page"
+      },
+      "text_95d3c8989f13": {
+        "fr": "Voyage avec l'autocar",
+        "ar": "السفر مع الحافلة",
+        "en": "Travels with the coach",
+        "label": "Voyage avec l'autocar",
+        "group": "Contenu de page"
+      },
+      "text_8b2bd40ceaac": {
+        "fr": "Il est placé dans un compartiment fermé dédié, séparé des bagages classiques.",
+        "ar": "توضع في صندوق مغلق مخصص، منفصل عن الأمتعة العادية.",
+        "en": "It travels in a dedicated sealed compartment, separate from regular luggage.",
+        "label": "Il est placé dans un compartiment fermé dédié, séparé des bagages classiques.",
+        "group": "Contenu de page"
+      },
+      "text_73b6e216b4a5": {
+        "fr": "Arrivée en agence",
+        "ar": "الوصول إلى الوكالة",
+        "en": "Arrival at the agency",
+        "label": "Arrivée en agence",
+        "group": "Contenu de page"
+      },
+      "text_5d0898e0194c": {
+        "fr": "Le destinataire reçoit une alerte SMS ou WhatsApp dès l'arrivée.",
+        "ar": "يتلقى المرسل إليه تنبيهاً عبر SMS أو واتساب عند الوصول.",
+        "en": "The recipient receives an SMS or WhatsApp alert on arrival.",
+        "label": "Le destinataire reçoit une alerte SMS ou WhatsApp dès l'arrivée.",
+        "group": "Contenu de page"
+      },
+      "text_f6b950d5e567": {
+        "fr": "Remise sécurisée",
+        "ar": "تسليم آمن",
+        "en": "Secure handover",
+        "label": "Remise sécurisée",
+        "group": "Contenu de page"
+      },
+      "text_60a162e1535d": {
+        "fr": "Vérification de la pièce d'identité et du code secret avant la remise.",
+        "ar": "التحقق من بطاقة التعريف والرمز السري قبل التسليم.",
+        "en": "ID and secret code are checked before handover.",
+        "label": "Vérification de la pièce d'identité et du code secret avant la remise.",
+        "group": "Contenu de page"
+      },
+      "text_cf04082cac0b": {
+        "fr": "Irsaliyat · messagerie express",
+        "ar": "إرساليات · توصيل سريع",
+        "en": "Irsaliyat · express parcels",
+        "label": "Irsaliyat · messagerie express",
+        "group": "hero"
+      },
+      "text_e6fa5ed22794": {
+        "fr": "Vos colis, livrés vite et en toute confiance",
+        "ar": "أمانتكم تصل بسرعة، بأمان ووضوح",
+        "en": "Your parcels, delivered fast and safely",
+        "label": "Vos colis, livrés vite et en toute confiance",
+        "group": "hero"
+      },
+      "text_59adb8f9eb01": {
+        "fr": "Notre réseau de colis utilise les mêmes liaisons quotidiennes que nos autocars, avec un suivi direct sur WhatsApp.",
+        "ar": "شبكة التوصيل الخاصة بنا تستعمل نفس رحلات الحافلات اليومية بين المدن، مع تتبع مباشر عبر واتساب.",
+        "en": "Our parcel network uses the same daily intercity coach routes, with direct WhatsApp tracking.",
+        "label": "Notre réseau de colis utilise les mêmes liaisons quotidiennes que nos autocars, avec un suivi direct sur Whats",
+        "group": "hero"
+      },
+      "text_df01d4b731c3": {
+        "fr": "Comment ça marche",
+        "ar": "كيف تعمل الخدمة",
+        "en": "How it works",
+        "label": "Comment ça marche",
+        "group": "section-1"
+      },
+      "text_555d59a0bd73": {
+        "fr": "Du dépôt à la remise en quatre étapes",
+        "ar": "من الإيداع إلى التسليم في أربع خطوات",
+        "en": "From drop-off to delivery in four steps",
+        "label": "Du dépôt à la remise en quatre étapes",
+        "group": "section-1"
+      },
+      "text_fb30ae8c285e": {
+        "fr": "Tarifs",
+        "ar": "الأسعار",
+        "en": "Pricing",
+        "label": "Tarifs",
+        "group": "tarifs"
+      },
+      "text_53c01dacd291": {
+        "fr": "Des tarifs clairs selon le poids",
+        "ar": "أسعار واضحة حسب الوزن",
+        "en": "Clear pricing by weight",
+        "label": "Des tarifs clairs selon le poids",
+        "group": "tarifs"
+      },
+      "text_edf6cf5d9204": {
+        "fr": "Tarifs de base par catégorie. Des suppléments peuvent s'appliquer selon la destination ou la nature du colis.",
+        "ar": "الأسعار الأساسية لكل فئة. قد تُضاف رسوم حسب الوجهة أو طبيعة الأمانة.",
+        "en": "Base fares per category. Surcharges may apply depending on destination or parcel type.",
+        "label": "Tarifs de base par catégorie. Des suppléments peuvent s'appliquer selon la destination ou la nature du colis.",
+        "group": "tarifs"
+      },
+      "text_49e333f4f39c": {
+        "fr": "Demander pour votre destination",
+        "ar": "اسأل عن وجهتكم",
+        "en": "Ask about your destination",
+        "label": "Demander pour votre destination",
+        "group": "tarifs"
+      },
+      "text_fd45ba571a87": {
+        "fr": "tarif de base",
+        "ar": "سعر أساسي",
+        "en": "base fare",
+        "label": "tarif de base",
+        "group": "tarifs"
+      },
+      "text_bdbce9febab4": {
+        "fr": "Suivi et sécurisé",
+        "ar": "تتبع وتسليم مؤمن",
+        "en": "Tracked and secured",
+        "label": "Suivi et sécurisé",
+        "group": "tarifs"
+      },
+      "text_b310ecd98789": {
+        "fr": "Aucun tarif publié",
+        "ar": "لا توجد أسعار منشورة",
+        "en": "No parcel rates",
+        "label": "Aucun tarif publié",
+        "group": "tarifs"
+      },
+      "text_dd9085ae6490": {
+        "fr": "Contactez notre équipe pour connaître le tarif de votre envoi.",
+        "ar": "تواصلوا مع فريقنا لمعرفة أسعار إرسالياتكم.",
+        "en": "Contact our team for a quote for your parcel.",
+        "label": "Contactez notre équipe pour connaître le tarif de votre envoi.",
+        "group": "tarifs"
+      },
+      "text_9f38ae8098e2": {
+        "fr": "Nous contacter",
+        "ar": "اتصلوا بنا",
+        "en": "Contact us",
+        "label": "Nous contacter",
+        "group": "tarifs"
+      },
+      "text_feecc2f902e8": {
+        "fr": "Pour les commerçants",
+        "ar": "للتجار",
+        "en": "For retailers",
+        "label": "Pour les commerçants",
+        "group": "section-2"
+      },
+      "text_0239e9bb3b61": {
+        "fr": "Paiement à la livraison, reversé chaque semaine",
+        "ar": "خدمة الدفع عند الاستلام",
+        "en": "Cash on delivery, reconciled weekly",
+        "label": "Paiement à la livraison, reversé chaque semaine",
+        "group": "section-2"
+      },
+      "text_94b51582a43e": {
+        "fr": "Expédiez vos produits avec nous. Nous encaissons à la livraison et vous reversons chaque semaine avec un récapitulatif.",
+        "ar": "انقلوا منتجاتكم معنا، ونحن نحصل على المبلغ عند التسليم ونحوّله لكم أسبوعياً مع كشف مفصل.",
+        "en": "Ship your products with us. We collect payment on delivery and pay you weekly with a detailed statement.",
+        "label": "Expédiez vos produits avec nous. Nous encaissons à la livraison et vous reversons chaque semaine avec un récap",
+        "group": "section-2"
+      },
+      "text_20e3ebeead0f": {
+        "fr": "Paiement à la livraison",
+        "ar": "الدفع عند التسليم",
+        "en": "Cash on delivery",
+        "label": "Paiement à la livraison",
+        "group": "section-2"
+      },
+      "text_e4d0b543a685": {
+        "fr": "Reversement hebdomadaire",
+        "ar": "تحويل أسبوعي",
+        "en": "Weekly payout",
+        "label": "Reversement hebdomadaire",
+        "group": "section-2"
+      },
+      "text_7ae43de7089d": {
+        "fr": "Colis traçables",
+        "ar": "أمانات قابلة للتتبع",
+        "en": "Trackable parcels",
+        "label": "Colis traçables",
+        "group": "section-2"
+      },
+      "text_2b34a2619a8b": {
+        "fr": "Compartiment sécurisé",
+        "ar": "صندوق مؤمن",
+        "en": "Secured compartment",
+        "label": "Compartiment sécurisé",
+        "group": "section-2"
+      },
+      "text_dddf86c53ff6": {
+        "fr": "Parler à l'équipe Irsaliyat",
+        "ar": "تواصل مع فريق إرساليات",
+        "en": "Talk to the Irsaliyat team",
+        "label": "Parler à l'équipe Irsaliyat",
+        "group": "section-2"
+      },
+      "text_15936a24b63a": {
+        "fr": "Suivre votre colis",
+        "ar": "تتبع أمانتكم",
+        "en": "Track your parcel",
+        "label": "Suivre votre colis",
+        "group": "Contenu de page"
+      },
+      "text_2b27304a563b": {
+        "fr": "Numéro de suivi",
+        "ar": "رقم التتبع",
+        "en": "Tracking number",
+        "label": "Numéro de suivi",
+        "group": "Contenu de page"
+      },
+      "text_8555a9966ded": {
+        "fr": "Suivre sur WhatsApp",
+        "ar": "تتبع عبر واتساب",
+        "en": "Track on WhatsApp",
+        "label": "Suivre sur WhatsApp",
+        "group": "Contenu de page"
+      },
+      "text_f8970bd401c6": {
+        "fr": "Le suivi est momentanément indisponible. Contactez une agence.",
+        "ar": "خدمة التتبع غير متاحة حالياً. تواصلوا مع الوكالة.",
+        "en": "Tracking is currently unavailable. Please contact an agency.",
+        "label": "Le suivi est momentanément indisponible. Contactez une agence.",
+        "group": "Contenu de page"
+      },
+      "text_c120f11bb031": {
+        "fr": "Veuillez saisir votre numéro de suivi.",
+        "ar": "يرجى إدخال رقم التتبع.",
+        "en": "Please enter your tracking number.",
+        "label": "Veuillez saisir votre numéro de suivi.",
+        "group": "Contenu de page"
+      },
+      "text_4218a4cc0da9": {
+        "fr": "Saisissez le numéro remis au dépôt. L'équipe Irsaliyat vous répond directement.",
+        "ar": "أدخل الرقم الذي تلقيتموه عند الإيداع. فريق إرساليات يجيبكم مباشرة.",
+        "en": "Enter the number issued at drop-off. Our Irsaliyat team replies directly.",
+        "label": "Saisissez le numéro remis au dépôt. L'équipe Irsaliyat vous répond directement.",
+        "group": "Contenu de page"
+      },
+      "text_194d63493fa7": {
+        "fr": "Notre réseau de messagerie",
+        "ar": "شبكة إرسالياتنا",
+        "en": "Our parcel network",
+        "label": "Notre réseau de messagerie",
+        "group": "Formulaire et réseau"
+      },
+      "text_e35b49703650": {
+        "fr": "Découvrez les villes et agences desservies par notre service de livraison de colis et d'envois.",
+        "ar": "اكتشفوا المدن والوكالات التي تغطيها خدمة إرسال الطرود لدينا.",
+        "en": "Discover the cities and agencies served by our parcel delivery service.",
+        "label": "Découvrez les villes et agences desservies par notre service de livraison de colis et d'envois.",
+        "group": "Formulaire et réseau"
+      },
+      "text_0b7897cb8ec3": {
+        "fr": "Les informations du réseau sont momentanément indisponibles.",
+        "ar": "معلومات الشبكة غير متاحة حالياً.",
+        "en": "Network information is temporarily unavailable.",
+        "label": "Les informations du réseau sont momentanément indisponibles.",
+        "group": "Formulaire et réseau"
+      },
+      "text_b7f5ef931116": {
+        "fr": "La carte du réseau sera prochainement disponible.",
+        "ar": "ستتوفر خريطة الشبكة قريباً.",
+        "en": "The network map will be available soon.",
+        "label": "La carte du réseau sera prochainement disponible.",
+        "group": "Formulaire et réseau"
+      },
+      "text_621061dc7a98": {
+        "fr": "Villes desservies",
+        "ar": "المدن المخدومة",
+        "en": "Served cities",
+        "label": "Villes desservies",
+        "group": "Formulaire et réseau"
+      },
+      "text_6f13f83e5a9b": {
+        "fr": "Nos agences de messagerie",
+        "ar": "وكالات إرسالياتنا",
+        "en": "Our parcel agencies",
+        "label": "Nos agences de messagerie",
+        "group": "Formulaire et réseau"
+      },
+      "text_6f4bb3e25693": {
+        "fr": "Filtrer par ville",
+        "ar": "تصفية حسب المدينة",
+        "en": "Filter by city",
+        "label": "Filtrer par ville",
+        "group": "Formulaire et réseau"
+      },
+      "text_e92207923058": {
+        "fr": "Toutes les villes",
+        "ar": "جميع المدن",
+        "en": "All cities",
+        "label": "Toutes les villes",
+        "group": "Formulaire et réseau"
+      },
+      "text_e98461de52c3": {
+        "fr": "Les coordonnées des agences de messagerie seront publiées prochainement.",
+        "ar": "ستنشر بيانات وكالات الإرساليات قريباً.",
+        "en": "Parcel agency contact details will be published soon.",
+        "label": "Les coordonnées des agences de messagerie seront publiées prochainement.",
+        "group": "Formulaire et réseau"
+      }
+    },
+    "images": {
+      "image_44f3933530f3": {
+        "src": "/images/hero-irsaliyat.jpg",
+        "label": "hero-irsaliyat.jpg",
+        "group": "hero"
+      },
+      "image_7f366d3e4316": {
+        "src": "/images/cargo-hold.jpg",
+        "label": "cargo-hold.jpg",
+        "group": "section-2"
+      }
+    },
+    "sections": [
+      {
+        "key": "hero",
+        "label": "Introduction / bannière",
+        "sort_order": 0
+      },
+      {
+        "key": "parcel-network",
+        "label": "Carte et agences de messagerie",
+        "sort_order": 10
+      },
+      {
+        "key": "section-1",
+        "label": "Comment ça marche",
+        "sort_order": 20
+      },
+      {
+        "key": "tarifs",
+        "label": "tarifs",
+        "sort_order": 30
+      },
+      {
+        "key": "section-2",
+        "label": "Pour les commerçants",
+        "sort_order": 40
+      }
+    ],
+    "links": {
+      "link_e0c7bc0426f0": {
+        "href": "/contact",
+        "label": "Destination · tarifs · /contact",
+        "group": "tarifs"
+      },
+      "link_fd6dc411307f": {
+        "href": "/contact",
+        "label": "Destination · section-2 · /contact",
+        "group": "section-2"
+      }
+    }
+  },
+  "about": {
+    "slug": "about",
+    "route": "/about",
+    "label": "Notre histoire",
+    "copy": {
+      "text_e1170ab1997e": {
+        "fr": "Sécurité d'abord",
+        "ar": "السلامة أولاً",
+        "en": "Safety first",
+        "label": "Sécurité d'abord",
+        "group": "Contenu de page"
+      },
+      "text_164066236600": {
+        "fr": "Des véhicules suivis, des chauffeurs formés et des procédures de contrôle à chaque départ.",
+        "ar": "مركبات متتبعة، سائقون مؤهلون وإجراءات مراقبة عند كل رحلة.",
+        "en": "Tracked vehicles, trained drivers and control procedures at every departure.",
+        "label": "Des véhicules suivis, des chauffeurs formés et des procédures de contrôle à chaque départ.",
+        "group": "Contenu de page"
+      },
+      "text_a4ed9ff495ee": {
+        "fr": "Proximité",
+        "ar": "القرب من الناس",
+        "en": "Closeness",
+        "label": "Proximité",
+        "group": "Contenu de page"
+      },
+      "text_d1e1254035e1": {
+        "fr": "Des équipes locales dans chaque ville, qui connaissent les routes et les attentes des voyageurs.",
+        "ar": "فرق محلية في كل مدينة تعرف الطرق وتطلعات المسافرين.",
+        "en": "Local teams in every city who know the roads and what travellers need.",
+        "label": "Des équipes locales dans chaque ville, qui connaissent les routes et les attentes des voyageurs.",
+        "group": "Contenu de page"
+      },
+      "text_1915ad464625": {
+        "fr": "Exigence",
+        "ar": "الجودة",
+        "en": "Excellence",
+        "label": "Exigence",
+        "group": "Contenu de page"
+      },
+      "text_fbf2b0944ae5": {
+        "fr": "Une flotte renouvelée, des départs à l'heure et un service client accessible 24/7.",
+        "ar": "أسطول متجدد، رحلات في الموعد وخدمة عملاء متاحة 24/7.",
+        "en": "A renewed fleet, on-time departures and customer service available 24/7.",
+        "label": "Une flotte renouvelée, des départs à l'heure et un service client accessible 24/7.",
+        "group": "Contenu de page"
+      },
+      "text_652cd9603ac8": {
+        "fr": "Notre histoire",
+        "ar": "قصتنا",
+        "en": "Our story",
+        "label": "Notre histoire",
+        "group": "hero"
+      },
+      "text_51ef54c529de": {
+        "fr": "Du souk d'Inezgane à un réseau national",
+        "ar": "من سوق إنزكان إلى شبكة وطنية",
+        "en": "From the Inezgane market to a national network",
+        "label": "Du souk d'Inezgane à un réseau national",
+        "group": "hero"
+      },
+      "text_26b72d60c687": {
+        "fr": "{{siteName}} a commencé avec une liaison et une idée claire : un transport sûr et régulier au service des gens. Aujourd'hui, la même route continue avec une flotte moderne et une équipe qui connaît le Maroc.",
+        "ar": "بدأت {{siteName}} برحلة واحدة ورؤية واضحة: نقل آمن ومنتظم يخدم الناس. اليوم، نواصل نفس الطريق بأسطول حديث وفريق يفهم المغرب.",
+        "en": "{{siteName}} began with one route and a clear vision: safe, reliable transport for local people. Today, the same road continues with a modern fleet and a team that knows Morocco.",
+        "label": "{{siteName}} a commencé avec une liaison et une idée claire : un transport sûr et régulier au service des gens",
+        "group": "hero"
+      },
+      "text_5a3031c4680d": {
+        "fr": "Fondateur",
+        "ar": "المؤسس",
+        "en": "Founder",
+        "label": "Fondateur",
+        "group": "section-2"
+      },
+      "text_54b9497e87db": {
+        "fr": "Une vision familiale depuis 1992",
+        "ar": "رؤية عائلية منذ 1992",
+        "en": "A family vision since 1992",
+        "label": "Une vision familiale depuis 1992",
+        "group": "section-2"
+      },
+      "text_8c6db3af58e2": {
+        "fr": "L'histoire",
+        "ar": "الحكاية",
+        "en": "The story",
+        "label": "L'histoire",
+        "group": "section-2"
+      },
+      "text_1148cf3ee1c8": {
+        "fr": "Trente ans sur la même route",
+        "ar": "ثلاثون عاماً على نفس الطريق",
+        "en": "Thirty years on the same road",
+        "label": "Trente ans sur la même route",
+        "group": "section-2"
+      },
+      "text_5775e5336150": {
+        "fr": "En 1992, les premières rotations partaient du cœur du souk d'Inezgane pour relier villages et centres urbains du Souss. Les débuts étaient modestes, mais l'engagement était total : respecter les horaires et servir les gens avec honnêteté.",
+        "ar": "في 1992، انطلقت أولى الرحلات من قلب سوق إنزكان لربط القرى والحواضر بمنطقة سوس. كانت البداية متواضعة، لكن الالتزام كان كبيراً: احترام المواعيد وخدمة الناس بصدق.",
+        "en": "In 1992, the first journeys left the heart of the Inezgane market, connecting villages and towns across the Souss. The start was modest, but the commitment was clear: keep to the schedule and serve people honestly.",
+        "label": "En 1992, les premières rotations partaient du cœur du souk d'Inezgane pour relier villages et centres urbains ",
+        "group": "section-2"
+      },
+      "text_6974fce44f26": {
+        "fr": "Au fil des années, le réseau s'est étendu vers le nord et le sud, et Irsaliyat a ajouté le transport de colis sur les mêmes autocars. Aujourd'hui, nous réunissons voyageurs, messagerie express et mobilité d'entreprise.",
+        "ar": "مع مرور السنوات، توسعت الشبكة نحو الشمال والجنوب، وانضافت خدمة إرساليات لنقل الأمانات مع نفس الحافلات. اليوم، نجمع بين نقل المسافرين، التوصيل السريع وحلول النقل للشركات.",
+        "en": "Over the years the network expanded north and south, and Irsaliyat added parcel transport on the same coaches. Today we bring together passenger travel, express delivery and corporate mobility.",
+        "label": "Au fil des années, le réseau s'est étendu vers le nord et le sud, et Irsaliyat a ajouté le transport de colis ",
+        "group": "section-2"
+      },
+      "text_7541c2434aed": {
+        "fr": "Un réseau national",
+        "ar": "شبكة وطنية",
+        "en": "A national network",
+        "label": "Un réseau national",
+        "group": "section-2"
+      },
+      "text_6fae79c72db8": {
+        "fr": "Des équipes locales",
+        "ar": "فرق محلية",
+        "en": "Local teams",
+        "label": "Des équipes locales",
+        "group": "section-2"
+      },
+      "text_5852bcae1f62": {
+        "fr": "Une flotte moderne",
+        "ar": "أسطول حديث",
+        "en": "A modern fleet",
+        "label": "Une flotte moderne",
+        "group": "section-2"
+      },
+      "text_d925c104e333": {
+        "fr": "Un service humain",
+        "ar": "خدمة إنسانية",
+        "en": "Human service",
+        "label": "Un service humain",
+        "group": "section-2"
+      },
+      "text_09e7d2cf376c": {
+        "fr": "Les étapes",
+        "ar": "المراحل",
+        "en": "Milestones",
+        "label": "Les étapes",
+        "group": "section-3"
+      },
+      "text_66d2df0e0bda": {
+        "fr": "Les moments qui ont façonné le trajet",
+        "ar": "محطات شكلت مسارنا",
+        "en": "Moments that shaped the journey",
+        "label": "Les moments qui ont façonné le trajet",
+        "group": "section-3"
+      },
+      "text_d0c8a757b7e7": {
+        "fr": "Aucune étape publiée",
+        "ar": "لا توجد مراحل منشورة",
+        "en": "No milestones yet",
+        "label": "Aucune étape publiée",
+        "group": "section-3"
+      },
+      "text_49f6c0ea2f85": {
+        "fr": "Contactez-nous pour en savoir plus sur SLKM.",
+        "ar": "تواصلوا معنا لمعرفة المزيد عن SLKM.",
+        "en": "Contact us to learn more about SLKM.",
+        "label": "Contactez-nous pour en savoir plus sur SLKM.",
+        "group": "section-3"
+      },
+      "text_c3201fad6f90": {
+        "fr": "Nos valeurs",
+        "ar": "قيمنا",
+        "en": "Our values",
+        "label": "Nos valeurs",
+        "group": "section-4"
+      },
+      "text_fb69107a96df": {
+        "fr": "Ce qui ne change pas",
+        "ar": "ما لا يتغير مع مرور السنوات",
+        "en": "What never changes",
+        "label": "Ce qui ne change pas",
+        "group": "section-4"
+      },
+      "text_d95a1270801d": {
+        "fr": "Présence",
+        "ar": "الحضور",
+        "en": "Presence",
+        "label": "Présence",
+        "group": "section-5"
+      },
+      "text_17c70e1250fa": {
+        "fr": "Notre réseau sur la carte",
+        "ar": "شبكتنا على الخريطة",
+        "en": "Our network on the map",
+        "label": "Notre réseau sur la carte",
+        "group": "section-5"
+      },
+      "text_b140ab9fb32c": {
+        "fr": "{{agencies.length}} agences actives relient le nord, le centre et le sud.",
+        "ar": "{{agencies.length}} وكالة نشطة تربط الشمال والوسط والجنوب.",
+        "en": "{{agencies.length}} active agencies connecting north, centre and south.",
+        "label": "{{agencies.length}} agences actives relient le nord, le centre et le sud.",
+        "group": "section-5"
+      },
+      "text_f139c54b7dd6": {
+        "fr": "Toutes les agences",
+        "ar": "كل الوكالات",
+        "en": "All agencies",
+        "label": "Toutes les agences",
+        "group": "section-5"
+      },
+      "text_9f38ae8098e2": {
+        "fr": "Nous contacter",
+        "ar": "تواصل معنا",
+        "en": "Contact us",
+        "label": "Nous contacter",
+        "group": "section-5"
+      },
+      "text_cc48426bf7db": {
+        "fr": "Rejoignez le voyage",
+        "ar": "انضموا إلى رحلتنا",
+        "en": "Join the journey",
+        "label": "Rejoignez le voyage",
+        "group": "section-6"
+      },
+      "text_fda674ddaf45": {
+        "fr": "Que vous voyagiez ou travailliez avec nous, bienvenue",
+        "ar": "سواء كنتم مسافراً أو شريكاً، مرحباً بكم",
+        "en": "Whether you travel or partner with us, welcome",
+        "label": "Que vous voyagiez ou travailliez avec nous, bienvenue",
+        "group": "section-6"
+      },
+      "text_ffcadf5671ac": {
+        "fr": "Découvrez nos lignes ou demandez une offre adaptée à vos équipes.",
+        "ar": "استكشفوا خطوطنا أو اطلبوا عرضاً مخصصاً لفريقكم.",
+        "en": "Explore our routes or request a tailored offer for your team.",
+        "label": "Découvrez nos lignes ou demandez une offre adaptée à vos équipes.",
+        "group": "section-6"
+      },
+      "text_567565cc67ca": {
+        "fr": "Les lignes",
+        "ar": "الخطوط",
+        "en": "Routes",
+        "label": "Les lignes",
+        "group": "section-6"
+      },
+      "text_330a53f83685": {
+        "fr": "Un devis",
+        "ar": "عرض أسعار",
+        "en": "Get a quote",
+        "label": "Un devis",
+        "group": "section-6"
+      }
+    },
+    "images": {
+      "image_9fce0732de23": {
+        "src": "/images/hero-about.jpg",
+        "label": "hero-about.jpg",
+        "group": "hero"
+      },
+      "image_19e23c8c7648": {
+        "src": "/images/ceo.jpg",
+        "label": "ceo.jpg",
+        "group": "section-2"
+      }
+    },
+    "sections": [
+      {
+        "key": "hero",
+        "label": "Introduction / bannière",
+        "sort_order": 0
+      },
+      {
+        "key": "section-1",
+        "label": "Section 2",
+        "sort_order": 10
+      },
+      {
+        "key": "section-2",
+        "label": "Fondateur",
+        "sort_order": 20
+      },
+      {
+        "key": "section-3",
+        "label": "Les étapes",
+        "sort_order": 30
+      },
+      {
+        "key": "section-4",
+        "label": "Nos valeurs",
+        "sort_order": 40
+      },
+      {
+        "key": "section-5",
+        "label": "Présence",
+        "sort_order": 50
+      },
+      {
+        "key": "section-6",
+        "label": "Rejoignez le voyage",
+        "sort_order": 60
+      }
+    ],
+    "links": {
+      "link_3bd6b58d0eb5": {
+        "href": "/lignes",
+        "label": "Destination · section-5 · /lignes",
+        "group": "section-5"
+      },
+      "link_72a342010d62": {
+        "href": "/contact",
+        "label": "Destination · section-5 · /contact",
+        "group": "section-5"
+      },
+      "link_a6d076cfdd50": {
+        "href": "/lignes",
+        "label": "Destination · section-6 · /lignes",
+        "group": "section-6"
+      },
+      "link_4e08d4e7785a": {
+        "href": "/services",
+        "label": "Destination · section-6 · /services",
+        "group": "section-6"
+      }
+    }
+  },
+  "services": {
+    "slug": "services",
+    "route": "/services",
+    "label": "Transport de personnel",
+    "copy": {
+      "text_1e013606c03c": {
+        "fr": "Solutions entreprises",
+        "ar": "حلول الشركات",
+        "en": "Business solutions",
+        "label": "Solutions entreprises",
+        "group": "hero"
+      },
+      "text_fd23bd01afda": {
+        "fr": "Ensemble, allez plus loin",
+        "ar": "معاً، إلى أبعد مدى",
+        "en": "Move further, together",
+        "label": "Ensemble, allez plus loin",
+        "group": "hero"
+      },
+      "text_7e9f0fa7d11a": {
+        "fr": "Des solutions de transport sur mesure pour entreprises et institutions : personnel, tourisme et scolaire, avec suivi et coordination.",
+        "ar": "حلول نقل مخصصة للشركات والمؤسسات: نقل الموظفين، رحلات سياحية ورحلات مدرسية، مع تتبع وتنسيق.",
+        "en": "Tailored transport for companies and institutions: staff mobility, tourism and school trips, with tracking and coordination.",
+        "label": "Des solutions de transport sur mesure pour entreprises et institutions : personnel, tourisme et scolaire, avec",
+        "group": "hero"
+      },
+      "text_3767bd206863": {
+        "fr": "Demander un devis",
+        "ar": "طلب عرض أسعار",
+        "en": "Request a quote",
+        "label": "Demander un devis",
+        "group": "Formulaire et réseau"
+      },
+      "text_88a1b6779e84": {
+        "fr": "Nos offres",
+        "ar": "عروضنا",
+        "en": "Our offers",
+        "label": "Nos offres",
+        "group": "section-1"
+      },
+      "text_4a8d041ca795": {
+        "fr": "Une solution de mobilité pour chaque besoin",
+        "ar": "حل نقل يناسب كل احتياج",
+        "en": "A mobility solution for every need",
+        "label": "Une solution de mobilité pour chaque besoin",
+        "group": "section-1"
+      },
+      "text_ef40bc4e956d": {
+        "fr": "Chaque proposition est construite selon le nombre de passagers, la distance, la fréquence et le niveau de service.",
+        "ar": "نصمم كل عرض حسب عدد المسافرين، المسافة، التردد ومستوى الخدمة المطلوب.",
+        "en": "Every proposal is built around passenger count, distance, frequency and service level.",
+        "label": "Chaque proposition est construite selon le nombre de passagers, la distance, la fréquence et le niveau de serv",
+        "group": "section-1"
+      },
+      "text_a9c1e59fe075": {
+        "fr": "Pourquoi SLKM",
+        "ar": "لماذا إس إل كي إم",
+        "en": "Why SLKM",
+        "label": "Pourquoi SLKM",
+        "group": "section-2"
+      },
+      "text_7ad3d45349f8": {
+        "fr": "Un partenaire transport que vos équipes connaissent",
+        "ar": "شريك نقل تعرفه الفرق",
+        "en": "A transport partner your teams can rely on",
+        "label": "Un partenaire transport que vos équipes connaissent",
+        "group": "section-2"
+      },
+      "text_81208c8b4684": {
+        "fr": "Trente ans d'expérience terrain, une flotte diversifiée et une équipe de coordination unique pour chaque détail.",
+        "ar": "ثلاثون عاماً من الخبرة الميدانية، أسطول متنوع وفريق تنسيق واحد يجمع كل التفاصيل.",
+        "en": "Thirty years of field experience, a diversified fleet and one coordination team for every detail.",
+        "label": "Trente ans d'expérience terrain, une flotte diversifiée et une équipe de coordination unique pour chaque détai",
+        "group": "section-2"
+      },
+      "text_890e612f8d9b": {
+        "fr": "Ponctualité suivie",
+        "ar": "التزام بالمواعيد",
+        "en": "Tracked punctuality",
+        "label": "Ponctualité suivie",
+        "group": "section-2"
+      },
+      "text_39291fb20b35": {
+        "fr": "Sécurité & assurance",
+        "ar": "السلامة والتأمين",
+        "en": "Safety & insurance",
+        "label": "Sécurité & assurance",
+        "group": "section-2"
+      },
+      "text_7f144d54c07f": {
+        "fr": "Chauffeurs formés",
+        "ar": "سائقون مؤهلون",
+        "en": "Trained drivers",
+        "label": "Chauffeurs formés",
+        "group": "section-2"
+      },
+      "text_7cbe7e5a7bf9": {
+        "fr": "Facturation entreprise",
+        "ar": "فواتير للشركات",
+        "en": "Corporate invoicing",
+        "label": "Facturation entreprise",
+        "group": "section-2"
+      },
+      "text_e0122aab53de": {
+        "fr": "Flotte récente",
+        "ar": "أسطول حديث",
+        "en": "Modern fleet",
+        "label": "Flotte récente",
+        "group": "section-2"
+      },
+      "text_118661e672de": {
+        "fr": "Des autocars équipés pour la route et le quotidien",
+        "ar": "حافلات مجهزة للرحلات الطويلة واليومية",
+        "en": "Coaches equipped for long-distance and daily duty",
+        "label": "Des autocars équipés pour la route et le quotidien",
+        "group": "section-2"
+      },
+      "text_f5554ae2f6b7": {
+        "fr": "Équipe B2B",
+        "ar": "فريق الشركات",
+        "en": "B2B desk",
+        "label": "Équipe B2B",
+        "group": "devis"
+      },
+      "text_81cced723304": {
+        "fr": "Réponse sous 24 heures",
+        "ar": "نتواصل معكم خلال 24 ساعة",
+        "en": "We reply within 24 hours",
+        "label": "Réponse sous 24 heures",
+        "group": "devis"
+      },
+      "text_52afccc9bd18": {
+        "fr": "Institutions",
+        "ar": "للمؤسسات",
+        "en": "For institutions",
+        "label": "Institutions",
+        "group": "devis"
+      },
+      "text_4844600a506a": {
+        "fr": "Contrats annuels, suivi des trajets et facturation mensuelle structurée.",
+        "ar": "عقود سنوية، تتبع الرحلات وفواتير شهرية منظمة.",
+        "en": "Annual contracts, journey tracking and structured monthly invoicing.",
+        "label": "Contrats annuels, suivi des trajets et facturation mensuelle structurée.",
+        "group": "devis"
+      },
+      "text_2456f711edaf": {
+        "fr": "Une mobilité adaptée à vos équipes",
+        "ar": "حلول تنقل مصممة لشركتكم",
+        "en": "Mobility built around your team",
+        "label": "Une mobilité adaptée à vos équipes",
+        "group": "Formulaire et réseau"
+      },
+      "text_4b000c1c5bff": {
+        "fr": "Entreprise",
+        "ar": "اسم الشركة",
+        "en": "Company",
+        "label": "Entreprise",
+        "group": "Formulaire et réseau"
+      },
+      "text_2b5c3d26721a": {
+        "fr": "Contact",
+        "ar": "الشخص المسؤول",
+        "en": "Contact person",
+        "label": "Contact",
+        "group": "Formulaire et réseau"
+      },
+      "text_cc4c424b571f": {
+        "fr": "Téléphone",
+        "ar": "الهاتف",
+        "en": "Phone",
+        "label": "Téléphone",
+        "group": "Formulaire et réseau"
+      },
+      "text_2550d962e536": {
+        "fr": "E-mail",
+        "ar": "البريد الإلكتروني",
+        "en": "Email",
+        "label": "E-mail",
+        "group": "Formulaire et réseau"
+      },
+      "text_da26234dc917": {
+        "fr": "Passagers",
+        "ar": "عدد المسافرين",
+        "en": "Passengers",
+        "label": "Passagers",
+        "group": "Formulaire et réseau"
+      },
+      "text_0bc226ec29cd": {
+        "fr": "Ville de départ",
+        "ar": "مدينة الانطلاق",
+        "en": "Origin city",
+        "label": "Ville de départ",
+        "group": "Formulaire et réseau"
+      },
+      "text_88aaac5494d3": {
+        "fr": "Ville d'arrivée",
+        "ar": "مدينة الوصول",
+        "en": "Destination",
+        "label": "Ville d'arrivée",
+        "group": "Formulaire et réseau"
+      },
+      "text_13f85bc0d96a": {
+        "fr": "Type de service",
+        "ar": "نوع الخدمة",
+        "en": "Service type",
+        "label": "Type de service",
+        "group": "Formulaire et réseau"
+      },
+      "text_e6d84389cc74": {
+        "fr": "Transport du personnel",
+        "ar": "نقل الموظفين",
+        "en": "Staff transport",
+        "label": "Transport du personnel",
+        "group": "Formulaire et réseau"
+      },
+      "text_9b0c6974de4d": {
+        "fr": "Voyages touristiques",
+        "ar": "رحلات سياحية",
+        "en": "Tourism trips",
+        "label": "Voyages touristiques",
+        "group": "Formulaire et réseau"
+      },
+      "text_0aa120a657ef": {
+        "fr": "Détails complémentaires",
+        "ar": "تفاصيل إضافية",
+        "en": "Additional details",
+        "label": "Détails complémentaires",
+        "group": "Formulaire et réseau"
+      },
+      "text_b8675b04f918": {
+        "fr": "Dates, fréquence, point de prise en charge...",
+        "ar": "التواريخ، التردد، نقطة الانطلاق...",
+        "en": "Dates, frequency, pickup point...",
+        "label": "Dates, fréquence, point de prise en charge...",
+        "group": "Formulaire et réseau"
+      },
+      "text_d3440d913b14": {
+        "fr": "Vos données sont protégées et utilisées uniquement pour traiter cette demande.",
+        "ar": "بياناتكم محمية ولا تُستخدم إلا لمعالجة الطلب.",
+        "en": "Your details are protected and only used to process this request.",
+        "label": "Vos données sont protégées et utilisées uniquement pour traiter cette demande.",
+        "group": "Formulaire et réseau"
+      },
+      "text_bf2f14e82f15": {
+        "fr": "Envoi...",
+        "ar": "جارٍ الإرسال...",
+        "en": "Sending...",
+        "label": "Envoi...",
+        "group": "Formulaire et réseau"
+      },
+      "text_642583f3af3a": {
+        "fr": "Envoyer la demande",
+        "ar": "إرسال الطلب",
+        "en": "Send request",
+        "label": "Envoyer la demande",
+        "group": "Formulaire et réseau"
+      }
+    },
+    "images": {
+      "image_3852bc87a12d": {
+        "src": "/images/hero-services.jpg",
+        "label": "hero-services.jpg",
+        "group": "hero"
+      },
+      "image_1d93533d8035": {
+        "src": "/images/serenity-coach.jpg",
+        "label": "serenity-coach.jpg",
+        "group": "section-2"
+      }
+    },
+    "sections": [
+      {
+        "key": "hero",
+        "label": "Introduction / bannière",
+        "sort_order": 0
+      },
+      {
+        "key": "section-1",
+        "label": "Demander un devis",
+        "sort_order": 10
+      },
+      {
+        "key": "section-2",
+        "label": "Pourquoi SLKM",
+        "sort_order": 20
+      },
+      {
+        "key": "devis",
+        "label": "devis",
+        "sort_order": 30
+      }
+    ],
+    "links": {
+      "link_bd01e7548213": {
+        "href": "#devis",
+        "label": "Destination · hero · #devis",
+        "group": "hero"
+      },
+      "link_8975dc6881f7": {
+        "href": "#devis",
+        "label": "Destination · section-1 · #devis",
+        "group": "section-1"
+      }
+    }
+  },
+  "contact": {
+    "slug": "contact",
+    "route": "/contact",
+    "label": "Contact",
+    "copy": {
+      "text_1a04b59df37a": {
+        "fr": "Bonjour, j'ai besoin d'aide.",
+        "ar": "مرحباً، أحتاج مساعدة.",
+        "en": "Hello, I need help.",
+        "label": "Bonjour, j'ai besoin d'aide.",
+        "group": "Contenu de page"
+      },
+      "text_cc4c424b571f": {
+        "fr": "Téléphone",
+        "ar": "الهاتف",
+        "en": "Phone",
+        "label": "Téléphone",
+        "group": "Formulaire et réseau"
+      },
+      "text_2550d962e536": {
+        "fr": "E-mail",
+        "ar": "البريد الإلكتروني",
+        "en": "Email",
+        "label": "E-mail",
+        "group": "Formulaire et réseau"
+      },
+      "text_79e5cf20de0b": {
+        "fr": "Adresse",
+        "ar": "العنوان",
+        "en": "Address",
+        "label": "Adresse",
+        "group": "Contenu de page"
+      },
+      "text_2b5c3d26721a": {
+        "fr": "Contact",
+        "ar": "اتصل بنا",
+        "en": "Contact",
+        "label": "Contact",
+        "group": "hero"
+      },
+      "text_ed0d4f31b3c0": {
+        "fr": "Nous sommes là pour répondre à vos questions",
+        "ar": "نحن هنا للإجابة على أسئلتكم",
+        "en": "We are here to answer your questions",
+        "label": "Nous sommes là pour répondre à vos questions",
+        "group": "hero"
+      },
+      "text_99352e031027": {
+        "fr": "Réservation, suivi de colis, devis entreprise ou assistance urgente : choisissez le canal qui vous convient.",
+        "ar": "حجز، تتبع أمانة، عرض أسعار للشركات أو مساعدة عاجلة: اختاروا القناة التي تناسبكم.",
+        "en": "Booking, parcel tracking, a corporate quote or urgent help: choose the channel that suits you.",
+        "label": "Réservation, suivi de colis, devis entreprise ou assistance urgente : choisissez le canal qui vous convient.",
+        "group": "hero"
+      },
+      "text_a9b01b010447": {
+        "fr": "Canaux de contact",
+        "ar": "قنوات الاتصال",
+        "en": "Contact channels",
+        "label": "Canaux de contact",
+        "group": "section-1"
+      },
+      "text_2f4647667d91": {
+        "fr": "Les coordonnées sont momentanément indisponibles. Utilisez le formulaire pour nous écrire.",
+        "ar": "بيانات الاتصال غير متاحة حالياً. يمكنكم استخدام النموذج لمراسلتنا.",
+        "en": "Contact details are currently unavailable. You can use the form to message us.",
+        "label": "Les coordonnées sont momentanément indisponibles. Utilisez le formulaire pour nous écrire.",
+        "group": "section-1"
+      },
+      "text_cdcbda2a3dd2": {
+        "fr": "Lignes d'assistance",
+        "ar": "خطوط المساعدة",
+        "en": "Support lines",
+        "label": "Lignes d'assistance",
+        "group": "section-1"
+      },
+      "text_c474fa194117": {
+        "fr": "Écrivez-nous via le formulaire pour préparer votre voyage.",
+        "ar": "تواصلوا معنا عبر النموذج لتحضير رحلتكم.",
+        "en": "Use the form to contact us about your journey.",
+        "label": "Écrivez-nous via le formulaire pour préparer votre voyage.",
+        "group": "section-1"
+      },
+      "text_f31f4fc85132": {
+        "fr": "Localisation",
+        "ar": "الموقع",
+        "en": "Location",
+        "label": "Localisation",
+        "group": "section-2"
+      },
+      "text_96ac3a928459": {
+        "fr": "Trouvez l'agence la plus proche",
+        "ar": "اعثروا على أقرب وكالة",
+        "en": "Find your nearest agency",
+        "label": "Trouvez l'agence la plus proche",
+        "group": "section-2"
+      },
+      "text_6aa115334159": {
+        "fr": "Cliquez sur une épingle pour l'adresse et le téléphone, ou utilisez la page des lignes pour filtrer les trajets.",
+        "ar": "انقروا على أي نقطة للاطلاع على العنوان والهاتف، أو استعملوا صفحة الخطوط لتصفية الرحلات.",
+        "en": "Click a pin for the address and phone, or use the routes page to filter journeys.",
+        "label": "Cliquez sur une épingle pour l'adresse et le téléphone, ou utilisez la page des lignes pour filtrer les trajet",
+        "group": "section-2"
+      },
+      "text_a44e9e92caa9": {
+        "fr": "Écrivez-nous",
+        "ar": "أرسل لنا رسالة",
+        "en": "Send us a message",
+        "label": "Écrivez-nous",
+        "group": "Formulaire et réseau"
+      },
+      "text_c0ab5dbad189": {
+        "fr": "Nous répondons sous un jour ouvré.",
+        "ar": "سنعود إليكم خلال يوم عمل واحد.",
+        "en": "We reply within one business day.",
+        "label": "Nous répondons sous un jour ouvré.",
+        "group": "Formulaire et réseau"
+      },
+      "text_c8af6e29fba8": {
+        "fr": "Nom complet",
+        "ar": "الاسم الكامل",
+        "en": "Full name",
+        "label": "Nom complet",
+        "group": "Formulaire et réseau"
+      },
+      "text_db59ebb27218": {
+        "fr": "Sujet",
+        "ar": "الموضوع",
+        "en": "Subject",
+        "label": "Sujet",
+        "group": "Formulaire et réseau"
+      },
+      "text_2f77668a9dfb": {
+        "fr": "Message",
+        "ar": "الرسالة",
+        "en": "Message",
+        "label": "Message",
+        "group": "Formulaire et réseau"
+      },
+      "text_b5875ab3a419": {
+        "fr": "Vos données ne sont jamais revendues.",
+        "ar": "لن نشارك بياناتكم مع أي طرف ثالث.",
+        "en": "We never share your details with third parties.",
+        "label": "Vos données ne sont jamais revendues.",
+        "group": "Formulaire et réseau"
+      },
+      "text_bf2f14e82f15": {
+        "fr": "Envoi...",
+        "ar": "جارٍ الإرسال...",
+        "en": "Sending...",
+        "label": "Envoi...",
+        "group": "Formulaire et réseau"
+      },
+      "text_79075209f2bb": {
+        "fr": "Envoyer",
+        "ar": "إرسال",
+        "en": "Send",
+        "label": "Envoyer",
+        "group": "Formulaire et réseau"
+      }
+    },
+    "images": {
+      "image_9fce0732de23": {
+        "src": "/images/hero-about.jpg",
+        "label": "hero-about.jpg",
+        "group": "hero"
+      }
+    },
+    "sections": [
+      {
+        "key": "hero",
+        "label": "Introduction / bannière",
+        "sort_order": 0
+      },
+      {
+        "key": "section-1",
+        "label": "Canaux de contact",
+        "sort_order": 10
+      },
+      {
+        "key": "section-2",
+        "label": "Localisation",
+        "sort_order": 20
+      }
+    ],
+    "links": {}
+  },
+  "blog": {
+    "slug": "blog",
+    "route": "/blog",
+    "label": "Actualités",
+    "copy": {
+      "text_1831f60fe790": {
+        "fr": "Le journal",
+        "ar": "المدونة",
+        "en": "Journal",
+        "label": "Le journal",
+        "group": "hero"
+      },
+      "text_175c55873466": {
+        "fr": "Actualités, conseils et destinations",
+        "ar": "أخبار، نصائح ووجهات",
+        "en": "News, advice and destinations",
+        "label": "Actualités, conseils et destinations",
+        "group": "hero"
+      },
+      "text_bd64b55010c7": {
+        "fr": "Des nouvelles utiles sur nos lignes, Irsaliyat et des conseils pour préparer votre prochain voyage.",
+        "ar": "معلومات عملية عن خطوطنا، خدمة إرساليات، ونصائح لتحضير رحلتكم القادمة.",
+        "en": "Practical updates on our routes, Irsaliyat and advice to plan your next journey.",
+        "label": "Des nouvelles utiles sur nos lignes, Irsaliyat et des conseils pour préparer votre prochain voyage.",
+        "group": "hero"
+      },
+      "text_bee9f69397b0": {
+        "fr": "À la une",
+        "ar": "مقال مميز",
+        "en": "Featured",
+        "label": "À la une",
+        "group": "section-1"
+      },
+      "text_e36036739f5c": {
+        "fr": "Le choix de la rédaction",
+        "ar": "اختيار المحرر",
+        "en": "Editor's pick",
+        "label": "Le choix de la rédaction",
+        "group": "section-1"
+      },
+      "text_4ef07352550e": {
+        "fr": "Tous les articles",
+        "ar": "كل المقالات",
+        "en": "All articles",
+        "label": "Tous les articles",
+        "group": "section-1"
+      },
+      "text_6f0b048748bb": {
+        "fr": "Suivez la vie du réseau",
+        "ar": "تابعوا أخبار الشبكة",
+        "en": "Follow network updates",
+        "label": "Suivez la vie du réseau",
+        "group": "section-1"
+      },
+      "text_6acd985680f8": {
+        "fr": "Pages des articles",
+        "ar": "صفحات المقالات",
+        "en": "Article pages",
+        "label": "Pages des articles",
+        "group": "section-1"
+      },
+      "text_6c857416ce4b": {
+        "fr": "Aucun article publié",
+        "ar": "لا توجد مقالات منشورة",
+        "en": "No published articles",
+        "label": "Aucun article publié",
+        "group": "section-1"
+      },
+      "text_440bf68b4bef": {
+        "fr": "Découvrez nos lignes et nos services en attendant nos prochaines nouvelles.",
+        "ar": "اكتشفوا خطوطنا وخدماتنا أثناء انتظار أخبارنا القادمة.",
+        "en": "Explore our routes and services while you wait for our next update.",
+        "label": "Découvrez nos lignes et nos services en attendant nos prochaines nouvelles.",
+        "group": "section-1"
+      },
+      "text_c37f1459c181": {
+        "fr": "Explorer les lignes",
+        "ar": "استكشفوا الخطوط",
+        "en": "Explore routes",
+        "label": "Explorer les lignes",
+        "group": "section-1"
+      }
+    },
+    "images": {},
+    "sections": [
+      {
+        "key": "hero",
+        "label": "Introduction / bannière",
+        "sort_order": 0
+      },
+      {
+        "key": "section-1",
+        "label": "À la une",
+        "sort_order": 10
+      }
+    ],
+    "links": {
+      "link_4f6fddd0268f": {
+        "href": "/lignes",
+        "label": "Destination · section-1 · /lignes",
+        "group": "section-1"
+      }
+    }
+  },
+  "article": {
+    "slug": "article",
+    "route": "/blog/[slug]",
+    "label": "Modèle des articles",
+    "copy": {
+      "text_4ef07352550e": {
+        "fr": "Tous les articles",
+        "ar": "كل المقالات",
+        "en": "All articles",
+        "label": "Tous les articles",
+        "group": "section-2"
+      },
+      "text_8a2263276b85": {
+        "fr": "Actualité",
+        "ar": "مقال",
+        "en": "Article",
+        "label": "Actualité",
+        "group": "section-1"
+      },
+      "text_da99809df088": {
+        "fr": "Besoin d'informations ?",
+        "ar": "هل تحتاجون معلومات؟",
+        "en": "Need more information?",
+        "label": "Besoin d'informations ?",
+        "group": "section-1"
+      },
+      "text_b74199bd8920": {
+        "fr": "Notre équipe vous répond toute la semaine.",
+        "ar": "فريقنا يجيبكم على مدار الأسبوع.",
+        "en": "Our team replies throughout the week.",
+        "label": "Notre équipe vous répond toute la semaine.",
+        "group": "section-1"
+      },
+      "text_9f38ae8098e2": {
+        "fr": "Nous contacter",
+        "ar": "اتصل بنا",
+        "en": "Contact us",
+        "label": "Nous contacter",
+        "group": "section-1"
+      },
+      "text_0dc8260a5466": {
+        "fr": "À lire aussi",
+        "ar": "اقرأ أيضاً",
+        "en": "Read next",
+        "label": "À lire aussi",
+        "group": "section-2"
+      },
+      "text_12a79763dee1": {
+        "fr": "D'autres articles du journal",
+        "ar": "مقالات قد تعجبكم",
+        "en": "More from the journal",
+        "label": "D'autres articles du journal",
+        "group": "section-2"
+      }
+    },
+    "images": {},
+    "sections": [
+      {
+        "key": "section-1",
+        "label": "Tous les articles",
+        "sort_order": 0
+      },
+      {
+        "key": "network",
+        "label": "Carte, recherche et agences",
+        "sort_order": 0
+      },
+      {
+        "key": "section-2",
+        "label": "Tous les articles",
+        "sort_order": 20
+      }
+    ],
+    "links": {
+      "link_1e2531571ad9": {
+        "href": "/blog",
+        "label": "Destination · section-1 · /blog",
+        "group": "section-1"
+      },
+      "link_55ffb6cb53be": {
+        "href": "/contact",
+        "label": "Destination · network · /contact",
+        "group": "network"
+      },
+      "link_73d6b97701d3": {
+        "href": "/blog",
+        "label": "Destination · section-2 · /blog",
+        "group": "section-2"
+      }
+    }
+  },
+  "global": {
+    "slug": "global",
+    "route": "global",
+    "label": "Pied de page",
+    "copy": {
+      "text_c74de52e2e36": {
+        "fr": "Un réseau national de transport qui relie les grandes villes du Maroc, avec Irsaliyat et des solutions de mobilité pour les entreprises.",
+        "ar": "شبكة وطنية للنقل تربط المدن الكبرى، مع خدمة إرساليات سريعة وحلول تنقل للشركات.",
+        "en": "A national transport network connecting Morocco's major cities, with express parcels and corporate mobility.",
+        "label": "Un réseau national de transport qui relie les grandes villes du Maroc, avec Irsaliyat et des solutions de mobi",
+        "group": "Contenu de page"
+      },
+      "text_c39d646f1076": {
+        "fr": "Explorer",
+        "ar": "تنقل",
+        "en": "Explore",
+        "label": "Explorer",
+        "group": "Contenu de page"
+      },
+      "text_44d7e9ead9cc": {
+        "fr": "Nous joindre",
+        "ar": "الاتصال",
+        "en": "Contact",
+        "label": "Nous joindre",
+        "group": "Contenu de page"
+      },
+      "text_cdcbda2a3dd2": {
+        "fr": "Lignes d'assistance",
+        "ar": "خطوط المساعدة",
+        "en": "Support lines",
+        "label": "Lignes d'assistance",
+        "group": "Contenu de page"
+      },
+      "text_adb674945680": {
+        "fr": "Contactez-nous pour préparer votre voyage.",
+        "ar": "تواصلوا معنا لتحضير رحلتكم.",
+        "en": "Contact us to plan your journey.",
+        "label": "Contactez-nous pour préparer votre voyage.",
+        "group": "Contenu de page"
+      },
+      "text_5a9b0ef55c1a": {
+        "fr": "Tous droits réservés.",
+        "ar": "جميع الحقوق محفوظة.",
+        "en": "All rights reserved.",
+        "label": "Tous droits réservés.",
+        "group": "Contenu de page"
+      },
+      "text_ee26a4e645de": {
+        "fr": "Maroc · Transport de voyageurs & Irsaliyat",
+        "ar": "المغرب · نقل المسافرين وإرساليات",
+        "en": "Morocco · Passenger transport & Irsaliyat",
+        "label": "Maroc · Transport de voyageurs & Irsaliyat",
+        "group": "Contenu de page"
+      }
+    },
+    "images": {},
+    "sections": []
+  }
+}

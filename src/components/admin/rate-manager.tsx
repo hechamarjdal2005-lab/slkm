@@ -9,6 +9,7 @@ import { AdminEmpty, AdminField, AdminHeader, AdminInput, AdminPanel, AdminTexta
 function RateForm({ rate }: { rate?: ParcelRate }) {
   return (
     <form action={upsertParcelRate} className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+      <label className="flex min-h-11 items-center gap-2"><input name="is_active" type="checkbox" defaultChecked={rate?.is_active ?? true} />Tarif publié</label>
       {rate ? <input type="hidden" name="id" value={rate.id} /> : null}
       <AdminField label="Catégorie (FR)"><AdminInput name="category_fr" required defaultValue={rate?.category_fr} /></AdminField>
       <AdminField label="Catégorie (AR)"><AdminInput name="category_ar" required defaultValue={rate?.category_ar} dir="rtl" /></AdminField>

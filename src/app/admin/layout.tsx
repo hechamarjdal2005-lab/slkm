@@ -7,6 +7,7 @@ import { isSupabaseConfigured } from "@/lib/supabase/env";
 import { pick } from "@/lib/utils";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: "Espace admin",
   description: "Gestion des agences, lignes, tarifs, devis et articles SLKM.",
 };

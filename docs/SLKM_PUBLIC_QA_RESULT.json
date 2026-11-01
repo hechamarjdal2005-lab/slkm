@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-31T14:41:35.636Z",
+  "scope": "Compiled public site; fallback content because Supabase returns PGRST205; no writes",
+  "layouts": 189,
+  "interactions": [
+    "Drawer: focus trap, Escape, backdrop, same-route close, navigation close, focus return and scroll unlock",
+    "All six desktop and drawer links navigate to the existing routes and keep correct active states",
+    "Live FR/AR/EN switch updates cookie, page copy and document direction; contact validation",
+    "Required quote fields validated; optional tracking/map checks recorded separately when configured; no messages sent or records created",
+    "Unauthenticated admin redirect and isolated admin theme"
+  ],
+  "skipped": [
+    "BLOCKED: no selectable published route origin; route filters/booking persistence were not exercised against live data.",
+    "BLOCKED: WhatsApp tracking action unavailable without configured contact data.",
+    "BLOCKED: no configured parcel-map image for a browser modal check.",
+    "BLOCKED: no published article available for a browser detail-page check."
+  ],
+  "pageErrors": []
+}

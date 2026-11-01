@@ -1,6 +1,9 @@
+import { MessagerieNetworkManager } from "@/components/admin/messagerie-network-manager";
+import { CMSWorkspace } from "@/components/admin/cms-workspace";
 import Link from "next/link";
 import { AlertCircle, ArrowRight, CheckCircle2, Database, MessageSquareQuote } from "lucide-react";
 import { AgencyManager } from "@/components/admin/agency-manager";
+import { SettingsManager } from "@/components/admin/settings-manager";
 import { BlogManager } from "@/components/admin/blog-manager";
 import { MessageManager } from "@/components/admin/message-manager";
 import { QuoteManager } from "@/components/admin/quote-manager";
@@ -12,7 +15,7 @@ import { getAdminSnapshot } from "@/lib/queries";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
 import { formatDateTime } from "@/lib/utils";
 
-const TABS = ["overview", "agencies", "routes", "rates", "quotes", "messages", "blog"];
+const TABS = ["overview", "agencies", "routes", "rates", "quotes", "messages", "blog", "settings", "messagerie", "cms", "design", "media"];
 
 const QUOTE_STATUS: Record<string, string> = {
   pending: "En attente",
@@ -37,6 +40,7 @@ export default async function AdminPage({
 }) {
   const params = await searchParams;
   const tab = params.tab && TABS.includes(params.tab) ? params.tab : "overview";
+  if (tab === "cms" || tab === "design" || tab === "media") return <CMSWorkspace mode={tab} />;
   const snapshot = await getAdminSnapshot();
   const configured = isSupabaseConfigured();
   const pendingQuotes = snapshot.quotes.filter((quote) => quote.status === "pending");
@@ -44,6 +48,9 @@ export default async function AdminPage({
 
   return (
     <div>
+      {snapshot.error && <p role="alert" className="mb-5 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">{snapshot.error}</p>}
+      {tab === "messagerie" && <MessagerieNetworkManager />}
+      {tab === "settings" && <SettingsManager settings={snapshot.settings} />}
       {!configured ? (
         <div className="mb-5 flex items-start gap-3 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
           <Database className="mt-0.5 h-4 w-4 shrink-0" />

@@ -1,6 +1,7 @@
 export type Locale = "fr" | "ar" | "en";
 
 export interface Agency {
+  sort_order?: number;
   id: string;
   city_ar: string;
   city_fr: string;
@@ -22,6 +23,7 @@ export interface Agency {
 }
 
 export interface Route {
+  sort_order?: number;
   id: string;
   from_agency_id: string;
   to_agency_id: string;
@@ -42,6 +44,7 @@ export interface RouteWithAgencies extends Route {
 }
 
 export interface ParcelRate {
+  is_active?: boolean;
   id: string;
   category_ar: string;
   category_fr: string;
@@ -110,6 +113,7 @@ export interface EmergencyLine {
 }
 
 export interface SiteStat {
+  is_active?: boolean;
   key: string;
   value: string;
   label_fr: string;
@@ -118,6 +122,7 @@ export interface SiteStat {
 }
 
 export interface FleetVehicle {
+  is_active?: boolean;
   name: string;
   category: string;
   capacity: string;
@@ -128,6 +133,7 @@ export interface FleetVehicle {
 }
 
 export interface TimelineItem {
+  is_active?: boolean;
   year: string;
   title_fr: string;
   title_ar: string;
@@ -138,13 +144,27 @@ export interface TimelineItem {
   image_url: string;
 }
 
+export interface ServiceOffer {
+  is_active?: boolean;
+  image_url: string;
+  title_fr: string;
+  title_ar: string;
+  title_en: string;
+  description_fr: string;
+  description_ar: string;
+  description_en: string;
+}
+
 export interface SiteConfig {
+  services?: ServiceOffer[];
   stats?: SiteStat[];
   fleet?: FleetVehicle[];
   timeline?: TimelineItem[];
 }
 
 export interface SiteSettings {
+  navigation?: unknown;
+  presentation?: unknown;
   id: number;
   site_name_ar: string | null;
   site_name_fr: string | null;

@@ -1,0 +1,3866 @@
+{
+  "date": "2026-10-31T16:18:34.440Z",
+  "sqlFiles": 9,
+  "nonFinalSqlFiles": 0,
+  "finalSqlFiles": 9,
+  "sourceFiles": 84,
+  "sql": [
+    {
+      "file": "supabase/FINAL_DATABASE/01.sql",
+      "lines": 911,
+      "sha256": "83e8cc3c820e0ef7824a1d667ad9d53cdd0b81b43b533932b97aac0a1666a21e",
+      "creates": [
+        {
+          "line": 264,
+          "text": "create table if not exists public.\"agencies"
+        },
+        {
+          "line": 325,
+          "text": "create table if not exists public.\"blog_posts"
+        },
+        {
+          "line": 377,
+          "text": "create table if not exists public.\"contact_messages"
+        },
+        {
+          "line": 408,
+          "text": "create table if not exists public.\"corporate_quotes"
+        },
+        {
+          "line": 451,
+          "text": "create table if not exists public.\"messagerie_agencies"
+        },
+        {
+          "line": 527,
+          "text": "create table if not exists public.\"messagerie_network_settings"
+        },
+        {
+          "line": 564,
+          "text": "create table if not exists public.\"parcel_rates"
+        },
+        {
+          "line": 604,
+          "text": "create table if not exists public.\"routes"
+        },
+        {
+          "line": 647,
+          "text": "create table if not exists public.\"site_media_assets"
+        },
+        {
+          "line": 690,
+          "text": "create table if not exists public.\"site_page_media"
+        },
+        {
+          "line": 715,
+          "text": "create table if not exists public.\"site_pages"
+        },
+        {
+          "line": 767,
+          "text": "create table if not exists public.\"site_sections"
+        },
+        {
+          "line": 846,
+          "text": "create table if not exists public.\"site_settings"
+        }
+      ],
+      "storageAlter": [],
+      "policyDeclarations": [],
+      "upserts": [],
+      "tableDrops": []
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/02.sql",
+      "lines": 1758,
+      "sha256": "8fd478982a6116b5d32333c0cc3de7d8e11d3a11bd7107b7cf06a7cb2b440db9",
+      "creates": [],
+      "storageAlter": [],
+      "policyDeclarations": [],
+      "upserts": [],
+      "tableDrops": [
+        {
+          "line": 28,
+          "text": "drop table pg_temp.\"slkm_expected_agencies\";"
+        },
+        {
+          "line": 29,
+          "text": "drop table pg_temp.\"slkm_actual_agencies\";"
+        },
+        {
+          "line": 51,
+          "text": "drop table pg_temp.\"slkm_expected_blog_posts\";"
+        },
+        {
+          "line": 52,
+          "text": "drop table pg_temp.\"slkm_actual_blog_posts\";"
+        },
+        {
+          "line": 74,
+          "text": "drop table pg_temp.\"slkm_expected_contact_messages\";"
+        },
+        {
+          "line": 75,
+          "text": "drop table pg_temp.\"slkm_actual_contact_messages\";"
+        },
+        {
+          "line": 97,
+          "text": "drop table pg_temp.\"slkm_expected_corporate_quotes\";"
+        },
+        {
+          "line": 98,
+          "text": "drop table pg_temp.\"slkm_actual_corporate_quotes\";"
+        },
+        {
+          "line": 120,
+          "text": "drop table pg_temp.\"slkm_expected_messagerie_agencies\";"
+        },
+        {
+          "line": 121,
+          "text": "drop table pg_temp.\"slkm_actual_messagerie_agencies\";"
+        },
+        {
+          "line": 143,
+          "text": "drop table pg_temp.\"slkm_expected_messagerie_network_settings\";"
+        },
+        {
+          "line": 144,
+          "text": "drop table pg_temp.\"slkm_actual_messagerie_network_settings\";"
+        },
+        {
+          "line": 166,
+          "text": "drop table pg_temp.\"slkm_expected_parcel_rates\";"
+        },
+        {
+          "line": 167,
+          "text": "drop table pg_temp.\"slkm_actual_parcel_rates\";"
+        },
+        {
+          "line": 189,
+          "text": "drop table pg_temp.\"slkm_expected_routes\";"
+        },
+        {
+          "line": 190,
+          "text": "drop table pg_temp.\"slkm_actual_routes\";"
+        },
+        {
+          "line": 212,
+          "text": "drop table pg_temp.\"slkm_expected_site_media_assets\";"
+        },
+        {
+          "line": 213,
+          "text": "drop table pg_temp.\"slkm_actual_site_media_assets\";"
+        },
+        {
+          "line": 235,
+          "text": "drop table pg_temp.\"slkm_expected_site_page_media\";"
+        },
+        {
+          "line": 236,
+          "text": "drop table pg_temp.\"slkm_actual_site_page_media\";"
+        },
+        {
+          "line": 258,
+          "text": "drop table pg_temp.\"slkm_expected_site_pages\";"
+        },
+        {
+          "line": 259,
+          "text": "drop table pg_temp.\"slkm_actual_site_pages\";"
+        },
+        {
+          "line": 281,
+          "text": "drop table pg_temp.\"slkm_expected_site_sections\";"
+        },
+        {
+          "line": 282,
+          "text": "drop table pg_temp.\"slkm_actual_site_sections\";"
+        },
+        {
+          "line": 304,
+          "text": "drop table pg_temp.\"slkm_expected_site_settings\";"
+        },
+        {
+          "line": 305,
+          "text": "drop table pg_temp.\"slkm_actual_site_settings\";"
+        },
+        {
+          "line": 327,
+          "text": "drop table pg_temp.\"slkm_expected_blog_posts\";"
+        },
+        {
+          "line": 328,
+          "text": "drop table pg_temp.\"slkm_actual_blog_posts\";"
+        },
+        {
+          "line": 350,
+          "text": "drop table pg_temp.\"slkm_expected_site_media_assets\";"
+        },
+        {
+          "line": 351,
+          "text": "drop table pg_temp.\"slkm_actual_site_media_assets\";"
+        },
+        {
+          "line": 373,
+          "text": "drop table pg_temp.\"slkm_expected_site_page_media\";"
+        },
+        {
+          "line": 374,
+          "text": "drop table pg_temp.\"slkm_actual_site_page_media\";"
+        },
+        {
+          "line": 396,
+          "text": "drop table pg_temp.\"slkm_expected_site_pages\";"
+        },
+        {
+          "line": 397,
+          "text": "drop table pg_temp.\"slkm_actual_site_pages\";"
+        },
+        {
+          "line": 419,
+          "text": "drop table pg_temp.\"slkm_expected_site_pages\";"
+        },
+        {
+          "line": 420,
+          "text": "drop table pg_temp.\"slkm_actual_site_pages\";"
+        },
+        {
+          "line": 442,
+          "text": "drop table pg_temp.\"slkm_expected_site_sections\";"
+        },
+        {
+          "line": 443,
+          "text": "drop table pg_temp.\"slkm_actual_site_sections\";"
+        },
+        {
+          "line": 465,
+          "text": "drop table pg_temp.\"slkm_expected_agencies\";"
+        },
+        {
+          "line": 466,
+          "text": "drop table pg_temp.\"slkm_actual_agencies\";"
+        },
+        {
+          "line": 488,
+          "text": "drop table pg_temp.\"slkm_expected_agencies\";"
+        },
+        {
+          "line": 489,
+          "text": "drop table pg_temp.\"slkm_actual_agencies\";"
+        },
+        {
+          "line": 511,
+          "text": "drop table pg_temp.\"slkm_expected_agencies\";"
+        },
+        {
+          "line": 512,
+          "text": "drop table pg_temp.\"slkm_actual_agencies\";"
+        },
+        {
+          "line": 534,
+          "text": "drop table pg_temp.\"slkm_expected_agencies\";"
+        },
+        {
+          "line": 535,
+          "text": "drop table pg_temp.\"slkm_actual_agencies\";"
+        },
+        {
+          "line": 557,
+          "text": "drop table pg_temp.\"slkm_expected_blog_posts\";"
+        },
+        {
+          "line": 558,
+          "text": "drop table pg_temp.\"slkm_actual_blog_posts\";"
+        },
+        {
+          "line": 580,
+          "text": "drop table pg_temp.\"slkm_expected_contact_messages\";"
+        },
+        {
+          "line": 581,
+          "text": "drop table pg_temp.\"slkm_actual_contact_messages\";"
+        },
+        {
+          "line": 603,
+          "text": "drop table pg_temp.\"slkm_expected_corporate_quotes\";"
+        },
+        {
+          "line": 604,
+          "text": "drop table pg_temp.\"slkm_actual_corporate_quotes\";"
+        },
+        {
+          "line": 626,
+          "text": "drop table pg_temp.\"slkm_expected_corporate_quotes\";"
+        },
+        {
+          "line": 627,
+          "text": "drop table pg_temp.\"slkm_actual_corporate_quotes\";"
+        },
+        {
+          "line": 649,
+          "text": "drop table pg_temp.\"slkm_expected_corporate_quotes\";"
+        },
+        {
+          "line": 650,
+          "text": "drop table pg_temp.\"slkm_actual_corporate_quotes\";"
+        },
+        {
+          "line": 672,
+          "text": "drop table pg_temp.\"slkm_expected_messagerie_agencies\";"
+        },
+        {
+          "line": 673,
+          "text": "drop table pg_temp.\"slkm_actual_messagerie_agencies\";"
+        },
+        {
+          "line": 695,
+          "text": "drop table pg_temp.\"slkm_expected_messagerie_agencies\";"
+        },
+        {
+          "line": 696,
+          "text": "drop table pg_temp.\"slkm_actual_messagerie_agencies\";"
+        },
+        {
+          "line": 718,
+          "text": "drop table pg_temp.\"slkm_expected_messagerie_agencies\";"
+        },
+        {
+          "line": 719,
+          "text": "drop table pg_temp.\"slkm_actual_messagerie_agencies\";"
+        },
+        {
+          "line": 741,
+          "text": "drop table pg_temp.\"slkm_expected_messagerie_network_settings\";"
+        },
+        {
+          "line": 742,
+          "text": "drop table pg_temp.\"slkm_actual_messagerie_network_settings\";"
+        },
+        {
+          "line": 764,
+          "text": "drop table pg_temp.\"slkm_expected_messagerie_network_settings\";"
+        },
+        {
+          "line": 765,
+          "text": "drop table pg_temp.\"slkm_actual_messagerie_network_settings\";"
+        },
+        {
+          "line": 787,
+          "text": "drop table pg_temp.\"slkm_expected_parcel_rates\";"
+        },
+        {
+          "line": 788,
+          "text": "drop table pg_temp.\"slkm_actual_parcel_rates\";"
+        },
+        {
+          "line": 810,
+          "text": "drop table pg_temp.\"slkm_expected_parcel_rates\";"
+        },
+        {
+          "line": 811,
+          "text": "drop table pg_temp.\"slkm_actual_parcel_rates\";"
+        },
+        {
+          "line": 833,
+          "text": "drop table pg_temp.\"slkm_expected_routes\";"
+        },
+        {
+          "line": 834,
+          "text": "drop table pg_temp.\"slkm_actual_routes\";"
+        },
+        {
+          "line": 856,
+          "text": "drop table pg_temp.\"slkm_expected_routes\";"
+        },
+        {
+          "line": 857,
+          "text": "drop table pg_temp.\"slkm_actual_routes\";"
+        },
+        {
+          "line": 879,
+          "text": "drop table pg_temp.\"slkm_expected_routes\";"
+        },
+        {
+          "line": 880,
+          "text": "drop table pg_temp.\"slkm_actual_routes\";"
+        },
+        {
+          "line": 902,
+          "text": "drop table pg_temp.\"slkm_expected_routes\";"
+        },
+        {
+          "line": 903,
+          "text": "drop table pg_temp.\"slkm_actual_routes\";"
+        },
+        {
+          "line": 925,
+          "text": "drop table pg_temp.\"slkm_expected_routes\";"
+        },
+        {
+          "line": 926,
+          "text": "drop table pg_temp.\"slkm_actual_routes\";"
+        },
+        {
+          "line": 948,
+          "text": "drop table pg_temp.\"slkm_expected_site_media_assets\";"
+        },
+        {
+          "line": 949,
+          "text": "drop table pg_temp.\"slkm_actual_site_media_assets\";"
+        },
+        {
+          "line": 971,
+          "text": "drop table pg_temp.\"slkm_expected_site_media_assets\";"
+        },
+        {
+          "line": 972,
+          "text": "drop table pg_temp.\"slkm_actual_site_media_assets\";"
+        },
+        {
+          "line": 994,
+          "text": "drop table pg_temp.\"slkm_expected_site_media_assets\";"
+        },
+        {
+          "line": 995,
+          "text": "drop table pg_temp.\"slkm_actual_site_media_assets\";"
+        },
+        {
+          "line": 1017,
+          "text": "drop table pg_temp.\"slkm_expected_site_media_assets\";"
+        },
+        {
+          "line": 1018,
+          "text": "drop table pg_temp.\"slkm_actual_site_media_assets\";"
+        },
+        {
+          "line": 1040,
+          "text": "drop table pg_temp.\"slkm_expected_site_media_assets\";"
+        },
+        {
+          "line": 1041,
+          "text": "drop table pg_temp.\"slkm_actual_site_media_assets\";"
+        },
+        {
+          "line": 1063,
+          "text": "drop table pg_temp.\"slkm_expected_site_page_media\";"
+        },
+        {
+          "line": 1064,
+          "text": "drop table pg_temp.\"slkm_actual_site_page_media\";"
+        },
+        {
+          "line": 1086,
+          "text": "drop table pg_temp.\"slkm_expected_site_page_media\";"
+        },
+        {
+          "line": 1087,
+          "text": "drop table pg_temp.\"slkm_actual_site_page_media\";"
+        },
+        {
+          "line": 1109,
+          "text": "drop table pg_temp.\"slkm_expected_site_page_media\";"
+        },
+        {
+          "line": 1110,
+          "text": "drop table pg_temp.\"slkm_actual_site_page_media\";"
+        },
+        {
+          "line": 1132,
+          "text": "drop table pg_temp.\"slkm_expected_site_pages\";"
+        },
+        {
+          "line": 1133,
+          "text": "drop table pg_temp.\"slkm_actual_site_pages\";"
+        },
+        {
+          "line": 1155,
+          "text": "drop table pg_temp.\"slkm_expected_site_pages\";"
+        },
+        {
+          "line": 1156,
+          "text": "drop table pg_temp.\"slkm_actual_site_pages\";"
+        },
+        {
+          "line": 1178,
+          "text": "drop table pg_temp.\"slkm_expected_site_pages\";"
+        },
+        {
+          "line": 1179,
+          "text": "drop table pg_temp.\"slkm_actual_site_pages\";"
+        },
+        {
+          "line": 1213,
+          "text": "drop table pg_temp.\"slkm_expected_site_pages\";"
+        },
+        {
+          "line": 1214,
+          "text": "drop table pg_temp.\"slkm_actual_site_pages\";"
+        },
+        {
+          "line": 1236,
+          "text": "drop table pg_temp.\"slkm_expected_site_pages\";"
+        },
+        {
+          "line": 1237,
+          "text": "drop table pg_temp.\"slkm_actual_site_pages\";"
+        },
+        {
+          "line": 1259,
+          "text": "drop table pg_temp.\"slkm_expected_site_sections\";"
+        },
+        {
+          "line": 1260,
+          "text": "drop table pg_temp.\"slkm_actual_site_sections\";"
+        },
+        {
+          "line": 1282,
+          "text": "drop table pg_temp.\"slkm_expected_site_sections\";"
+        },
+        {
+          "line": 1283,
+          "text": "drop table pg_temp.\"slkm_actual_site_sections\";"
+        },
+        {
+          "line": 1305,
+          "text": "drop table pg_temp.\"slkm_expected_site_sections\";"
+        },
+        {
+          "line": 1306,
+          "text": "drop table pg_temp.\"slkm_actual_site_sections\";"
+        },
+        {
+          "line": 1328,
+          "text": "drop table pg_temp.\"slkm_expected_site_sections\";"
+        },
+        {
+          "line": 1329,
+          "text": "drop table pg_temp.\"slkm_actual_site_sections\";"
+        },
+        {
+          "line": 1351,
+          "text": "drop table pg_temp.\"slkm_expected_site_sections\";"
+        },
+        {
+          "line": 1352,
+          "text": "drop table pg_temp.\"slkm_actual_site_sections\";"
+        },
+        {
+          "line": 1374,
+          "text": "drop table pg_temp.\"slkm_expected_site_sections\";"
+        },
+        {
+          "line": 1375,
+          "text": "drop table pg_temp.\"slkm_actual_site_sections\";"
+        },
+        {
+          "line": 1397,
+          "text": "drop table pg_temp.\"slkm_expected_site_sections\";"
+        },
+        {
+          "line": 1398,
+          "text": "drop table pg_temp.\"slkm_actual_site_sections\";"
+        },
+        {
+          "line": 1420,
+          "text": "drop table pg_temp.\"slkm_expected_site_sections\";"
+        },
+        {
+          "line": 1421,
+          "text": "drop table pg_temp.\"slkm_actual_site_sections\";"
+        },
+        {
+          "line": 1443,
+          "text": "drop table pg_temp.\"slkm_expected_site_sections\";"
+        },
+        {
+          "line": 1444,
+          "text": "drop table pg_temp.\"slkm_actual_site_sections\";"
+        },
+        {
+          "line": 1466,
+          "text": "drop table pg_temp.\"slkm_expected_site_settings\";"
+        },
+        {
+          "line": 1467,
+          "text": "drop table pg_temp.\"slkm_actual_site_settings\";"
+        },
+        {
+          "line": 1489,
+          "text": "drop table pg_temp.\"slkm_expected_site_settings\";"
+        },
+        {
+          "line": 1490,
+          "text": "drop table pg_temp.\"slkm_actual_site_settings\";"
+        },
+        {
+          "line": 1512,
+          "text": "drop table pg_temp.\"slkm_expected_site_settings\";"
+        },
+        {
+          "line": 1513,
+          "text": "drop table pg_temp.\"slkm_actual_site_settings\";"
+        },
+        {
+          "line": 1535,
+          "text": "drop table pg_temp.\"slkm_expected_site_settings\";"
+        },
+        {
+          "line": 1536,
+          "text": "drop table pg_temp.\"slkm_actual_site_settings\";"
+        },
+        {
+          "line": 1558,
+          "text": "drop table pg_temp.\"slkm_expected_site_settings\";"
+        },
+        {
+          "line": 1559,
+          "text": "drop table pg_temp.\"slkm_actual_site_settings\";"
+        },
+        {
+          "line": 1581,
+          "text": "drop table pg_temp.\"slkm_expected_site_settings\";"
+        },
+        {
+          "line": 1582,
+          "text": "drop table pg_temp.\"slkm_actual_site_settings\";"
+        },
+        {
+          "line": 1604,
+          "text": "drop table pg_temp.\"slkm_expected_site_settings\";"
+        },
+        {
+          "line": 1605,
+          "text": "drop table pg_temp.\"slkm_actual_site_settings\";"
+        }
+      ]
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/03.sql",
+      "lines": 81,
+      "sha256": "cf38a944d3be459599e8e08891df245aa47897ce910dc528c235dccd1b0803c6",
+      "creates": [],
+      "storageAlter": [
+        {
+          "line": 4,
+          "text": "ALTER TABLE storage.objects here.\ndo $$ begin if exists(select 1 from storage.buckets where id='agencies-media' and public is distinct from true) then raise exception 'Bucket agencies-media visibility differs: review existing files before changing confidentiality';"
+        }
+      ],
+      "policyDeclarations": [],
+      "upserts": [
+        {
+          "line": 14,
+          "text": "on conflict(id) do update"
+        }
+      ],
+      "tableDrops": []
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/04.sql",
+      "lines": 136,
+      "sha256": "a9f198adbe4770e8a7d2808b34ad219a63a81cda82476de52a3cfccc84567320",
+      "creates": [],
+      "storageAlter": [],
+      "policyDeclarations": [],
+      "upserts": [],
+      "tableDrops": []
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/05.sql",
+      "lines": 249,
+      "sha256": "4e65b65ba5d920a1e0ffccd317311e42e6c92817b6b51042ae1437a0e14b2fb8",
+      "creates": [],
+      "storageAlter": [],
+      "policyDeclarations": [
+        {
+          "line": 154,
+          "text": "create policy \"Admins can delete agencies\" on \"public\".\"agencies\" as PERMISSIVE for DELETE to \"authenticated\" using (is_admin());"
+        },
+        {
+          "line": 156,
+          "text": "create policy \"Admins can insert agencies\" on \"public\".\"agencies\" as PERMISSIVE for INSERT to \"authenticated\" with check (is_admin());"
+        },
+        {
+          "line": 158,
+          "text": "create policy \"Admins can read all agencies\" on \"public\".\"agencies\" as PERMISSIVE for SELECT to \"authenticated\" using (is_admin());"
+        },
+        {
+          "line": 160,
+          "text": "create policy \"Admins can update agencies\" on \"public\".\"agencies\" as PERMISSIVE for UPDATE to \"authenticated\" using (is_admin()) with check (is_admin());"
+        },
+        {
+          "line": 162,
+          "text": "create policy \"Public can read active agencies\" on \"public\".\"agencies\" as PERMISSIVE for SELECT to \"anon\",\"authenticated\" using ((is_active = true));"
+        },
+        {
+          "line": 164,
+          "text": "create policy \"Admins can delete blog posts\" on \"public\".\"blog_posts\" as PERMISSIVE for DELETE to \"authenticated\" using (is_admin());"
+        },
+        {
+          "line": 166,
+          "text": "create policy \"Admins can insert blog posts\" on \"public\".\"blog_posts\" as PERMISSIVE for INSERT to \"authenticated\" with check (is_admin());"
+        },
+        {
+          "line": 168,
+          "text": "create policy \"Admins can read all blog posts\" on \"public\".\"blog_posts\" as PERMISSIVE for SELECT to \"authenticated\" using (is_admin());"
+        },
+        {
+          "line": 170,
+          "text": "create policy \"Admins can update blog posts\" on \"public\".\"blog_posts\" as PERMISSIVE for UPDATE to \"authenticated\" using (is_admin()) with check (is_admin());"
+        },
+        {
+          "line": 172,
+          "text": "create policy \"Public can read published blog posts\" on \"public\".\"blog_posts\" as PERMISSIVE for SELECT to \"anon\",\"authenticated\" using ((is_published = true));"
+        },
+        {
+          "line": 174,
+          "text": "create policy \"Admins can delete contact messages\" on \"public\".\"contact_messages\" as PERMISSIVE for DELETE to \"authenticated\" using (is_admin());"
+        },
+        {
+          "line": 176,
+          "text": "create policy \"Admins can read contact messages\" on \"public\".\"contact_messages\" as PERMISSIVE for SELECT to \"authenticated\" using (is_admin());"
+        },
+        {
+          "line": 178,
+          "text": "create policy \"Admins can update contact messages\" on \"public\".\"contact_messages\" as PERMISSIVE for UPDATE to \"authenticated\" using (is_admin()) with check (is_admin());"
+        },
+        {
+          "line": 180,
+          "text": "create policy \"Anyone can send a contact message\" on \"public\".\"contact_messages\" as PERMISSIVE for INSERT to \"anon\",\"authenticated\" with check (((status)::text = 'new'::text));"
+        },
+        {
+          "line": 182,
+          "text": "create policy \"Admins can delete corporate quotes\" on \"public\".\"corporate_quotes\" as PERMISSIVE for DELETE to \"authenticated\" using (is_admin());"
+        },
+        {
+          "line": 184,
+          "text": "create policy \"Admins can read all corporate quotes\" on \"public\".\"corporate_quotes\" as PERMISSIVE for SELECT to \"authenticated\" using (is_admin());"
+        },
+        {
+          "line": 186,
+          "text": "create policy \"Admins can update corporate quotes\" on \"public\".\"corporate_quotes\" as PERMISSIVE for UPDATE to \"authenticated\" using (is_admin()) with check (is_admin());"
+        },
+        {
+          "line": 188,
+          "text": "create policy \"Anyone can submit a corporate quote\" on \"public\".\"corporate_quotes\" as PERMISSIVE for INSERT to \"anon\",\"authenticated\" with check (((status)::text = 'pending'::text));"
+        },
+        {
+          "line": 190,
+          "text": "create policy \"messagerie_agencies_admin\" on \"public\".\"messagerie_agencies\" as PERMISSIVE for ALL to \"authenticated\" using (is_admin()) with check (is_admin());"
+        },
+        {
+          "line": 192,
+          "text": "create policy \"messagerie_agencies_public\" on \"public\".\"messagerie_agencies\" as PERMISSIVE for SELECT to \"anon\",\"authenticated\" using ((is_active AND ((agency_id IS NULL) OR (EXISTS ( SELECT 1"
+        },
+        {
+          "line": 196,
+          "text": "create policy \"messagerie_settings_admin\" on \"public\".\"messagerie_network_settings\" as PERMISSIVE for ALL to \"authenticated\" using (is_admin()) with check (is_admin());"
+        },
+        {
+          "line": 198,
+          "text": "create policy \"messagerie_settings_public\" on \"public\".\"messagerie_network_settings\" as PERMISSIVE for SELECT to \"anon\",\"authenticated\" using (is_active);"
+        },
+        {
+          "line": 200,
+          "text": "create policy \"Admins can delete parcel rates\" on \"public\".\"parcel_rates\" as PERMISSIVE for DELETE to \"authenticated\" using (is_admin());"
+        },
+        {
+          "line": 202,
+          "text": "create policy \"Admins can insert parcel rates\" on \"public\".\"parcel_rates\" as PERMISSIVE for INSERT to \"authenticated\" with check (is_admin());"
+        },
+        {
+          "line": 204,
+          "text": "create policy \"Admins can read all parcel rates\" on \"public\".\"parcel_rates\" as PERMISSIVE for SELECT to \"authenticated\" using (is_admin());"
+        },
+        {
+          "line": 206,
+          "text": "create policy \"Admins can update parcel rates\" on \"public\".\"parcel_rates\" as PERMISSIVE for UPDATE to \"authenticated\" using (is_admin()) with check (is_admin());"
+        },
+        {
+          "line": 208,
+          "text": "create policy \"Public can read parcel rates\" on \"public\".\"parcel_rates\" as PERMISSIVE for SELECT to \"anon\",\"authenticated\" using (is_active);"
+        },
+        {
+          "line": 210,
+          "text": "create policy \"Admins can delete routes\" on \"public\".\"routes\" as PERMISSIVE for DELETE to \"authenticated\" using (is_admin());"
+        },
+        {
+          "line": 212,
+          "text": "create policy \"Admins can insert routes\" on \"public\".\"routes\" as PERMISSIVE for INSERT to \"authenticated\" with check (is_admin());"
+        },
+        {
+          "line": 214,
+          "text": "create policy \"Admins can read all routes\" on \"public\".\"routes\" as PERMISSIVE for SELECT to \"authenticated\" using (is_admin());"
+        },
+        {
+          "line": 216,
+          "text": "create policy \"Admins can update routes\" on \"public\".\"routes\" as PERMISSIVE for UPDATE to \"authenticated\" using (is_admin()) with check (is_admin());"
+        },
+        {
+          "line": 218,
+          "text": "create policy \"Public can read active routes\" on \"public\".\"routes\" as PERMISSIVE for SELECT to \"anon\",\"authenticated\" using ((is_active = true));"
+        },
+        {
+          "line": 220,
+          "text": "create policy \"cms_admin_all\" on \"public\".\"site_media_assets\" as PERMISSIVE for ALL to \"authenticated\" using (is_admin()) with check (is_admin());"
+        },
+        {
+          "line": 222,
+          "text": "create policy \"cms_public_assets\" on \"public\".\"site_media_assets\" as PERMISSIVE for SELECT to \"anon\",\"authenticated\" using ((is_active AND is_published));"
+        },
+        {
+          "line": 224,
+          "text": "create policy \"cms_admin_all\" on \"public\".\"site_page_media\" as PERMISSIVE for ALL to \"authenticated\" using (is_admin()) with check (is_admin());"
+        },
+        {
+          "line": 226,
+          "text": "create policy \"cms_public_media_links\" on \"public\".\"site_page_media\" as PERMISSIVE for SELECT to \"anon\",\"authenticated\" using (((EXISTS ( SELECT 1"
+        },
+        {
+          "line": 232,
+          "text": "create policy \"cms_admin_all\" on \"public\".\"site_pages\" as PERMISSIVE for ALL to \"authenticated\" using (is_admin()) with check (is_admin());"
+        },
+        {
+          "line": 234,
+          "text": "create policy \"cms_public_pages\" on \"public\".\"site_pages\" as PERMISSIVE for SELECT to \"anon\",\"authenticated\" using ((is_active AND is_published));"
+        },
+        {
+          "line": 236,
+          "text": "create policy \"cms_admin_all\" on \"public\".\"site_sections\" as PERMISSIVE for ALL to \"authenticated\" using (is_admin()) with check (is_admin());"
+        },
+        {
+          "line": 238,
+          "text": "create policy \"cms_public_sections\" on \"public\".\"site_sections\" as PERMISSIVE for SELECT to \"anon\",\"authenticated\" using ((is_active AND is_published AND (EXISTS ( SELECT 1"
+        },
+        {
+          "line": 242,
+          "text": "create policy \"Admins can read site settings\" on \"public\".\"site_settings\" as PERMISSIVE for SELECT to \"authenticated\" using (is_admin());"
+        },
+        {
+          "line": 244,
+          "text": "create policy \"Admins can update site settings\" on \"public\".\"site_settings\" as PERMISSIVE for UPDATE to \"authenticated\" using (is_admin()) with check (is_admin());"
+        },
+        {
+          "line": 246,
+          "text": "create policy \"Public can read site settings\" on \"public\".\"site_settings\" as PERMISSIVE for SELECT to \"anon\",\"authenticated\" using (true);"
+        }
+      ],
+      "upserts": [],
+      "tableDrops": []
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/06.sql",
+      "lines": 94,
+      "sha256": "c41ec3cb755fb891b530580e0db23054299f99e20799b7f07ceb522435724a5a",
+      "creates": [],
+      "storageAlter": [],
+      "policyDeclarations": [],
+      "upserts": [],
+      "tableDrops": []
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/07.sql",
+      "lines": 36,
+      "sha256": "6d246697de6d4cb5478b2f1836f1986cf9785eb36611f0af1aa169bc63a0a187",
+      "creates": [],
+      "storageAlter": [],
+      "policyDeclarations": [
+        {
+          "line": 19,
+          "text": "create policy \"CMS admin media all\" on \"storage\".\"objects\" as PERMISSIVE for ALL to \"authenticated\" using (((bucket_id = 'site-media'::text) AND public.is_admin())) with check (((bucket_id = 'site-media'::text) AND public.is_admin()));"
+        },
+        {
+          "line": 21,
+          "text": "create policy \"CMS published media read\" on \"storage\".\"objects\" as PERMISSIVE for SELECT to \"anon\",\"authenticated\" using (((bucket_id = 'site-media'::text) AND (EXISTS ( SELECT 1"
+        },
+        {
+          "line": 25,
+          "text": "create policy \"SLKM admins media delete\" on \"storage\".\"objects\" as PERMISSIVE for DELETE to \"authenticated\" using (((bucket_id = ANY (ARRAY['agencies-media'::text, 'blog-images'::text, 'fleet-images'::text])) AND public.is_admin()));"
+        },
+        {
+          "line": 27,
+          "text": "create policy \"SLKM authenticated media update\" on \"storage\".\"objects\" as PERMISSIVE for UPDATE to \"authenticated\" using (((bucket_id = ANY (ARRAY['agencies-media'::text, 'blog-images'::text, 'fleet-images'::text])) AND public.is_admin())) with check (((bucket_id = ANY (ARRAY['agencies-media'::text, 'blog-images'::text, 'fleet-images'::text])) AND public.is_admin()));"
+        },
+        {
+          "line": 29,
+          "text": "create policy \"SLKM authenticated media upload\" on \"storage\".\"objects\" as PERMISSIVE for INSERT to \"authenticated\" with check (((bucket_id = ANY (ARRAY['agencies-media'::text, 'blog-images'::text, 'fleet-images'::text])) AND public.is_admin() AND (length(TRIM(BOTH FROM name)) > 0)));"
+        },
+        {
+          "line": 31,
+          "text": "create policy \"SLKM public media read\" on \"storage\".\"objects\" as PERMISSIVE for SELECT to \"anon\",\"authenticated\" using ((bucket_id = ANY (ARRAY['agencies-media'::text, 'blog-images'::text, 'fleet-images'::text])));"
+        }
+      ],
+      "upserts": [],
+      "tableDrops": []
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/08.sql",
+      "lines": 344,
+      "sha256": "a8bb00d449f7ef2482511cfabff75e111a1ded2bc95de02eb969b233db1078d0",
+      "creates": [],
+      "storageAlter": [],
+      "policyDeclarations": [],
+      "upserts": [],
+      "tableDrops": []
+    },
+    {
+      "file": "supabase/FINAL_DATABASE/09.sql",
+      "lines": 15,
+      "sha256": "fefb97e96536316ab1e1494809a12115538a19b75723fe64c16ec66fbdffb764",
+      "creates": [],
+      "storageAlter": [],
+      "policyDeclarations": [],
+      "upserts": [],
+      "tableDrops": []
+    }
+  ],
+  "references": [
+    {
+      "file": "src/app/actions.ts",
+      "line": 73,
+      "table": "corporate_quotes"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 118,
+      "table": "contact_messages"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 194,
+      "table": "agencies"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 195,
+      "table": "agencies"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 205,
+      "table": "agencies"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 239,
+      "table": "routes"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 240,
+      "table": "routes"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 250,
+      "table": "routes"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 276,
+      "table": "parcel_rates"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 277,
+      "table": "parcel_rates"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 287,
+      "table": "parcel_rates"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 322,
+      "table": "blog_posts"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 323,
+      "table": "blog_posts"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 333,
+      "table": "blog_posts"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 345,
+      "table": "corporate_quotes"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 355,
+      "table": "corporate_quotes"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 367,
+      "table": "contact_messages"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 377,
+      "table": "contact_messages"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 398,
+      "table": "site_settings"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 443,
+      "table": "site_settings"
+    },
+    {
+      "file": "src/app/api/admin/media/route.ts",
+      "line": 5,
+      "table": "site_media_assets"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 13,
+      "table": "site_settings"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 27,
+      "table": "site_media_assets"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 56,
+      "table": "site_settings"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 64,
+      "table": "site_pages"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 68,
+      "table": "site_sections"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 70,
+      "table": "site_sections"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 73,
+      "table": "site_sections"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 80,
+      "table": "site_sections"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 95,
+      "table": "site_media_assets"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 107,
+      "table": "site_settings"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 108,
+      "table": "agencies"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 109,
+      "table": "blog_posts"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 110,
+      "table": "messagerie_network_settings"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 111,
+      "table": "messagerie_agencies"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 112,
+      "table": "site_page_media"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 113,
+      "table": "site_sections"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 118,
+      "table": "site_media_assets"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 125,
+      "table": "site_settings"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 127,
+      "table": "agencies"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 127,
+      "table": "blog_posts"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 128,
+      "table": "messagerie_network_settings"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 129,
+      "table": "messagerie_agencies"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 132,
+      "table": "site_media_assets"
+    },
+    {
+      "file": "src/app/media/[id]/route.ts",
+      "line": 7,
+      "table": "site_media_assets"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 30,
+      "table": "messagerie_network_settings"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 66,
+      "table": "agencies"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 75,
+      "table": "messagerie_agencies"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 75,
+      "table": "messagerie_agencies"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 81,
+      "table": "messagerie_agencies"
+    },
+    {
+      "file": "src/lib/cms-admin-store.ts",
+      "line": 8,
+      "table": "site_pages"
+    },
+    {
+      "file": "src/lib/cms-admin-store.ts",
+      "line": 9,
+      "table": "site_sections"
+    },
+    {
+      "file": "src/lib/cms-admin-store.ts",
+      "line": 10,
+      "table": "site_media_assets"
+    },
+    {
+      "file": "src/lib/cms-admin-store.ts",
+      "line": 11,
+      "table": "site_page_media"
+    },
+    {
+      "file": "src/lib/cms-store.ts",
+      "line": 25,
+      "table": "site_pages"
+    },
+    {
+      "file": "src/lib/cms-store.ts",
+      "line": 26,
+      "table": "site_sections"
+    },
+    {
+      "file": "src/lib/cms-store.ts",
+      "line": 27,
+      "table": "site_page_media"
+    },
+    {
+      "file": "src/lib/messagerie.ts",
+      "line": 31,
+      "table": "messagerie_network_settings"
+    },
+    {
+      "file": "src/lib/messagerie.ts",
+      "line": 32,
+      "table": "messagerie_agencies"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 38,
+      "table": "site_settings"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 46,
+      "table": "agencies"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 57,
+      "table": "routes"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 74,
+      "table": "parcel_rates"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 85,
+      "table": "blog_posts"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 99,
+      "table": "blog_posts"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 138,
+      "table": "agencies"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 139,
+      "table": "routes"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 140,
+      "table": "parcel_rates"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 141,
+      "table": "corporate_quotes"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 142,
+      "table": "blog_posts"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 143,
+      "table": "contact_messages"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 144,
+      "table": "site_settings"
+    }
+  ],
+  "checkedColumns": [
+    {
+      "file": "src/app/actions.ts",
+      "line": 74,
+      "table": "corporate_quotes",
+      "column": "company_name",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 75,
+      "table": "corporate_quotes",
+      "column": "contact_person",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 76,
+      "table": "corporate_quotes",
+      "column": "phone",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 77,
+      "table": "corporate_quotes",
+      "column": "email",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 78,
+      "table": "corporate_quotes",
+      "column": "service_type",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 79,
+      "table": "corporate_quotes",
+      "column": "passenger_count",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 80,
+      "table": "corporate_quotes",
+      "column": "origin_city",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 81,
+      "table": "corporate_quotes",
+      "column": "destination_city",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 82,
+      "table": "corporate_quotes",
+      "column": "details",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 83,
+      "table": "corporate_quotes",
+      "column": "status",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 119,
+      "table": "contact_messages",
+      "column": "full_name",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 120,
+      "table": "contact_messages",
+      "column": "email",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 121,
+      "table": "contact_messages",
+      "column": "phone",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 122,
+      "table": "contact_messages",
+      "column": "subject",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 123,
+      "table": "contact_messages",
+      "column": "message",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 124,
+      "table": "contact_messages",
+      "column": "status",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 194,
+      "table": "agencies",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 194,
+      "table": "agencies",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 165,
+      "table": "agencies",
+      "column": "sort_order",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 166,
+      "table": "agencies",
+      "column": "city_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 167,
+      "table": "agencies",
+      "column": "city_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 168,
+      "table": "agencies",
+      "column": "city_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 169,
+      "table": "agencies",
+      "column": "agency_name_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 170,
+      "table": "agencies",
+      "column": "agency_name_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 171,
+      "table": "agencies",
+      "column": "agency_name_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 172,
+      "table": "agencies",
+      "column": "address_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 173,
+      "table": "agencies",
+      "column": "address_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 174,
+      "table": "agencies",
+      "column": "address_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 175,
+      "table": "agencies",
+      "column": "whatsapp_number",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 176,
+      "table": "agencies",
+      "column": "phone_number",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 177,
+      "table": "agencies",
+      "column": "lat",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 178,
+      "table": "agencies",
+      "column": "lng",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 179,
+      "table": "agencies",
+      "column": "image_url",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 180,
+      "table": "agencies",
+      "column": "is_active",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 165,
+      "table": "agencies",
+      "column": "sort_order",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 166,
+      "table": "agencies",
+      "column": "city_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 167,
+      "table": "agencies",
+      "column": "city_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 168,
+      "table": "agencies",
+      "column": "city_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 169,
+      "table": "agencies",
+      "column": "agency_name_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 170,
+      "table": "agencies",
+      "column": "agency_name_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 171,
+      "table": "agencies",
+      "column": "agency_name_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 172,
+      "table": "agencies",
+      "column": "address_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 173,
+      "table": "agencies",
+      "column": "address_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 174,
+      "table": "agencies",
+      "column": "address_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 175,
+      "table": "agencies",
+      "column": "whatsapp_number",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 176,
+      "table": "agencies",
+      "column": "phone_number",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 177,
+      "table": "agencies",
+      "column": "lat",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 178,
+      "table": "agencies",
+      "column": "lng",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 179,
+      "table": "agencies",
+      "column": "image_url",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 180,
+      "table": "agencies",
+      "column": "is_active",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 205,
+      "table": "agencies",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 205,
+      "table": "agencies",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 239,
+      "table": "routes",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 239,
+      "table": "routes",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 216,
+      "table": "routes",
+      "column": "sort_order",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 217,
+      "table": "routes",
+      "column": "from_agency_id",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 218,
+      "table": "routes",
+      "column": "to_agency_id",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 219,
+      "table": "routes",
+      "column": "departure_time",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 220,
+      "table": "routes",
+      "column": "arrival_time",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 221,
+      "table": "routes",
+      "column": "price_mad",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 222,
+      "table": "routes",
+      "column": "bus_type",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 223,
+      "table": "routes",
+      "column": "days_of_week",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 224,
+      "table": "routes",
+      "column": "is_tourist_route",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 225,
+      "table": "routes",
+      "column": "is_active",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 216,
+      "table": "routes",
+      "column": "sort_order",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 217,
+      "table": "routes",
+      "column": "from_agency_id",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 218,
+      "table": "routes",
+      "column": "to_agency_id",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 219,
+      "table": "routes",
+      "column": "departure_time",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 220,
+      "table": "routes",
+      "column": "arrival_time",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 221,
+      "table": "routes",
+      "column": "price_mad",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 222,
+      "table": "routes",
+      "column": "bus_type",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 223,
+      "table": "routes",
+      "column": "days_of_week",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 224,
+      "table": "routes",
+      "column": "is_tourist_route",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 225,
+      "table": "routes",
+      "column": "is_active",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 250,
+      "table": "routes",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 250,
+      "table": "routes",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 276,
+      "table": "parcel_rates",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 276,
+      "table": "parcel_rates",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 260,
+      "table": "parcel_rates",
+      "column": "is_active",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 261,
+      "table": "parcel_rates",
+      "column": "category_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 262,
+      "table": "parcel_rates",
+      "column": "category_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 263,
+      "table": "parcel_rates",
+      "column": "category_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 264,
+      "table": "parcel_rates",
+      "column": "max_weight_kg",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 265,
+      "table": "parcel_rates",
+      "column": "base_price_mad",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 266,
+      "table": "parcel_rates",
+      "column": "description_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 267,
+      "table": "parcel_rates",
+      "column": "description_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 268,
+      "table": "parcel_rates",
+      "column": "description_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 260,
+      "table": "parcel_rates",
+      "column": "is_active",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 261,
+      "table": "parcel_rates",
+      "column": "category_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 262,
+      "table": "parcel_rates",
+      "column": "category_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 263,
+      "table": "parcel_rates",
+      "column": "category_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 264,
+      "table": "parcel_rates",
+      "column": "max_weight_kg",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 265,
+      "table": "parcel_rates",
+      "column": "base_price_mad",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 266,
+      "table": "parcel_rates",
+      "column": "description_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 267,
+      "table": "parcel_rates",
+      "column": "description_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 268,
+      "table": "parcel_rates",
+      "column": "description_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 287,
+      "table": "parcel_rates",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 287,
+      "table": "parcel_rates",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 322,
+      "table": "blog_posts",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 322,
+      "table": "blog_posts",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 301,
+      "table": "blog_posts",
+      "column": "slug",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 302,
+      "table": "blog_posts",
+      "column": "title_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 303,
+      "table": "blog_posts",
+      "column": "title_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 304,
+      "table": "blog_posts",
+      "column": "title_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 305,
+      "table": "blog_posts",
+      "column": "excerpt_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 306,
+      "table": "blog_posts",
+      "column": "excerpt_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 307,
+      "table": "blog_posts",
+      "column": "excerpt_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 308,
+      "table": "blog_posts",
+      "column": "content_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 309,
+      "table": "blog_posts",
+      "column": "content_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 310,
+      "table": "blog_posts",
+      "column": "content_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 311,
+      "table": "blog_posts",
+      "column": "cover_image_url",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 312,
+      "table": "blog_posts",
+      "column": "is_published",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 313,
+      "table": "blog_posts",
+      "column": "published_at",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 301,
+      "table": "blog_posts",
+      "column": "slug",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 302,
+      "table": "blog_posts",
+      "column": "title_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 303,
+      "table": "blog_posts",
+      "column": "title_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 304,
+      "table": "blog_posts",
+      "column": "title_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 305,
+      "table": "blog_posts",
+      "column": "excerpt_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 306,
+      "table": "blog_posts",
+      "column": "excerpt_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 307,
+      "table": "blog_posts",
+      "column": "excerpt_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 308,
+      "table": "blog_posts",
+      "column": "content_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 309,
+      "table": "blog_posts",
+      "column": "content_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 310,
+      "table": "blog_posts",
+      "column": "content_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 311,
+      "table": "blog_posts",
+      "column": "cover_image_url",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 312,
+      "table": "blog_posts",
+      "column": "is_published",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 313,
+      "table": "blog_posts",
+      "column": "published_at",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 333,
+      "table": "blog_posts",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 333,
+      "table": "blog_posts",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 345,
+      "table": "corporate_quotes",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 345,
+      "table": "corporate_quotes",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 345,
+      "table": "corporate_quotes",
+      "column": "status",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 355,
+      "table": "corporate_quotes",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 355,
+      "table": "corporate_quotes",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 367,
+      "table": "contact_messages",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 367,
+      "table": "contact_messages",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 367,
+      "table": "contact_messages",
+      "column": "status",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 377,
+      "table": "contact_messages",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 377,
+      "table": "contact_messages",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 398,
+      "table": "site_settings",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 398,
+      "table": "site_settings",
+      "column": "analytics_config",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 443,
+      "table": "site_settings",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 437,
+      "table": "site_settings",
+      "column": "default_locale",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 438,
+      "table": "site_settings",
+      "column": "emergency_lines",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 439,
+      "table": "site_settings",
+      "column": "site_name_fr",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 439,
+      "table": "site_settings",
+      "column": "site_name_ar",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 439,
+      "table": "site_settings",
+      "column": "site_name_en",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 439,
+      "table": "site_settings",
+      "column": "address_fr",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 439,
+      "table": "site_settings",
+      "column": "address_ar",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 439,
+      "table": "site_settings",
+      "column": "address_en",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 439,
+      "table": "site_settings",
+      "column": "support_phone",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 439,
+      "table": "site_settings",
+      "column": "whatsapp_number",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 439,
+      "table": "site_settings",
+      "column": "emergency_phone",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 439,
+      "table": "site_settings",
+      "column": "contact_email",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 440,
+      "table": "site_settings",
+      "column": "social_links",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 441,
+      "table": "site_settings",
+      "column": "analytics_config",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/api/admin/media/route.ts",
+      "line": 5,
+      "table": "site_media_assets",
+      "column": "created_at",
+      "kind": "order"
+    },
+    {
+      "file": "src/app/api/admin/media/route.ts",
+      "line": 5,
+      "table": "site_media_assets",
+      "column": "is_active",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 13,
+      "table": "site_settings",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 13,
+      "table": "site_settings",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 13,
+      "table": "site_settings",
+      "column": "navigation",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 27,
+      "table": "site_media_assets",
+      "column": "is_active",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 27,
+      "table": "site_media_assets",
+      "column": "is_published",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 27,
+      "table": "site_media_assets",
+      "column": "id",
+      "kind": "in"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 27,
+      "table": "site_media_assets",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 56,
+      "table": "site_settings",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 56,
+      "table": "site_settings",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 56,
+      "table": "site_settings",
+      "column": "presentation",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 64,
+      "table": "site_pages",
+      "column": "slug",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 64,
+      "table": "site_pages",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 68,
+      "table": "site_sections",
+      "column": "page_id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 68,
+      "table": "site_sections",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 68,
+      "table": "site_sections",
+      "column": "kind",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 70,
+      "table": "site_sections",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 70,
+      "table": "site_sections",
+      "column": "page_id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 70,
+      "table": "site_sections",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 73,
+      "table": "site_sections",
+      "column": "page_id",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 73,
+      "table": "site_sections",
+      "column": "section_key",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 80,
+      "table": "site_sections",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 80,
+      "table": "site_sections",
+      "column": "kind",
+      "kind": "neq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 80,
+      "table": "site_sections",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 95,
+      "table": "site_media_assets",
+      "column": "storage_path",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 95,
+      "table": "site_media_assets",
+      "column": "filename",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 95,
+      "table": "site_media_assets",
+      "column": "mime_type",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 95,
+      "table": "site_media_assets",
+      "column": "size_bytes",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 95,
+      "table": "site_media_assets",
+      "column": "alt_fr",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 95,
+      "table": "site_media_assets",
+      "column": "alt_ar",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 95,
+      "table": "site_media_assets",
+      "column": "alt_en",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 95,
+      "table": "site_media_assets",
+      "column": "is_published",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 107,
+      "table": "site_settings",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 107,
+      "table": "site_settings",
+      "column": "presentation",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 107,
+      "table": "site_settings",
+      "column": "analytics_config",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 108,
+      "table": "agencies",
+      "column": "image_url",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 108,
+      "table": "agencies",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 109,
+      "table": "blog_posts",
+      "column": "cover_image_url",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 109,
+      "table": "blog_posts",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 110,
+      "table": "messagerie_network_settings",
+      "column": "map_image_url",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 110,
+      "table": "messagerie_network_settings",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 111,
+      "table": "messagerie_agencies",
+      "column": "image_url",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 111,
+      "table": "messagerie_agencies",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 112,
+      "table": "site_page_media",
+      "column": "asset_id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 112,
+      "table": "site_page_media",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 113,
+      "table": "site_sections",
+      "column": "media_asset_id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 113,
+      "table": "site_sections",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 118,
+      "table": "site_media_assets",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 118,
+      "table": "site_media_assets",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 102,
+      "table": "site_media_assets",
+      "column": "is_published",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 102,
+      "table": "site_media_assets",
+      "column": "is_active",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 102,
+      "table": "site_media_assets",
+      "column": "alt_fr",
+      "kind": "localized payload spread"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 102,
+      "table": "site_media_assets",
+      "column": "alt_ar",
+      "kind": "localized payload spread"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 102,
+      "table": "site_media_assets",
+      "column": "alt_en",
+      "kind": "localized payload spread"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 125,
+      "table": "site_settings",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 125,
+      "table": "site_settings",
+      "column": "presentation",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 125,
+      "table": "site_settings",
+      "column": "analytics_config",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 127,
+      "table": "agencies",
+      "column": "image_url",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 127,
+      "table": "agencies",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 127,
+      "table": "blog_posts",
+      "column": "cover_image_url",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 127,
+      "table": "blog_posts",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 128,
+      "table": "messagerie_network_settings",
+      "column": "map_image_url",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 128,
+      "table": "messagerie_network_settings",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 129,
+      "table": "messagerie_agencies",
+      "column": "image_url",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 129,
+      "table": "messagerie_agencies",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 132,
+      "table": "site_media_assets",
+      "column": "storage_path",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 132,
+      "table": "site_media_assets",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/media/[id]/route.ts",
+      "line": 7,
+      "table": "site_media_assets",
+      "column": "is_published",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/media/[id]/route.ts",
+      "line": 7,
+      "table": "site_media_assets",
+      "column": "is_active",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/media/[id]/route.ts",
+      "line": 7,
+      "table": "site_media_assets",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/media/[id]/route.ts",
+      "line": 7,
+      "table": "site_media_assets",
+      "column": "storage_path",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 29,
+      "table": "messagerie_network_settings",
+      "column": "id",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 29,
+      "table": "messagerie_network_settings",
+      "column": "map_image_url",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 29,
+      "table": "messagerie_network_settings",
+      "column": "is_active",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 29,
+      "table": "messagerie_network_settings",
+      "column": "title_fr",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 29,
+      "table": "messagerie_network_settings",
+      "column": "title_ar",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 29,
+      "table": "messagerie_network_settings",
+      "column": "title_en",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 29,
+      "table": "messagerie_network_settings",
+      "column": "description_fr",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 29,
+      "table": "messagerie_network_settings",
+      "column": "description_ar",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 29,
+      "table": "messagerie_network_settings",
+      "column": "description_en",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 66,
+      "table": "agencies",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 66,
+      "table": "agencies",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 75,
+      "table": "messagerie_agencies",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 75,
+      "table": "messagerie_agencies",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 70,
+      "table": "messagerie_agencies",
+      "column": "image_url",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 70,
+      "table": "messagerie_agencies",
+      "column": "lat",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 70,
+      "table": "messagerie_agencies",
+      "column": "lng",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 70,
+      "table": "messagerie_agencies",
+      "column": "agents",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 71,
+      "table": "messagerie_agencies",
+      "column": "agency_id",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 71,
+      "table": "messagerie_agencies",
+      "column": "is_active",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 71,
+      "table": "messagerie_agencies",
+      "column": "display_order",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "name_fr",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "name_ar",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "name_en",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "city_fr",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "city_ar",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "city_en",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "address_fr",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "address_ar",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "address_en",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "phone",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "whatsapp",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 73,
+      "table": "messagerie_agencies",
+      "column": "opening_hours_fr",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 73,
+      "table": "messagerie_agencies",
+      "column": "opening_hours_ar",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 73,
+      "table": "messagerie_agencies",
+      "column": "opening_hours_en",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 75,
+      "table": "messagerie_agencies",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 70,
+      "table": "messagerie_agencies",
+      "column": "image_url",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 70,
+      "table": "messagerie_agencies",
+      "column": "lat",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 70,
+      "table": "messagerie_agencies",
+      "column": "lng",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 70,
+      "table": "messagerie_agencies",
+      "column": "agents",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 71,
+      "table": "messagerie_agencies",
+      "column": "agency_id",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 71,
+      "table": "messagerie_agencies",
+      "column": "is_active",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 71,
+      "table": "messagerie_agencies",
+      "column": "display_order",
+      "kind": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "name_fr",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "name_ar",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "name_en",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "city_fr",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "city_ar",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "city_en",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "address_fr",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "address_ar",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "address_en",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "phone",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 72,
+      "table": "messagerie_agencies",
+      "column": "whatsapp",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 73,
+      "table": "messagerie_agencies",
+      "column": "opening_hours_fr",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 73,
+      "table": "messagerie_agencies",
+      "column": "opening_hours_ar",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 73,
+      "table": "messagerie_agencies",
+      "column": "opening_hours_en",
+      "kind": "payload spread"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 81,
+      "table": "messagerie_agencies",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 81,
+      "table": "messagerie_agencies",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/lib/cms-admin-store.ts",
+      "line": 8,
+      "table": "site_pages",
+      "column": "slug",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/cms-admin-store.ts",
+      "line": 9,
+      "table": "site_sections",
+      "column": "id",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/cms-admin-store.ts",
+      "line": 9,
+      "table": "site_sections",
+      "column": "sort_order",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/cms-admin-store.ts",
+      "line": 10,
+      "table": "site_media_assets",
+      "column": "created_at",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/cms-store.ts",
+      "line": 25,
+      "table": "site_pages",
+      "column": "is_active",
+      "kind": "eq"
+    },
+    {
+      "file": "src/lib/cms-store.ts",
+      "line": 25,
+      "table": "site_pages",
+      "column": "is_published",
+      "kind": "eq"
+    },
+    {
+      "file": "src/lib/cms-store.ts",
+      "line": 26,
+      "table": "site_sections",
+      "column": "id",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/cms-store.ts",
+      "line": 26,
+      "table": "site_sections",
+      "column": "sort_order",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/cms-store.ts",
+      "line": 26,
+      "table": "site_sections",
+      "column": "is_active",
+      "kind": "eq"
+    },
+    {
+      "file": "src/lib/cms-store.ts",
+      "line": 26,
+      "table": "site_sections",
+      "column": "is_published",
+      "kind": "eq"
+    },
+    {
+      "file": "src/lib/cms-store.ts",
+      "line": 27,
+      "table": "site_media_assets",
+      "column": "id",
+      "kind": "select"
+    },
+    {
+      "file": "src/lib/cms-store.ts",
+      "line": 27,
+      "table": "site_media_assets",
+      "column": "is_active",
+      "kind": "select"
+    },
+    {
+      "file": "src/lib/cms-store.ts",
+      "line": 27,
+      "table": "site_media_assets",
+      "column": "is_published",
+      "kind": "select"
+    },
+    {
+      "file": "src/lib/messagerie.ts",
+      "line": 31,
+      "table": "messagerie_network_settings",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/lib/messagerie.ts",
+      "line": 32,
+      "table": "messagerie_agencies",
+      "column": "id",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/messagerie.ts",
+      "line": 32,
+      "table": "messagerie_agencies",
+      "column": "display_order",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/messagerie.ts",
+      "line": 33,
+      "table": "messagerie_network_settings",
+      "column": "is_active",
+      "kind": "eq"
+    },
+    {
+      "file": "src/lib/messagerie.ts",
+      "line": 33,
+      "table": "messagerie_agencies",
+      "column": "is_active",
+      "kind": "eq"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 38,
+      "table": "site_settings",
+      "column": "id",
+      "kind": "eq"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 46,
+      "table": "agencies",
+      "column": "city_fr",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 46,
+      "table": "agencies",
+      "column": "sort_order",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 47,
+      "table": "agencies",
+      "column": "is_active",
+      "kind": "eq"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 57,
+      "table": "routes",
+      "column": "departure_time",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 57,
+      "table": "routes",
+      "column": "sort_order",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 57,
+      "table": "routes",
+      "column": "is_active",
+      "kind": "eq"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 74,
+      "table": "parcel_rates",
+      "column": "max_weight_kg",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 85,
+      "table": "blog_posts",
+      "column": "published_at",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 85,
+      "table": "blog_posts",
+      "column": "is_published",
+      "kind": "eq"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 99,
+      "table": "blog_posts",
+      "column": "is_published",
+      "kind": "eq"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 99,
+      "table": "blog_posts",
+      "column": "slug",
+      "kind": "eq"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 138,
+      "table": "agencies",
+      "column": "city_fr",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 139,
+      "table": "routes",
+      "column": "created_at",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 140,
+      "table": "parcel_rates",
+      "column": "max_weight_kg",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 141,
+      "table": "corporate_quotes",
+      "column": "created_at",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 142,
+      "table": "blog_posts",
+      "column": "created_at",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 143,
+      "table": "contact_messages",
+      "column": "created_at",
+      "kind": "order"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 144,
+      "table": "site_settings",
+      "column": "id",
+      "kind": "eq"
+    }
+  ],
+  "writes": [
+    {
+      "file": "src/app/actions.ts",
+      "line": 73,
+      "table": "corporate_quotes",
+      "method": "insert",
+      "expression": "{\r\n    company_name: companyName,\r\n    contact_person: contactPerson,\r\n    phone,\r\n    email,\r\n    service_type: serviceType,\r\n    passenger_count: passengerCount,\r\n    origin_city: originCity,\r\n    destination_city: destinationCity,\r\n    details,\r\n    status: \"pending\",\r\n  }"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 118,
+      "table": "contact_messages",
+      "method": "insert",
+      "expression": "{\r\n    full_name: fullName,\r\n    email,\r\n    phone,\r\n    subject,\r\n    message,\r\n    status: \"new\",\r\n  }"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 194,
+      "table": "agencies",
+      "method": "update",
+      "expression": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 195,
+      "table": "agencies",
+      "method": "insert",
+      "expression": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 239,
+      "table": "routes",
+      "method": "update",
+      "expression": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 240,
+      "table": "routes",
+      "method": "insert",
+      "expression": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 276,
+      "table": "parcel_rates",
+      "method": "update",
+      "expression": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 277,
+      "table": "parcel_rates",
+      "method": "insert",
+      "expression": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 322,
+      "table": "blog_posts",
+      "method": "update",
+      "expression": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 323,
+      "table": "blog_posts",
+      "method": "insert",
+      "expression": "payload"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 345,
+      "table": "corporate_quotes",
+      "method": "update",
+      "expression": "{ status }"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 367,
+      "table": "contact_messages",
+      "method": "update",
+      "expression": "{ status }"
+    },
+    {
+      "file": "src/app/actions.ts",
+      "line": 443,
+      "table": "site_settings",
+      "method": "update",
+      "expression": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 13,
+      "table": "site_settings",
+      "method": "update",
+      "expression": "{ navigation }"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 56,
+      "table": "site_settings",
+      "method": "update",
+      "expression": "{ presentation: theme }"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 70,
+      "table": "site_sections",
+      "method": "update",
+      "expression": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 73,
+      "table": "site_sections",
+      "method": "insert",
+      "expression": "{ ...payload, page_id: page.id, section_key: `custom-${randomUUID()}` }"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 95,
+      "table": "site_media_assets",
+      "method": "insert",
+      "expression": "{ storage_path: path, filename: file.name.slice(0, 255), mime_type: type.mime, size_bytes: file.size, alt_fr: text(\"alt_fr\"), alt_ar: text(\"alt_ar\"), alt_en: text(\"alt_en\"), is_published: form.get(\"is_published\") === \"on\" }"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 118,
+      "table": "site_media_assets",
+      "method": "update",
+      "expression": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 30,
+      "table": "messagerie_network_settings",
+      "method": "upsert",
+      "expression": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 75,
+      "table": "messagerie_agencies",
+      "method": "update",
+      "expression": "payload"
+    },
+    {
+      "file": "src/app/messagerie-actions.ts",
+      "line": 75,
+      "table": "messagerie_agencies",
+      "method": "insert",
+      "expression": "payload"
+    }
+  ],
+  "manualReview": [
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 70,
+      "table": "site_sections",
+      "reason": "Payload from imported validator or runtime binding",
+      "expression": "payload"
+    },
+    {
+      "file": "src/app/cms-actions.ts",
+      "line": 73,
+      "table": "site_sections",
+      "reason": "Payload from imported validator or runtime binding",
+      "expression": "payload"
+    },
+    {
+      "file": "src/lib/queries.ts",
+      "line": 170,
+      "reason": "Dynamic server-only table target",
+      "expression": "supabase.from(table)"
+    }
+  ],
+  "errors": [],
+  "tableInventory": [
+    {
+      "table": "agencies",
+      "creationFile": "supabase/FINAL_DATABASE/01.sql",
+      "usage": [
+        "src/app/actions.ts",
+        "src/app/cms-actions.ts",
+        "src/app/messagerie-actions.ts",
+        "src/lib/queries.ts"
+      ],
+      "dependencies": [],
+      "status": "STATIC_MATCH; LIVE_UNVERIFIED"
+    },
+    {
+      "table": "blog_posts",
+      "creationFile": "supabase/FINAL_DATABASE/01.sql",
+      "usage": [
+        "src/app/actions.ts",
+        "src/app/cms-actions.ts",
+        "src/lib/queries.ts"
+      ],
+      "dependencies": [],
+      "status": "STATIC_MATCH; LIVE_UNVERIFIED"
+    },
+    {
+      "table": "contact_messages",
+      "creationFile": "supabase/FINAL_DATABASE/01.sql",
+      "usage": [
+        "src/app/actions.ts",
+        "src/lib/queries.ts"
+      ],
+      "dependencies": [],
+      "status": "STATIC_MATCH; LIVE_UNVERIFIED"
+    },
+    {
+      "table": "corporate_quotes",
+      "creationFile": "supabase/FINAL_DATABASE/01.sql",
+      "usage": [
+        "src/app/actions.ts",
+        "src/lib/queries.ts"
+      ],
+      "dependencies": [],
+      "status": "STATIC_MATCH; LIVE_UNVERIFIED"
+    },
+    {
+      "table": "messagerie_agencies",
+      "creationFile": "supabase/FINAL_DATABASE/01.sql",
+      "usage": [
+        "src/app/cms-actions.ts",
+        "src/app/messagerie-actions.ts",
+        "src/lib/messagerie.ts"
+      ],
+      "dependencies": [
+        "FOREIGN KEY (agency_id) REFERENCES agencies(id) ON DELETE RESTRICT"
+      ],
+      "status": "STATIC_MATCH; LIVE_UNVERIFIED"
+    },
+    {
+      "table": "messagerie_network_settings",
+      "creationFile": "supabase/FINAL_DATABASE/01.sql",
+      "usage": [
+        "src/app/cms-actions.ts",
+        "src/app/messagerie-actions.ts",
+        "src/lib/messagerie.ts"
+      ],
+      "dependencies": [],
+      "status": "STATIC_MATCH; LIVE_UNVERIFIED"
+    },
+    {
+      "table": "parcel_rates",
+      "creationFile": "supabase/FINAL_DATABASE/01.sql",
+      "usage": [
+        "src/app/actions.ts",
+        "src/lib/queries.ts"
+      ],
+      "dependencies": [],
+      "status": "STATIC_MATCH; LIVE_UNVERIFIED"
+    },
+    {
+      "table": "routes",
+      "creationFile": "supabase/FINAL_DATABASE/01.sql",
+      "usage": [
+        "src/app/actions.ts",
+        "src/lib/queries.ts"
+      ],
+      "dependencies": [
+        "FOREIGN KEY (from_agency_id) REFERENCES agencies(id) ON DELETE RESTRICT",
+        "FOREIGN KEY (to_agency_id) REFERENCES agencies(id) ON DELETE RESTRICT"
+      ],
+      "status": "STATIC_MATCH; LIVE_UNVERIFIED"
+    },
+    {
+      "table": "site_media_assets",
+      "creationFile": "supabase/FINAL_DATABASE/01.sql",
+      "usage": [
+        "src/app/api/admin/media/route.ts",
+        "src/app/cms-actions.ts",
+        "src/app/media/[id]/route.ts",
+        "src/lib/cms-admin-store.ts"
+      ],
+      "dependencies": [
+        "FOREIGN KEY (bucket_id) REFERENCES storage.buckets(id) ON DELETE RESTRICT"
+      ],
+      "status": "STATIC_MATCH; LIVE_UNVERIFIED"
+    },
+    {
+      "table": "site_page_media",
+      "creationFile": "supabase/FINAL_DATABASE/01.sql",
+      "usage": [
+        "src/app/cms-actions.ts",
+        "src/lib/cms-admin-store.ts",
+        "src/lib/cms-store.ts"
+      ],
+      "dependencies": [
+        "FOREIGN KEY (asset_id) REFERENCES site_media_assets(id) ON DELETE RESTRICT",
+        "FOREIGN KEY (page_id) REFERENCES site_pages(id) ON DELETE CASCADE"
+      ],
+      "status": "STATIC_MATCH; LIVE_UNVERIFIED"
+    },
+    {
+      "table": "site_pages",
+      "creationFile": "supabase/FINAL_DATABASE/01.sql",
+      "usage": [
+        "src/app/cms-actions.ts",
+        "src/lib/cms-admin-store.ts",
+        "src/lib/cms-store.ts"
+      ],
+      "dependencies": [],
+      "status": "STATIC_MATCH; LIVE_UNVERIFIED"
+    },
+    {
+      "table": "site_sections",
+      "creationFile": "supabase/FINAL_DATABASE/01.sql",
+      "usage": [
+        "src/app/cms-actions.ts",
+        "src/lib/cms-admin-store.ts",
+        "src/lib/cms-store.ts"
+      ],
+      "dependencies": [
+        "FOREIGN KEY (media_asset_id) REFERENCES site_media_assets(id) ON DELETE RESTRICT",
+        "FOREIGN KEY (page_id) REFERENCES site_pages(id) ON DELETE CASCADE"
+      ],
+      "status": "STATIC_MATCH; LIVE_UNVERIFIED"
+    },
+    {
+      "table": "site_settings",
+      "creationFile": "supabase/FINAL_DATABASE/01.sql",
+      "usage": [
+        "src/app/actions.ts",
+        "src/app/cms-actions.ts",
+        "src/lib/queries.ts"
+      ],
+      "dependencies": [],
+      "status": "STATIC_MATCH; LIVE_UNVERIFIED"
+    }
+  ]
+}

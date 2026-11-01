@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-31T14:47:11.261Z",
+  "typecheck": "PASS",
+  "eslint": "PASS: targeted runtime/security rules; no warnings",
+  "build": "PASS: Next.js plugin not configured warning documented",
+  "localAssertions": {
+    "cmsSql": 22,
+    "finalSql": 23,
+    "cmsControls": 32,
+    "transport": 14,
+    "messagerieRendering": 16,
+    "total": 107
+  },
+  "httpSmokeChecks": 23,
+  "responsiveLayouts": 189,
+  "interactionGroups": 5,
+  "remoteSchema": "BLOCKED: 13 tables return PGRST205 from anonymous GET limit=0",
+  "remoteWritesPerformed": false,
+  "adminRoundTrips": "NOT TESTED",
+  "storageUploads": "NOT LIVE TESTED",
+  "npmInstallationAudit": "0 vulnerabilities after PostCSS and minimatch corrections"
+}

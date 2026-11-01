@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-31T15:18:17.520Z",
+  "file": "supabase/slkm_sql_verified/INSTALL_OR_UPGRADE.sql",
+  "checks": 12,
+  "status": "PASS",
+  "scope": "Real isolated PostgreSQL via PGlite; fresh + populated legacy + reruns + transaction rollback; no remote writes"
+}

@@ -6,6 +6,8 @@ import { getSupabaseEnv } from "@/lib/supabase/env";
 import { createClient } from "@/lib/supabase/server";
 import type { ActionState } from "@/lib/action-state";
 import type { Locale } from "@/lib/types";
+import { authorizedAdminClient } from "@/lib/supabase/admin";
+import { isSafeUrl } from "@/lib/cms";
 
 function localized(locale: Locale, fr: string, ar: string, en: string) {
   return locale === "ar" ? ar : locale === "en" ? en : fr;
@@ -55,13 +57,14 @@ export async function submitCorporateQuote(_state: ActionState, formData: FormDa
   if (!validEmail(email)) {
     return { status: "error", message: localized(locale, "Veuillez saisir une adresse e-mail valide.", "يرجى إدخال بريد إلكتروني صالح.", "Please enter a valid email address.") };
   }
-  if (!Number.isFinite(passengerCount) || passengerCount < 1) {
+  if (!Number.isSafeInteger(passengerCount) || passengerCount < 1 || passengerCount > 100000) {
     return { status: "error", message: localized(locale, "Le nombre de passagers doit être supérieur à zéro.", "يجب أن يكون عدد المسافرين أكبر من صفر.", "Passenger count must be greater than zero.") };
   }
   if (serviceType !== "personnel" && serviceType !== "tourisme") {
     return { status: "error", message: localized(locale, "Type de service invalide.", "نوع الخدمة غير صالح.", "Invalid service type.") };
   }
 
+  if (Array.from(formData.values()).some(value => typeof value === "string" && (value.includes("\0") || value.length > 8000))) return { status: "error", message: localized(locale,"Texte trop long ou invalide.","النص طويل جداً أو غير صالح.","Text is too long or invalid.") };
   const supabase = await publicClient();
   if (!supabase) {
     return { status: "error", message: localized(locale, "Le service de demande est momentanément indisponible.", "خدمة الطلب غير متاحة حالياً.", "The request service is temporarily unavailable.") };
@@ -140,7 +143,7 @@ function adminRedirect(tab: string, message?: string, success?: string): never {
 async function adminClient() {
   if (!getSupabaseEnv()) adminRedirect("overview", "Supabase n'est pas configuré.");
   try {
-    return await createClient();
+    return await authorizedAdminClient();
   } catch {
     adminRedirect("overview", "Connexion Supabase impossible.");
   }
@@ -159,6 +162,7 @@ export async function upsertAgency(formData: FormData) {
   const supabase = await adminClient();
   const id = optional(formData.get("id"));
   const payload = {
+    sort_order: Number(text(formData.get("sort_order")) || "0"),
     city_ar: text(formData.get("city_ar")),
     city_fr: text(formData.get("city_fr")),
     city_en: text(formData.get("city_en")),
@@ -176,15 +180,18 @@ export async function upsertAgency(formData: FormData) {
     is_active: formData.get("is_active") === "on",
   };
 
+  if (!Number.isInteger(payload.sort_order) || payload.sort_order < 0 || payload.sort_order > 10000) fail("agencies", "Ordre invalide.");
   if (!payload.city_fr || !payload.city_ar || !payload.city_en || !payload.agency_name_fr || !payload.agency_name_ar || !payload.agency_name_en) {
     fail("agencies", "Ville et nom d'agence requis dans les trois langues.");
   }
   if ((payload.lat === null) !== (payload.lng === null)) {
     fail("agencies", "Latitude et longitude doivent être renseignées ensemble.");
   }
+  if (payload.image_url && !isSafeUrl(payload.image_url, true)) fail("agencies", "URL d’image invalide.");
+  if ((payload.lat !== null && (!Number.isFinite(payload.lat) || Math.abs(payload.lat) > 90)) || (payload.lng !== null && (!Number.isFinite(payload.lng) || Math.abs(payload.lng) > 180))) fail("agencies", "Coordonnées géographiques invalides.");
 
   const result = id
-    ? await supabase.from("agencies").update(payload).eq("id", id)
+    ? await supabase.from("agencies").update(payload).eq("id", id).select("id").single()
     : await supabase.from("agencies").insert(payload);
   if (result.error) fail("agencies", result.error.message);
   refreshAdmin();
@@ -195,7 +202,7 @@ export async function deleteAgency(formData: FormData) {
   const supabase = await adminClient();
   const id = text(formData.get("id"));
   if (!id) fail("agencies", "Agence introuvable.");
-  const { error } = await supabase.from("agencies").delete().eq("id", id);
+  const { error } = await supabase.from("agencies").delete().eq("id", id).select("id").single();
   if (error) fail("agencies", error.message);
   refreshAdmin();
   adminRedirect("agencies", undefined, "Agence supprimée.");
@@ -206,6 +213,7 @@ export async function upsertRoute(formData: FormData) {
   const id = optional(formData.get("id"));
   const days = formData.getAll("days_of_week").filter((value): value is string => typeof value === "string");
   const payload = {
+    sort_order: Number(text(formData.get("sort_order")) || "0"),
     from_agency_id: text(formData.get("from_agency_id")),
     to_agency_id: text(formData.get("to_agency_id")),
     departure_time: text(formData.get("departure_time")),
@@ -217,6 +225,9 @@ export async function upsertRoute(formData: FormData) {
     is_active: formData.get("is_active") === "on",
   };
 
+  if (!Number.isInteger(payload.sort_order) || payload.sort_order < 0 || payload.sort_order > 10000) fail("routes", "Ordre invalide.");
+  if (!/^(?:[01]\d|2[0-3]):[0-5]\d(?::[0-5]\d)?$/.test(payload.departure_time) || !/^(?:[01]\d|2[0-3]):[0-5]\d(?::[0-5]\d)?$/.test(payload.arrival_time)) fail("routes", "Horaire invalide.");
+  if (!["Comfort", "Premium", "VIP"].includes(payload.bus_type) || days.some(day => !["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"].includes(day))) fail("routes", "Classe ou jours invalides.");
   if (!payload.from_agency_id || !payload.to_agency_id || !payload.departure_time || !payload.arrival_time) {
     fail("routes", "Agences, heure de départ et heure d'arrivée sont requises.");
   }
@@ -225,7 +236,7 @@ export async function upsertRoute(formData: FormData) {
   if (!days.length) fail("routes", "Sélectionnez au moins un jour de circulation.");
 
   const result = id
-    ? await supabase.from("routes").update(payload).eq("id", id)
+    ? await supabase.from("routes").update(payload).eq("id", id).select("id").single()
     : await supabase.from("routes").insert(payload);
   if (result.error) fail("routes", result.error.message);
   refreshAdmin();
@@ -236,7 +247,7 @@ export async function deleteRoute(formData: FormData) {
   const supabase = await adminClient();
   const id = text(formData.get("id"));
   if (!id) fail("routes", "Ligne introuvable.");
-  const { error } = await supabase.from("routes").delete().eq("id", id);
+  const { error } = await supabase.from("routes").delete().eq("id", id).select("id").single();
   if (error) fail("routes", error.message);
   refreshAdmin();
   adminRedirect("routes", undefined, "Ligne supprimée.");
@@ -246,6 +257,7 @@ export async function upsertParcelRate(formData: FormData) {
   const supabase = await adminClient();
   const id = optional(formData.get("id"));
   const payload = {
+    is_active: formData.get("is_active") === "on",
     category_ar: text(formData.get("category_ar")),
     category_fr: text(formData.get("category_fr")),
     category_en: text(formData.get("category_en")),
@@ -261,7 +273,7 @@ export async function upsertParcelRate(formData: FormData) {
   if (!Number.isFinite(payload.base_price_mad) || payload.base_price_mad < 0) fail("rates", "Le tarif doit être positif.");
 
   const result = id
-    ? await supabase.from("parcel_rates").update(payload).eq("id", id)
+    ? await supabase.from("parcel_rates").update(payload).eq("id", id).select("id").single()
     : await supabase.from("parcel_rates").insert(payload);
   if (result.error) fail("rates", result.error.message);
   refreshAdmin();
@@ -272,7 +284,7 @@ export async function deleteParcelRate(formData: FormData) {
   const supabase = await adminClient();
   const id = text(formData.get("id"));
   if (!id) fail("rates", "Tarif introuvable.");
-  const { error } = await supabase.from("parcel_rates").delete().eq("id", id);
+  const { error } = await supabase.from("parcel_rates").delete().eq("id", id).select("id").single();
   if (error) fail("rates", error.message);
   refreshAdmin();
   adminRedirect("rates", undefined, "Tarif supprimé.");
@@ -304,9 +316,10 @@ export async function upsertBlogPost(formData: FormData) {
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(payload.slug)) fail("blog", "Le slug doit contenir uniquement des minuscules, chiffres et tirets.");
   if (!payload.title_fr || !payload.title_ar || !payload.title_en) fail("blog", "Les titres sont requis dans les trois langues.");
   if (!payload.content_fr || !payload.content_ar || !payload.content_en) fail("blog", "Les contenus sont requis dans les trois langues.");
+  if (payload.cover_image_url && !isSafeUrl(payload.cover_image_url, true)) fail("blog", "URL d’image invalide.");
 
   const result = id
-    ? await supabase.from("blog_posts").update(payload).eq("id", id)
+    ? await supabase.from("blog_posts").update(payload).eq("id", id).select("id").single()
     : await supabase.from("blog_posts").insert(payload);
   if (result.error) fail("blog", result.error.message);
   refreshAdmin();
@@ -317,7 +330,7 @@ export async function deleteBlogPost(formData: FormData) {
   const supabase = await adminClient();
   const id = text(formData.get("id"));
   if (!id) fail("blog", "Article introuvable.");
-  const { error } = await supabase.from("blog_posts").delete().eq("id", id);
+  const { error } = await supabase.from("blog_posts").delete().eq("id", id).select("id").single();
   if (error) fail("blog", error.message);
   refreshAdmin();
   adminRedirect("blog", undefined, "Article supprimé.");
@@ -329,7 +342,7 @@ export async function updateQuoteStatus(formData: FormData) {
   const status = text(formData.get("status"));
   const allowed = ["pending", "contacted", "quoted", "confirmed", "completed", "cancelled"];
   if (!id || !allowed.includes(status)) fail("quotes", "Statut invalide.");
-  const { error } = await supabase.from("corporate_quotes").update({ status }).eq("id", id);
+  const { error } = await supabase.from("corporate_quotes").update({ status }).eq("id", id).select("id").single();
   if (error) fail("quotes", error.message);
   refreshAdmin();
   adminRedirect("quotes", undefined, "Statut du devis mis à jour.");
@@ -339,7 +352,7 @@ export async function deleteQuote(formData: FormData) {
   const supabase = await adminClient();
   const id = text(formData.get("id"));
   if (!id) fail("quotes", "Demande introuvable.");
-  const { error } = await supabase.from("corporate_quotes").delete().eq("id", id);
+  const { error } = await supabase.from("corporate_quotes").delete().eq("id", id).select("id").single();
   if (error) fail("quotes", error.message);
   refreshAdmin();
   adminRedirect("quotes", undefined, "Demande supprimée.");
@@ -351,7 +364,7 @@ export async function updateContactStatus(formData: FormData) {
   const status = text(formData.get("status"));
   const allowed = ["new", "read", "replied", "archived"];
   if (!id || !allowed.includes(status)) fail("messages", "Statut de message invalide.");
-  const { error } = await supabase.from("contact_messages").update({ status }).eq("id", id);
+  const { error } = await supabase.from("contact_messages").update({ status }).eq("id", id).select("id").single();
   if (error) fail("messages", error.message);
   refreshAdmin();
   adminRedirect("messages", undefined, "Message mis à jour.");
@@ -361,7 +374,7 @@ export async function deleteContactMessage(formData: FormData) {
   const supabase = await adminClient();
   const id = text(formData.get("id"));
   if (!id) fail("messages", "Message introuvable.");
-  const { error } = await supabase.from("contact_messages").delete().eq("id", id);
+  const { error } = await supabase.from("contact_messages").delete().eq("id", id).select("id").single();
   if (error) fail("messages", error.message);
   refreshAdmin();
   adminRedirect("messages", undefined, "Message supprimé.");
@@ -378,4 +391,57 @@ export async function signOutAdmin() {
   }
   revalidatePath("/admin");
   redirect("/admin/login");
+}
+
+export async function updateSiteSettings(formData: FormData) {
+  const supabase = await adminClient();
+  const { data: current, error: readError } = await supabase.from("site_settings").select("analytics_config").eq("id", 1).single();
+  if (readError || !current) fail("settings", "Paramètres introuvables. Vérifiez la configuration de site_settings.");
+  let socialLinks: Record<string, string>;
+  let fleet: unknown[];
+  let timeline: unknown[];
+  let services: unknown[];
+  let emergencyLines: unknown[];
+  let stats: unknown[];
+  const safeImage = (value: unknown) => typeof value === "string" && isSafeUrl(value, true);
+  try {
+    socialLinks = JSON.parse(text(formData.get("social_links")));
+    fleet = JSON.parse(text(formData.get("fleet")));
+    timeline = JSON.parse(text(formData.get("timeline")));
+    services = JSON.parse(text(formData.get("services")));
+    emergencyLines = JSON.parse(text(formData.get("emergency_lines")) || "[]");
+    stats = JSON.parse(text(formData.get("stats")) || "[]");
+    if (!Array.isArray(stats) || stats.length > 20 || stats.some(item => !item || typeof item !== "object" || !["key", "value", "label_fr", "label_ar", "label_en"].every(key => typeof (item as Record<string, unknown>)[key] === "string" && String((item as Record<string, unknown>)[key]).trim().length > 0 && String((item as Record<string, unknown>)[key]).length <= 200))) throw new Error();
+    if (!socialLinks || Array.isArray(socialLinks) || typeof socialLinks !== "object" || !Object.values(socialLinks).every(v => typeof v === "string" && /^https:\/\//.test(v))) throw new Error();
+    if (!Array.isArray(fleet) || !Array.isArray(timeline) || !Array.isArray(services)) throw new Error();
+    if (!Array.isArray(emergencyLines) || emergencyLines.length > 20 || emergencyLines.some(item => !item || typeof item !== "object" || !["label_fr", "label_ar", "label_en", "phone"].every(key => typeof (item as Record<string,unknown>)[key] === "string" && (item as Record<string,string>)[key].trim().length > 0))) throw new Error();
+    for (const item of [...fleet, ...timeline, ...services]) if (item && typeof item === "object" && "is_active" in item && typeof item.is_active !== "boolean") throw new Error();
+    for (const item of fleet) {
+      if (!item || typeof item !== "object") throw new Error();
+      const v = item as Record<string, unknown>;
+      if (!["name", "category", "capacity"].every(k => typeof v[k] === "string") || !safeImage(v.image_url)) throw new Error();
+      if (!["features_fr", "features_ar", "features_en"].every(k => Array.isArray(v[k]) && (v[k] as unknown[]).every(f => typeof f === "string"))) throw new Error();
+    }
+    for (const item of timeline) {
+      if (!item || typeof item !== "object") throw new Error();
+      const v = item as Record<string, unknown>;
+      if (!["year", "title_fr", "title_ar", "title_en", "description_fr", "description_ar", "description_en"].every(k => typeof v[k] === "string") || !safeImage(v.image_url)) throw new Error();
+    }
+    for (const item of services) {
+      if (!item || typeof item !== "object") throw new Error();
+      const v = item as Record<string, unknown>;
+      if (!["title_fr", "title_ar", "title_en", "description_fr", "description_ar", "description_en"].every(k => typeof v[k] === "string") || !safeImage(v.image_url)) throw new Error();
+    }
+  } catch { fail("settings", "JSON invalide : vérifiez les champs, les traductions et les URL des images."); }
+  const payload = {
+    default_locale: readLocale(formData.get("default_locale")),
+    emergency_lines: emergencyLines,
+    ...Object.fromEntries(["site_name_fr", "site_name_ar", "site_name_en", "address_fr", "address_ar", "address_en", "support_phone", "whatsapp_number", "emergency_phone", "contact_email"].map(k => [k, optional(formData.get(k))])),
+    social_links: socialLinks,
+    analytics_config: { ...(current.analytics_config ?? {}), fleet, timeline, services, stats },
+  };
+  const { error } = await supabase.from("site_settings").update(payload).eq("id", 1);
+  if (error) fail("settings", error.message);
+  refreshAdmin();
+  adminRedirect("settings", undefined, "Paramètres enregistrés.");
 }

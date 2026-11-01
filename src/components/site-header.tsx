@@ -1,152 +1,114 @@
 "use client";
 
-import Image from "next/image";
+import { navigation } from "@/lib/navigation";
+import Image from "./site-image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import { ChevronRight, Menu, MessageCircle, Phone, X } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { ArrowUpRight, BusFront, ChevronRight, History, Home, MapPin, MessageCircle, Package, Phone, Users, X } from "lucide-react";
 import type { Locale } from "@/lib/types";
-import { cn, whatsappUrl } from "@/lib/utils";
+import { cn, normalizePhone, pick, whatsappUrl } from "@/lib/utils";
 import { LocaleSwitcher } from "./locale-switcher";
+import { keepDialogFocus } from "./dialog-focus";
+import { presentation, type SitePresentation } from "@/lib/cms";
 
 const NAV = [
-  { href: "/", fr: "Accueil", ar: "الرئيسية", en: "Home" },
-  { href: "/lignes", fr: "Lignes & agences", ar: "الخطوط والوكالات", en: "Routes & agencies" },
-  { href: "/irsaliyat", fr: "Irsaliyat", ar: "إرساليات", en: "Parcels" },
-  { href: "/services", fr: "Services B2B", ar: "خدمات الشركات", en: "B2B services" },
-  { href: "/about", fr: "Notre histoire", ar: "قصتنا", en: "Our story" },
-  { href: "/blog", fr: "Actualités", ar: "الأخبار", en: "News" },
-  { href: "/contact", fr: "Contact", ar: "اتصل بنا", en: "Contact" },
+  { href: "/", icon: Home, fr: "Accueil", ar: "الرئيسية", en: "Home" },
+  { href: "/lignes", icon: MapPin, fr: "Lignes & agences", ar: "الخطوط والوكالات", en: "Routes & agencies" },
+  { href: "/irsaliyat", icon: Package, fr: "Messageries", ar: "إرساليات", en: "Parcels" },
+  { href: "/about", icon: History, fr: "Notre histoire", ar: "قصتنا", en: "Our story" },
+  { href: "/services", icon: Users, fr: "Transport de personnel", ar: "نقل الموظفين", en: "Staff transport" },
+  { href: "/contact", icon: MessageCircle, fr: "Contact", ar: "اتصل بنا", en: "Contact" },
 ];
 
-export function SiteHeader({
-  locale,
-  siteName,
-  phone,
-  whatsapp,
-}: {
-  locale: Locale;
-  siteName: string;
-  phone: string | null;
-  whatsapp: string | null;
+export function SiteHeader({ locale, siteName, phone, whatsapp, theme = presentation(null), navigation: navValue }: {
+  locale: Locale; siteName: string; phone: string | null; whatsapp: string | null; theme?: SitePresentation; navigation?: unknown;
 }) {
+  const nav = navigation(navValue);
+  const items = nav.items.filter(item => item.header).map(item => ({ ...item, icon: NAV.find(row => row.href === item.href)?.icon ?? Home }));
+  const dockItems = nav.items.filter(item => item.dock).map(item => ({ ...item, label: item[`dock_${locale}`] ?? item[locale], icon: NAV.find(row => row.href === item.href)?.icon ?? Home }));
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const dialog = useRef<HTMLDialogElement>(null);
+  const trigger = useRef<HTMLButtonElement>(null);
+  const t = (fr: string, ar: string, en: string) => pick(locale, fr, ar, en);
+  const active = (href: string) => href === "/" ? pathname === href : pathname.startsWith(href);
+  const bookHref = nav.cta_href || (whatsappUrl(whatsapp, t("Bonjour, je souhaite réserver un billet.", "مرحباً، أريد حجز تذكرة.", "Hello, I would like to book a ticket.")) ?? "/lignes");
+  const bookLabel = nav[`cta_${locale}`];
 
+  useEffect(() => { setOpen(false); }, [pathname, locale]);
   useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
+    const element = dialog.current;
+    if (!open) { element?.close(); return; }
+    element?.showModal();
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const desktop = window.matchMedia("(min-width: 1024px)");
+    const resize = () => { if (desktop.matches) setOpen(false); };
+    desktop.addEventListener("change", resize);
+    return () => {
+      document.body.style.overflow = previous;
+      desktop.removeEventListener("change", resize);
+    };
+  }, [open]);
 
-  const bookHref = whatsappUrl(whatsapp, locale === "ar" ? "مرحباً، أريد حجز تذكرة." : locale === "en" ? "Hello, I would like to book a ticket." : "Bonjour, je souhaite réserver un billet.") ?? "/lignes";
-  const bookLabel = locale === "ar" ? "احجز" : locale === "en" ? "Book" : "Réserver";
-
-  return (
-    <header className="sticky top-0 z-50 border-b border-line/80 bg-white/90 backdrop-blur-xl">
-      <div className="hidden border-b border-line/60 bg-primary-dark text-white lg:block">
-        <div className="container-page flex h-9 items-center justify-between text-[11px] font-semibold">
-          <div className="flex items-center gap-5">
-            {phone ? (
-              <a href={`tel:${phone.replace(/\s/g, "")}`} className="inline-flex items-center gap-1.5 text-white/80 transition hover:text-white">
-                <Phone className="h-3 w-3" />
-                {phone}
-              </a>
-            ) : null}
-            <span className="text-white/55">{locale === "ar" ? "شبكة وطنية من طنجة إلى الداخلة" : locale === "en" ? "National network from Tangier to Dakhla" : "Réseau national de Tanger à Dakhla"}</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <Link href="/admin" className="text-white/70 transition hover:text-white">
-              {locale === "ar" ? "لوحة الإدارة" : locale === "en" ? "Admin" : "Espace admin"}
-            </Link>
-            <LocaleSwitcher locale={locale} dark />
-          </div>
-        </div>
-      </div>
-
-      <div className="container-page flex h-[72px] items-center justify-between gap-4">
-        <Link href="/" className="flex shrink-0 items-center gap-3">
-          <span className="relative h-11 w-11 overflow-hidden rounded-2xl bg-white ring-1 ring-line">
-            <Image src="/images/logo-header.jpg" alt={siteName} fill sizes="44px" className="object-contain p-1" priority />
-          </span>
-          <span className="hidden sm:block">
-            <span className="block max-w-[240px] truncate text-sm font-extrabold tracking-[-0.02em] text-ink">{siteName}</span>
-            <span className="block text-[10px] font-bold uppercase tracking-[0.16em] text-primary">
-              {locale === "ar" ? "نقل المسافرين والأمانات" : locale === "en" ? "Passengers & parcels" : "Voyageurs & Irsaliyat"}
-            </span>
-          </span>
-        </Link>
-
-        <nav className="hidden items-center gap-1 xl:flex">
-          {NAV.map((item) => {
-            const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={cn(
-                  "rounded-lg px-3 py-2 text-xs font-bold transition",
-                  active ? "bg-primary-soft text-primary-dark" : "text-muted hover:bg-surface-muted hover:text-ink",
-                )}
-              >
-                {item[locale]}
-              </Link>
-            );
-          })}
-        </nav>
-
-        <div className="flex items-center gap-2">
-          <div className="hidden sm:block lg:hidden">
-            <LocaleSwitcher locale={locale} />
-          </div>
-          {bookHref.startsWith("http") ? (
-            <a href={bookHref} target="_blank" rel="noopener noreferrer" className="hidden items-center gap-2 rounded-xl bg-secondary-bright px-4 py-2.5 text-xs font-extrabold text-white shadow-soft transition hover:bg-secondary sm:inline-flex">
-              <MessageCircle className="h-4 w-4" />
-              {bookLabel}
-            </a>
-          ) : (
-            <Link href={bookHref} className="hidden items-center gap-2 rounded-xl bg-secondary-bright px-4 py-2.5 text-xs font-extrabold text-white shadow-soft transition hover:bg-secondary sm:inline-flex">
-              <MessageCircle className="h-4 w-4" />
-              {bookLabel}
-            </Link>
-          )}
-          <button
-            type="button"
-            onClick={() => setOpen((value) => !value)}
-            className="grid h-11 w-11 place-items-center rounded-xl border border-line bg-white text-ink xl:hidden"
-            aria-label={open ? "Close menu" : "Open menu"}
-            aria-expanded={open}
-          >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
-        </div>
-      </div>
-
-      {open ? (
-        <div className="border-t border-line bg-white xl:hidden">
-          <div className="container-page py-4">
-            <nav className="grid gap-1">
-              {NAV.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="flex items-center justify-between rounded-xl px-3 py-3 text-sm font-bold text-ink transition hover:bg-surface-muted"
-                >
-                  {item[locale]}
-                  <ChevronRight className="h-4 w-4 text-muted rtl:rotate-180" />
-                </Link>
-              ))}
-            </nav>
-            <div className="mt-4 flex items-center justify-between border-t border-line pt-4">
-              <LocaleSwitcher locale={locale} />
-              {phone ? (
-                <a href={`tel:${phone.replace(/\s/g, "")}`} className="inline-flex items-center gap-2 text-sm font-bold text-primary">
-                  <Phone className="h-4 w-4" />
-                  {phone}
-                </a>
-              ) : null}
-            </div>
-          </div>
-        </div>
-      ) : null}
-    </header>
+  const booking = (className: string) => bookHref.startsWith("http") ? (
+    <a href={bookHref} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className={className}><BusFront size={18} aria-hidden="true" />{bookLabel}<ArrowUpRight size={16} className="booking-arrow rtl:-scale-x-100" aria-hidden="true" /></a>
+  ) : (
+    <Link href={bookHref} onClick={() => setOpen(false)} className={className}><BusFront size={18} aria-hidden="true" />{bookLabel}<ArrowUpRight size={16} className="booking-arrow rtl:-scale-x-100" aria-hidden="true" /></Link>
   );
+
+  return <>
+    <header className="site-header">
+      <div className={cn("site-topbar", !theme.announcement_visible && "announcement-disabled")}>
+        <div className="container-page flex min-h-8 items-center justify-between gap-4">
+          <p className="inline-flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-brand-orange" />{theme[`announcement_${locale}`]}</p>
+          <div className="flex items-center gap-5">
+            {phone && <a href={`tel:${normalizePhone(phone)}`} className="inline-flex min-h-8 items-center gap-2"><Phone size={13} /><bdi>{phone}</bdi></a>}
+            <Link href="/contact" className="inline-flex min-h-8 items-center">{t("Besoin d’aide ?", "تحتاجون مساعدة؟", "Need a hand?")}</Link>
+            <Link href="/admin" className="inline-flex min-h-8 items-center">{t("Espace admin", "لوحة الإدارة", "Admin")}</Link>
+          </div>
+        </div>
+      </div>
+      <div className="container-page header-main">
+        <button ref={trigger} type="button" onClick={() => setOpen(true)} className="menu-toggle" aria-label={t("Ouvrir le menu", "فتح القائمة", "Open menu")} aria-controls="mobile-navigation" aria-expanded={open} aria-haspopup="dialog">
+          <span className={cn("hamburger", open && "is-open")} aria-hidden="true"><span /><span /><span /></span>
+        </button>
+        <Link href="/" aria-label={`${siteName} · ${t("Accueil", "الرئيسية", "Home")}`} className="brand-lockup">
+          <span className="brand-logo brand-logo-desktop"><Image src={theme.logo_light_url} alt={siteName} fill sizes="(max-width: 767px) 56px, 72px" className="object-contain" priority /></span><span className="brand-logo brand-logo-mobile"><Image src={theme.logo_mobile_url} alt={siteName} fill sizes="56px" className="object-contain" priority /></span>
+          <span className="brand-caption"><strong lang="fr" dir="ltr">TRANSPORT</strong><span>{theme[`tagline_${locale}`]}</span></span>
+        </Link>
+        <nav aria-label={t("Navigation principale", "التنقل الرئيسي", "Main navigation")} className="desktop-navigation">
+          {items.map(item => <Link key={item.href} href={item.href} aria-current={active(item.href) ? "page" : undefined} className={cn("desktop-nav-link", active(item.href) && "is-active")}>{item[locale]}</Link>)}
+        </nav>
+        <div className="header-actions">
+          <LocaleSwitcher locale={locale} compact />
+          {booking("header-book brand-button")}
+        </div>
+      </div>
+    </header>
+
+    <dialog ref={dialog} id="mobile-navigation" className="navigation-dialog" aria-labelledby="navigation-title" onKeyDown={keepDialogFocus} onCancel={() => setOpen(false)} onClose={() => { setOpen(false); trigger.current?.focus(); }} onClick={event => { if (event.target === event.currentTarget) setOpen(false); }}>
+      <div className="drawer-panel">
+        <div className="flex items-center justify-between gap-3 border-b border-line pb-4">
+          <div><p className="section-kicker">{siteName}</p><h2 id="navigation-title" className="mt-1 text-lg font-extrabold text-ink">{theme[`tagline_${locale}`]}</h2></div>
+          <button type="button" autoFocus onClick={() => setOpen(false)} className="icon-button shrink-0" aria-label={t("Fermer le menu", "إغلاق القائمة", "Close menu")}><X size={21} /></button>
+        </div>
+        <nav className="drawer-navigation" aria-label={t("Navigation mobile", "التنقل", "Mobile navigation")}>
+          {items.map((item, index) => <Link key={item.href} href={item.href} onClick={() => setOpen(false)} aria-current={active(item.href) ? "page" : undefined} className={cn("drawer-link", active(item.href) && "is-active")} style={{ "--item-index": index } as React.CSSProperties}><item.icon size={17} className="shrink-0" aria-hidden="true" /><span>{item[locale]}</span><ChevronRight size={15} className="ms-auto shrink-0 rtl:rotate-180" aria-hidden="true" /></Link>)}
+        </nav>
+        <div className="border-t border-line pt-4">
+          {booking("brand-button w-full")}
+          <div className="mt-4 flex flex-wrap items-center justify-between gap-3"><LocaleSwitcher locale={locale} />{phone && <a href={`tel:${normalizePhone(phone)}`} className="inline-flex min-h-11 items-center gap-2 text-xs font-bold text-ink"><Phone size={15} /><bdi>{phone}</bdi></a>}</div>
+          <Link href="/admin" onClick={() => setOpen(false)} className="mt-3 inline-flex min-h-11 items-center text-xs text-muted">{t("Espace admin", "لوحة الإدارة", "Admin")}</Link>
+        </div>
+      </div>
+    </dialog>
+
+    <nav className="mobile-dock" style={{ gridTemplateColumns: dockItems.length === 4 ? "1fr 1fr 1.5fr 1fr 1fr" : `repeat(${dockItems.length + 1}, minmax(0, 1fr))` }} aria-label={t("Accès rapide", "روابط سريعة", "Quick navigation")}>
+      {dockItems.slice(0, 2).map(item => <Link key={item.href} href={item.href} aria-current={active(item.href) ? "page" : undefined} className={cn("dock-link", active(item.href) && "is-active")}><item.icon size={20} aria-hidden="true" /><span>{item.label}</span></Link>)}
+      {booking("dock-book brand-button")}
+      {dockItems.slice(2).map(item => <Link key={item.href} href={item.href} aria-current={active(item.href) ? "page" : undefined} className={cn("dock-link", active(item.href) && "is-active")}><item.icon size={20} aria-hidden="true" /><span>{item.label}</span></Link>)}
+    </nav>
+  </>;
 }

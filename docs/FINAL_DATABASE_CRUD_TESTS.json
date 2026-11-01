@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-31T16:18:48.171Z",
+  "status": "PASS",
+  "checks": 814,
+  "coverage": "All 13 tables; Dashboard CRUD, singleton settings, seeded FR/AR/EN catalog equality, local assets, FK restrictions, invalid values, updated_at triggers, no business seed",
+  "remoteWrites": false
+}

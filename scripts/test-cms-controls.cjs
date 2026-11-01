@@ -1,0 +1,22 @@
+const fs=require('node:fs'),ts=require('typescript'),assert=require('node:assert/strict');
+require.extensions['.ts']=(module,file)=>module._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);
+const {navigation,validateNavigation,NAV_DEFAULTS}=require('../src/lib/navigation.ts');
+const {presentation,THEME_DEFAULTS,BRAND_ASSET_KEYS,isSafeUrl,themeStyle,CMS_CATALOG}=require('../src/lib/cms.ts');
+const {validatePresentation,detectImageType,validatePagePayload}=require('../src/lib/cms-validation.ts');
+let checks=0;const check=fn=>{fn();checks++;};
+check(()=>assert.equal(navigation(null).items.filter(i=>i.header).length,6));
+check(()=>assert.throws(()=>validateNavigation({...navigation(null),cta_href:'https://untrusted.invalid'})));
+check(()=>assert.throws(()=>validateNavigation({...navigation(null),items:[...NAV_DEFAULTS.slice(1),NAV_DEFAULTS[1]]})));
+check(()=>assert.throws(()=>validateNavigation({...navigation(null),items:NAV_DEFAULTS.map(i=>({...i,fr:''}))})));
+check(()=>assert.equal(validateNavigation({...navigation(null),items:[...NAV_DEFAULTS].reverse()}).items[0].href,'/blog'));
+check(()=>assert.equal(navigation({...navigation(null),items:NAV_DEFAULTS.map(i=>({...i,header:false}))}).items.filter(i=>i.header).length,0));
+for(const key of BRAND_ASSET_KEYS)check(()=>assert.equal(validatePresentation({...THEME_DEFAULTS,[key]:'/media/11111111-1111-4111-8111-111111111111'})[key],'/media/11111111-1111-4111-8111-111111111111'));
+check(()=>assert.throws(()=>validatePresentation({...THEME_DEFAULTS,accent_color:'url(javascript:alert(1))'})));
+check(()=>assert.equal(presentation({logo_url:'javascript:alert(1)'}).logo_url,THEME_DEFAULTS.logo_url));
+check(()=>assert.equal(isSafeUrl('//evil.invalid'),false));check(()=>assert.equal(isSafeUrl('/../admin'),false));check(()=>assert.equal(isSafeUrl('https://user:pass@example.com'),false));
+check(()=>assert.throws(()=>detectImageType(Buffer.from('<svg onload="alert(1)"></svg>'))));
+check(()=>assert.throws(()=>detectImageType(Buffer.from('<html>'))));
+check(()=>assert.equal(detectImageType(Buffer.from([137,80,78,71,13,10,26,10])).mime,'image/png'));
+check(()=>assert.equal(themeStyle({...THEME_DEFAULTS,accent_color:'#123456'})['--accent-bright'],'18 52 86'));
+for(const [slug,def]of Object.entries(CMS_CATALOG)){check(()=>assert.doesNotThrow(()=>validatePagePayload({slug,copy:def.copy,images:Object.fromEntries(Object.entries(def.images).map(([key,v])=>[key,v.src])),hero_overlay:.7,links:{}})));}
+console.log(`CMS controls: ${checks} assertions passed (protected destinations, translations, branding, URL safety, upload signatures, complete page payloads). No database contacted.`);

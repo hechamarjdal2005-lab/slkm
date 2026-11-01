@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-31T16:18:41.517Z",
+  "status": "PASS",
+  "engine": "Real PostgreSQL 18.6 via PGlite 0.5.13; minimal Auth/Storage stubs",
+  "checks": 503,
+  "tables": 13,
+  "columns": 197,
+  "constraints": 77,
+  "policies": 49,
+  "triggers": 13,
+  "functions": 3,
+  "executions": [
+    {
+      "scenario": "fresh database",
+      "file": "supabase/FINAL_DATABASE/01.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "fresh database",
+      "file": "supabase/FINAL_DATABASE/02.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "fresh database",
+      "file": "supabase/FINAL_DATABASE/03.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "fresh database",
+      "file": "supabase/FINAL_DATABASE/04.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "fresh database",
+      "file": "supabase/FINAL_DATABASE/05.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "fresh database",
+      "file": "supabase/FINAL_DATABASE/06.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "fresh database",
+      "file": "supabase/FINAL_DATABASE/07.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "fresh database",
+      "file": "supabase/FINAL_DATABASE/08.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "fresh database",
+      "file": "supabase/FINAL_DATABASE/09.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "existing partial database",
+      "file": "supabase/FINAL_DATABASE/01.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "existing partial database",
+      "file": "supabase/FINAL_DATABASE/02.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "existing partial database",
+      "file": "supabase/FINAL_DATABASE/03.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "existing partial database",
+      "file": "supabase/FINAL_DATABASE/04.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "existing partial database",
+      "file": "supabase/FINAL_DATABASE/05.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "existing partial database",
+      "file": "supabase/FINAL_DATABASE/06.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "existing partial database",
+      "file": "supabase/FINAL_DATABASE/07.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "existing partial database",
+      "file": "supabase/FINAL_DATABASE/08.sql",
+      "status": "PASS"
+    },
+    {
+      "scenario": "existing partial database",
+      "file": "supabase/FINAL_DATABASE/09.sql",
+      "status": "PASS"
+    }
+  ],
+  "existingData": "Seven populated business tables preserved; existing CMS edits retained; all 13 tables stable on rerun",
+  "duplicatePublicTables": 0,
+  "duplicateConstraintDefinitions": 0,
+  "remoteWrites": false,
+  "liveSupabase": "NOT VERIFIED"
+}
